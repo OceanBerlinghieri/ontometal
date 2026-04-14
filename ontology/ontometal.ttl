@@ -15,11 +15,95 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandId
-:bandId rdf:type owl:DatatypeProperty ;
+###  http://purl.org/dc/terms/available
+<http://purl.org/dc/terms/available> owl:equivalentProperty :releaseYear .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#bandID
+:bandID rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
         rdfs:domain :Band ;
-        rdfs:range xsd:long .
+        rdfs:range xsd:long ;
+        rdfs:comment "Identifier by metal archives"@en ;
+        rdfs:label "bandID"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#bandName
+:bandName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+          rdfs:domain :Band ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of a given band"@en ;
+          rdfs:label "bandName"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Name of a given country"@en ;
+             rdfs:label "countryName"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#labelID
+:labelID rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+         rdfs:domain :Label ;
+         rdfs:range xsd:long ;
+         rdfs:comment "Identifier by metal archives"@en ;
+         rdfs:label "labelID"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#labelName
+:labelName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+           rdfs:domain :Label ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Name of a given label"@en ;
+           rdfs:label "labelName"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#labelWebsiteURL
+:labelWebsiteURL rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :url ;
+                 rdfs:domain :Label ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "URL of a label website"@en ;
+                 rdfs:label "labelWebsiteURL"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#metalArchivesURL
+:metalArchivesURL rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :url ;
+                  rdfs:domain :Band ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "URL of a band page in metal archives website"@en ;
+                  rdfs:label "metalArchivesURL"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#releaseTitle
+:releaseTitle rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
+              rdfs:domain :Release ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Title of a band release"@en ;
+              rdfs:label "releaseTitle"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#releaseYear
+:releaseYear rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://purl.org/dc/terms/date> ;
+             rdfs:domain :Release ;
+             rdfs:range xsd:gYear ;
+             rdfs:comment "Year when a band release came out"@en ;
+             rdfs:label "releaseYear"@en .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#url
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:comment "A link to acess a website" ;
+     rdfs:label "url" .
 
 
 ###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus
