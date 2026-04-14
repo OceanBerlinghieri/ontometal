@@ -15,21 +15,21 @@
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#bandId
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandId
 :bandId rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
         rdfs:domain :Band ;
         rdfs:range xsd:long .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#bandStatus
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus
 :bandStatus rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/status> ;
             rdfs:domain :Band ;
             rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#labelStatus
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus
 :labelStatus rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/status> ;
              rdfs:domain :Label ;
@@ -56,37 +56,37 @@
 <http://purl.org/ontology/mo/ReleaseType> owl:equivalentClass :Release .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#Band
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band
 :Band rdf:type owl:Class ;
       rdfs:comment "Class representing a music group. Equivalent to mo:MusicGroup"@en ;
       rdfs:label "Band"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#Country
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country
 :Country rdf:type owl:Class ;
          rdfs:comment "A class representing a country"@en ;
          rdfs:label "Country"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#Genre
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre
 :Genre rdf:type owl:Class ;
        rdfs:comment "Music genre class, equivalent to mo:Genre"@en ;
        rdfs:label "Genre"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#Label
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label
 :Label rdf:type owl:Class ;
        rdfs:comment "Comercial organization from music industry. Equivalent to mo:Label"@en ;
        rdfs:label "Label"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#MetalGenre
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre
 :MetalGenre rdf:type owl:Class ;
             rdfs:subClassOf :Genre ;
             rdfs:label "A class representing musical subgenres from metal music"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#Release
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release
 :Release rdf:type owl:Class ;
          rdfs:comment "Music release from a band. Equivalent to mo:ReleaseType"@en ;
          rdfs:label "Release"@en .
