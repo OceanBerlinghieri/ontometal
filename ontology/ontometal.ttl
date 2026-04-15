@@ -55,7 +55,9 @@
 :producedBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ;
             owl:inverseOf :producer ;
-            rdf:type owl:SymmetricProperty ;
+            rdfs:domain :Band ;
+            rdfs:range :Band ,
+                       :Label ;
             rdfs:comment "Relates a band which is produces by a label"@en ;
             rdfs:label "producedBy" .
 
@@ -63,7 +65,8 @@
 ###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer
 :producer rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#agent> ;
-          rdfs:domain :Label ;
+          rdfs:domain :Band ,
+                      :Label ;
           rdfs:range :Band ;
           rdfs:comment "Relates a band or musical composition to its producer (label)"@en ;
           rdfs:label "producer"@en .
@@ -94,7 +97,8 @@
 #################################################################
 
 ###  http://purl.org/dc/terms/available
-<http://purl.org/dc/terms/available> owl:equivalentProperty :releaseYear .
+<http://purl.org/dc/terms/available> owl:equivalentProperty :releaseYear ;
+                                     rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
 
 
 ###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID
