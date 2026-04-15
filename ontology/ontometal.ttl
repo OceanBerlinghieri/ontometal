@@ -20,9 +20,10 @@
                                                            :hasSpecialization .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#hasCountry
-:hasCountry rdf:type owl:ObjectProperty ,
-                     owl:FunctionalProperty ;
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry
+:hasCountry rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/based_near> ;
+            rdf:type owl:FunctionalProperty ;
             rdfs:domain :Band ,
                         :Label ;
             rdfs:range :Country ;
@@ -30,7 +31,7 @@
             rdfs:label "hasCountry"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#hasGenre
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre
 :hasGenre rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> ;
           rdf:type owl:TransitiveProperty ;
@@ -40,7 +41,7 @@
           rdfs:label "hasGenre"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#hasSpecialization
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization
 :hasSpecialization rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> ;
                    rdf:type owl:TransitiveProperty ;
@@ -50,7 +51,7 @@
                               "hasSpecialization"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#producedBy
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy
 :producedBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ;
             owl:inverseOf :producer ;
@@ -59,7 +60,7 @@
             rdfs:label "producedBy" .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#producer
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer
 :producer rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#agent> ;
           rdfs:domain :Label ;
@@ -68,7 +69,7 @@
           rdfs:label "producer"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#releasedBy
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy
 :releasedBy rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/made> ;
             owl:inverseOf :releases ;
@@ -79,7 +80,7 @@
             rdfs:label "releasedBy"@en .
 
 
-###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal#releases
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases
 :releases rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/maker> ;
           rdfs:domain :Band ;
