@@ -1,16 +1,23 @@
 name: Build Docs
 run-name: ${{ github.actor }} is generation ontology documentation
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 permissions:
   contents: write
   
 jobs:
   build-docs:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          persist-credentials: false
 
       - name: Set up JDK 17
         uses: actions/setup-java@v3
@@ -32,6 +39,10 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           add: './ontometal/docs'
-          author_name: 'github-actions'
-          committer_name: Github Actions
+          author_name: 'OceanBerlinghieri'
+          author_email: 'OceanBerlinghieri@users.noreply.github.com'
+          committer_name: 'OceanBerlinghieri'
+          committer_email: 'OceanBerlinghieri@users.noreply.github.com'
           message: 'Update documentation'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
