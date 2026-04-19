@@ -1,0 +1,471 @@
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal-0.0.1_dev> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/ontology/mo/> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/contributor> "Ocean Berlinghieri García" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/created> "2026-04-19" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/creator> "Ocean Berlinghieri García" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/publisher> "Ocean Berlinghieri García" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/title> "ontometal" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-nd/3.0/es/legalcode.es" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/vocab/vann/preferredNamespacePrefix> "om" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about metal music" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1_dev - First ontology prototype" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/created
+<http://purl.org/dc/elements/1.1/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/NET/c4dm/event.owl#agent
+<http://purl.org/NET/c4dm/event.owl#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/NET/c4dm/event.owl#isAgentIn
+<http://purl.org/NET/c4dm/event.owl#isAgentIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/ontology/ao/core#genre
+<http://purl.org/ontology/ao/core#genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/ontology/mo/releaseType
+<http://purl.org/ontology/mo/releaseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/mo/releaseType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://purl.org/ontology/mo/releaseType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/mo/ReleaseType> .
+<http://purl.org/ontology/mo/ReleaseType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/mo/releaseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines de type of a release as album, single, compilation.."@en .
+<http://purl.org/ontology/mo/releaseType> <http://www.w3.org/2000/01/rdf-schema#label> "releaseType"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/based_near> .
+<http://xmlns.com/foaf/0.1/based_near> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an entity with its origin country"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.w3.org/2000/01/rdf-schema#label> "hasCountry"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/ao/core#genre> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a band with one or more genres"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.w3.org/2000/01/rdf-schema#label> "hasGenre"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/ontology/ao/core#genre> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization> <http://www.w3.org/2000/01/rdf-schema#label> "Relates a label with its preferred musical genre"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization> <http://www.w3.org/2000/01/rdf-schema#label> "hasSpecialization"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/NET/c4dm/event.owl#isAgentIn> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a band which is produces by a label"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.w3.org/2000/01/rdf-schema#label> "producedBy" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/NET/c4dm/event.owl#agent> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a band or musical composition to its producer (label)"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.w3.org/2000/01/rdf-schema#label> "producer"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/made> .
+<http://xmlns.com/foaf/0.1/made> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a release with the band that released it"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.w3.org/2000/01/rdf-schema#label> "releasedBy"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/maker> .
+<http://xmlns.com/foaf/0.1/maker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a band with a release"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.w3.org/2000/01/rdf-schema#label> "releases"@en .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+# 
+# http://xmlns.com/foaf/0.1/made
+# 
+# http://xmlns.com/foaf/0.1/maker
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/available
+<http://purl.org/dc/terms/available> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/available> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/terms/date
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier by metal archives"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> <http://www.w3.org/2000/01/rdf-schema#label> "bandID"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/name> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a given band"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> <http://www.w3.org/2000/01/rdf-schema#label> "bandName"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/status> .
+<http://xmlns.com/foaf/0.1/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/name> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a given country"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> <http://www.w3.org/2000/01/rdf-schema#label> "countryName"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/identifier> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier by metal archives"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> <http://www.w3.org/2000/01/rdf-schema#label> "labelID"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/name> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a given label"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> <http://www.w3.org/2000/01/rdf-schema#label> "labelName"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://xmlns.com/foaf/0.1/status> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of a label website"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL> <http://www.w3.org/2000/01/rdf-schema#label> "labelWebsiteURL"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of a band page in metal archives website"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL> <http://www.w3.org/2000/01/rdf-schema#label> "metalArchivesURL"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/title> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of a band release"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> <http://www.w3.org/2000/01/rdf-schema#label> "releaseTitle"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/date> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Year when a band release came out"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> <http://www.w3.org/2000/01/rdf-schema#label> "releaseYear"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url> <http://www.w3.org/2000/01/rdf-schema#comment> "A link to acess a website" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url> <http://www.w3.org/2000/01/rdf-schema#label> "url" .
+# 
+# http://xmlns.com/foaf/0.1/name
+# 
+# http://xmlns.com/foaf/0.1/status
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/mo/Genre
+<http://purl.org/ontology/mo/Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/mo/Genre> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre> .
+# 
+# http://purl.org/ontology/mo/Label
+<http://purl.org/ontology/mo/Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/mo/Label> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+# 
+# http://purl.org/ontology/mo/MusicGroup
+<http://purl.org/ontology/mo/MusicGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/mo/MusicGroup> <http://www.w3.org/2002/07/owl#equivalentClass> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+# 
+# http://purl.org/ontology/mo/ReleaseType
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing a music group. Equivalent to mo:MusicGroup"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> <http://www.w3.org/2000/01/rdf-schema#label> "Band"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A class representing a country"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre> <http://www.w3.org/2000/01/rdf-schema#comment> "Music genre class, equivalent to mo:Genre"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre> <http://www.w3.org/2000/01/rdf-schema#label> "Genre"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> <http://www.w3.org/2000/01/rdf-schema#comment> "Comercial organization from music industry. Equivalent to mo:Label"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> <http://www.w3.org/2000/01/rdf-schema#label> "Label"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre> <http://www.w3.org/2000/01/rdf-schema#comment> "A class representing musical subgenres from metal music"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre> <http://www.w3.org/2000/01/rdf-schema#label> "MetalGenre"@en .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> <http://www.w3.org/2000/01/rdf-schema#comment> "Music release from a band. Equivalent to mo:ReleaseType"@en .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> <http://www.w3.org/2000/01/rdf-schema#label> "Release"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/mo/album
+<http://purl.org/ontology/mo/album> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> "Capitol Records" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> "Active" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> "Columbia Records" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> "Active" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath> <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> "Dance Of Death" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName> "Elektra Records" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus> "Active" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> "Iron Maiden" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> "Active" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.w3.org/2000/01/rdf-schema#comment> "Iron Maiden music group" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden> <http://www.w3.org/2000/01/rdf-schema#label> "IronMaiden" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets> <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> "Master Of Puppets" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> "Megadeth" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> "Active" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://purl.org/dc/terms/bibliographicCitation> "Megadeth. Encyclopaedia Metallum: The Metal Archives. Accessed 2026. https://www.metal-archives.com/bands/megadeth/138" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.w3.org/2000/01/rdf-schema#comment> "Megadeth music group" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> <http://www.w3.org/2000/01/rdf-schema#label> "Megadeth" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> "1"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> "Metallica" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> "Active" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.w3.org/2000/01/rdf-schema#comment> "Metallica music group" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica> <http://www.w3.org/2000/01/rdf-schema#label> "Metallica" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace> <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle> "Rust In Peace" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear> "1990"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName> "Slayer" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus> "Retired" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.w3.org/2000/01/rdf-schema#comment> "Slayer music group" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer> <http://www.w3.org/2000/01/rdf-schema#label> "Slayer" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre> .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> "United Kingdom" .
+# 
+# http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country> .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA> <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName> "United States Of America" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
