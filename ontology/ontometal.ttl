@@ -8,16 +8,28 @@
 @base <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/> .
 
 <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> rdf:type owl:Ontology ;
+                                                                owl:versionIRI <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal-0.0.1_dev> ;
                                                                 owl:imports <http://purl.org/ontology/mo/> ;
-                                                                rdfs:comment "Ontology about metal music" .
+                                                                <http://purl.org/dc/elements/1.1/contributor> "Ocean Berlinghieri García" ;
+                                                                <http://purl.org/dc/elements/1.1/created> "2026-04-19" ;
+                                                                <http://purl.org/dc/elements/1.1/creator> "Ocean Berlinghieri García" ;
+                                                                <http://purl.org/dc/elements/1.1/publisher> "Ocean Berlinghieri García" ;
+                                                                <http://purl.org/dc/elements/1.1/title> "ontometal" ;
+                                                                <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-nd/3.0/es/legalcode.es" ;
+                                                                <http://purl.org/vocab/vann/preferredNamespacePrefix> "om" ;
+                                                                <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal" ;
+                                                                rdfs:comment "Ontology about metal music" ;
+                                                                owl:versionInfo "0.0.1_dev - First ontology prototype" .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://purl.org/ontology/mo/genre
-<http://purl.org/ontology/mo/genre> owl:equivalentProperty :hasGenre ,
-                                                           :hasSpecialization .
+###  http://purl.org/ontology/mo/releaseType
+<http://purl.org/ontology/mo/releaseType> rdfs:domain :Release ;
+                                          rdfs:range <http://purl.org/ontology/mo/ReleaseType> ;
+                                          rdfs:comment "Defines de type of a release as album, single, compilation.."@en ;
+                                          rdfs:label "releaseType"@en .
 
 
 ###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry
@@ -223,10 +235,6 @@
 <http://purl.org/ontology/mo/MusicGroup> owl:equivalentClass :Band .
 
 
-###  http://purl.org/ontology/mo/ReleaseType
-<http://purl.org/ontology/mo/ReleaseType> owl:equivalentClass :Release .
-
-
 ###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band
 :Band rdf:type owl:Class ;
       rdfs:comment "Class representing a music group. Equivalent to mo:MusicGroup"@en ;
@@ -254,13 +262,153 @@
 ###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre
 :MetalGenre rdf:type owl:Class ;
             rdfs:subClassOf :Genre ;
-            rdfs:label "A class representing musical subgenres from metal music"@en .
+            rdfs:comment "A class representing musical subgenres from metal music"@en ;
+            rdfs:label "MetalGenre"@en .
 
 
 ###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release
 :Release rdf:type owl:Class ;
          rdfs:comment "Music release from a band. Equivalent to mo:ReleaseType"@en ;
          rdfs:label "Release"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords
+:CapitolRecords rdf:type owl:NamedIndividual ,
+                         :Label ;
+                :hasCountry :USA ;
+                :producer :Megadeth ;
+                :labelID 1 ;
+                :labelName "Capitol Records" ;
+                :labelStatus "Active" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords
+:ColumbiaRecords rdf:type owl:NamedIndividual ,
+                          :Label ;
+                 :hasCountry :USA ;
+                 :producer :IronMaiden ;
+                 :labelID 2 ;
+                 :labelName "Columbia Records" ;
+                 :labelStatus "Active" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath
+:DanceOfDeath rdf:type owl:NamedIndividual ,
+                       :Release ;
+              <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
+              :releasedBy :IronMaiden ;
+              :releaseTitle "Dance Of Death" ;
+              :releaseYear "2003"^^xsd:gYear .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords
+:ElekctraRecords rdf:type owl:NamedIndividual ,
+                          :Label ;
+                 :hasCountry :USA ;
+                 :producer :Metallica ;
+                 :labelID 3 ;
+                 :labelName "Elektra Records" ;
+                 :labelStatus "Active" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal
+:HeavyMetal rdf:type owl:NamedIndividual ,
+                     :MetalGenre .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden
+:IronMaiden rdf:type owl:NamedIndividual ,
+                     :Band ;
+            :hasCountry :UK ;
+            :producedBy :ColumbiaRecords ;
+            :releases :DanceOfDeath ;
+            :bandID 3 ;
+            :bandName "Iron Maiden" ;
+            :bandStatus "Active" ;
+            rdfs:comment "Iron Maiden music group" ;
+            rdfs:label "IronMaiden" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets
+:MasterOfPuppets rdf:type owl:NamedIndividual ,
+                          :Release ;
+                 <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
+                 :releasedBy :Metallica ;
+                 :releaseTitle "Master Of Puppets" ;
+                 :releaseYear "1986"^^xsd:gYear .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth
+:Megadeth rdf:type owl:NamedIndividual ,
+                   :Band ;
+          :hasCountry :USA ;
+          :hasGenre :HeavyMetal ,
+                    :ThrashMetal ;
+          :producedBy :CapitolRecords ;
+          :releases :RustInPeace ;
+          :bandID 2 ;
+          :bandName "Megadeth" ;
+          :bandStatus "Active" ;
+          <http://purl.org/dc/terms/bibliographicCitation> "Megadeth. Encyclopaedia Metallum: The Metal Archives. Accessed 2026. https://www.metal-archives.com/bands/megadeth/138" ;
+          rdfs:comment "Megadeth music group" ;
+          rdfs:label "Megadeth" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica
+:Metallica rdf:type owl:NamedIndividual ,
+                    :Band ;
+           :hasCountry :USA ;
+           :hasGenre :HeavyMetal ,
+                     :ThrashMetal ;
+           :producedBy :ElekctraRecords ;
+           :releases :MasterOfPuppets ;
+           :bandID 1 ;
+           :bandName "Metallica" ;
+           :bandStatus "Active" ;
+           rdfs:comment "Metallica music group" ;
+           rdfs:label "Metallica" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace
+:RustInPeace rdf:type owl:NamedIndividual ,
+                      :Release ;
+             <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
+             :releasedBy :Megadeth ;
+             :releaseTitle "Rust In Peace" ;
+             :releaseYear "1990"^^xsd:gYear .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer
+:Slayer rdf:type owl:NamedIndividual ,
+                 :Band ;
+        :hasCountry :USA ;
+        :hasGenre :ThrashMetal ;
+        :bandID 4 ;
+        :bandName "Slayer" ;
+        :bandStatus "Retired" ;
+        rdfs:comment "Slayer music group" ;
+        rdfs:label "Slayer" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal
+:ThrashMetal rdf:type owl:NamedIndividual ,
+                      :MetalGenre .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK
+:UK rdf:type owl:NamedIndividual ,
+             :Country ;
+    :countryName "United Kingdom" .
+
+
+###  http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA
+:USA rdf:type owl:NamedIndividual ,
+              :Country ;
+     :countryName "United States Of America" .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
