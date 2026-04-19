@@ -42,6 +42,6 @@ jobs:
           author_email: 'OceanBerlinghieri@users.noreply.github.com'
           committer_name: 'OceanBerlinghieri'
           committer_email: 'OceanBerlinghieri@users.noreply.github.com'
-          message: 'Update documentation'
+          message: 'Update documentation [skip ci]'
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
