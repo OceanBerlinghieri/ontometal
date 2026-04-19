@@ -1,0 +1,37 @@
+name: Build Docs
+run-name: ${{ github.actor }} is generation ontology documentation
+on: [push]
+
+permissions:
+  contents: write
+  
+jobs:
+  build-docs:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Verify Java Installation
+        run: java -version
+
+      - name: Download Widoco
+        run: |
+          wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
+
+      - name: Generate Documentation
+        run: ls && java -jar ./widoco-1.4.25-jar-with-dependencies_JDK-17.jar -ontFile ./ontology/ontometal.ttl -outFolder ./ontometal/docs/ -oops -rewriteAll -lang en
+        
+      - name: Commit and Push Changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: './ontometal/docs'
+          author_name: 'github-actions'
+          committer_name: Github Actions
+          message: 'Update documentation'
