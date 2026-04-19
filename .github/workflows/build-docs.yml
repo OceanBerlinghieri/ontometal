@@ -2,8 +2,8 @@ name: Build Docs
 run-name: ${{ github.actor }} is generation ontology documentation
 on:
   push:
-    #branches:
-    #  - master
+    branches:
+      - master
 
 permissions:
   contents: write
