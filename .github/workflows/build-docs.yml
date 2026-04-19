@@ -53,6 +53,7 @@ jobs:
           cp -r generated-docs/. gh-pages/
           test -f gh-pages/index_en.html
           cp gh-pages/index_en.html gh-pages/index.html
+
       - name: Commit and push docs to gh-pages
         working-directory: gh-pages
         run: |
