@@ -1,1 +1,1 @@
-https://oceanberlinghieri.github.io/ontometal/index-en
+https://oceanberlinghieri.github.io/ontometal/
