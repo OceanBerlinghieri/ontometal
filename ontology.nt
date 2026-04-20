@@ -6,7 +6,7 @@
 <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/creator> "Ocean Berlinghieri García" .
 <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/publisher> "Ocean Berlinghieri García" .
 <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/elements/1.1/title> "ontometal" .
-<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-nd/3.0/es/legalcode.es" .
+<http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
 <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/vocab/vann/preferredNamespacePrefix> "om" .
 <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal" .
 <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about metal music" .

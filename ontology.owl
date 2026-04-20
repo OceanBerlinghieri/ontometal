@@ -19,7 +19,7 @@
         <dc:creator>Ocean Berlinghieri García</dc:creator>
         <dc:publisher>Ocean Berlinghieri García</dc:publisher>
         <dc:title>ontometal</dc:title>
-        <terms:license>https://creativecommons.org/licenses/by-nc-nd/3.0/es/legalcode.es</terms:license>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <vann:preferredNamespacePrefix>om</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal</vann:preferredNamespaceUri>
         <rdfs:comment>Ontology about metal music</rdfs:comment>
