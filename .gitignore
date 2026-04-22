@@ -1,7 +1,13 @@
-.syncmetadata
-
 # Python cache files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.egg-info/
+
+# Virtual environment
+venv/
+env/
+.virtualenv/
+.venv/
+.env/
