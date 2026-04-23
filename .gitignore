@@ -11,3 +11,6 @@ env/
 .virtualenv/
 .venv/
 .env/
+
+#VsCode settings
+.vscode/
