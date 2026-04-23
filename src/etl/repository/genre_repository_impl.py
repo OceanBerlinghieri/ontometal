@@ -1,4 +1,3 @@
-
 from pandas import DataFrame
 
 from etl.repository.genre_repository import GenreRepository

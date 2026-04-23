@@ -5,7 +5,5 @@ from etl.repository.resource.csv_resource import CSVResource
 if __name__ == "__main__":
     # Repositories
     band_repository = BandRepositoryImpl(resource=CSVResource())
-    pipeline = Pipeline(
-        band_repository=band_repository
-        )
+    pipeline = Pipeline(band_repository=band_repository)
     pipeline.run()

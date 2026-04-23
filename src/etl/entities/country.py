@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
+
 @dataclass
 class Country:
-    #Data properties
+    # Data properties
     name: str
