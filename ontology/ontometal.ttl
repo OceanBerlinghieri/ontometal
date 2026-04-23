@@ -5,7 +5,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/> .
+@base <https://w3id.org/ontometal> .
 
 <https://w3id.org/ontometal> rdf:type owl:Ontology ;
                               owl:versionIRI <https://w3id.org/ontometal-0.0.1_dev> ;
@@ -26,82 +26,82 @@
 #################################################################
 
 ###  http://purl.org/ontology/mo/releaseType
-<http://purl.org/ontology/mo/releaseType> rdfs:domain <https://w3id.org/ontometal#Release> ;
+<http://purl.org/ontology/mo/releaseType> rdfs:domain :Release ;
                                           rdfs:range <http://purl.org/ontology/mo/ReleaseType> ;
                                           rdfs:comment "Defines de type of a release as album, single, compilation.."@en ;
                                           rdfs:label "releaseType"@en .
 
 
 ###  https://w3id.org/ontometal#hasCountry
-<https://w3id.org/ontometal#hasCountry> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/based_near> ;
-                                        rdf:type owl:FunctionalProperty ;
-                                        rdfs:domain <https://w3id.org/ontometal#Band> ,
-                                                    <https://w3id.org/ontometal#Label> ;
-                                        rdfs:range <https://w3id.org/ontometal#Country> ;
-                                        rdfs:comment "Relates an entity with its origin country"@en ;
-                                        rdfs:label "hasCountry"@en .
+:hasCountry rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/based_near> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Band ,
+                        :Label ;
+            rdfs:range :Country ;
+            rdfs:comment "Relates an entity with its origin country"@en ;
+            rdfs:label "hasCountry"@en .
 
 
 ###  https://w3id.org/ontometal#hasGenre
-<https://w3id.org/ontometal#hasGenre> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> ;
-                                      rdf:type owl:TransitiveProperty ;
-                                      rdfs:domain <https://w3id.org/ontometal#Band> ;
-                                      rdfs:range <https://w3id.org/ontometal#Genre> ;
-                                      rdfs:comment "Relates a band with one or more genres"@en ;
-                                      rdfs:label "hasGenre"@en .
+:hasGenre rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> ;
+          rdf:type owl:TransitiveProperty ;
+          rdfs:domain :Band ;
+          rdfs:range :Genre ;
+          rdfs:comment "Relates a band with one or more genres"@en ;
+          rdfs:label "hasGenre"@en .
 
 
 ###  https://w3id.org/ontometal#hasSpecialization
-<https://w3id.org/ontometal#hasSpecialization> rdf:type owl:ObjectProperty ;
-                                               rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> ;
-                                               rdf:type owl:TransitiveProperty ;
-                                               rdfs:domain <https://w3id.org/ontometal#Label> ;
-                                               rdfs:range <https://w3id.org/ontometal#Genre> ;
-                                               rdfs:label "Relates a label with its preferred musical genre"@en ,
-                                                          "hasSpecialization"@en .
+:hasSpecialization rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> ;
+                   rdf:type owl:TransitiveProperty ;
+                   rdfs:domain :Label ;
+                   rdfs:range :Genre ;
+                   rdfs:label "Relates a label with its preferred musical genre"@en ,
+                              "hasSpecialization"@en .
 
 
 ###  https://w3id.org/ontometal#producedBy
-<https://w3id.org/ontometal#producedBy> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ;
-                                        owl:inverseOf <https://w3id.org/ontometal#producer> ;
-                                        rdfs:domain <https://w3id.org/ontometal#Band> ;
-                                        rdfs:range <https://w3id.org/ontometal#Band> ,
-                                                   <https://w3id.org/ontometal#Label> ;
-                                        rdfs:comment "Relates a band which is produces by a label"@en ;
-                                        rdfs:label "producedBy" .
+:producedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ;
+            owl:inverseOf :producer ;
+            rdfs:domain :Band ;
+            rdfs:range :Band ,
+                       :Label ;
+            rdfs:comment "Relates a band which is produces by a label"@en ;
+            rdfs:label "producedBy" .
 
 
 ###  https://w3id.org/ontometal#producer
-<https://w3id.org/ontometal#producer> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#agent> ;
-                                      rdfs:domain <https://w3id.org/ontometal#Band> ,
-                                                  <https://w3id.org/ontometal#Label> ;
-                                      rdfs:range <https://w3id.org/ontometal#Band> ;
-                                      rdfs:comment "Relates a band or musical composition to its producer (label)"@en ;
-                                      rdfs:label "producer"@en .
+:producer rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#agent> ;
+          rdfs:domain :Band ,
+                      :Label ;
+          rdfs:range :Band ;
+          rdfs:comment "Relates a band or musical composition to its producer (label)"@en ;
+          rdfs:label "producer"@en .
 
 
 ###  https://w3id.org/ontometal#releasedBy
-<https://w3id.org/ontometal#releasedBy> rdf:type owl:ObjectProperty ;
-                                        rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/made> ;
-                                        owl:inverseOf <https://w3id.org/ontometal#releases> ;
-                                        rdf:type owl:FunctionalProperty ;
-                                        rdfs:domain <https://w3id.org/ontometal#Release> ;
-                                        rdfs:range <https://w3id.org/ontometal#Band> ;
-                                        rdfs:comment "Relates a release with the band that released it"@en ;
-                                        rdfs:label "releasedBy"@en .
+:releasedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/made> ;
+            owl:inverseOf :releases ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Release ;
+            rdfs:range :Band ;
+            rdfs:comment "Relates a release with the band that released it"@en ;
+            rdfs:label "releasedBy"@en .
 
 
 ###  https://w3id.org/ontometal#releases
-<https://w3id.org/ontometal#releases> rdf:type owl:ObjectProperty ;
-                                      rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/maker> ;
-                                      rdfs:domain <https://w3id.org/ontometal#Band> ;
-                                      rdfs:range <https://w3id.org/ontometal#Release> ;
-                                      rdfs:comment "Relates a band with a release"@en ;
-                                      rdfs:label "releases"@en .
+:releases rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/maker> ;
+          rdfs:domain :Band ;
+          rdfs:range :Release ;
+          rdfs:comment "Relates a band with a release"@en ;
+          rdfs:label "releases"@en .
 
 
 #################################################################
@@ -109,118 +109,132 @@
 #################################################################
 
 ###  http://purl.org/dc/terms/available
-<http://purl.org/dc/terms/available> owl:equivalentProperty <https://w3id.org/ontometal#releaseYear> ;
+<http://purl.org/dc/terms/available> owl:equivalentProperty :releaseYear ;
                                      rdfs:subPropertyOf <http://purl.org/dc/terms/date> .
 
 
 ###  https://w3id.org/ontometal#bandID
-<https://w3id.org/ontometal#bandID> rdf:type owl:DatatypeProperty ;
-                                    rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
-                                    rdf:type owl:FunctionalProperty ;
-                                    rdfs:domain <https://w3id.org/ontometal#Band> ;
-                                    rdfs:range xsd:long ;
-                                    rdfs:comment "Identifier by metal archives"@en ;
-                                    rdfs:label "bandID"@en .
+:bandID rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Band ;
+        rdfs:range xsd:long ;
+        rdfs:comment "Identifier by metal archives"@en ;
+        rdfs:label "bandID"@en .
 
 
 ###  https://w3id.org/ontometal#bandName
-<https://w3id.org/ontometal#bandName> rdf:type owl:DatatypeProperty ;
-                                      rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
-                                      rdfs:domain <https://w3id.org/ontometal#Band> ;
-                                      rdfs:range xsd:string ;
-                                      rdfs:comment "Name of a given band"@en ;
-                                      rdfs:label "bandName"@en .
+:bandName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+          rdfs:domain :Band ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of a given band"@en ;
+          rdfs:label "bandName"@en .
 
 
 ###  https://w3id.org/ontometal#bandStatus
-<https://w3id.org/ontometal#bandStatus> rdf:type owl:DatatypeProperty ;
-                                        rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/status> ;
-                                        rdf:type owl:FunctionalProperty ;
-                                        rdfs:domain <https://w3id.org/ontometal#Band> ;
-                                        rdfs:range xsd:string ;
-                                        rdfs:comment "Status of a band (active, split..)" ;
-                                        rdfs:label "bandStatus" .
+:bandStatus rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/status> ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Band ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Status of a band (active, split..)" ;
+            rdfs:label "bandStatus" .
 
 
 ###  https://w3id.org/ontometal#countryName
-<https://w3id.org/ontometal#countryName> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
-                                         rdfs:domain <https://w3id.org/ontometal#Country> ;
-                                         rdfs:range xsd:string ;
-                                         rdfs:comment "Name of a given country"@en ;
-                                         rdfs:label "countryName"@en .
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Name of a given country"@en ;
+             rdfs:label "countryName"@en .
+
+
+###  https://w3id.org/ontometal#genreID
+:genreID rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+         rdfs:comment "Identifier of a genre"@en ;
+         rdfs:label "genreID"@en .
+
+
+###  https://w3id.org/ontometal#genreName
+:genreName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+           rdfs:comment "Name of a music genre"@en ;
+           rdfs:label "genreName"@en .
 
 
 ###  https://w3id.org/ontometal#labelID
-<https://w3id.org/ontometal#labelID> rdf:type owl:DatatypeProperty ;
-                                     rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
-                                     rdf:type owl:FunctionalProperty ;
-                                     rdfs:domain <https://w3id.org/ontometal#Label> ;
-                                     rdfs:range xsd:long ;
-                                     rdfs:comment "Identifier by metal archives"@en ;
-                                     rdfs:label "labelID"@en .
+:labelID rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf <http://purl.org/dc/terms/identifier> ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain :Label ;
+         rdfs:range xsd:long ;
+         rdfs:comment "Identifier by metal archives"@en ;
+         rdfs:label "labelID"@en .
 
 
 ###  https://w3id.org/ontometal#labelName
-<https://w3id.org/ontometal#labelName> rdf:type owl:DatatypeProperty ;
-                                       rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
-                                       rdfs:domain <https://w3id.org/ontometal#Label> ;
-                                       rdfs:range xsd:string ;
-                                       rdfs:comment "Name of a given label"@en ;
-                                       rdfs:label "labelName"@en .
+:labelName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/name> ;
+           rdfs:domain :Label ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Name of a given label"@en ;
+           rdfs:label "labelName"@en .
 
 
 ###  https://w3id.org/ontometal#labelStatus
-<https://w3id.org/ontometal#labelStatus> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/status> ;
-                                         rdf:type owl:FunctionalProperty ;
-                                         rdfs:domain <https://w3id.org/ontometal#Label> ;
-                                         rdfs:range xsd:string ;
-                                         rdfs:comment "Status of a label (closed, active, changedName..)" ;
-                                         rdfs:label "labelStatus" .
+:labelStatus rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://xmlns.com/foaf/0.1/status> ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Label ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Status of a label (closed, active, changedName..)" ;
+             rdfs:label "labelStatus" .
 
 
 ###  https://w3id.org/ontometal#labelWebsiteURL
-<https://w3id.org/ontometal#labelWebsiteURL> rdf:type owl:DatatypeProperty ;
-                                             rdfs:subPropertyOf <https://w3id.org/ontometal#url> ;
-                                             rdfs:domain <https://w3id.org/ontometal#Label> ;
-                                             rdfs:range xsd:string ;
-                                             rdfs:comment "URL of a label website"@en ;
-                                             rdfs:label "labelWebsiteURL"@en .
+:labelWebsiteURL rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :url ;
+                 rdfs:domain :Label ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "URL of a label website"@en ;
+                 rdfs:label "labelWebsiteURL"@en .
 
 
 ###  https://w3id.org/ontometal#metalArchivesURL
-<https://w3id.org/ontometal#metalArchivesURL> rdf:type owl:DatatypeProperty ;
-                                              rdfs:subPropertyOf <https://w3id.org/ontometal#url> ;
-                                              rdfs:domain <https://w3id.org/ontometal#Band> ;
-                                              rdfs:range xsd:string ;
-                                              rdfs:comment "URL of a band page in metal archives website"@en ;
-                                              rdfs:label "metalArchivesURL"@en .
+:metalArchivesURL rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf :url ;
+                  rdfs:domain :Band ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "URL of a band page in metal archives website"@en ;
+                  rdfs:label "metalArchivesURL"@en .
 
 
 ###  https://w3id.org/ontometal#releaseTitle
-<https://w3id.org/ontometal#releaseTitle> rdf:type owl:DatatypeProperty ;
-                                          rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
-                                          rdfs:domain <https://w3id.org/ontometal#Release> ;
-                                          rdfs:range xsd:string ;
-                                          rdfs:comment "Title of a band release"@en ;
-                                          rdfs:label "releaseTitle"@en .
+:releaseTitle rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf <http://purl.org/dc/terms/title> ;
+              rdfs:domain :Release ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Title of a band release"@en ;
+              rdfs:label "releaseTitle"@en .
 
 
 ###  https://w3id.org/ontometal#releaseYear
-<https://w3id.org/ontometal#releaseYear> rdf:type owl:DatatypeProperty ;
-                                         rdfs:subPropertyOf <http://purl.org/dc/terms/date> ;
-                                         rdf:type owl:FunctionalProperty ;
-                                         rdfs:domain <https://w3id.org/ontometal#Release> ;
-                                         rdfs:range xsd:gYear ;
-                                         rdfs:comment "Year when a band release came out"@en ;
-                                         rdfs:label "releaseYear"@en .
+:releaseYear rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf <http://purl.org/dc/terms/date> ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Release ;
+             rdfs:range xsd:gYear ;
+             rdfs:comment "Year when a band release came out"@en ;
+             rdfs:label "releaseYear"@en .
 
 
 ###  https://w3id.org/ontometal#url
-<https://w3id.org/ontometal#url> rdf:type owl:DatatypeProperty ;
-                                 rdfs:comment "A link to acess a website" ;
-                                 rdfs:label "url" .
+:url rdf:type owl:DatatypeProperty ;
+     rdfs:comment "A link to acess a website" ;
+     rdfs:label "url" .
 
 
 #################################################################
@@ -228,52 +242,52 @@
 #################################################################
 
 ###  http://purl.org/ontology/mo/Genre
-<http://purl.org/ontology/mo/Genre> owl:equivalentClass <https://w3id.org/ontometal#Genre> .
+<http://purl.org/ontology/mo/Genre> owl:equivalentClass :Genre .
 
 
 ###  http://purl.org/ontology/mo/Label
-<http://purl.org/ontology/mo/Label> owl:equivalentClass <https://w3id.org/ontometal#Label> .
+<http://purl.org/ontology/mo/Label> owl:equivalentClass :Label .
 
 
 ###  http://purl.org/ontology/mo/MusicGroup
-<http://purl.org/ontology/mo/MusicGroup> owl:equivalentClass <https://w3id.org/ontometal#Band> .
+<http://purl.org/ontology/mo/MusicGroup> owl:equivalentClass :Band .
 
 
 ###  https://w3id.org/ontometal#Band
-<https://w3id.org/ontometal#Band> rdf:type owl:Class ;
-                                  rdfs:comment "Class representing a music group. Equivalent to mo:MusicGroup"@en ;
-                                  rdfs:label "Band"@en .
+:Band rdf:type owl:Class ;
+      rdfs:comment "Class representing a music group. Equivalent to mo:MusicGroup"@en ;
+      rdfs:label "Band"@en .
 
 
 ###  https://w3id.org/ontometal#Country
-<https://w3id.org/ontometal#Country> rdf:type owl:Class ;
-                                     rdfs:comment "A class representing a country"@en ;
-                                     rdfs:label "Country"@en .
+:Country rdf:type owl:Class ;
+         rdfs:comment "A class representing a country"@en ;
+         rdfs:label "Country"@en .
 
 
 ###  https://w3id.org/ontometal#Genre
-<https://w3id.org/ontometal#Genre> rdf:type owl:Class ;
-                                   rdfs:comment "Music genre class, equivalent to mo:Genre"@en ;
-                                   rdfs:label "Genre"@en .
+:Genre rdf:type owl:Class ;
+       rdfs:comment "Music genre class, equivalent to mo:Genre"@en ;
+       rdfs:label "Genre"@en .
 
 
 ###  https://w3id.org/ontometal#Label
-<https://w3id.org/ontometal#Label> rdf:type owl:Class ;
-                                   rdfs:comment "Comercial organization from music industry. Equivalent to mo:Label"@en ;
-                                   rdfs:label "Label"@en .
+:Label rdf:type owl:Class ;
+       rdfs:comment "Comercial organization from music industry. Equivalent to mo:Label"@en ;
+       rdfs:label "Label"@en .
 
 
 ###  https://w3id.org/ontometal#MetalGenre
-<https://w3id.org/ontometal#MetalGenre> rdf:type owl:Class ;
-                                        rdfs:subClassOf <https://w3id.org/ontometal#Genre> ;
-                                        rdfs:comment "A class representing musical subgenres from metal music"@en ;
-                                        rdfs:label "MetalGenre"@en .
+:MetalGenre rdf:type owl:Class ;
+            rdfs:subClassOf :Genre ;
+            rdfs:comment "A class representing musical subgenres from metal music"@en ;
+            rdfs:label "MetalGenre"@en .
 
 
 ###  https://w3id.org/ontometal#Release
-<https://w3id.org/ontometal#Release> rdf:type owl:Class ;
-                                     rdfs:comment "Music release from a band. Equivalent to mo:ReleaseType"@en ;
-                                     rdfs:label "Release"@en .
+:Release rdf:type owl:Class ;
+         rdfs:comment "Music release from a band. Equivalent to mo:ReleaseType"@en ;
+         rdfs:label "Release"@en .
 
 
 #################################################################
@@ -281,138 +295,138 @@
 #################################################################
 
 ###  https://w3id.org/ontometal#CapitolRecords
-<https://w3id.org/ontometal#CapitolRecords> rdf:type owl:NamedIndividual ,
-                                                     <https://w3id.org/ontometal#Label> ;
-                                            <https://w3id.org/ontometal#hasCountry> <https://w3id.org/ontometal#USA> ;
-                                            <https://w3id.org/ontometal#producer> <https://w3id.org/ontometal#Megadeth> ;
-                                            <https://w3id.org/ontometal#labelID> 1 ;
-                                            <https://w3id.org/ontometal#labelName> "Capitol Records" ;
-                                            <https://w3id.org/ontometal#labelStatus> "Active" .
+:CapitolRecords rdf:type owl:NamedIndividual ,
+                         :Label ;
+                :hasCountry :USA ;
+                :producer :Megadeth ;
+                :labelID 1 ;
+                :labelName "Capitol Records" ;
+                :labelStatus "Active" .
 
 
 ###  https://w3id.org/ontometal#ColumbiaRecords
-<https://w3id.org/ontometal#ColumbiaRecords> rdf:type owl:NamedIndividual ,
-                                                      <https://w3id.org/ontometal#Label> ;
-                                             <https://w3id.org/ontometal#hasCountry> <https://w3id.org/ontometal#USA> ;
-                                             <https://w3id.org/ontometal#producer> <https://w3id.org/ontometal#IronMaiden> ;
-                                             <https://w3id.org/ontometal#labelID> 2 ;
-                                             <https://w3id.org/ontometal#labelName> "Columbia Records" ;
-                                             <https://w3id.org/ontometal#labelStatus> "Active" .
+:ColumbiaRecords rdf:type owl:NamedIndividual ,
+                          :Label ;
+                 :hasCountry :USA ;
+                 :producer :IronMaiden ;
+                 :labelID 2 ;
+                 :labelName "Columbia Records" ;
+                 :labelStatus "Active" .
 
 
 ###  https://w3id.org/ontometal#DanceOfDeath
-<https://w3id.org/ontometal#DanceOfDeath> rdf:type owl:NamedIndividual ,
-                                                   <https://w3id.org/ontometal#Release> ;
-                                          <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
-                                          <https://w3id.org/ontometal#releasedBy> <https://w3id.org/ontometal#IronMaiden> ;
-                                          <https://w3id.org/ontometal#releaseTitle> "Dance Of Death" ;
-                                          <https://w3id.org/ontometal#releaseYear> "2003"^^xsd:gYear .
+:DanceOfDeath rdf:type owl:NamedIndividual ,
+                       :Release ;
+              <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
+              :releasedBy :IronMaiden ;
+              :releaseTitle "Dance Of Death" ;
+              :releaseYear "2003"^^xsd:gYear .
 
 
 ###  https://w3id.org/ontometal#ElekctraRecords
-<https://w3id.org/ontometal#ElekctraRecords> rdf:type owl:NamedIndividual ,
-                                                      <https://w3id.org/ontometal#Label> ;
-                                             <https://w3id.org/ontometal#hasCountry> <https://w3id.org/ontometal#USA> ;
-                                             <https://w3id.org/ontometal#producer> <https://w3id.org/ontometal#Metallica> ;
-                                             <https://w3id.org/ontometal#labelID> 3 ;
-                                             <https://w3id.org/ontometal#labelName> "Elektra Records" ;
-                                             <https://w3id.org/ontometal#labelStatus> "Active" .
+:ElekctraRecords rdf:type owl:NamedIndividual ,
+                          :Label ;
+                 :hasCountry :USA ;
+                 :producer :Metallica ;
+                 :labelID 3 ;
+                 :labelName "Elektra Records" ;
+                 :labelStatus "Active" .
 
 
 ###  https://w3id.org/ontometal#HeavyMetal
-<https://w3id.org/ontometal#HeavyMetal> rdf:type owl:NamedIndividual ,
-                                                 <https://w3id.org/ontometal#MetalGenre> .
+:HeavyMetal rdf:type owl:NamedIndividual ,
+                     :MetalGenre .
 
 
 ###  https://w3id.org/ontometal#IronMaiden
-<https://w3id.org/ontometal#IronMaiden> rdf:type owl:NamedIndividual ,
-                                                 <https://w3id.org/ontometal#Band> ;
-                                        <https://w3id.org/ontometal#hasCountry> <https://w3id.org/ontometal#UK> ;
-                                        <https://w3id.org/ontometal#producedBy> <https://w3id.org/ontometal#ColumbiaRecords> ;
-                                        <https://w3id.org/ontometal#releases> <https://w3id.org/ontometal#DanceOfDeath> ;
-                                        <https://w3id.org/ontometal#bandID> 3 ;
-                                        <https://w3id.org/ontometal#bandName> "Iron Maiden" ;
-                                        <https://w3id.org/ontometal#bandStatus> "Active" ;
-                                        rdfs:comment "Iron Maiden music group" ;
-                                        rdfs:label "IronMaiden" .
+:IronMaiden rdf:type owl:NamedIndividual ,
+                     :Band ;
+            :hasCountry :UK ;
+            :producedBy :ColumbiaRecords ;
+            :releases :DanceOfDeath ;
+            :bandID 3 ;
+            :bandName "Iron Maiden" ;
+            :bandStatus "Active" ;
+            rdfs:comment "Iron Maiden music group" ;
+            rdfs:label "IronMaiden" .
 
 
 ###  https://w3id.org/ontometal#MasterOfPuppets
-<https://w3id.org/ontometal#MasterOfPuppets> rdf:type owl:NamedIndividual ,
-                                                      <https://w3id.org/ontometal#Release> ;
-                                             <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
-                                             <https://w3id.org/ontometal#releasedBy> <https://w3id.org/ontometal#Metallica> ;
-                                             <https://w3id.org/ontometal#releaseTitle> "Master Of Puppets" ;
-                                             <https://w3id.org/ontometal#releaseYear> "1986"^^xsd:gYear .
+:MasterOfPuppets rdf:type owl:NamedIndividual ,
+                          :Release ;
+                 <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
+                 :releasedBy :Metallica ;
+                 :releaseTitle "Master Of Puppets" ;
+                 :releaseYear "1986"^^xsd:gYear .
 
 
 ###  https://w3id.org/ontometal#Megadeth
-<https://w3id.org/ontometal#Megadeth> rdf:type owl:NamedIndividual ,
-                                               <https://w3id.org/ontometal#Band> ;
-                                      <https://w3id.org/ontometal#hasCountry> <https://w3id.org/ontometal#USA> ;
-                                      <https://w3id.org/ontometal#hasGenre> <https://w3id.org/ontometal#HeavyMetal> ,
-                                                                            <https://w3id.org/ontometal#ThrashMetal> ;
-                                      <https://w3id.org/ontometal#producedBy> <https://w3id.org/ontometal#CapitolRecords> ;
-                                      <https://w3id.org/ontometal#releases> <https://w3id.org/ontometal#RustInPeace> ;
-                                      <https://w3id.org/ontometal#bandID> 2 ;
-                                      <https://w3id.org/ontometal#bandName> "Megadeth" ;
-                                      <https://w3id.org/ontometal#bandStatus> "Active" ;
-                                      <http://purl.org/dc/terms/bibliographicCitation> "Megadeth. Encyclopaedia Metallum: The Metal Archives. Accessed 2026. https://www.metal-archives.com/bands/megadeth/138" ;
-                                      rdfs:comment "Megadeth music group" ;
-                                      rdfs:label "Megadeth" .
+:Megadeth rdf:type owl:NamedIndividual ,
+                   :Band ;
+          :hasCountry :USA ;
+          :hasGenre :HeavyMetal ,
+                    :ThrashMetal ;
+          :producedBy :CapitolRecords ;
+          :releases :RustInPeace ;
+          :bandID 2 ;
+          :bandName "Megadeth" ;
+          :bandStatus "Active" ;
+          <http://purl.org/dc/terms/bibliographicCitation> "Megadeth. Encyclopaedia Metallum: The Metal Archives. Accessed 2026. https://www.metal-archives.com/bands/megadeth/138" ;
+          rdfs:comment "Megadeth music group" ;
+          rdfs:label "Megadeth" .
 
 
 ###  https://w3id.org/ontometal#Metallica
-<https://w3id.org/ontometal#Metallica> rdf:type owl:NamedIndividual ,
-                                                <https://w3id.org/ontometal#Band> ;
-                                       <https://w3id.org/ontometal#hasCountry> <https://w3id.org/ontometal#USA> ;
-                                       <https://w3id.org/ontometal#hasGenre> <https://w3id.org/ontometal#HeavyMetal> ,
-                                                                             <https://w3id.org/ontometal#ThrashMetal> ;
-                                       <https://w3id.org/ontometal#producedBy> <https://w3id.org/ontometal#ElekctraRecords> ;
-                                       <https://w3id.org/ontometal#releases> <https://w3id.org/ontometal#MasterOfPuppets> ;
-                                       <https://w3id.org/ontometal#bandID> 1 ;
-                                       <https://w3id.org/ontometal#bandName> "Metallica" ;
-                                       <https://w3id.org/ontometal#bandStatus> "Active" ;
-                                       rdfs:comment "Metallica music group" ;
-                                       rdfs:label "Metallica" .
+:Metallica rdf:type owl:NamedIndividual ,
+                    :Band ;
+           :hasCountry :USA ;
+           :hasGenre :HeavyMetal ,
+                     :ThrashMetal ;
+           :producedBy :ElekctraRecords ;
+           :releases :MasterOfPuppets ;
+           :bandID 1 ;
+           :bandName "Metallica" ;
+           :bandStatus "Active" ;
+           rdfs:comment "Metallica music group" ;
+           rdfs:label "Metallica" .
 
 
 ###  https://w3id.org/ontometal#RustInPeace
-<https://w3id.org/ontometal#RustInPeace> rdf:type owl:NamedIndividual ,
-                                                  <https://w3id.org/ontometal#Release> ;
-                                         <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
-                                         <https://w3id.org/ontometal#releasedBy> <https://w3id.org/ontometal#Megadeth> ;
-                                         <https://w3id.org/ontometal#releaseTitle> "Rust In Peace" ;
-                                         <https://w3id.org/ontometal#releaseYear> "1990"^^xsd:gYear .
+:RustInPeace rdf:type owl:NamedIndividual ,
+                      :Release ;
+             <http://purl.org/ontology/mo/releaseType> <http://purl.org/ontology/mo/album> ;
+             :releasedBy :Megadeth ;
+             :releaseTitle "Rust In Peace" ;
+             :releaseYear "1990"^^xsd:gYear .
 
 
 ###  https://w3id.org/ontometal#Slayer
-<https://w3id.org/ontometal#Slayer> rdf:type owl:NamedIndividual ,
-                                             <https://w3id.org/ontometal#Band> ;
-                                    <https://w3id.org/ontometal#hasCountry> <https://w3id.org/ontometal#USA> ;
-                                    <https://w3id.org/ontometal#hasGenre> <https://w3id.org/ontometal#ThrashMetal> ;
-                                    <https://w3id.org/ontometal#bandID> 4 ;
-                                    <https://w3id.org/ontometal#bandName> "Slayer" ;
-                                    <https://w3id.org/ontometal#bandStatus> "Retired" ;
-                                    rdfs:comment "Slayer music group" ;
-                                    rdfs:label "Slayer" .
+:Slayer rdf:type owl:NamedIndividual ,
+                 :Band ;
+        :hasCountry :USA ;
+        :hasGenre :ThrashMetal ;
+        :bandID 4 ;
+        :bandName "Slayer" ;
+        :bandStatus "Retired" ;
+        rdfs:comment "Slayer music group" ;
+        rdfs:label "Slayer" .
 
 
 ###  https://w3id.org/ontometal#ThrashMetal
-<https://w3id.org/ontometal#ThrashMetal> rdf:type owl:NamedIndividual ,
-                                                  <https://w3id.org/ontometal#MetalGenre> .
+:ThrashMetal rdf:type owl:NamedIndividual ,
+                      :MetalGenre .
 
 
 ###  https://w3id.org/ontometal#UK
-<https://w3id.org/ontometal#UK> rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/ontometal#Country> ;
-                                <https://w3id.org/ontometal#countryName> "United Kingdom" .
+:UK rdf:type owl:NamedIndividual ,
+             :Country ;
+    :countryName "United Kingdom" .
 
 
 ###  https://w3id.org/ontometal#USA
-<https://w3id.org/ontometal#USA> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/ontometal#Country> ;
-                                 <https://w3id.org/ontometal#countryName> "United States Of America" .
+:USA rdf:type owl:NamedIndividual ,
+              :Country ;
+     :countryName "United States Of America" .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
