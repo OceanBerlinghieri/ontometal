@@ -7,5 +7,5 @@ class BaseResource(ABC):
         pass
     
     @abstractmethod
-    def save(self, data: pd.DataFrame, file_path: str):
+    def save(self, data: pd.DataFrame, file_path: str) -> None:
         pass
