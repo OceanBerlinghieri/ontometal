@@ -16,7 +16,7 @@ class ReleaseNormalization:
         normalized_releases = self._create_release_entities(releases_with_bands)
         result = DataFrame([vars(r) for r in normalized_releases])
         return result
-    
+
     def _create_release_entities(self, releases_with_bands: DataFrame) -> list[Release]:
         normalized_releases = []
         for _, row in releases_with_bands.iterrows():
@@ -25,16 +25,7 @@ class ReleaseNormalization:
                     releaseTitle=row["Album Name"],
                     releaseYear=row["Year"],
                     releaseType=row["Type"],
-                    releasedBy=Band(
-                        bandId=row["Band ID"],
-                        bandName=row["Name"],
-                        status=row["Status"],
-                        metalArchiveUrl=row["URL"],
-                        releases=None,  # This will be set in the Band normalization step
-                        producedBy=None,  # This will be set in the Band normalization step
-                        hasGenre=None,  # This will be set in the Band normalization step
-                        hasCountry=None,  # This will be set in the Band normalization step
-                    ),
+                    releasedBy=row["Band ID"],
                 )
             )
 

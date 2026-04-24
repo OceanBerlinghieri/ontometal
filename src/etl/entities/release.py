@@ -13,4 +13,4 @@ class Release:
     releaseYear: int
     releaseType: str
     # Object properties
-    releasedBy: Band  # noqa: F821
+    releasedBy: str  # noqa: F821
