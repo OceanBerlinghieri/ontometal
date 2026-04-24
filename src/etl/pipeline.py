@@ -2,6 +2,7 @@ import os
 
 import pandas as pd
 
+from etl.interactor.normalization.genre_normalization import GenreNormalization
 from etl.repository.band_repository import BandRepository
 from etl.repository.country_repository import CountryRepository
 from etl.repository.genre_repository import GenreRepository
@@ -26,6 +27,7 @@ class Pipeline:
 
     def run(self):
         working_dir = os.getcwd()
+        #Genres
         band_genres = self.genre_repository.get_band_genres(
             path=os.path.join(working_dir, "src/etl/raw", "metal_bands.csv")
         )
@@ -34,9 +36,9 @@ class Pipeline:
             path=os.path.join(working_dir, "src/etl/raw", "labels_roster.csv")
         )
 
-        all_genres = (
+        distinct_genres = (
             pd.concat([band_genres, label_specializations]).drop_duplicates().dropna()
         )
 
-        print("All genres:")
-        print(all_genres)
+        normalized_genres = GenreNormalization().normalize(distinct_genres)
+        
