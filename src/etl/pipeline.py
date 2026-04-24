@@ -2,6 +2,7 @@ import os
 
 import pandas as pd
 
+from etl.interactor.normalization.country_normalization import CountryNormalization
 from etl.interactor.normalization.genre_normalization import GenreNormalization
 from etl.repository.band_repository import BandRepository
 from etl.repository.country_repository import CountryRepository
@@ -42,3 +43,17 @@ class Pipeline:
 
         normalized_genres = GenreNormalization().normalize(distinct_genres)
         
+        #Countries
+        band_countries = self.country_repository.get_band_countries(
+            path=os.path.join(working_dir, "src/etl/raw", "metal_bands.csv")
+        )
+
+        label_countries = self.country_repository.get_label_countries(
+            path=os.path.join(working_dir, "src/etl/raw", "labels_roster.csv")
+        )
+
+        distinct_countries = (
+            pd.concat([band_countries, label_countries]).drop_duplicates().dropna()
+        )
+
+        normalized_countries = CountryNormalization().normalize(distinct_countries)

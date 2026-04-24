@@ -11,3 +11,11 @@ class CountryRepository(ABC):
     @abstractmethod
     def get_countries(self, path, header=0) -> DataFrame:
         pass
+
+    @abstractmethod
+    def get_band_countries(self, path, header=0) -> DataFrame:
+        pass
+
+    @abstractmethod
+    def get_label_countries(self, path, header=0) -> DataFrame:
+        pass
