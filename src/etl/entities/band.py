@@ -1,10 +1,5 @@
 from dataclasses import dataclass
 
-from etl.entities.country import Country
-from etl.entities.genre import Genre
-from etl.entities.label import Label
-from etl.entities.release import Release
-
 
 @dataclass
 class Band:
@@ -14,7 +9,7 @@ class Band:
     status: str
     metalArchiveUrl: str
     # Object properties
-    releases: Release
-    producedBy: Label
-    hasGenre: Genre
-    hasCountry: Country
+    releases: str  # List[Release]
+    producedBy: int  # Label
+    hasGenre: int  # Genre
+    hasCountry: str  # Country
