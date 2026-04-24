@@ -10,3 +10,11 @@ class GenreRepositoryImpl(GenreRepository):
 
     def get_genres(self, path, header=0) -> DataFrame:
         return self.resource.load(file_path=path, header=header)
+
+    def get_band_genres(self, path, header=0) -> DataFrame:
+        return self.resource.load(file_path=path, header=header)[["Genre"]]
+
+    def get_label_specializations(self, path, header=0) -> DataFrame:
+        return self.resource.load(file_path=path, header=header)[
+            ["Specialization"]
+        ].rename(columns={"Specialization": "Genre"})
