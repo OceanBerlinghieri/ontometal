@@ -57,3 +57,5 @@ class Pipeline:
         )
 
         normalized_countries = CountryNormalization().normalize(distinct_countries)
+
+        print(normalized_countries)
