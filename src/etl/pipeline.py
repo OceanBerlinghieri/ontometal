@@ -4,6 +4,7 @@ import pandas as pd
 
 from etl.interactor.normalization.country_normalization import CountryNormalization
 from etl.interactor.normalization.genre_normalization import GenreNormalization
+from etl.interactor.normalization.label_normalization import LabelNormalization
 from etl.interactor.normalization.release_normalization import ReleaseNormalization
 from etl.repository.band_repository import BandRepository
 from etl.repository.country_repository import CountryRepository
@@ -28,6 +29,8 @@ class Pipeline:
         self.band_repository = band_repository
 
     def run(self):
+        print("Running...")
+
         working_dir = os.getcwd()
         #Genres
         band_genres = self.genre_repository.get_band_genres(
@@ -42,7 +45,8 @@ class Pipeline:
             pd.concat([band_genres, label_specializations]).drop_duplicates().dropna()
         )
 
-        normalized_genres = GenreNormalization().normalize(distinct_genres)
+        genre_normalization = GenreNormalization()
+        normalized_genres = genre_normalization.normalize(distinct_genres)
         
         #Countries
         band_countries = self.country_repository.get_band_countries(
@@ -71,3 +75,12 @@ class Pipeline:
         normalized_releases = ReleaseNormalization().normalize(releases, bands)
 
         # Labels
+        labels = self.label_repository.get_labels(
+            path=os.path.join(working_dir, "src/etl/raw", "labels_roster.csv")
+        )
+
+        normalized_labels = LabelNormalization().normalize(
+            labels, normalized_countries, genre_normalization.genre_map
+        )
+
+        # Bands
