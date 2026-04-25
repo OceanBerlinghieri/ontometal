@@ -83,4 +83,4 @@ class Pipeline:
             labels, normalized_countries, genre_normalization.genre_map
         )
 
-        print(normalized_labels.head())
+        # Bands
