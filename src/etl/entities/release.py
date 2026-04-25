@@ -8,10 +8,10 @@ if TYPE_CHECKING:
 
 @dataclass
 class Release:
-    # TODO: Add releaseId: int (auto-incremented). Store release IDs in Band.releases instead of title strings.
     # Data properties
+    releaseId: int
     releaseTitle: str
     releaseYear: int
     releaseType: str
     # Object properties
-    releasedBy: int  # noqa: F821
+    releasedBy: int

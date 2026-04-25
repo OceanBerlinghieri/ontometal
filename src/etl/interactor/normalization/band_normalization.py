@@ -63,10 +63,10 @@ class BandNormalization:
 
     def _merge_releases(self, bands: DataFrame, releases: DataFrame) -> DataFrame:
         releases_grouped = (
-            releases.groupby("releasedBy")["releaseTitle"]
+            releases.groupby("releasedBy")["releaseId"]
             .apply(list)
             .reset_index()
-            .rename(columns={"releaseTitle": "releases"})
+            .rename(columns={"releaseId": "releases"})
         )
 
         bands = bands.merge(
@@ -89,7 +89,9 @@ class BandNormalization:
                     status=str(row["Status"]).strip().lower(),
                     metalArchiveUrl=str(row["URL"]).strip().lower(),
                     releases=row["releases"],
-                    producedBy=int(row["producedBy"]) if pd.notna(row["producedBy"]) else None,
+                    producedBy=(
+                        int(row["producedBy"]) if pd.notna(row["producedBy"]) else None
+                    ),
                     hasGenre=row["genre"],
                     hasCountry=row["country"],
                 )

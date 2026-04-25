@@ -19,9 +19,10 @@ class ReleaseNormalization:
 
     def _create_release_entities(self, releases_with_bands: DataFrame) -> list[Release]:
         normalized_releases = []
-        for _, row in releases_with_bands.iterrows():
+        for idx, (_, row) in enumerate(releases_with_bands.iterrows(), start=1):
             normalized_releases.append(
                 Release(
+                    releaseId=idx,
                     releaseTitle=str(row["Album Name"]).strip().lower(),
                     releaseYear=row["Year"],
                     releaseType=str(row["Type"]).strip().lower(),
