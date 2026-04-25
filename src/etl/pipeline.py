@@ -2,6 +2,7 @@ import os
 
 import pandas as pd
 
+from etl.interactor.normalization.band_normalization import BandNormalization
 from etl.interactor.normalization.country_normalization import CountryNormalization
 from etl.interactor.normalization.genre_normalization import GenreNormalization
 from etl.interactor.normalization.label_normalization import LabelNormalization
@@ -32,9 +33,9 @@ class Pipeline:
         print("Running...")
 
         working_dir = os.getcwd()
-        #Genres
+        # Genres
         band_genres = self.genre_repository.get_band_genres(
-            path=os.path.join(working_dir, "src/etl/raw", "metal_bands.csv")
+            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
         )
 
         label_specializations = self.genre_repository.get_label_specializations(
@@ -47,10 +48,10 @@ class Pipeline:
 
         genre_normalization = GenreNormalization()
         normalized_genres = genre_normalization.normalize(distinct_genres)
-        
-        #Countries
+
+        # Countries
         band_countries = self.country_repository.get_band_countries(
-            path=os.path.join(working_dir, "src/etl/raw", "metal_bands.csv")
+            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
         )
 
         label_countries = self.country_repository.get_label_countries(
@@ -69,7 +70,7 @@ class Pipeline:
         )
 
         bands = self.band_repository.get_bands(
-            path=os.path.join(working_dir, "src/etl/raw", "metal_bands.csv")
+            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
         )
 
         normalized_releases = ReleaseNormalization().normalize(releases, bands)
@@ -84,3 +85,16 @@ class Pipeline:
         )
 
         # Bands
+        bands = self.band_repository.get_bands(
+            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
+        )
+
+        normalized_bands = BandNormalization().normalize(
+            bands,
+            normalized_countries,
+            normalized_labels,
+            genre_normalization.genre_map,
+            normalized_releases,
+        )
+
+        print(normalized_bands.head())

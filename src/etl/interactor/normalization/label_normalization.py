@@ -37,7 +37,6 @@ class LabelNormalization:
             return [r for r in resolved if r] or [None]
 
         labels["specialization"] = labels["Specialization"].apply(resolve_uncomplete_genres)
-        labels = labels.explode("specialization").reset_index(drop=True)
         labels = labels.drop(columns=["Specialization"])
 
         return labels
@@ -48,11 +47,11 @@ class LabelNormalization:
         for _, row in labels.iterrows():
             normalized_labels.append(
                 Label(
-                    labelId=row["Label ID"],
+                    labelId=int(row["Label ID"]),
                     labelName=str(row["Name"]).strip().lower(),
                     status=str(row["Status"]).strip().lower(),
                     websiteUrl=str(row["Website"]).strip().lower(),
-                    producer=row["Band ID"],
+                    producer=int(row["Band ID"]) if pd.notna(row["Band ID"]) else None,
                     hasCountry=row["country"],
                     hasSpecialization=row["specialization"],
                 )
