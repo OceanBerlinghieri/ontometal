@@ -14,7 +14,6 @@ class LabelNormalization:
         result = DataFrame([vars(g) for g in normalized_labels])
         return result
 
-
     def _merge_countries(self, labels, normalized_countries):
         labels["_country_lower"] = labels["Country"].str.strip().str.lower()
         labels = labels.merge(
@@ -26,7 +25,7 @@ class LabelNormalization:
         labels = labels.drop(columns=["Country", "_country_lower", "name"])
         labels = labels.rename(columns={"id": "hasCountry"})
         return labels
-    
+
     def _merge_specializations(self, labels, genre_map: dict):
         def resolve_uncomplete_genres(spec):
             if pd.isna(spec) or not str(spec).strip():
@@ -37,7 +36,9 @@ class LabelNormalization:
             resolved = [genre_map.get(p.strip().lower()) for p in parts]
             return [r for r in resolved if r] or [None]
 
-        labels["specialization"] = labels["Specialization"].apply(resolve_uncomplete_genres)
+        labels["specialization"] = labels["Specialization"].apply(
+            resolve_uncomplete_genres
+        )
         labels = labels.drop(columns=["Specialization"])
 
         return labels
@@ -45,15 +46,13 @@ class LabelNormalization:
     def _group_by_label(self, labels):
         # Raw CSV has one row per label-band pair (a label appears N times for N bands).
         # Group by Label ID to get one row per label:
-        agg = {
-            "Name": "first",
-            "Status": "first",
-            "Website": "first",
-            "hasCountry": "first",
-            "specialization": "first",
-            "Band ID": lambda x: [int(v) for v in x if pd.notna(v)],
-        }
-        return labels.groupby("Label ID", as_index=False).agg(agg)
+        grouped = labels.groupby("Label ID", as_index=False).first()
+        grouped["producer"] = (
+            labels.groupby("Label ID")["Band ID"]
+            .apply(lambda x: [int(v) for v in x if pd.notna(v)])
+            .values
+        )
+        return grouped.drop(columns=["Band ID"])
 
     def _create_normalized_labels(self, labels) -> list[Label]:
         normalized_labels = []
@@ -65,8 +64,10 @@ class LabelNormalization:
                     labelName=str(row["Name"]).strip().lower(),
                     status=str(row["Status"]).strip().lower(),
                     websiteUrl=str(row["Website"]).strip().lower(),
-                    producer=row["Band ID"],
-                    hasCountry=int(row["hasCountry"]) if pd.notna(row["hasCountry"]) else None,
+                    producer=row["producer"],
+                    hasCountry=(
+                        int(row["hasCountry"]) if pd.notna(row["hasCountry"]) else None
+                    ),
                     hasSpecialization=row["specialization"],
                 )
             )
