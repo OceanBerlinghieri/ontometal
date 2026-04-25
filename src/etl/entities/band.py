@@ -9,7 +9,7 @@ class Band:
     status: str
     metalArchiveUrl: str
     # Object properties
-    releases: str  # List[Release]
-    producedBy: int  # Label
-    hasGenre: int  # Genre
-    hasCountry: str  # Country
+    releases: list  # TODO: Change to list[int] once Release has releaseId
+    producedBy: int  # Label.labelId
+    hasGenre: list[str]  # Genre names (resolved via genre_map)
+    hasCountry: str  # TODO: Change to int once Country has id
