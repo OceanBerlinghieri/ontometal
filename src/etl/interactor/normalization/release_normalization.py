@@ -22,9 +22,9 @@ class ReleaseNormalization:
         for _, row in releases_with_bands.iterrows():
             normalized_releases.append(
                 Release(
-                    releaseTitle=row["Album Name"],
+                    releaseTitle=str(row["Album Name"]).strip().lower(),
                     releaseYear=row["Year"],
-                    releaseType=row["Type"],
+                    releaseType=str(row["Type"]).strip().lower(),
                     releasedBy=row["Band ID"],
                 )
             )
