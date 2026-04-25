@@ -26,13 +26,13 @@ class BandNormalization:
     def _merge_countries(self, labels, normalized_countries):
         labels["_country_lower"] = labels["Country"].str.strip().str.lower()
         labels = labels.merge(
-            normalized_countries[["name"]],
+            normalized_countries[["name", "id"]],
             left_on="_country_lower",
             right_on="name",
             how="left",
         )
-        labels = labels.drop(columns=["Country", "_country_lower"])
-        labels = labels.rename(columns={"name": "country"})
+        labels = labels.drop(columns=["Country", "_country_lower", "name"])
+        labels = labels.rename(columns={"id": "hasCountry"})
         return labels
 
     def _merge_labels(self, bands, normalized_labels):
@@ -93,7 +93,7 @@ class BandNormalization:
                         int(row["producedBy"]) if pd.notna(row["producedBy"]) else None
                     ),
                     hasGenre=row["genre"],
-                    hasCountry=row["country"],
+                    hasCountry=int(row["hasCountry"]) if pd.notna(row["hasCountry"]) else None,
                 )
             )
 

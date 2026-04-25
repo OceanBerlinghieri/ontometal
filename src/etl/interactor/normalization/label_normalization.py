@@ -8,22 +8,23 @@ class LabelNormalization:
     def normalize(self, labels, normalized_countries, genre_map: dict) -> DataFrame:
         labels = self._merge_countries(labels, normalized_countries)
         labels = self._merge_specializations(labels, genre_map)
+        labels = self._group_by_label(labels)
 
         normalized_labels = self._create_normalized_labels(labels)
         result = DataFrame([vars(g) for g in normalized_labels])
-        return result.drop_duplicates(subset=["labelName"]).reset_index(drop=True)
+        return result
 
 
     def _merge_countries(self, labels, normalized_countries):
         labels["_country_lower"] = labels["Country"].str.strip().str.lower()
         labels = labels.merge(
-            normalized_countries[["name"]],
+            normalized_countries[["name", "id"]],
             left_on="_country_lower",
             right_on="name",
             how="left",
         )
-        labels = labels.drop(columns=["Country", "_country_lower"])
-        labels = labels.rename(columns={"name": "country"})
+        labels = labels.drop(columns=["Country", "_country_lower", "name"])
+        labels = labels.rename(columns={"id": "hasCountry"})
         return labels
     
     def _merge_specializations(self, labels, genre_map: dict):
@@ -41,6 +42,19 @@ class LabelNormalization:
 
         return labels
 
+    def _group_by_label(self, labels):
+        # Raw CSV has one row per label-band pair (a label appears N times for N bands).
+        # Group by Label ID to get one row per label:
+        agg = {
+            "Name": "first",
+            "Status": "first",
+            "Website": "first",
+            "hasCountry": "first",
+            "specialization": "first",
+            "Band ID": lambda x: [int(v) for v in x if pd.notna(v)],
+        }
+        return labels.groupby("Label ID", as_index=False).agg(agg)
+
     def _create_normalized_labels(self, labels) -> list[Label]:
         normalized_labels = []
 
@@ -51,8 +65,8 @@ class LabelNormalization:
                     labelName=str(row["Name"]).strip().lower(),
                     status=str(row["Status"]).strip().lower(),
                     websiteUrl=str(row["Website"]).strip().lower(),
-                    producer=int(row["Band ID"]) if pd.notna(row["Band ID"]) else None,
-                    hasCountry=row["country"],
+                    producer=row["Band ID"],
+                    hasCountry=int(row["hasCountry"]) if pd.notna(row["hasCountry"]) else None,
                     hasSpecialization=row["specialization"],
                 )
             )

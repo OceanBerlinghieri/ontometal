@@ -96,4 +96,6 @@ class Pipeline:
             genre_normalization.genre_map,
             normalized_releases,
         )
-        
+
+        print("Country labels:", normalized_labels[["labelName", "hasCountry"]])
+        print("Country bands:", normalized_bands[["bandName", "hasCountry"]])

@@ -9,6 +9,6 @@ class Label:
     status: str
     websiteUrl: str
     # Object properties
-    producer: int  # Band.bandId
-    hasSpecialization: str  # Genre name (resolved via genre_map)
-    hasCountry: str  # TODO: Change to int once Country has id
+    producer: list[int]  # List of Band.bandId
+    hasSpecialization: list[str]  # Genre name (resolved via genre_map)
+    hasCountry: int # Country.countryId

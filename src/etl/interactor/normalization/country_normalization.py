@@ -11,9 +11,9 @@ class CountryNormalization:
     # handle edge cases (e.g., "USA" -> "United States", "UK" -> "United Kingdom")
     def normalize(self, countries: DataFrame) -> DataFrame:
         normalized_countries = []
-        for _, country in countries.iterrows():
+        for idx, (_, country) in enumerate(countries.iterrows(), start=1):
             normalized_countries.append(
-                Country(name=country["Country"].strip().lower())
+                Country(id=idx, name=country["Country"].strip().lower())
             )
         result = DataFrame([vars(c) for c in normalized_countries])
         return result
