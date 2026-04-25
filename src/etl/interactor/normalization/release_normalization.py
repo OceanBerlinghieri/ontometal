@@ -25,7 +25,7 @@ class ReleaseNormalization:
                     releaseTitle=str(row["Album Name"]).strip().lower(),
                     releaseYear=row["Year"],
                     releaseType=str(row["Type"]).strip().lower(),
-                    releasedBy=row["Band ID"],
+                    releasedBy=int(row["Band ID"]),
                 )
             )
 
