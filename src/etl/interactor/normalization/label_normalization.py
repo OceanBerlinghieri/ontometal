@@ -34,12 +34,12 @@ class LabelNormalization:
     def _merge_specializations(self, labels, genre_map: dict):
         def resolve_uncomplete_genres(spec):
             if pd.isna(spec) or not str(spec).strip():
-                return [None]
+                return []
             parts = [
                 g.strip() for g in str(spec).replace(",", "/").split("/") if g.strip()
             ]
             resolved = [genre_map.get(p.strip().lower()) for p in parts]
-            return [r for r in resolved if r] or [None]
+            return [r for r in resolved if r] or []
 
         labels["specialization"] = labels["Specialization"].apply(
             resolve_uncomplete_genres
@@ -49,14 +49,20 @@ class LabelNormalization:
         return labels
 
     def _group_by_label(self, labels):
-        # Raw CSV has one row per label-band pair (a label appears N times for N bands).
-        # Group by Label ID to get one row per label:
+        # Raw CSV has one row per label-band pair (a label appears N times for N bands). 
+        # Group by Label ID to get one row per label applying dict to keep one band occurence
         grouped = labels.groupby("Label ID", as_index=False).first()
-        grouped["producer"] = (
-            labels.groupby("Label ID")["Band ID"]
-            .apply(lambda x: [int(v) for v in x if pd.notna(v)])
+
+        producer = (
+            labels.dropna(subset=["Band ID"])
+            .assign(**{"Band ID": labels["Band ID"].astype(int)})
+            .groupby("Label ID")["Band ID"]
+            .apply(lambda s: list(dict.fromkeys(int(x) for x in s)))
             .values
         )
+
+        grouped["producer"] = producer
+
         return grouped.drop(columns=["Band ID"])
 
     def _create_normalized_labels(self, labels) -> list[Label]:

@@ -15,10 +15,5 @@ class GenreRepositoryImpl(GenreRepository):
     def get_band_genres(self, path: str, header: int = 0) -> DataFrame:
         return self.resource.load(file_path=path, header=header)[["Genre"]]
 
-    def get_label_specializations(self, path: str, header: int = 0) -> DataFrame:
-        return self.resource.load(file_path=path, header=header)[
-            ["Specialization"]
-        ].rename(columns={"Specialization": "Genre"})
-    
     def write_genres(self, genres: DataFrame, path: str) -> None:
         self.resource.save(data=genres, file_path=path)

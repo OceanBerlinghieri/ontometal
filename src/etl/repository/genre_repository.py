@@ -16,9 +16,5 @@ class GenreRepository(ABC):
         pass
 
     @abstractmethod
-    def get_label_specializations(self, path: str, header: int = 0) -> DataFrame:
-        pass
-
-    @abstractmethod
     def write_genres(self, genres: DataFrame, path: str) -> None:
         pass

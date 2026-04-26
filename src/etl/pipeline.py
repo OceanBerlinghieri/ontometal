@@ -34,13 +34,9 @@ class Pipeline:
 
         working_dir = os.getcwd()
         # Data read
-        band_genres = self.genre_repository.get_band_genres(
+        distinct_genres = self.genre_repository.get_band_genres(
             path=os.path.join(working_dir, "src/etl/data/raw", "metal_bands_roster.csv")
-        )
-
-        label_specializations = self.genre_repository.get_label_specializations(
-            path=os.path.join(working_dir, "src/etl/data/raw", "labels_roster.csv")
-        )
+        ).drop_duplicates().dropna()
 
         band_countries = self.country_repository.get_band_countries(
             path=os.path.join(working_dir, "src/etl/data/raw", "metal_bands_roster.csv")
@@ -61,9 +57,6 @@ class Pipeline:
         ).drop_duplicates()
 
         # Genres
-        distinct_genres = (
-            pd.concat([band_genres, label_specializations]).drop_duplicates().dropna()
-        )
         genre_normalization = GenreNormalization()
         normalized_genres = genre_normalization.normalize(distinct_genres)
 

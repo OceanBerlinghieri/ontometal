@@ -58,7 +58,7 @@ class BandNormalization:
                 if g.strip()
             ]
             resolved = [genre_map.get(p.strip().lower()) for p in parts]
-            return [r for r in resolved if r] or [None]
+            return [r for r in resolved if r] or [] 
 
         bands["genre"] = bands["Genre"].apply(resolve_genres)
         bands = bands.drop(columns=["Genre"])

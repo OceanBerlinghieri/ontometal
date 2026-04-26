@@ -1,3 +1,4 @@
+import re
 from pandas import DataFrame
 
 from src.etl.entities.genre import Genre
@@ -33,8 +34,14 @@ class GenreNormalization:
 
         for _, row in genres.iterrows():
             genre_str = str(row["Genre"]).strip()
+            # Clean up genre string by removing details in parentheses, quotes, etc.
+            cleaned_genre_str = re.sub(r"\(.*?\)|\'|’", "", genre_str)
             split_genres = [
-                g.strip() for g in genre_str.replace(",", "/").split("/") if g.strip()
+                g.strip() for g in cleaned_genre_str
+                .replace(",", "/")
+                .replace(";", "/")
+                .replace(".", "/")
+                .split("/") if g.strip() and len(g.strip()) > 3
             ]
             all_genres.extend(split_genres)
         return all_genres
