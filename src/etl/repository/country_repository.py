@@ -9,13 +9,17 @@ class CountryRepository(ABC):
         self.resource = resource
 
     @abstractmethod
-    def get_countries(self, path, header=0) -> DataFrame:
+    def get_countries(self, path: str, header: int = 0) -> DataFrame:
         pass
 
     @abstractmethod
-    def get_band_countries(self, path, header=0) -> DataFrame:
+    def get_band_countries(self, path: str, header: int = 0) -> DataFrame:
         pass
 
     @abstractmethod
-    def get_label_countries(self, path, header=0) -> DataFrame:
+    def get_label_countries(self, path: str, header: int = 0) -> DataFrame:
+        pass
+
+    @abstractmethod
+    def write_countries(self, countries: DataFrame, path: str) -> None:
         pass

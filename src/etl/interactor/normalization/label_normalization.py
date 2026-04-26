@@ -71,5 +71,4 @@ class LabelNormalization:
                     hasSpecialization=row["specialization"],
                 )
             )
-
         return normalized_labels

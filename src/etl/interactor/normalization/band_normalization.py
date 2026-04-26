@@ -96,5 +96,4 @@ class BandNormalization:
                     hasCountry=int(row["hasCountry"]) if pd.notna(row["hasCountry"]) else None,
                 )
             )
-
         return normalized_bands
