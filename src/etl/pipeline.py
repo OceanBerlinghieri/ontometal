@@ -96,5 +96,3 @@ class Pipeline:
             genre_normalization.genre_map,
             normalized_releases,
         )
-
-        print(normalized_bands.head())
