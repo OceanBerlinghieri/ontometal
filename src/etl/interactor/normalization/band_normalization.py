@@ -20,8 +20,11 @@ class BandNormalization:
         normalized_bands = self._merge_genres(normalized_bands, genres)
         normalized_bands = self._merge_releases(normalized_bands, releases)
         normalized_bands = self._create_band_entities(normalized_bands)
-        result = DataFrame([vars(b) for b in normalized_bands])
-        return result
+        normalized_bands = DataFrame([vars(b) for b in normalized_bands])
+
+        # Due to left join, some bands may have float(NaN) in producedBy. Convert to Int64 with NA support.
+        normalized_bands["producedBy"] = pd.to_numeric(normalized_bands["producedBy"], errors='coerce').astype("Int64")
+        return normalized_bands
 
     def _merge_countries(self, labels, normalized_countries):
         labels["_country_lower"] = labels["Country"].str.strip().str.lower()
@@ -55,7 +58,7 @@ class BandNormalization:
                 if g.strip()
             ]
             resolved = [genre_map.get(p.strip().lower()) for p in parts]
-            return [r for r in resolved if r] or [None]
+            return [r for r in resolved if r] or [] 
 
         bands["genre"] = bands["Genre"].apply(resolve_genres)
         bands = bands.drop(columns=["Genre"])
@@ -96,5 +99,4 @@ class BandNormalization:
                     hasCountry=int(row["hasCountry"]) if pd.notna(row["hasCountry"]) else None,
                 )
             )
-
         return normalized_bands

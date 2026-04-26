@@ -10,5 +10,9 @@ class BandRepository(ABC):
         pass
 
     @abstractmethod
-    def get_bands(self, path, header=0) -> DataFrame:
+    def get_bands(self, path: str, header: int = 0) -> DataFrame:
+        pass
+
+    @abstractmethod
+    def write_bands(self, bands: DataFrame, path: str) -> None:
         pass

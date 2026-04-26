@@ -10,5 +10,9 @@ class ReleaseRepository(ABC):
         self.resource = resource
 
     @abstractmethod
-    def get_releases(self, path, header=0) -> DataFrame:
+    def get_releases(self, path: str, header: int = 0) -> DataFrame:
+        pass
+
+    @abstractmethod
+    def write_releases(self, releases: DataFrame, path: str) -> None:
         pass
