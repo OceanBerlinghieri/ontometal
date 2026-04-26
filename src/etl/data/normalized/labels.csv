@@ -84,7 +84,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 104,die hard records,active,http://www.diehard.com.br,"[3540423327, 3540399605, 13317, 13319, 88533, 3255, 1056, 52997, 105952, 93351]","['death metal', 'heavy metal', 'power metal', 'thrash metal']",23
 105,metal age productions,active,http://www.metalage.sk/,"[47202, 11544, 92905, 3540439219, 10142, 73762, 9161, 47240, 3540341906, 1173, 7546, 4204, 5094, 6403, 6772, 3540339894, 3540441764]","['death metal', 'black metal', 'doom metal', 'thrash metal', 'death metal with grindcore', 'folk metal']",68
 106,prosthetic records,active,http://prostheticrecords.com/,"[3540497529, 3540370004, 3540394240, 3540460587, 3540445628, 3540376906, 3540355379, 3540459402, 3540416493, 33549, 3540492625, 3540438274, 3540407505, 4592, 3540465508, 3540503104, 3540342373, 3540496101, 3540487581, 3540435319, 3540409019, 16011, 26772, 3540474086, 3540465176, 12108, 3540425631, 3540477677, 3720, 3540460371, 3540436594, 3540437687, 3540339780, 3540354213, 3540487930, 101157, 3540402002, 3540399028, 3540378827, 3540318481, 3540437246, 92196, 3540443043, 108715, 3604, 3540483993, 3540259026, 3540387420, 3540491281, 3540427585, 3540429085, 187, 3540496439, 3540397949, 3540327456, 3540316251, 3540523257, 16879, 3540501298, 3540434362, 68884, 3540450283, 3540392162, 3540404039, 3540357305, 3540257097, 87347, 3540393028, 3540457936, 3540449681, 3540451166, 3540487324, 3540422743, 3540393546, 3540463769, 694, 3540395532, 3540464838, 3540395323, 3540484828, 3540437153, 3540542576, 3540383732, 3540487971, 3540447853, 35392, 3540380048]","['metalcore', 'death metal', 'black metal', 'progressive metal']",1
-107,rise above records,active,http://www.riseaboverecords.com,"[3540350545, 3540300320, 8153, 3540318499, 763, 3540383901, 872, 3540503480, 3540437335, 38639, 3540364126, 3540406799, 3540329522, 3540396107, 3540402526]","['doom metal', 'stoner metal', 'psychedelic doom metal', 'death metal with hardcore', 'death metal with progressive rock influences']",3
+107,rise above records,active,http://www.riseaboverecords.com,"[3540350545, 3540300320, 8153, 3540318499, 763, 3540383901, 872, 3540503480, 3540437335, 38639, 3540364126, 3540406799, 3540329522, 3540396107, 3540402526]","['doom metal', 'stoner metal', 'psychedelic post-metal', 'death metal with hardcore', 'death metal with progressive rock influences']",3
 108,winterreich productions,active,nan,"[24411, 3540317285, 96740, 3540280222, 3540326234, 114780]",['black metal'],7
 109,xtreem music,active,http://shop.xtreemmusic.com/english.main.index.php,"[2426, 120732, 67728, 3540326562, 1485, 13537, 982, 3540381196, 117785, 3540476775, 2751, 22908, 3540342254, 3540435510, 3300, 3540383674, 3540315958, 3540434978, 4646, 3540398820, 3540373434, 3540276942, 3540350842, 3540325177, 3540500769, 3540398661, 3540317587, 3622, 2185, 5567, 19717, 3540383605, 19321, 3540471912, 17153, 3540387793, 4369, 3540475334, 3540353828, 3540386593, 3540437327, 3540266564, 3540442868, 3540392256, 18407, 11263, 3540483957, 1957, 125327, 3540431502, 54692, 3540342654, 9431, 3540385746, 13099, 9613, 101009, 3540363119, 21491, 56040, 3540357908, 9283, 3540357097, 3540451722, 3540263883, 32351, 128267, 97350, 3540351029, 3540510169, 3540271425, 18698, 3540300512, 22305, 3540479522, 3540400337, 12621, 8783, 60709, 26050, 3608, 59400, 3540284366, 120829, 128344, 127584, 3540365130, 14366, 12585, 3540342573, 3540510234, 18121, 3527, 3540499079, 3540359918, 3540306233, 122405]","['death metal', 'thrash metal', 'black metal']",4
 111,satanica productions,active,http://www.satanica.org/,"[3540316477, 3540332794, 3540383814, 3540306139, 3540337885, 6764, 3540327251, 3540359278, 3540322273, 3540310883, 3540353139, 3540325586, 3540312284, 3540362801, 3540323291, 3540328940, 3540332697, 3540287157, 3540310429, 3540298790, 3540309659, 3540298414, 3540325532, 3540290466, 3540311158, 3540331538, 3540359047, 109266, 3540288960, 3540364111, 3540310348, 3540322277, 3540290468, 3540324919, 3540308917, 3540365555, 3540327110, 3540330032, 3540332425, 73424, 3540309575]","['black metal', 'death metal']",17
@@ -276,7 +276,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 360,mdd records,active,http://mdd-records.de/,"[3540530349, 1323, 3540418613, 3540497674, 3540541393, 3540281756, 3540326257, 3540527606, 129347, 4894, 3540507853, 3540492234, 23267, 1075, 3540520303, 34014, 3540385817, 12741, 3540346749, 3540502040, 3540539436, 3540458185, 3540316569, 3540273505, 3540538977, 3761, 65677, 7511, 3540426781, 3540304290, 34104, 3540299709, 3575, 3540473784, 3540433408, 3540460838, 10856, 49341, 60835, 11334, 39161, 110094, 3540433133, 3540407247, 3540454390, 3540504118, 2656, 3540527519, 3540418920, 3540526763, 3540395739, 5957, 5012, 123426, 487, 3540490242, 3540402910, 3540381485, 5164, 107568, 1579, 3540510948, 3540525027]",['metal'],5
 362,nebelfee klangwerke,changed name,nan,"[11090, 78934, 15045, 32669, 3540405740, 53161, 3540352670]",['black metal'],5
 364,sabbathid records,changed name,nan,"[51664, 3540289693, 39065, 112582, 3540310376, 12051]",['black metal'],26
-365,small stone recordings,active,http://www.smallstone.com,"[126658, 61295, 126933, 29180, 3540531179, 104220, 3540330943, 3540357969, 3540358037, 17648, 3540428683, 43258, 1356, 3540431080, 668, 3540293901, 97133, 3540320567, 78368]","['stoner metal', 'doom metal', 'psychedelic doom metal']",1
+365,small stone recordings,active,http://www.smallstone.com,"[126658, 61295, 126933, 29180, 3540531179, 104220, 3540330943, 3540357969, 3540358037, 17648, 3540428683, 43258, 1356, 3540431080, 668, 3540293901, 97133, 3540320567, 78368]","['stoner metal', 'doom metal', 'psychedelic post-metal']",1
 366,sound riot records,closed,http://www.soundriotrecords.com,"[6012, 8836]","['black metal', 'death metal', 'power metal', 'doom metal']",18
 367,black mass records,closed,nan,"[3540374246, 3540286458]","['doom metal', 'death metal', 'black metal']",3
 368,grodhaisn productions,closed,nan,"[37538, 3540304099]","['brutal death metal', 'death metal with grindcore']",51
@@ -487,7 +487,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 647,soulseller records,active,http://www.soulsellerrecords.com/,"[26253, 772, 3540480039, 3540542906, 808, 121567, 36876, 3540515320, 3540318270, 3540269550, 3540339380, 30363, 3540471466, 770, 73387, 3540315888, 17237, 392, 3540261559, 3540365785, 11796, 1104, 3540414440, 3540415486, 3540278682, 3540394851, 93407, 3540372883, 3540457639, 3540431568, 794, 3540368523, 3540335808, 3540441392, 3540287324, 3540351587, 61924, 3540260296, 3540278472, 3540474893, 3540417042, 3540547362, 3540344486, 904, 3540396675, 96784, 3540476669, 3540534119, 14934, 3540518186, 1378, 3540295222, 499, 3540483488, 9065, 3540261542]","['black metal', 'death metal', 'doom metal', 'thrash metal']",41
 651,suicidal records,active,nan,"[12402, 3540307320, 959]",[],1
 652,sword productions,active,https://heathensword.wixsite.com/sword-productions,"[3540428389, 29757, 3540457899, 3540459168]","['pagan metal', 'black metal']",18
-653,tee pee records,active,http://www.teepeerecords.com/,"[3540291936, 3540259471, 17795, 3540415051, 3540334248, 25065, 3540550032, 3540304410, 3540300125, 3540275454, 3540379216, 78338, 3540466097, 3540404065]","['psychedelic doom metal', 'heavy metal with stoner rock influences', 'metal']",1
+653,tee pee records,active,http://www.teepeerecords.com/,"[3540291936, 3540259471, 17795, 3540415051, 3540334248, 25065, 3540550032, 3540304410, 3540300125, 3540275454, 3540379216, 78338, 3540466097, 3540404065]","['psychedelic post-metal', 'heavy metal with stoner rock influences', 'metal']",1
 654,temple of darkness records,active,http://www.templeofdarknessrecords.com,"[3540423310, 3540374989, 3540406897, 39739, 20019, 1403]","['black metal', 'death metal', 'thrash metal']",4
 657,view beyond records,unknown,nan,[49845],"['death metal with hardcore', 'metal', 'death metal with grindcore', 'death metal with noise elements']",51
 658,vinland winds,closed,nan,[20054],['black metal'],1
@@ -1350,7 +1350,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 2226,new era productions,active,http://www.new-era-productions.nl/,"[3988, 3540457536, 6017, 3540478105, 8305, 3540504761, 3540418024, 20616, 3540485909, 110895, 20929, 3540510450, 3540432556, 3540547569, 3540507982, 3540478473, 3540355875, 3540457579, 3540499793, 3540451600, 3540329474, 3540377775]",['black metal'],41
 2227,nidus music productions,closed,http://www.nidusprod.com/,[2105],[],1
 2231,no idea records!,active,http://www.noidearecords.com/,[3540413748],"['black metal with punk', 'metal', 'avant-garde metal', 'death metal with hardcore']",1
-2233,noiseville,closed,nan,[3540318290],"['black metal with punk', 'death metal with hardcore', 'death metal with grindcore', 'death metal with noise elements', 'psychedelic doom metal', 'noise rock', 'experimental metal']",1
+2233,noiseville,closed,nan,[3540318290],"['black metal with punk', 'death metal with hardcore', 'death metal with grindcore', 'death metal with noise elements', 'psychedelic post-metal', 'noise rock', 'experimental metal']",1
 2234,nmb records,unknown,nan,"[42361, 5239]",['black metal'],6
 2235,northfire records,active,http://www.northfire-mailorder.de/,[113638],[],5
 2236,now & then records,unknown,nan,[6863],"['heavy metal', 'power metal', 'progressive metal', 'melodic rock']",3
@@ -2079,7 +2079,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 4251,humanity's plague productions,active,nan,"[3540345787, 116320, 3540384262, 3540497167]",['black metal'],1
 4252,humanos mortos,active,http://www.humanosmortos.com,"[26896, 114410]","['death metal with grindcore', 'death metal', 'black metal with crust', 'black metal with punk']",23
 4253,hungaryan records,active,nan,[25594],"['black metal', 'death metal']",37
-4254,hypershape records,active,http://www.hypershaperecords.com,"[3540505695, 3540429384]","['experimental metal', 'psychedelic doom metal', 'metal']",12
+4254,hypershape records,active,http://www.hypershaperecords.com,"[3540505695, 3540429384]","['experimental metal', 'psychedelic post-metal', 'metal']",12
 4255,i for an i records & media,active,https://www.facebook.com/iforanirecords/,"[3540289820, 87314, 52854]","['death metal', 'doom metal', 'gothic metal']",19
 4256,"i, voidhanger records",active,https://i-voidhangerrecords.bandcamp.com/merch,"[3540396969, 3540488706, 3540453487, 3540494333, 3540392778, 3540487213, 15548, 3540423250, 3540520931, 3540466462, 3540523094, 3540343589, 3540312765, 3540506213, 3540444244, 3540440635, 76779, 3540392312, 3540429560, 3540408224, 3540462867, 3540514518, 3540379735, 3540300108, 3540523688, 3540451747, 3540472949, 3540270054, 3540385056, 3540304243, 3540383487, 3540389868, 3540407983, 3540475576, 69453, 3540423839, 10179, 16737, 3540507958, 3540275343, 3540389867, 3540470937, 3540426574, 3540498436, 3540451517, 3540548166, 3540551411, 6067, 3540506216, 3540469342, 3540437841, 3540373865, 3540426072, 124931, 3540304232, 3540282061, 3540392036, 3540513235, 73274, 68704, 3540413680, 3540368653, 3540545111, 3540398891, 3540535565, 3540270605, 3540436873, 3540484687, 14142, 3540387277, 45060, 25332, 3540538398, 40792, 78615, 3540497536, 3540424270, 3540427407, 3540399696, 3540401806, 3540258539, 3540464661]","['experimental metal', 'black metal', 'death metal']",12
 4259,icewarrior records,active,http://rockituprecords.blogspot.de,"[45577, 8053, 2888, 6683]",[],5
@@ -4667,7 +4667,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 20215,take it back records,active,http://www.facebook.com/takeitbackrec,[3540308965],"['death metal with hardcore', 'black metal with punk']",5
 20222,talking trash records,closed,nan,[6089],['death metal'],
 20237,tarkus,closed,nan,[93871],[],21
-20246,taxi driver records,active,http://www.taxidriverstore.com/,"[3540428339, 3540323465, 3540360343, 3540502008]","['doom metal', 'stoner metal', 'psychedelic doom metal', 'death metal with hardcore']",12
+20246,taxi driver records,active,http://www.taxidriverstore.com/,"[3540428339, 3540323465, 3540360343, 3540502008]","['doom metal', 'stoner metal', 'psychedelic post-metal', 'death metal with hardcore']",12
 20281,templo de la maldad,unknown,nan,[3540269398],[],
 20287,tenlightenment,active,nan,[59136],[],
 20301,terra firma,closed,nan,[61194],[],
@@ -5274,7 +5274,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 23413,vomit bakery,unknown,nan,"[15442, 36043]",[],1
 23414,vomitted bowel,unknown,nan,[3540305397],[],
 23415,vorna-incorperated,unknown,nan,[22105],[],
-23416,vorpt records,unknown,http://myspace.com/vorptrecords,[3540344296],"['progressive metal', 'experimental metal', 'psychedelic doom metal']",7
+23416,vorpt records,unknown,http://myspace.com/vorptrecords,[3540344296],"['progressive metal', 'experimental metal', 'psychedelic post-metal']",7
 23420,w.o.t.c.r.,unknown,nan,[118549],[],
 23425,war doctrine,closed,nan,"[3540309864, 3540325121, 3540314955]",[],7
 23432,wayward star,unknown,nan,[3540305366],[],
@@ -5927,7 +5927,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 27250,lament records,active,https://www.facebook.com/lamentrecords/,"[116951, 89481, 3540436048, 3540410265, 3540509786, 3540461014, 6460, 3540259521, 3540280179, 3540451950, 3540326769]",[],20
 27251,devil's seed productions,active,https://www.facebook.com/devils-seed-prods-102928535065868,"[3540479250, 3540338312, 3540405814]",[],56
 27254,thoursmusic,active,nan,[3540371412],[],20
-27255,zzpot,active,https://www.facebook.com/zzpotrecords/,[3540334558],"['heavy metal with stoner rock influences', 'doom metal', 'progressive metal', 'psychedelic doom metal']",1
+27255,zzpot,active,https://www.facebook.com/zzpotrecords/,[3540334558],"['heavy metal with stoner rock influences', 'doom metal', 'progressive metal', 'psychedelic post-metal']",1
 27260,viha records,closed,nan,[29129],"['thrash metal with alternative rock', 'metal']",35
 27262,kill yourself productions,unknown,nan,"[106908, 3540281559, 3540288253]",[],23
 27263,metal sin records,active,nan,[3540338771],[],21
@@ -6204,7 +6204,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 28621,storm of bullets productions,active,nan,[3540345604],"['black metal', 'pagan metal']",20
 28623,sublimity records,active,https://sublimity.bandcamp.com,"[3540434285, 122613, 3540439106, 82413, 6178, 3540327079, 3540438239, 3540312830, 63343, 57710, 3540358223, 3540381748, 3540361900]",[],14
 28625,monolith,closed,nan,[3540410233],[],7
-28632,doom metal alliance records,unknown,http://www.doommantia.com,[3540345695],"['doom metal', 'stoner metal', 'sludge metal', 'psychedelic doom metal', 'drone metal']",1
+28632,doom metal alliance records,unknown,http://www.doommantia.com,[3540345695],"['doom metal', 'stoner metal', 'sludge metal', 'psychedelic post-metal', 'drone metal']",1
 28640,music valley,active,nan,"[3540404898, 3540339453]",[],38
 28643,burned by god records,unknown,http://www.burnedbygodrecords.com/,[3540333124],[],1
 28655,radical east,unknown,https://radicaleast.thebase.in,[3540409153],['death metal with hardcore'],26
@@ -6635,7 +6635,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 30796,t entertainment,unknown,nan,"[116149, 97695]",[],47
 30810,black candles records,unknown,nan,"[3540373978, 3540375607, 3540313776]","['shoegaze', 'black metal with post-rock influences', 'post-metal', 'doom metal', 'death metal', 'ambient doom metal', 'atmospheric metal']",23
 30815,indie rocks records,active,nan,[3540358119],[],20
-30820,orange cliff records,active,http://orangecliffrecords.com/,"[3540520276, 3540412602]","['stoner metal', 'southern metal', 'psychedelic doom metal', 'alternative metal']",53
+30820,orange cliff records,active,http://orangecliffrecords.com/,"[3540520276, 3540412602]","['stoner metal', 'southern metal', 'psychedelic post-metal', 'alternative metal']",53
 30822,trollmusic,active,http://www.trollmusic.net/,"[3540368273, 3540430774, 3540481206, 3540295065]",[],5
 30823,southern blasphemy records,active,http://southernblasphemyrecords.bandcamp.com/,"[3540365286, 3540337341, 43840, 3540361061, 3540364720, 3540351742, 3540361088, 3540361058]",[],1
 30824,goat curse diaboli productions,active,nan,[3540388656],['black metal'],2
@@ -6663,7 +6663,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 30913,death plagues productions,active,http://deathplaguesprod.blogspot.com/,[3540350345],"['black metal', 'death metal', 'thrash metal']",75
 30916,sociedade dos mortos,active,http://sociedadedosmortos.loja2.com.br/,"[3540264107, 5040, 15343, 3540473886]",[],23
 30920,morose music inc.,active,http://morosemusic.com/,"[3540361377, 3540297925, 3540326718]",[],1
-30925,ozium records,active,http://www.oziumrecords.com/,"[3540445616, 3540424781, 3540511566, 3540485520, 3540422136, 3540502641, 3540426672, 3540452630, 3540363349, 3540547957, 3540439952, 3540511542, 3540338167, 3540477597]","['stoner metal', 'doom metal', 'psychedelic doom metal']",15
+30925,ozium records,active,http://www.oziumrecords.com/,"[3540445616, 3540424781, 3540511566, 3540485520, 3540422136, 3540502641, 3540426672, 3540452630, 3540363349, 3540547957, 3540439952, 3540511542, 3540338167, 3540477597]","['stoner metal', 'doom metal', 'psychedelic post-metal']",15
 30963,mythrone promotion,active,https://www.facebook.com/mythroneprom,"[3540399451, 3540483955, 12485]","['black metal', 'thrash metal', 'death metal', 'crossover metal', 'death metal with grindcore']",13
 30964,king oath records,active,nan,[3540277795],[],7
 30967,down the drain records,active,http://www.downthedrainrecords.com/,[118953],"['death metal with hardcore', 'black metal with punk', 'alternative metal']",5
@@ -7170,7 +7170,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 33080,brutal art records,active,https://www.facebook.com/brutalartrecords,[3540294170],['death metal'],5
 33083,desavenencia,active,http://desavenencia.bandcamp.com,"[3540390550, 3540492354, 3540371584]",['black metal'],1
 33087,rpm roar,active,http://www.roar.gr/,"[3540453687, 3540439286, 3540369518, 8615, 3540464809, 3540481578, 3540356916, 3540294785, 64049, 3540528399, 84910, 563, 3540488335, 3540404019, 5354, 3540339471, 3540450808, 3540310937, 12475, 2055, 3540529191, 3540431265, 391, 3540407352, 4, 90160, 3540378087, 16020, 1727, 3540533982, 31203, 3540528412, 3540391779, 3123, 3540364033, 3540286363, 3540449808, 3540411928, 126091, 3540469710, 463, 3540306932, 3140, 267, 3540391966, 3540283263, 3540296643, 317, 3540503800, 3540407464, 3540355864, 3540539811, 3540283833, 3540541205, 3540472383, 902, 6455]","['heavy metal with hard rock', 'metal']",19
-33088,electric magic records,active,nan,[3540328096],"['psychedelic doom metal', 'space rock']",5
+33088,electric magic records,active,nan,[3540328096],"['psychedelic post-metal', 'space rock']",5
 33090,screaming victims distro,active,http://www.screamingvictims.blogspot.gr/,[3540319593],[],19
 33091,neuschwabenland propaganda,active,nan,"[3540455191, 3540495752, 3540429958, 3540372143, 3540514275, 35107]",[],5
 33092,penthouse records,active,nan,[3540516473],[],1
@@ -7336,7 +7336,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 33741,prolific summer,active,nan,[3540375540],[],1
 33748,various goods,active,https://www.facebook.com/variousgoodsprods/,[3540375587],[],44
 33750,valkyrie rising,active,nan,"[3540361875, 3540463157, 101380]",['symphonic metal'],
-33753,come to the end,active,http://cometothend.blogspot.com/,[3540387506],"['experimental metal', 'death metal with noise elements', 'metal', 'black metal with punk', 'psychedelic doom metal', 'sludge metal', 'death metal with grindcore']",41
+33753,come to the end,active,http://cometothend.blogspot.com/,[3540387506],"['experimental metal', 'death metal with noise elements', 'metal', 'black metal with punk', 'psychedelic post-metal', 'sludge metal', 'death metal with grindcore']",41
 33758,nuclearmageddon records,active,http://nuclearmageddon.blogspot.fr/,[3540347513],"['thrash metal', 'death metal', 'heavy metal']",29
 33771,profimusic,active,http://profimusic.ch,[3540375822],['gospel'],45
 33776,shunned house,closed,https://web.archive.org/web/20181128053141/https://shunnedhouse.nl/,"[3540421131, 3540387107, 9423]","['black metal', 'death metal with noise elements']",41
@@ -7378,7 +7378,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 33898,spiders & sparrows recordings,active,nan,[3540376579],[],1
 33903,papagájův hlasatel records,active,http://www.phr.cz/,"[3295, 3540374828]",[],51
 33911,elvester records,closed,nan,[3540289182],['doom metal'],1
-33914,kitty on fire records,active,http://www.facebook.com/kittyonfire,[3540307012],"['death metal with noise elements', 'death metal with grindcore', 'experimental metal', 'psychedelic doom metal']",1
+33914,kitty on fire records,active,http://www.facebook.com/kittyonfire,[3540307012],"['death metal with noise elements', 'death metal with grindcore', 'experimental metal', 'psychedelic post-metal']",1
 33919,saviour records,active,nan,[3540298687],[],2
 33930,rps enterteyment,active,http://www.rpsenterteyment.com,[3540376843],['hip-hop'],13
 33932,cold raw records,unknown,http://pontefractummelancho.wix.com/coldrawrecords,"[3540374177, 3540373887, 3540379557, 3540374467, 3540373758, 3540374799, 3540375495, 3540384559, 3540342377, 3540377338, 3540395983]",['black metal'],3
@@ -7442,7 +7442,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 34193,dead inside records,active,http://www.deadinsiderecords.com/,[3540392629],[],
 34198,imminence records,active,http://imminencerecords.com/,[3540344326],"['metalcore', 'sludge metal with post-hardcore influences']",1
 34199,into endless chaos records,active,https://intoendlesschaos.de,"[3540475420, 3540453893, 3540456330, 3540375572, 3540331245, 117642, 3540410988, 3540451158, 3540387183, 3540458495, 3540447243, 3540414585, 3540506265, 3540477571, 3540545901, 3540455445, 3540475369, 3540455797, 3540439107, 3540360126, 3540482097, 3540453913]","['heavy metal', 'black metal', 'death metal', 'doom metal']",5
-34201,howling invocations,active,http://howlinginvocations.blogspot.co.uk/,"[3540424606, 3540420016]","['metal', 'black metal with punk', 'rock with doom metal', 'psychedelic doom metal', 'death metal with hardcore']",3
+34201,howling invocations,active,http://howlinginvocations.blogspot.co.uk/,"[3540424606, 3540420016]","['metal', 'black metal with punk', 'rock with doom metal', 'psychedelic post-metal', 'death metal with hardcore']",3
 34205,astral temple,active,nan,"[3540378216, 3540393449]","['black metal', 'ambient doom metal']",15
 34206,groundless daphnis,active,nan,[3540378268],[],12
 34209,odi profanum vulgus et arceo,active,nan,"[3540542596, 3540390189, 3540378277]",['black metal'],29
@@ -7471,7 +7471,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 34335,ira militias productions,active,https://fr-fr.facebook.com/ira.militias,"[3540377051, 3540377052]","['black metal', 'death metal']",29
 34346,in death records,active,nan,[28436],['metal'],1
 34347,dark skies coming recordings,active,http://www.darkskiescoming.nl/,[3540425090],[],41
-34349,argonauta records,active,http://www.argonautarecords.com/,"[3540423308, 3540358097, 3540464625, 3540474441, 3706, 3540324642, 3540507366, 3540364902, 3540461642, 3540458499, 3540460327, 3540326826, 3540504365, 3540389392, 3540388319, 3540423253, 3540401209, 3540476813, 3540325964, 3540419993, 3540370314, 3540550502, 3540504620, 3540522487, 3540490784, 3540338825, 3540463137, 3540480812, 3540356932, 3540454415, 3540516760, 3540407871, 3540438179, 3540388247, 3540324893, 3540467067, 3540478514, 3540394410, 3540481383, 3540552820, 3540323267, 45841, 3540399864, 3540451425, 3540407895, 3540371676, 3540398101, 3540418953, 3540547404, 3540476815, 3540418142, 3540410133, 3540457161, 3540522358, 3540361027, 12714, 3540464995, 3540464131, 3540439929, 3540538501, 3540350996, 3540429915, 3540325663, 3540379834, 3540427028, 3540429581, 3540393706, 3540464482, 3540415397, 3540506881, 3540510567, 3540426340, 3540284729, 3540505279, 3540410281, 3540455580, 3540365081, 3540466010, 3540470655, 3540418176, 3540470383, 3540444826, 3540469432, 3540365633, 3540322238, 3540452733, 6732, 3540482630, 3540364496, 2126, 3540335949, 3540509643, 3540393111, 3540518646, 3540423272, 3540396223, 89127, 3540368839, 3540441089, 3540462930]","['doom metal', 'drone metal', 'psychedelic doom metal', 'stoner metal', 'sludge metal', 'post metal']",12
+34349,argonauta records,active,http://www.argonautarecords.com/,"[3540423308, 3540358097, 3540464625, 3540474441, 3706, 3540324642, 3540507366, 3540364902, 3540461642, 3540458499, 3540460327, 3540326826, 3540504365, 3540389392, 3540388319, 3540423253, 3540401209, 3540476813, 3540325964, 3540419993, 3540370314, 3540550502, 3540504620, 3540522487, 3540490784, 3540338825, 3540463137, 3540480812, 3540356932, 3540454415, 3540516760, 3540407871, 3540438179, 3540388247, 3540324893, 3540467067, 3540478514, 3540394410, 3540481383, 3540552820, 3540323267, 45841, 3540399864, 3540451425, 3540407895, 3540371676, 3540398101, 3540418953, 3540547404, 3540476815, 3540418142, 3540410133, 3540457161, 3540522358, 3540361027, 12714, 3540464995, 3540464131, 3540439929, 3540538501, 3540350996, 3540429915, 3540325663, 3540379834, 3540427028, 3540429581, 3540393706, 3540464482, 3540415397, 3540506881, 3540510567, 3540426340, 3540284729, 3540505279, 3540410281, 3540455580, 3540365081, 3540466010, 3540470655, 3540418176, 3540470383, 3540444826, 3540469432, 3540365633, 3540322238, 3540452733, 6732, 3540482630, 3540364496, 2126, 3540335949, 3540509643, 3540393111, 3540518646, 3540423272, 3540396223, 89127, 3540368839, 3540441089, 3540462930]","['doom metal', 'drone metal', 'psychedelic post-metal', 'stoner metal', 'sludge metal', 'post metal']",12
 34351,premier records,active,nan,[44727],[],
 34369,wickerman recordings,active,http://www.wickermanrec.com,[3540266519],"['black metal', 'stoner metal', 'experimental metal']",110
 34370,united spreading the ancient evil kult prod,closed,nan,[12947],['black metal'],23
@@ -7535,7 +7535,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 34619,ripping storm records,active,http://www.rippingstorm.com,"[3540387469, 80632]","['black metal with punk', 'death metal', 'thrash metal']",12
 34622,shunu records,active,http://www.shunurecords.com,"[3540402881, 3540545751]",[],15
 34623,raw war tapes,active,nan,[3540370393],[],4
-34629,stonehill records,active,https://www.stonehillrecords.eu/,"[3540389393, 3540380653]","['doom metal', 'psychedelic doom metal', 'thrash metal']",5
+34629,stonehill records,active,https://www.stonehillrecords.eu/,"[3540389393, 3540380653]","['doom metal', 'psychedelic post-metal', 'thrash metal']",5
 34642,brutal extinctions,active,nan,[52092],[],
 34645,foamin' sodomy records,unknown,nan,[21666],[],1
 34649,splatter zombie records,active,nan,"[3540336175, 3540401622, 107588, 3540462038, 3540530901, 3540376740]","['death metal', 'brutal death metal', 'death metal with grindcore', 'goregrind with doom metal elements']",5
@@ -7924,7 +7924,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 37392,draconum records,on hold,nan,[3540397118],['extreme metal'],1
 37393,forges productions,unknown,nan,[94266],[],
 37394,sickness productions,closed,https://www.facebook.com/sicknessproductios,"[3540381642, 3540410566, 3540419967, 3540302947, 3540378453, 3540294897, 3540395594, 3540410998, 3540328864, 3540397902, 3540337877, 3540380388]","['death metal', 'brutal death metal', 'thrash metal']",53
-37395,dead wax records,active,nan,[3540397662],"['heavy metal with stoner rock influences', 'metal', 'psychedelic doom metal', 'black metal with punk']",1
+37395,dead wax records,active,nan,[3540397662],"['heavy metal with stoner rock influences', 'metal', 'psychedelic post-metal', 'black metal with punk']",1
 37406,holy mountain printing,active,http://holymountainprinting.bigcartel.com/,[3540389990],"['black metal', 'power metal with dark ambient influences', 'black metal with crust', 'doom metal']",1
 37418,grindtoday records,active,http://www.grindtoday.com/,[3540393685],"['death metal with grindcore', 'powerviolence']",53
 37419,ujiteru hojo bootleg,active,nan,[3540384624],[],6
@@ -7955,7 +7955,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 37541,threshold of pain records,active,nan,[3540377982],[],1
 37558,sifare,active,http://www.sifare.it/,"[31857, 3540487832]",[],12
 37564,lawless records,active,http://lawlessjakarta.com,"[3540442748, 3540340619, 3540431954, 3540427987, 3540335706, 3540517804]",[],53
-37579,archaic revival records,active,http://archaicrevivalrecords.bandcamp.com/,"[3540333765, 3540367033]","['power metal with dark ambient influences', 'doom metal', 'post-metal', 'psychedelic doom metal', 'stoner metal']",1
+37579,archaic revival records,active,http://archaicrevivalrecords.bandcamp.com/,"[3540333765, 3540367033]","['power metal with dark ambient influences', 'doom metal', 'post-metal', 'psychedelic post-metal', 'stoner metal']",1
 37581,lord of the flies records,active,nan,[3540395155],['death metal'],12
 37583,thelema promotions,unknown,nan,[76986],['black metal'],32
 37593,nosferatu records,active,nan,[3540390546],[],2
@@ -8149,7 +8149,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 38602,canometal records,active,http://www.canometal.cl/,[3540420402],"['doom metal', 'heavy metal', 'thrash metal', 'black metal']",22
 38610,secret law records,active,http://www.secretlawrecords.com/,[3540536959],[],3
 38621,høst recordings,active,nan,[85510],[],3
-38622,voron nest,active,https://voron-nest.bandcamp.com/,[3540327398],"['stoner metal', 'psychedelic doom metal', 'doom metal']",26
+38622,voron nest,active,https://voron-nest.bandcamp.com/,[3540327398],"['stoner metal', 'psychedelic post-metal', 'doom metal']",26
 38624,la migra records,active,nan,[3540410068],[],23
 38626,morbid chapel records,active,http://morbidchapelrecords.com/,"[122343, 3540442196, 3540451220, 3540347315, 3540341089, 3540470749, 3540507255]","['black metal', 'death metal']",13
 38629,across music,active,nan,"[3540392411, 3540417505]",[],26
@@ -8234,7 +8234,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 39054,lom,active,nan,[3540406545],[],52
 39060,desgraça na terra records,active,nan,"[3540363821, 3540360304]",[],23
 39061,nbqrecords,active,nan,[3540396696],[],18
-39066,underwater bong records,active,http://www.underwater.8merch.com/services/store,[3540405810],"['stoner metal', 'doom metal', 'psychedelic doom metal']",13
+39066,underwater bong records,active,http://www.underwater.8merch.com/services/store,[3540405810],"['stoner metal', 'doom metal', 'psychedelic post-metal']",13
 39070,mysterion,active,https://mstrn.net/,"[3540422306, 3540432235]","['black metal', 'death metal']",19
 39071,christian metal distro,active,nan,[3540402075],[],1
 39073,gokukara records,active,http://binylrecords.com/gokukara/,[3540371265],['j-rock'],26
@@ -8302,7 +8302,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 39466,last rites records,active,nan,[3540397977],[],53
 39468,f h e d,active,nan,"[3540454565, 3540406731]","['sludge metal', 'doom metal', 'death metal with grindcore', 'powerviolence']",3
 39475,black element productions,active,nan,[3540396830],[],6
-39493,the government knows records,active,http://thegovernmentknows.blogspot.com/,[3540398666],"['doom metal', 'stoner metal', 'psychedelic doom metal', 'experimental metal']",1
+39493,the government knows records,active,http://thegovernmentknows.blogspot.com/,[3540398666],"['doom metal', 'stoner metal', 'psychedelic post-metal', 'experimental metal']",1
 39499,endless falling records,active,http://endlessfallingrecords.com/news/,[3540398704],[],1
 39505,imperialismo pagano produzioni,active,nan,[124062],['black metal'],12
 39507,nihilistic despair records,active,http://nihilisticdespair.storenvy.com/,"[3540436977, 3540440025]",[],1
@@ -8446,7 +8446,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 40324,infernal war records,active,http://infernalwar-records.loja2.com.br/,[3540406900],"['black metal', 'death metal']",23
 40327,hellraiser producciones,active,https://www.facebook.com/hellraiserproduccionesjf,[3540370995],['thrash metal'],71
 40328,metasonic production,active,nan,[61151],[],
-40330,green plague records,active,nan,[3540435206],"['doom metal', 'stoner metal', 'psychedelic doom metal']",13
+40330,green plague records,active,nan,[3540435206],"['doom metal', 'stoner metal', 'psychedelic post-metal']",13
 40333,morbid rites prod,active,nan,"[3540457653, 3540441152, 3540410877, 3540433782, 3540424042, 45507, 3540436685, 3540412621]",[],22
 40335,kromazonta,active,nan,[3540401823],[],
 40341,mamat records,active,nan,[3540414057],[],38
@@ -8493,7 +8493,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 40520,masked dead records,active,nan,"[3540544912, 3540412358, 3540547601, 3540544926, 3540522278, 3540414689, 3540306335, 3540413162]",['black metal'],12
 40521,slo-blo records,active,nan,[3540402762],"['doom metal with grunge elements', 'stoner metal', 'black metal with punk']",2
 40529,universal music gmbh,active,https://www.universal-music.de,[3540407968],['doom metal with various influences'],5
-40530,blues for the red sun records,active,https://www.facebook.com/blues-for-the-red-sun-645295312258485,"[3540491154, 3540406817, 3540402828]","['stoner metal', 'doom metal', 'psychedelic doom metal']",10
+40530,blues for the red sun records,active,https://www.facebook.com/blues-for-the-red-sun-645295312258485,"[3540491154, 3540406817, 3540402828]","['stoner metal', 'doom metal', 'psychedelic post-metal']",10
 40537,killer tofu records,active,nan,[3540402857],[],
 40540,ekhidna records,active,https://ekhidnarecords.bandcamp.com,"[3540313645, 3540412200]","['black metal', 'death metal']",6
 40547,olden sonorities,active,http://oldensonorities.blogspot.co.uk/,[3540402890],"['black metal', 'death metal with noise elements', 'ambient doom metal']",32
@@ -8809,7 +8809,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 42125,warner music finland,active,http://www.warnermusic.fi/,[5057],[],35
 42128,rotting throne records,active,nan,[3540411739],[],3
 42131,leviatan ouroboro,active,nan,[3540475415],[],1
-42132,tonzonen records,active,http://www.tonzonen.de/,"[3540464089, 3540505186]","['psychedelic doom metal', 'stoner metal', 'avant-garde metal']",5
+42132,tonzonen records,active,http://www.tonzonen.de/,"[3540464089, 3540505186]","['psychedelic post-metal', 'stoner metal', 'avant-garde metal']",5
 42134,loneravn records,active,nan,"[3540433753, 3540431931, 3540434111, 3540443074, 3540470261, 3540418039, 3540426382, 3540374421, 3540415487, 3540488072, 3540432393, 3540422631, 3540470262]",['doom metal'],74
 42137,wsc records,active,nan,[3540411784],[],15
 42139,bzk records,active,nan,"[3540494080, 50780, 3540427636, 3540470649, 3540483811]","['death metal', 'brutal death metal', 'raw black metal', 'ambient doom metal', 'death metal with grindcore', 'death metal with noise elements', 'experimental metal', 'electronic metal', 'death metal with hardcore', 'dubstep', 'breakcore']",63
@@ -8827,7 +8827,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 42206,adagio records,active,nan,[3540412223],[],20
 42211,wilde welt records,unknown,nan,[3540481926],[],
 42212,jersey devil records,unknown,nan,[57331],[],1
-42216,doomsayer records,active,https://www.facebook.com/doomsayerrecords/,"[3540389461, 3540498932, 3540544893, 3540532624]","['doom metal', 'sludge metal', 'stoner metal', 'psychedelic doom metal']",1
+42216,doomsayer records,active,https://www.facebook.com/doomsayerrecords/,"[3540389461, 3540498932, 3540544893, 3540532624]","['doom metal', 'sludge metal', 'stoner metal', 'psychedelic post-metal']",1
 42217,glyph records,active,nan,[3540412285],[],17
 42232,black hill records,active,nan,[3540412372],[],26
 42233,yab moung records,active,nan,"[3540458999, 3540402864]","['rock with doom metal', 'black metal with punk', 'metal']",120
@@ -9050,7 +9050,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 43357,die in pain records,active,nan,[3540417703],[],1
 43368,venomous records,active,nan,[3540417767],[],53
 43376,dystopian cult records,active,https://www.facebook.com/cult85/,"[3540417851, 3540439670]","['black metal with crust', 'blackened crust', 'doom metal']",1
-43380,the company,active,https://www.thecompanykc.com/,"[3540394899, 3540437367, 3540439475, 3540427972]","['stoner metal', 'psychedelic doom metal']",1
+43380,the company,active,https://www.thecompanykc.com/,"[3540394899, 3540437367, 3540439475, 3540427972]","['stoner metal', 'psychedelic post-metal']",1
 43382,serpentyne music,active,nan,[3540417331],[],3
 43385,ton of hell productions,active,nan,[3540417834],[],
 43387,terrorcorps,active,nan,[3540417856],[],9
@@ -9086,7 +9086,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 43549,black babylon records,active,nan,"[3540284272, 3540420425, 3540426617]",[],1
 43557,grathila records,active,nan,[12046],[],33
 43560,human recycle,closed,nan,"[3540457841, 3540457840]",[],65
-43561,spiritside productions,active,http://spiritside.info/,"[3540546452, 3540330765]",['black  metal'],37
+43561,spiritside productions,active,http://spiritside.info/,"[3540546452, 3540330765]",[],37
 43562,oyster brothers records,active,nan,[3540462442],['metal'],26
 43572,beyond andromeda records,active,http://beyondandromedarecords.bandcamp.com/,"[3540435638, 3540446578, 3540360041]","['black metal', 'death metal', 'thrash metal', 'ambient doom metal']",24
 43577,abnormal exaggeration records,active,http://abnormalexaggerationrecords.bigcartel.com/,[3540420919],[],26
@@ -9155,7 +9155,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 43891,raise the dead productions,active,nan,"[3540458045, 3540393322]",[],2
 43894,xenoglossy productions,closed,https://xenoglossyproductions.limitedrun.com/,"[3540406554, 3540478131, 3540424853, 3540428149, 3540508758, 3540503155, 3540410503, 3540443161, 3540503156, 3540445409, 3540503158, 3540531742, 3540267192]","['black metal', 'experimental metal', 'death metal with noise elements']",12
 43895,think tank media,active,http://www.thetank.com/,[97382],[],1
-43900,electric valley records,active,https://www.electricvalleyrecords.com/,"[3540533520, 3540483456, 3540488632, 3540469912, 3540522801, 3540440023, 3540517656, 3540420581, 3540413540, 3540489115, 3540518909]","['stoner metal', 'psychedelic doom metal', 'doom metal']",12
+43900,electric valley records,active,https://www.electricvalleyrecords.com/,"[3540533520, 3540483456, 3540488632, 3540469912, 3540522801, 3540440023, 3540517656, 3540420581, 3540413540, 3540489115, 3540518909]","['stoner metal', 'psychedelic post-metal', 'doom metal']",12
 43904,cuerpo records,active,https://www.facebook.com/cuerporecords,[3540420591],['black metal'],20
 43925,dark matter records,active,http://darkmatterrecords.blogspot.com,[3540420757],[],18
 43936,lab audio,active,nan,[3540416667],[],1
@@ -9186,7 +9186,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 44045,a view from a hole,active,nan,[3540374833],['extreme metal'],12
 44046,ashburn productions,active,https://www.facebook.com/ashburn-productions-525301017513890,[3540420805],['metal'],45
 44049,dg records,active,nan,"[3540401370, 3540450543, 3540395507]",[],53
-44054,golden dawn recordings,closed,nan,[55240],"['psychedelic doom metal', 'stoner metal', 'doom metal']",22
+44054,golden dawn recordings,closed,nan,[55240],"['psychedelic post-metal', 'stoner metal', 'doom metal']",22
 44055,no life records,active,https://www.facebook.com/noliferecordsmd/,[3540396020],[],59
 44058,nightfear records,active,nan,[3540421786],"['death metal', 'death metal with grindcore']",18
 44064,concorde music company,active,http://www.concordemusic.fi,"[3540451083, 3540465932, 3540476285]",[],35
@@ -9210,7 +9210,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 44178,dipsomaniac distilleries,active,https://archive.org/details/dipsomaniacnetlabel,"[3540419479, 3540429101, 3540388539]","['black metal', 'death metal', 'death metal with noise elements', 'experimental metal']",1
 44179,rat mix records,active,https://www.facebook.com/ratmixrecords/,[3540442666],"['death metal with grindcore', 'powerviolence', 'death metal with hardcore', 'doom metal', 'death metal with noise elements']",1
 44184,the true plague,changed name,nan,[3540436951],[],1
-44185,king volume records,active,https://www.facebook.com/kingvolumerecords,"[3540509740, 3540522813, 3540503020, 3540455294, 3540451039, 3540417117, 3540422562]","['psychedelic doom metal', 'stoner metal', 'doom metal']",1
+44185,king volume records,active,https://www.facebook.com/kingvolumerecords,"[3540509740, 3540522813, 3540503020, 3540455294, 3540451039, 3540417117, 3540422562]","['psychedelic post-metal', 'stoner metal', 'doom metal']",1
 44190,xenokorp,closed,http://www.xenokorp.com,"[3540273872, 3540257322, 3540441156, 127708, 6734, 90485, 3371, 3540328960, 3540492745]","['death metal', 'goregrind with doom metal elements', 'funeral doom metal']",29
 44201,demonolatry records,closed,nan,[266],[],1
 44203,extreme resurrection records,active,nan,"[3540516199, 3540434102, 3540424311]",['death metal'],84
@@ -9224,7 +9224,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 44248,raine music,active,https://www.facebook.com/raineitalia/,[3540323850],[],12
 44252,sick rites records,active,https://www.facebook.com/sick-rites-records-112593103722379,"[3540521966, 3540398141, 3540332077, 3540348335]","['death metal', 'thrash metal', 'doom metal']",22
 44256,hymns of apocalypse,active,nan,"[3540470789, 3540283439, 3540439060, 3540457625]",[],14
-44265,nebiros producciones,active,nan,[3540536763],"['black metal', 'death  metal']",57
+44265,nebiros producciones,active,nan,[3540536763],['black metal'],57
 44266,deathfuckmageddon records,changed name,https://ciklonizacija.bandcamp.com/,[3540539219],"['metal', 'death metal with noise elements', 'electronic metal']",52
 44277,knives out records,active,http://www.knivesoutrecords.com,[3540546333],"['death metal with hardcore', 'metalcore', 'stoner metal', 'sludge metal', 'doom metal']",29
 44279,continuum records,unknown,nan,[3540425367],[],1
@@ -9285,7 +9285,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 44557,gargoyle records,active,nan,[3540424623],[],1
 44560,mptdo,active,nan,[26468],['death metal'],20
 44570,bloodlust productions,closed,nan,[93487],[],10
-44574,rock freaks records,active,http://www.rockfreaks.de/,[3540424697],"['stoner metal', 'doom metal', 'psychedelic doom metal', 'blues rock', 'metal']",5
+44574,rock freaks records,active,http://www.rockfreaks.de/,[3540424697],"['stoner metal', 'doom metal', 'psychedelic post-metal', 'blues rock', 'metal']",5
 44578,cursed tongue records,active,http://cursedtonguerecords.bigcartel.com/,"[3540424714, 3540440070]","['stoner metal', 'rock with doom metal']",34
 44592,hidden stone records,active,nan,[3540292774],[],12
 44595,astral records & music,closed,nan,[4432],[],7
@@ -9389,7 +9389,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 45130,scarifide records,active,https://www.reverbnation.com/scarifiderecordsradio,[3540427450],[],1
 45136,volcano records & promotion,active,https://www.volcanopromotion.com/,"[3540452269, 3540464529, 3540483368, 3540294910, 50843, 3540455825, 3540468245, 3540495991, 3540466129, 3540537494, 3540493134, 52406, 3540509384, 3540441795, 56128, 3540446668, 3540325362, 3540449931, 3540322237, 3540306925, 3540322763]","['heavy metal with hard rock', 'heavy metal']",12
 45141,full flight records,active,nan,[3540427478],[],
-45152,abraxas,active,http://abraxas.fm/,"[3540456340, 3540517120, 3540338521]",['psychedelic doom metal'],23
+45152,abraxas,active,http://abraxas.fm/,"[3540456340, 3540517120, 3540338521]",['psychedelic post-metal'],23
 45156,cthulhus yell,active,nan,"[3540331549, 3540375389]",[],5
 45160,metal mayhem hq,active,nan,"[3540408994, 3540394473]","['death metal', 'thrash metal']",1
 45167,nekromantra records,active,https://nekromantrarecords.bandcamp.com/merch,[3540538999],"['black metal', 'death metal', 'thrash metal', 'doom metal']",20
@@ -9624,7 +9624,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 46316,whore & cunt records,active,nan,"[3540454625, 3540449708, 3540448884]","['black metal', 'd-beat']",22
 46318,sme records,active,nan,[3540434943],[],26
 46322,the hidden art,active,https://www.facebook.com/proextremeart/,"[3540526633, 3540463272, 3540295274]",[],5
-46329,sound effect records,active,http://www.soundeffect-records.gr,"[3540467415, 3540412104, 3540501857]","['stoner metal', 'psychedelic doom metal', 'doom metal']",19
+46329,sound effect records,active,http://www.soundeffect-records.gr,"[3540467415, 3540412104, 3540501857]","['stoner metal', 'psychedelic post-metal', 'doom metal']",19
 46332,bungalo records,active,http://bungalorecords.com/,[3540471984],['doom metal with various influences'],1
 46340,freya records,active,http://dutchmusicworks.com/?page_id=258,"[3540441727, 3540308198, 3540446296]","['rock with doom metal', 'metal']",41
 46347,lorchestral recording company,active,http://lorchestralrecordingcompany.com/,[3540444120],[],1
@@ -10437,7 +10437,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 50295,from the caves of time records,active,nan,[3540456382],['black metal'],2
 50297,red handed records,active,https://redhandedrecords.bandcamp.com/,[3540469282],[],1
 50302,ancient entity records,active,nan,"[86431, 3540493692, 3540455398, 3540479131, 3540473513]","['black metal', 'death metal', 'doom metal', 'drone metal', 'dungeon synth']",3
-50310,barhill records,active,https://barhillrecords.de/,"[3540308221, 3540520251]","['psychedelic doom metal', 'stoner metal']",5
+50310,barhill records,active,https://barhillrecords.de/,"[3540308221, 3540520251]","['psychedelic post-metal', 'stoner metal']",5
 50311,robnroll records,active,nan,[3540456448],"['death metal', 'thrash metal']",45
 50314,hypyractyv larynx frogquencies,active,nan,[3540529653],"['death metal with noise elements', 'harsh noise', 'gorenoise']",1
 50316,d.i.y. records colombia,active,https://www.discogs.com/label/1052171-di,"[3540457638, 3540456479]","['thrash metal', 'brutal death metal']",2
@@ -10527,7 +10527,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 50719,skull crusher music,active,nan,[36654],"['death metal', 'black metal with crust', 'thrash metal', 'doom metal']",1
 50720,sacrificio azteca,active,https://www.facebook.com/sacrificio-azteca-prods-292652158079014/,[3540458600],"['goregrind with doom metal elements', 'death metal with grindcore', 'death metal with noise elements', 'crust punk with doom metal influences', 'brutal death metal']",20
 50725,myth of darkness records,active,http://mythofdarknessrecords.angelfire.com/,"[3540525528, 3540521780, 3540507891, 3540506560, 3540402062, 3540547502, 3540521456]",['black metal'],1
-50733,majestic mountain records,active,https://www.majesticmountainrecords.com/,"[3540334427, 3540381054, 3540401496, 3540536212, 3540519089, 3540512664, 3540546577, 3540473213, 3540513759, 3540484688, 3540455663, 3540416246, 3540501089, 3540413617, 3540400149, 3540430682, 3540417542, 3540407145, 3540451389, 3540464318, 3540330540, 3540438134, 3540476891, 3540444039, 3540356373, 3540426850, 3540472428]","['stoner metal', 'psychedelic doom metal', 'sludge metal', 'doom metal']",15
+50733,majestic mountain records,active,https://www.majesticmountainrecords.com/,"[3540334427, 3540381054, 3540401496, 3540536212, 3540519089, 3540512664, 3540546577, 3540473213, 3540513759, 3540484688, 3540455663, 3540416246, 3540501089, 3540413617, 3540400149, 3540430682, 3540417542, 3540407145, 3540451389, 3540464318, 3540330540, 3540438134, 3540476891, 3540444039, 3540356373, 3540426850, 3540472428]","['stoner metal', 'psychedelic post-metal', 'sludge metal', 'doom metal']",15
 50734,jfm core,active,nan,[3540447021],[],26
 50738,thorn within records,active,https://thornwithinrecords.xyz,[3540458701],[],75
 50742,boogie records,active,nan,[103128],['doom metal with various influences'],12
@@ -10579,7 +10579,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 50902,nostalgia vision productions,active,https://www.facebook.com/nostaliavision,[3540435484],['black metal'],19
 50905,venetic black metal front,active,https://veneticblackmetalfront.altervista.org/,"[3540381131, 3540407914, 3540459459]",['black metal'],12
 50915,lichtung tapes,active,nan,"[3540466760, 3540484527, 3540463754, 3540463758, 3540465210, 3540474166, 3540463219]","['atmospheric metal', 'raw black metal', 'dungeon synth']",6
-50917,interstellar smoke records,active,https://interstellarsmokerecords.bigcartel.com/,"[3540548454, 3540478198, 3540353351, 3540355266, 3540417059, 3540484231, 3540458673, 3540495552]","['psychedelic doom metal', 'stoner metal', 'sludge metal', 'doom metal']",13
+50917,interstellar smoke records,active,https://interstellarsmokerecords.bigcartel.com/,"[3540548454, 3540478198, 3540353351, 3540355266, 3540417059, 3540484231, 3540458673, 3540495552]","['psychedelic post-metal', 'stoner metal', 'sludge metal', 'doom metal']",13
 50920,magellanic records,active,nan,[3540301749],['metal'],1
 50923,tormo records,active,http://www.tormorecords.com/,"[3540509791, 3540362381, 3540390367]",[],4
 50925,almost famous,active,nan,"[3540422530, 3540383294, 3540404412]",[],29
@@ -11645,7 +11645,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 55722,nihilist.militant.records,active,https://www.facebook.com/nihilistmilitantrecords-106852474445596/,[3540486856],[],71
 55728,fuzzed and buzzed records,active,https://fuzzedandbuzzed.myshopify.com/,"[3540381875, 3540446562]","['stoner metal', 'doom metal']",6
 55735,nullfrost records,active,https://www.facebook.com/nullfrostrecords,"[3540346067, 3540464987, 3540458893]","['atmospheric metal', 'ambient doom metal']",1
-55738,ruidoteka records,active,nan,[3540476913],"['stoner metal', 'doom metal', 'psychedelic doom metal']",21
+55738,ruidoteka records,active,nan,[3540476913],"['stoner metal', 'doom metal', 'psychedelic post-metal']",21
 55746,cursed blood records,active,nan,"[3540505070, 3540491532, 3540486976, 3540510958, 3540491523, 3540510994]","['raw black metal', 'death metal with noise elements', 'ambient doom metal']",6
 55749,rock city music label,active,https://rockcitymusiclabel.com/,"[3540401140, 3540324097]","['heavy metal', 'power metal', 'progressive metal', 'heavy metal with hard rock']",29
 55753,junkie and proud,active,nan,[3540487453],"['experimental metal', 'dungeon synth', 'raw black metal', 'death metal with noise elements']",1
@@ -12243,7 +12243,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 58639,krv propaganda,active,nan,[56757],['black metal'],75
 58664,shattered silence records,unknown,nan,[3540505779],[],1
 58667,casabot records,active,nan,[3540506127],[],1
-58672,herby records,active,https://herbyrecords.bandcamp.com/merch,"[3540533424, 3540505380]","['doom metal', 'stoner metal', 'sludge metal', 'drone metal', 'psychedelic doom metal']",1
+58672,herby records,active,https://herbyrecords.bandcamp.com/merch,"[3540533424, 3540505380]","['doom metal', 'stoner metal', 'sludge metal', 'drone metal', 'psychedelic post-metal']",1
 58673,bootyhaus records,active,nan,[3540506167],[],
 58676,cult of oblivion recordings,active,https://cultofoblivion.bandcamp.com/,"[3540523601, 3540521890, 3540512394, 3540552148, 3540514703, 3540504938, 3540510412, 3540514648]","['black metal', 'dungeon synth']",1
 58679,aniluca records,active,nan,[3540506207],[],
@@ -12785,7 +12785,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 61341,metalkonoba opatija,active,nan,[3540549786],"['heavy metal', 'black metal with punk', 'death metal with hardcore']",32
 61343,atheistic productions,active,nan,[3540499686],['black metal'],1
 61344,vuoto luce productions,closed,nan,"[3540537096, 3540536179]","['black metal', 'dungeon synth']",12
-61345,fifth funeral records,active,https://fifthfuneralrecords.bandcamp.com/artists,"[3540551065, 3540526092, 3540549030]","['black metal', 'dungeon synth', 'ambient doom metal', 'folk metal', 'psychedelic doom metal', 'drone metal', 'black metal with post-punk', 'gothic metal with darkwave influences', 'techno']",1
+61345,fifth funeral records,active,https://fifthfuneralrecords.bandcamp.com/artists,"[3540551065, 3540526092, 3540549030]","['black metal', 'dungeon synth', 'ambient doom metal', 'folk metal', 'psychedelic post-metal', 'drone metal', 'black metal with post-punk', 'gothic metal with darkwave influences', 'techno']",1
 61354,m71,active,nan,[3540525422],[],5
 61363,dreamkiller records,unknown,nan,[3540525506],[],7
 61366,silver hammer sounds,active,https://www.silverhammersounds.com/,"[3540525908, 3540452168]",[],1
@@ -12966,7 +12966,7 @@ labelId,labelName,status,websiteUrl,producer,hasSpecialization,hasCountry
 62202,jungle gym records,active,https://junglegymrecords.bandcamp.com/merch,[3540531956],[],1
 62214,voidbound records,active,nan,[3540532029],['raw black metal'],12
 62215,trimming the shield records,active,http://www.trimmingtheshield.com/,[3540531717],[],1
-62216,the spirit of goat'n roll,active,https://thespiritofgoatnroll.bandcamp.com,"[3540535695, 3540535693]","['black metal', 'doom metal', 'death metal', 'thrash metal', 'ambient doom metal', 'psychedelic doom metal']",50
+62216,the spirit of goat'n roll,active,https://thespiritofgoatnroll.bandcamp.com,"[3540535695, 3540535693]","['black metal', 'doom metal', 'death metal', 'thrash metal', 'ambient doom metal', 'psychedelic post-metal']",50
 62217,chapel rcrds,active,nan,[3540529740],[],1
 62218,easthaven records,active,https://easthavenrecords.com/,[3540276307],['metal'],5
 62219,thrash out records,active,https://thrashout-records.com,[3540478164],"['black metal with punk', 'death metal with hardcore', 'metal']",5
