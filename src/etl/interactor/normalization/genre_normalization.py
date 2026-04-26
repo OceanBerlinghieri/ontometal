@@ -36,6 +36,8 @@ class GenreNormalization:
             genre_str = str(row["Genre"]).strip()
             # Clean up genre string by removing details in parentheses, quotes, etc.
             cleaned_genre_str = re.sub(r"\(.*?\)|\'|’", "", genre_str)
+            cleaned_genre_str = re.sub(r"\s+", " ", cleaned_genre_str).strip()
+
             split_genres = [
                 g.strip() for g in cleaned_genre_str
                 .replace(",", "/")
