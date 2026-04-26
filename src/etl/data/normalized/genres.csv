@@ -1,0 +1,1376 @@
+id,name
+1,progressive thrash metal with punk elements
+2,thrash metal with gothic influences
+3,death and punk elements
+4,groove metal with grindcore influences
+5,groove metal with death metal influences
+6,brutal death metal with industrial influences
+7,thrash with hardcore and heavy metal influences
+8,thrash metal with death and hardcore influences
+9,blackened crossover
+10,electronic progressive death
+11,free jazz
+12,power metal with folk influences
+13,industrial symphonic black metal
+14,shred with thrash metal elements
+15,heavy metal with gothic
+16,experimental technical thrash metal
+17,symphonic metal with avant-garde influences
+18,crust n roll
+19,metal with black metal elements
+20,crossover with funk elements
+21,groove metal with funk influences
+22,shoegaze
+23,industrial gothic rock
+24,breakcore
+25,epic symphonic power metal
+26,meodic heavy
+27,progressive metal with middle-eastern folk influences
+28,technical blackened death metal
+29,epic heavy metal
+30,speed metal with punk influences
+31,rock with industrial
+32,post-black metal
+33,technical experimental metal
+34,industrial deathcore
+35,death metal with electronic influences
+36,gothic death metal
+37,melodic power metal with flamenco influences
+38,experimental post-hardcore
+39,heavy metal with black metal influences
+40,stoner metal with punk influences
+41,melodic industrial metal
+42,gothic metal with death
+43,melodic black metal with hardcore punk influences
+44,ambient pagan
+45,blackened melodic thrash metal
+46,power metal with electronic influences
+47,experimental raw black metal
+48,thrash metal with grunge influences
+49,progressive metal with groove
+50,black metal with psychobilly influences
+51,grind n roll
+52,progressive folk metal with classical influences
+53,power metal with dark ambient influences
+54,progressive gothic metal
+55,hard rock with punk influences
+56,neoclassical darkwave
+57,medieval folk metal
+58,doom metal with electronica influences
+59,ambient with industrial influences
+60,metalcore with death metal influences
+61,glitch
+62,melodic grindcore
+63,blackened folk metal
+64,blackened speed metal
+65,thrash metal with latin influences
+66,psychedelic experimental metal
+67,hard rock with thrash influences
+68,symphonic metalcore
+69,rapcore
+70,doom metal with grunge elements
+71,industrial heavy metal
+72,technical grindcore
+73,thrash metal with power influences
+74,nu-metal with folk influences
+75,cowpunk
+76,blackened symphonic pagan metal
+77,thrash metal with rac
+78,celtic symphonic metal
+79,melodic death metal with chiptune elements
+80,brutal death metal with goregrind elements
+81,raw crust
+82,experimental industrial black metal
+83,progressive metal with groove influences
+84,black metal with folk and doom metal influences
+85,death metal
+86,progressive power metal
+87,psychedelic post-metal
+88,melodic hardcore
+89,soundtrack with electronic
+90,black metal with electronica
+91,melodic black metal with doom influences
+92,death metal with progressive rock influences
+93,dubstep
+94,black metal with doom influences
+95,melodic post-black metal
+96,doom metal with psychedelic influences
+97,electronic groove metal
+98,technical slam
+99,technical melodic black
+100,raw pagan black metal
+101,melodic metalcore
+102,technical progressive death metal
+103,industrial metal
+104,symphonic melodic deathcore
+105,technical death metal with grindcore elements
+106,atmospheric doom metal
+107,experimental psychedelic doom
+108,heavy metal with doom metal elements
+109,atmospheric black metal
+110,industrial cybergrind
+111,experimental symphonic metal
+112,experimental progressive rock
+113,melodic death metal
+114,raw atmospheric black metal
+115,gothic metal
+116,hard rock with gothic influences
+117,avant-garde drone
+118,epic power metal with folk influences
+119,progressive black metal
+120,technical black metal
+121,brutal deathcore
+122,noisecore
+123,folk doom
+124,thrash metal with groove
+125,viking black metal
+126,thrash metal with psychedelic influences
+127,gothic black metal
+128,heavy metal with gothic rock influences
+129,heavy metal with thrash metal influences
+130,experimental melodic death metal
+131,doom metal with crust influences
+132,melodic heavy metal with progressive rock elements
+133,heavy metal with power and thrash influences
+134,nwobhm
+135,death metal with noise elements
+136,rock with flamenco elements
+137,experimental electronic
+138,black metal with grindcore elements
+139,thrash metal with jazz influences
+140,rock with jazz elements
+141,epic speed metal
+142,thrash metal with industrial elements
+143,experimental symphonic black metal
+144,power metal with electronic elements
+145,experimental dark ambient
+146,doom metal with industrial
+147,extreme progressive metal
+148,heavy metal with death
+149,melodic thrash metal with death
+150,groove metal with punk influences
+151,noise rock influences
+152,avant-garde heavy metal
+153,dark jazz
+154,rock with gothic influences
+155,depressive melodic black metal
+156,atmospheric neoclassical metal
+157,electronic black metal
+158,experimental slam
+159,celtic rock
+160,power metal with progressive influences
+161,progressive blackened death metal
+162,synthwave
+163,melodic crust
+164,death metal with punk elements
+165,funeral doom metal with avant-garde elements
+166,death metal with hardcore
+167,black metal with death metal influences
+168,operatic progressive
+169,melodic thrash metal with alternative influences
+170,technical melodic thrash metal with progressive elements
+171,progressive deathcore
+172,atmospheric deathcore
+173,progressive melodic power metal
+174,rock with funk elements
+175,progressive death n roll
+176,atmospheric neofolk
+177,death metal with electronic elements
+178,progressive technical deathcore
+179,groove metal with alternative
+180,heavy metal with hardcore punk
+181,epic atmospheric avant-garde metal
+182,blackened funeral doom metal
+183,thrash metal with gothic metal influences
+184,melodic symphonic power metal
+185,epic progressive metal
+186,post-black metal with hardcore influences
+187,black noise
+188,electronic ambient
+189,melodic blackened deathcore
+190,heavy metal with groove influences
+191,atmospheric drone
+192,speed metal with hardcore influences
+193,death metal with progressive
+194,progressive with rock and metal elements
+195,experimental funeral doom metal
+196,atmospheric metal
+197,symphonic gothic metal with folk influences
+198,extreme gothic metal
+199,gorenoise
+200,crossover with grindcore elements
+201,progressive sludge metal
+202,technical metalcore
+203,deathcore with jazz fusion elements
+204,technical death metal with industrial influences
+205,black metal with death and thrash influences
+206,progressive heavy metal with thrash metal influences
+207,classical crossover
+208,atmospheric black metal with industrial elements
+209,atmospheric heavy metal
+210,progressive black metal with industrial
+211,gothic melodic thrash
+212,heavy metal with thrash influences
+213,death metal with industrial influences
+214,experimental power metal
+215,black metal with punk
+216,stoner metal with psychobilly influences
+217,depressive post-black metal
+218,power metal with symphonic
+219,doom metal with hardcore influences
+220,melodic progressive metal
+221,acoustic folk
+222,power metal with black
+223,experimental progressive groove metal
+224,death metal with jazz elements
+225,symphonic post-black metal
+226,death metal with flamenco elements
+227,experimental grindcore with jazz influences
+228,heavy metal with melodic thrash influences
+229,metal with folk influences
+230,progressive neoclassical gothic metal
+231,death metal with heavy and thrash elements
+232,melodic death metal with progressive thrash metal influences
+233,symphonic deathcore
+234,thrash metal with rac influences
+235,funeral death
+236,death n roll influences
+237,progressive mathcore
+238,raw ambient black metal
+239,pagan heavy metal
+240,rock with grunge influences
+241,atmospheric blackened death metal
+242,epic symphonic metal
+243,progressive post-black metal
+244,melodic death metal with rock elements
+245,powerviolence with sludge influences
+246,ambient black metal
+247,deathcore with sludge metal influences
+248,neoclassical symphonic metal
+249,blackened crust
+250,symphonic pagan metal
+251,heavy metal with progressive elements
+252,metalcore with sludge metal influences
+253,black metal with thrash influences
+254,symphonic progressive metal
+255,heavy metal with folk and thrash influences
+256,black metal with post-metal
+257,industrial metalcore
+258,hardcore with folk influences
+259,folk power metal
+260,black metal with middle eastern influences
+261,death metal with middle eastern influences
+262,power metal with eastern folk elements
+263,industrial gothic metal with black metal influences
+264,melodic folk black metal
+265,psychedelic folk rock
+266,avant-garde stoner
+267,epic blackened doom metal
+268,celtic death metal
+269,metalcore with heavy metal influences
+270,industrial noise
+271,j-rock
+272,gypsy jazz
+273,trip hop
+274,soft rock
+275,progressive post-metal
+276,neoclassical ambient
+277,industrial post-metal
+278,blackened brutal death metal
+279,viking metal with death metal influences
+280,blues rock
+281,death metal with metalcore influences
+282,technical thrash metal with jazz
+283,technical death metal with hardcore influences
+284,garage rock
+285,symphonic doom metal
+286,experimental post-rock
+287,folk viking metal
+288,melodic death metal with hardcore elements
+289,electronic thrash
+290,bossa nova
+291,raw celtic folk metal
+292,viking folk metal
+293,stoner metal with death metal elements
+294,industrial metal with black metal elements
+295,brutal death metal with jazz elements
+296,blackend death
+297,rock with thrash metal influences
+298,progressive metal with thrash metal elements
+299,technical progressive thrash
+300,post-punk elements
+301,epic black metal
+302,heavy metal with folk influences
+303,atmospheric funeral doom metal
+304,avant-garde gothic metal
+305,blackened deathcore
+306,medieval gothic rock
+307,progressive melodic black metal
+308,black metal with post-rock influences
+309,psychedelic stoner rock
+310,dance pop
+311,melodic death metal with gothic influences
+312,extreme epic
+313,extreme melodic progressive metal
+314,raw black metal with hardcore punk influences
+315,metalcore with death
+316,ambient post-black metal
+317,symphonic technical death metal
+318,melodic atmospheric sludge metal
+319,sludge metal
+320,speed metal with black metal elements
+321,speed metal with folk influences
+322,progressive rock with jazz influences
+323,metalcore with industrial influences
+324,folk gothic metal
+325,experimental deathcore
+326,psychedelic blackened death
+327,doom metal with black metal influences
+328,metal
+329,atmospheric symphonic metal
+330,industrial death metal
+331,groove metal with folk influences
+332,technical melodic thrash metal
+333,thrash metal with ska influences
+334,progressive death metal with middle eastern influences
+335,hardcore with nu-metal elements
+336,orchestral folk metal
+337,raw doom
+338,progressive metal with death metal elements
+339,symphonic black metal
+340,experimental depressive black metal
+341,stoner metal with crust influences
+342,blackened pagan metal
+343,symphonic gothic metal
+344,atmospheric stoner
+345,blackened sludge metal
+346,avante-garde
+347,gothic folk metal
+348,gothic metal with classical and folk influences
+349,metalcore with electronic influences
+350,space
+351,melodic gothic metal
+352,death metal with thrash influences
+353,pagan thrash
+354,pagan black metal
+355,melodic black metal with oi!
+356,progressive melodic doom
+357,punk rock with heavy metal influences
+358,progressive metal with black
+359,thrash metal with folk
+360,psychedelic thrash metal
+361,atmospheric industrial
+362,experimental heavy metal
+363,raw black metal with rac influences
+364,depressive black n roll
+365,melodic heavy metal with death metal elements
+366,technical melodic death metal
+367,coldwave
+368,crossover with heavy metal influences
+369,progressive metal with jazz influences
+370,power metal with melodic death influences
+371,industrial sludge metal
+372,rock with black metal influences
+373,city pop
+374,gothic metal with doom influences
+375,medieval metal
+376,harsh noise
+377,thrash metal with groove influences
+378,thrash metal with crossover influences
+379,black metal with drone
+380,folk metal with black metal influences
+381,thrash metal with rock elements
+382,groove metal with horror rock influences
+383,experimental drone
+384,progressive industrial metal
+385,doom metal with thrash metal
+386,progressive and jazz influences
+387,atmospheric grindcore
+388,melodic experimental black metal
+389,thrash metal with hardcore
+390,melodic technical deathcore
+391,blackened noise
+392,industrial post-black metal
+393,new age
+394,viking metal
+395,grindcore with hardcore influences
+396,industrial groove metal
+397,melodic punk
+398,melodic epic heavy metal
+399,atmospheric black metal with gothic influences
+400,neofolk with progressive black metal influences
+401,melodic death metal with black metal influences
+402,doom metal with punk influences
+403,power metal with groove influences
+404,progressive blackened doom metal
+405,melodic crossover
+406,epic death metal
+407,speed metal influences
+408,melodic death metal with symphonic influences
+409,hard rock with industrial elements
+410,synthpop
+411,raw black metal with punk elements
+412,doom metal with power metal influences
+413,blackened progressive death metal
+414,experimental funk
+415,speed metal with doom influences
+416,speed metal with progressive elements
+417,electronic progressive metal
+418,heavy metal with thrash and doom metal elements
+419,egyptian ambient
+420,death metal with folk influences
+421,experimental metal
+422,experimental thrash metal with black
+423,symphonic melodic death metal
+424,black metal with punk elements
+425,symphonic death metal with electronic influences
+426,brutal death metal
+427,industrial doom metal
+428,groove metal with grunge influences
+429,industrial gothic metal
+430,orchestral pop
+431,groove metal with blues influences
+432,extreme symphonic metal
+433,death metal with black
+434,sludge metal with progressive metal influences
+435,psychedelic avant-garde metal
+436,rock with punk elements
+437,metalcore with trance elements
+438,psychedelic black n roll
+439,industrial black metal
+440,progressive brutal death metal
+441,melodic groove metal
+442,heavy metal with oi!
+443,groove metal
+444,symphonic groove metal
+445,blackened doom metal
+446,experimental gothic rock
+447,power metal with stoner influences
+448,gothic metal with darkwave influences
+449,doom metal elements
+450,psychedelic sludge metal
+451,progressive metal with electronic elements
+452,heavy metal
+453,blackened progressive rock
+454,folk heavy metal
+455,atmospheric depressive black metal
+456,heavy metal with progressive metal influences
+457,heavy metal with progressive and power influences
+458,heavy metal with industrial influences
+459,speed ​​metal
+460,slam
+461,extreme metal
+462,acoustic rock
+463,electronic progressive metalcore
+464,power metal with industrial influences
+465,technical speed metal
+466,sludge metal with post-hardcore influences
+467,dungeon synth
+468,heavy metal with gothic influences
+469,crossover metal
+470,death metal with drum and bass influences
+471,thrash metal with black metal influences
+472,pagan death metal
+473,avant-garde post-black metal
+474,melodic technical death metal
+475,funk rock
+476,blackened crust punk
+477,raw experimental
+478,gothic metal with punk influences
+479,heavy metal with melodic death influences
+480,symphonic metal with eastern asian folk elements
+481,experimental progressive death metal
+482,avant-garde folk rock
+483,technical melodic deathcore
+484,hardcore with doom metal influences
+485,industrial progressive metal
+486,progressive hardcore
+487,progressive metal with doom influences
+488,atmospheric extreme metal
+489,groove metal with power metal influences
+490,neoclassical melodic death metal
+491,enka
+492,symphonic industrial black
+493,technical progressive metal
+494,atmospheric blackened sludge metal
+495,neoclassical progressive metal
+496,raw depressive black metal
+497,death metal with prehispanic folk influences
+498,crossover with industrial elements
+499,atmospheric progressive black metal
+500,electronic doom metal
+501,brutal death metal with folk influences
+502,progressive death metal with jazz elements
+503,groove metal with death
+504,industrial gothic doom metal
+505,grindcore with hardcore elements
+506,progressive metal with thrash metal influences
+507,experimental death metal
+508,experimental rock
+509,psychedelic progressive metal
+510,heavy metal with thrash metal elements
+511,electronic gothic metal
+512,crust punk with doom metal influences
+513,progressive heavy metal
+514,avant-garde jazz
+515,fusion
+516,jazz fusion
+517,atmospheric thrash
+518,operatic gothic metal
+519,black metal with punk influences
+520,thrash metal with hardcore and doom
+521,neoclassical heavy metal
+522,sludge metal with thrash influences
+523,avant-garde death metal
+524,power metal with death metal influences
+525,crossover thrash metal
+526,grindcore with electronic influences
+527,melodic epic black metal
+528,metalcore with folk influences
+529,melodic death metal with middle eastern influences
+530,heavy metal with progressive influences
+531,symphonic blackened death metal
+532,doom metal with progressive elements
+533,death n roll
+534,blackened technical deathcore
+535,heavy metal with hard rock
+536,progressive stoner rock
+537,experimental groove metal
+538,avant-garde black metal
+539,grindcore with thrash metal influences
+540,heavy metal with alternative influences
+541,symphonic progressive power metal
+542,psychedelic stoner metal
+543,doom metal with death metal influences
+544,rock with thrash elements
+545,grindcore with jazz influences
+546,death metal with groove influences
+547,progressive thrash metal with industrial elements
+548,technical death metal with jazz influences
+549,stoner metal
+550,melodic death metal with folk influences
+551,glam rock
+552,thrash metal
+553,black metal with industrial influences
+554,melodic death metal with electronic
+555,thrash metal with black metal elements
+556,blackened punk
+557,melodic death metal with doom influences
+558,blackened electronic
+559,deathrock
+560,melodic depressive black metal
+561,progressive black metal with middle eastern folk
+562,gospel
+563,psychedelic heavy metal
+564,groove metal with grunge elements
+565,melodic thrash metal
+566,thrash metal with progressive metal elements
+567,death metal with groove elements
+568,progressive extreme metal
+569,heavy metal with punk elements
+570,blackened death metal
+571,death metal with ambient influences
+572,death metal with hardcore elements
+573,soft
+574,witch house
+575,metalcore
+576,experimental noise
+577,death viking metal
+578,gothic metal with industrial influences
+579,viking metal with black
+580,melodic black metal with folk influences
+581,post metal
+582,avant-garde grindcore
+583,heavy metal with power metal elements
+584,experimental ambient black metal
+585,death industrial
+586,thrash metal with punk elements
+587,brutal death metal with hardcore influences
+588,metalcore with black metal elements
+589,thrash metal with folk influences
+590,rock with funk influences
+591,screamo
+592,atmospheric gothic rock
+593,thrash metal with grindcore influences
+594,thrash metal with alternative rock
+595,operatic symphonic metal
+596,glam metal
+597,thrash metal with rac elements
+598,rockabilly
+599,experimental post-metal
+600,heavy metal with punk influences
+601,industrial avant-garde metal
+602,doom metal with thrash influences
+603,hard rock with various influences
+604,atmospheric black n roll
+605,experimental post-black metal
+606,experimental brutal death metal
+607,melodic death metal with folk metal influences
+608,thrash metal with metalcore influences
+609,blackened grindcore
+610,black metal with ambient influences
+611,drone doom metal
+612,industrial blackened death metal
+613,atmospheric heavy metal with hard rock influences
+614,psychedelic doom metal
+615,melodic progressive power metal
+616,viking rock
+617,death metal with punk influences
+618,melodic symphonic heavy metal
+619,heavy metal with stoner rock influences
+620,epic melodic death metal
+621,progressive sludge metal with middle eastern influences
+622,post-punk with depressive black metal elements
+623,symphonic ambient
+624,hard rock with punk elements
+625,industrial hard rock
+626,alternative heavy
+627,technical death metal
+628,melodic neoclassical power metal
+629,operatic avant-garde metal
+630,symphonic metal with death metal elements
+631,symphonic raw black metal
+632,melodic heavy metal
+633,sludge metal with punk influences
+634,melodic heavy metal with neoclassical influences
+635,gothic metal with medieval influences
+636,progressive gothic rock
+637,extreme industrial metal
+638,brutal death metal with groove influences
+639,death metal with thrash
+640,stoner metal with hardcore elements
+641,thrash metal with metalcore elements
+642,noise rock
+643,melodic blackened death metal
+644,viking metal with black metal influences
+645,electronic death metal
+646,symphonic viking
+647,technical thrash metal
+648,symphonic black metal with classical influences
+649,heavy metal with blues influences
+650,melodic heavy metal with schlager influences
+651,blackened death metal with thrash elements
+652,doom metal with middle eastern folk influences
+653,raw industrial black metal
+654,avant-garde thrash metal
+655,power metal with progressive elements
+656,ritual ambient
+657,raw folk
+658,melodic heavy metal with hard rock influences
+659,death metal with melodic
+660,progressive folk metal
+661,death metal with progressive and thrash elements
+662,atmospheric folk metal
+663,melodic groove metal with industrial elements
+664,melodic death metal with folk
+665,doom metal with death metal elements
+666,symphonic black metal with doom elements
+667,ambient folk
+668,epic atmospheric black metal
+669,blackened rac
+670,groove metal with thrash metal influences
+671,krautrock
+672,epic pagan metal
+673,doom metal with grindcore influences
+674,experimental industrial metal
+675,heavy metal with post-punk influences
+676,atmsospheric black metal
+677,heavy metal with rock elements
+678,depressive black metal
+679,death metal with hardcore punk influences
+680,experimental psychedelic black metal
+681,experimental doom metal
+682,punk with rockabilly influences
+683,metal with classical influences
+684,rock with progressive elements
+685,death metal with gothic
+686,crustcore
+687,extreme avant-garde metal
+688,melodic black metal with punk influences
+689,blackened thrash n roll
+690,indie
+691,metalcore with gothic metal influences
+692,raw black metal with industrial influences
+693,pagan folk metal
+694,celtic folk metal
+695,melodic sludge metal
+696,experimental folk metal
+697,experimental thrash metal
+698,neoclassical progressive power metal
+699,groove metal with jazz influences
+700,ambient progressive stoner
+701,jazz rock
+702,middle eastern folk metal
+703,progressive symphonic rock
+704,progressive metal with rock influences
+705,avant-garde progressive metal
+706,spoken word
+707,melodic pop
+708,groove metal with hardcore influences
+709,metalcore with viking
+710,death metal with crust influences
+711,blackened shoegaze
+712,neoclassical metal
+713,gothic industrial
+714,symphonic hard rock
+715,melodic black metal
+716,psychedelic blues
+717,progressive electronic rock
+718,post-metal
+719,doom metal with thrash
+720,industrial thrash metal
+721,doom rock
+722,blackened progressive heavy
+723,black metal with middle eastern folk influences
+724,blackened symphonic heavy metal
+725,progressive viking
+726,melodic speed metal
+727,melodic crust punk
+728,atmospheric rock
+729,ambient black metal with industrial influences
+730,metalcore with groove metal elements
+731,grindcore with classical influences
+732,melodic progressive death metal
+733,psychedelic groove metal
+734,groove metal with gothic
+735,experimental grindcore
+736,symphonic metal with various influences
+737,death with black metal influences
+738,deathcore with grindcore influences
+739,black metal with rac
+740,melodic death metal with hard rock influences
+741,gothic metal with folk
+742,experimental sludge metal
+743,stoner metal with hardcore influences
+744,melodic heavy metal with death metal
+745,nu-metal with thrash metal elements
+746,industrial stoner metal
+747,heavy metal with thrash
+748,progressive metalcore
+749,hardcore with nu-metal influences
+750,electronic metalcore
+751,melodic death metal with rock and jazz influences
+752,epic progressive doom metal
+753,symphonic depressive black metal
+754,math rock
+755,hardcore with grindcore influences
+756,melodic heavy metal with gothic influences
+757,raw death
+758,psybient
+759,heavy metal with funk influences
+760,symphonic melodic black
+761,atomspheric funeral doom metal
+762,avant-garde death metal with jazz influences
+763,technical progressive groove metal
+764,sludge metal with death metal influences
+765,blackened heavy metal
+766,melodic rock
+767,noisegrind
+768,thrash metal with heavy metal influences
+769,symphonic melodic power metal
+770,reggae
+771,heavy metal with folk elements
+772,heavy metal with doom
+773,thrash metal with industrial influences
+774,power metal with electronic
+775,death metal with doom
+776,industrial alternative
+777,psychedelic death metal
+778,experimental acoustic
+779,epic symphonic black metal
+780,stoner metal with folk influences
+781,death metal with funk elements
+782,indie rock
+783,melodic progressive doom
+784,melodic shred
+785,southern metal
+786,atmsopheric post-black metal
+787,symphonic gothic metal with electronic elements
+788,downtempo
+789,experimental stoner metal
+790,epic doom metal
+791,power metal with gothic and doom influences
+792,melodic pagan black metal
+793,classical elements
+794,black metal with post-punk
+795,experimental technical melodic death metal
+796,industrial black metal with death
+797,black metal with industrial elements
+798,doom metal with crossover influences
+799,progressive pagan black metal
+800,melodic death metal with groove influences
+801,heavy metal with power and speed influences
+802,power metal with eastern folk influences
+803,neoclassical speed metal
+804,avant-garde brutal death metal
+805,thrash metal with groove metal elements
+806,groove metal with alternative rock elements
+807,avant-garde extreme metal
+808,gothic metal with black metal influences
+809,epic melodic heavy metal
+810,grindcore with thrash elements
+811,death metal with rock influences
+812,atmospheric power metal
+813,melodic industrial death metal
+814,progressive metal with melodic death metal
+815,cybergrind
+816,thrash n roll
+817,atmospheric groove
+818,thrash metal with rock n roll elements
+819,crossver
+820,rock ballad
+821,melodic pagan metal
+822,extreme groove metal
+823,blackened progressive sludge
+824,drone metal
+825,blackened ebm
+826,southern groove
+827,easy listening
+828,hard rock with thrash metal elements
+829,death metal with southern rock influences
+830,thrash metal with death metal influences
+831,extreme industrial noise
+832,doom metal with middle eastern influences
+833,stoner metal with thrash influences
+834,hip-hop
+835,black metal with doom
+836,speed metal with progressive influences
+837,experimental drone doom
+838,roots
+839,technical extreme metal
+840,extreme power metal
+841,sludge metal with hardcore influences
+842,grindcore with death metal elements
+843,horror punk
+844,hardcore with djent elements
+845,heavy metal with rock influences
+846,power metal with thrash elements
+847,blackened symphonic metalcore
+848,rock opera
+849,black metal influences
+850,cloud rap
+851,hardcore with thrash metal elements
+852,melodic blackened doom metal
+853,death metal with black metal
+854,thrash metal with death metal elements
+855,grindcore with rock
+856,doom metal with thrash elements
+857,funeral doom metal
+858,atmospheric sludge metal
+859,death metal with crossover influences
+860,death metal with groove metal influences
+861,hardcore with middle eastern influences
+862,atmospheric sludge metal with hardcore influences
+863,funk metal
+864,symphonic power metal with electronic influences
+865,sluge
+866,pop punk
+867,gothic metal with progressive elements
+868,progressive metal
+869,heavy metal with thrash elements
+870,brutal technical death metal
+871,progressive metal with dark ambient elements
+872,grindcore with industrial influences
+873,thrash metal influences
+874,death metal with progressive influences
+875,power metal with hardcore elements
+876,black metal with gothic
+877,shred with heavy metal elements
+878,ambient drone
+879,symphonic progressive heavy metal
+880,punk with grindcore influences
+881,neoclassical black metal
+882,martial industrial
+883,melodic deathcore
+884,melodic progressive heavy metal
+885,gothic metal with rock influences
+886,atmospheric post-black metal with doom metal influences
+887,acoustic
+888,avant-garde sludge
+889,hard rock with thrash and groove influences
+890,heavy metal with hardcore
+891,trap
+892,symphonic industrial metal
+893,blackened death metal with crust punk influences
+894,symphonic power metal
+895,power metal
+896,alternative thrash
+897,extreme folk metal
+898,progressive neoclassical power
+899,post-punk with various influences
+900,thrash metal with oi! influences
+901,bluegrass
+902,thrash metal with hardcore influences
+903,blackened technical death metal
+904,atmospheric death metal
+905,hardcore with death metal influences
+906,black metal with ambient elements
+907,blackened post-metal
+908,shred with rock influences
+909,pagan metal
+910,brutal death metal with neoclassical influences
+911,progressive doom metal
+912,heavy metal with sludge
+913,atmospheric alternative
+914,atmospheric post-metal
+915,thrash metal with hardcore elements
+916,groove metal with sludge
+917,speed metal
+918,metalcore with thrash metal elements
+919,technical doom metal
+920,progressive post-rock
+921,martial dark ambient
+922,death metal with gothic influences
+923,experimental technical death metal
+924,avant-garde progressive black
+925,progressive melodic death metal
+926,metalcore with death metal elements
+927,heavy metal with death metal elements
+928,black metal with metalcore influences
+929,goregrind with doom metal elements
+930,folk rock
+931,blackened atmospheric death metal
+932,death metal with speed
+933,blackened post-hardcore
+934,progressive death metal with punk influences
+935,progressive stoner metal
+936,death metal with industrial elements
+937,symphonic epic power metal
+938,melodic black metal with folk
+939,symphonic progressive rock
+940,black metal with folk influences
+941,groove metal with industrial elements
+942,thrash metal with crossover elements
+943,death metal with heavy rock influences
+944,hard rock with nu-metal influences
+945,thrash metal with black
+946,industrial black metal with new wave influences
+947,death metal with grindcore and stoner metal influences
+948,death metal with black metal influences
+949,experimental southern
+950,blackened hardcore
+951,death metal with hardcore influences
+952,progressive melodic groove metal
+953,blackened goregrind
+954,oriental folk
+955,melodic viking metal
+956,nu-metal
+957,heavy metal with middle eastern influences
+958,melodic hard rock
+959,symphonic progressive death metal
+960,progressive thrash metal with doom elements
+961,metalcore with death metal
+962,epic crust
+963,alternative hard rock
+964,progressive metal with gothic influences
+965,groove metal influences
+966,grindcore with black metal elements
+967,symphonic epic black metal
+968,melodic death metal with grindcore elements
+969,stoner metal with punk elements
+970,symphonic progressive black metal
+971,blackened experimental metal
+972,stoner metal with groove influences
+973,symphonic rock
+974,heavy metal with rac influences
+975,alternative metal
+976,southern metal influences
+977,blackened thrash metal
+978,progressive death metal
+979,hard rock with funk influences
+980,melodic progressive rock
+981,industrial rock
+982,thrash metal with alternative influences
+983,thrash metal with gothic elements
+984,experimental black metal
+985,soundtrack
+986,film score
+987,raw post-black metal
+988,doom metal influences
+989,power metal with thrash metal elements
+990,progressive metal with middle eastern folk influences
+991,doom metal with progressive influences
+992,avant-garde metal
+993,deathcore with technical
+994,raw black metal
+995,avant-garde metal with folk elements
+996,progressive symphonic black metal
+997,thrash metal with death influences
+998,symphonic folk metal
+999,gothic metal with doom elements
+1000,epic black metal with folk influences
+1001,epic folk metal
+1002,raw viking
+1003,raw melodic black metal
+1004,rap rock
+1005,groove metal with alternative influences
+1006,psychedelic drone
+1007,progressive metal with various influences
+1008,dark ritual ambient
+1009,heavy metal with power metal and hard rock influences
+1010,doom metal with alternative influences
+1011,neofolk black metal
+1012,digital hardcore
+1013,heavy metal influences
+1014,symphonic metal
+1015,psychedelic rock
+1016,death metal influences
+1017,heavy groove
+1018,death metal with grindcore
+1019,melodic progressive thrash metal
+1020,gothic metal with thrash influences
+1021,heavy metal with folk
+1022,doom metal with industrial influences
+1023,psychedelic black metal
+1024,technical sludge metal
+1025,stoner metal with various influences
+1026,thrash metal with stoner influences
+1027,death metal with power metal influences
+1028,technical brutal death metal
+1029,death metal with doom metal influences
+1030,post-industrial metal
+1031,heavy metal with doom influences
+1032,gothic metal with middle eastern influences
+1033,progressive hard rock
+1034,groove metal with metalcore elements
+1035,electronic goregrind
+1036,thrash metal with alternative rock influences
+1037,folk black metal
+1038,power metal with folk elements
+1039,atmospheric gothic metal
+1040,grindcore with death metal influences
+1041,death metal with industrial and noise influences
+1042,blackened power metal
+1043,psychedelic hard rock
+1044,death metal with grindcore influences
+1045,death metal with heavy metal influences
+1046,doom metal with electronic elements
+1047,raw symphonic black metal
+1048,doom metal with thrash metal influences
+1049,experimental progressive metal
+1050,blackened epic heavy metal
+1051,technical power metal
+1052,progessive
+1053,progressive neoclassical metal
+1054,atmospheric progressive sludge
+1055,stoner metal with doom metal influences
+1056,heavy progressive
+1057,black metal with surf rock influences
+1058,brutal death metal with grindcore influences
+1059,industrial hip-hop
+1060,avant-garde folk
+1061,black metal with symphonic elements
+1062,black metal
+1063,death metal with alternative influences
+1064,gothic metal with folk influences
+1065,a cappella
+1066,experimental metalcore
+1067,grindcore with melodic and power metal elements
+1068,death metal with middle eastern folk influences
+1069,atmospheric progressive rock
+1070,ritual dark ambient
+1071,heavy metal with medieval influences
+1072,symphonic thrash metal
+1073,avant-garde industrial death metal
+1074,psychedelic pop
+1075,melodic atmospheric death metal
+1076,death metal with various influences
+1077,atmospheric ambient doom metal
+1078,power metal with viking influences
+1079,progressive death metal with hardcore elements
+1080,black metal with hardcore elements
+1081,melodic death metal with alternative influences
+1082,black metal with hardcore influences
+1083,heavy metal with psychedelic influences
+1084,melodic heavy metal with folk elements
+1085,industrial metal with death metal
+1086,experimental industrial doom
+1087,mathcore
+1088,symphonic heavy metal
+1089,industrial metal with sludge metal elements
+1090,death metal with rac influences
+1091,experimental avant-garde death metal
+1092,progressive psychedelic doom
+1093,djent
+1094,death elements
+1095,blackened heavy metal with folk influences
+1096,nu-metal with funk influences
+1097,d-beat
+1098,goregrind with groove metal influences
+1099,symphonic death metal
+1100,experimental black metal with various rock influences
+1101,metalcore with electronic elements
+1102,power metal with various rock elements
+1103,melodic death metal with thrash influences
+1104,depressive gothic
+1105,industrial symphonic death
+1106,heavy metal with progressive rock influences
+1107,melodic power metal
+1108,raw thrash metal
+1109,melodic experimental metal
+1110,thrash metal with grunge elements
+1111,drone ambient
+1112,atmospheric pagan black metal
+1113,thrash metal with latin jazz influences
+1114,electronic power metal
+1115,blackened melodic death metal
+1116,progressive metal with thrash
+1117,blackened progressive metal
+1118,epic funeral doom metal
+1119,ambient with metal influences
+1120,symphonic extreme metal
+1121,thrash metal with middle eastern influences
+1122,electronic heavy metal
+1123,pagan celtic
+1124,melodic symphonic death metal
+1125,doom metal with ambient influences
+1126,blackened epic doom metal
+1127,progressive metal with death metal influences
+1128,brutal blackened death metal
+1129,progressive sludge metal with post-rock influences
+1130,epic power metal
+1131,techno
+1132,industrial melodic death metal
+1133,atmospheric pagan metal
+1134,progressive speed metal
+1135,progressive technical death metal
+1136,sludge metal influences
+1137,symphonic industrial death
+1138,atmospheric alternative rock
+1139,brutal death metal with doom influences
+1140,epic viking metal
+1141,atmospheric epic black metal
+1142,rock with doom metal
+1143,death metal with thrash metal elements
+1144,death metal with doom influences
+1145,blackened drone
+1146,alternative rock with industrial elements
+1147,shred metal
+1148,atmospheric symphonic death metal
+1149,metalcore with alternative rock influences
+1150,groove metal with various influences
+1151,symphonic black metal with industrial influences
+1152,experimental melodic death metal with industrial influences
+1153,melodic symphonic metal
+1154,thrash metal with doom and alternative rock influences
+1155,doom metal with industrial and noise influences
+1156,blackened groove metal
+1157,progessive black
+1158,melodic death metal influences
+1159,atmospheric black metal with folk influences
+1160,avant-garde symphonic metal
+1161,black metal with grindcore influences
+1162,avant-garde rock
+1163,depressive doom
+1164,metalcore with death influences
+1165,thrash metal with crust influences
+1166,medieval black metal
+1167,pagan black metal with folk
+1168,metal with latin influences
+1169,atmospheric death metal with industrial influences
+1170,pagan doom metal with folk influences
+1171,epic pagan black metal
+1172,avant-garde doom metal
+1173,blackened symphonic death metal
+1174,heavy metal with doom elements
+1175,folk metalcore
+1176,death metal with industrial
+1177,reggaeton
+1178,doom metal with folk influences
+1179,atmospheric post-black metal
+1180,atmospheric gothic metal with classical influences
+1181,folk metal with industrial elements
+1182,blackened industrial metal
+1183,melodic death metal with nu-metal influences
+1184,extreme heavy metal
+1185,hardcore with flamenco influences
+1186,experimental extreme metal
+1187,progressive metal with folk
+1188,groove metal with thrash metal elements
+1189,hardcore with gothic influences
+1190,black metal with drone influences
+1191,groove metal with funk elements
+1192,melodic power metal with classical influences
+1193,sludge metal with thrash metal elements
+1194,doom metal with punk and black metal elements
+1195,operatic heavy metal
+1196,dark industrial noise
+1197,technical avant-garde metal
+1198,progressive ambient
+1199,symphonic metal with electronic music influences
+1200,melodic epic death metal
+1201,melodic death metal with hardcore influences
+1202,industrial blackened sludge metal
+1203,black metal with crust influences
+1204,atmospheric melodic black metal
+1205,power metal with various rock influences
+1206,electronic metal
+1207,heavy metal with deathcore influences
+1208,industrial drone doom metal
+1209,atmospheric raw black metal
+1210,progressive symphonic metal
+1211,neoclassical gothic metal
+1212,progressive metal with middle eastern influences
+1213,thrash metal with funk influences
+1214,industrial experimental metal
+1215,metalcore with crossover
+1216,gothic heavy metal
+1217,gothic metal with thrash and death metal elements
+1218,doom metal with gothic influences
+1219,raw pagan metal
+1220,melodic death metal with trance elements
+1221,epic technical death
+1222,groove metal with hardcore elements
+1223,progressive folk heavy
+1224,melodic death metal with rock influences
+1225,hard rock with oi!
+1226,technical death metal with groove influences
+1227,blackened psychedelic stoner
+1228,punk with thrash metal influences
+1229,folk metal with punk influences
+1230,shred with oriental influences
+1231,symphonic pagan black metal
+1232,atmospheric black metal with darkwave elements
+1233,avant-garde blackened death metal
+1234,blackened metalcore
+1235,doom metal with folk elements
+1236,doom metal
+1237,black metal with crust
+1238,progressive metal with folk influences
+1239,raw blackened thrash metal
+1240,melodic folk metal
+1241,neoclassical progressive heavy metal
+1242,black metal with gothic influences
+1243,stoner metal with black metal influences
+1244,blackened symphonic metal
+1245,acoustic death
+1246,experimental melodic black
+1247,progressive death metal with jazz influences
+1248,avant-garde atmospheric doom metal
+1249,neoclassical power metal
+1250,thrash metal with punk influences
+1251,groove metal with thrash elements
+1252,death metal with classical influences
+1253,epic stoner
+1254,folk metal with hard rock elements
+1255,progressive thrash metal
+1256,metal with death metal and industrial influences
+1257,black metal with progressive elements
+1258,metalcore with thrash elements
+1259,black metal with folk
+1260,thrash metal with rock n roll influences
+1261,melodic atmospheric doom
+1262,hard rock with funk elements
+1263,thrash metal with gothic
+1264,atmospheric melodic doom
+1265,death metal with progressive elements
+1266,experimental gothic
+1267,grindcore with heavy metal influences
+1268,death metal with deathcore influences
+1269,psychedelic folk metal
+1270,powerviolence
+1271,metalcore with eastern folk influences
+1272,folk death metal
+1273,progressive symphonic power metal
+1274,world folk
+1275,thrash metal with grindcore elements
+1276,epic gothic
+1277,blackened viking
+1278,thrash metal with death metal
+1279,gothic doom metal
+1280,vaporwave
+1281,metal with electronic influences
+1282,country
+1283,ska punk
+1284,thrash metal with stoner
+1285,avant-garde electronic black metal
+1286,speed metal with oi! influences
+1287,progressive epic heavy metal
+1288,heavy metal with prehispanic folk influences
+1289,gothic metal with power metal elements
+1290,melodic brutal death metal
+1291,epic heavy metal with progressive elements
+1292,symphonic epic gothic
+1293,post-metal with folk influences
+1294,stoner metal with celtic folk elements
+1295,world music
+1296,symphonic neoclassical metal
+1297,technical thrash metal with groove influences
+1298,avant-garde symphonic black metal
+1299,death metal with jazz influences
+1300,dance
+1301,electronic rock
+1302,avant-garde pagan metal
+1303,symphonic atmospheric black metal
+1304,nu-metal influences
+1305,black metal with rac influences
+1306,hardcore with death metal elements
+1307,industrial brutal death metal
+1308,pop rock
+1309,hard rock with thrash metal influences
+1310,synthwave elements
+1311,melodic black metal with power metal influences
+1312,thrash metal with folk and gothic influences
+1313,atmospheric melodic viking
+1314,progressive groove metal
+1315,chillwave
+1316,electronic deathcore
+1317,raw black metal with punk influences
+1318,melodic symphonic black metal
+1319,symphonic metal with electro
+1320,progressive melodic heavy metal
+1321,heavy metal with hardcore influences
+1322,power electronics
+1323,industrial blackened gothic metal
+1324,melodic death metal with thrash
+1325,thrash metal with punk
+1326,blackened gothic metal
+1327,blackened stoner metal
+1328,thrash metal with progressive influences
+1329,black n roll
+1330,progressive metal with melodic death metal influences
+1331,epic folk black
+1332,melodic doom metal
+1333,phonk
+1334,thrash metal with doom influences
+1335,atmospheric blackened doom metal
+1336,black metal with medieval influences
+1337,synth punk
+1338,fusion with hard rock influences
+1339,heavy metal with various influences
+1340,symphonic electronic metal
+1341,neoclassical melodic power metal
+1342,atmospheric progressive metal
+1343,industrial grindcore
+1344,technical groove metal
+1345,symphonic funeral doom metal
+1346,psychedelic progressive gothic
+1347,heavy metal with doom metal
+1348,deathcore with djent
+1349,symphonic black metal with folk influences
+1350,technical progressive black metal
+1351,doom metal with various influences
+1352,metalcore with thrash metal influences
+1353,black metal with heavy metal influences
+1354,space rock
+1355,gothic metal with power metal influences
+1356,symphonic metal with black metal influences
+1357,epic progressive heavy metal
+1358,ambient doom metal
+1359,melodic thrash metal with progressive influences
+1360,rock with grunge elements
+1361,experimental blackened death metal
+1362,progressive and rock elements
+1363,progressive metal with black and doom influences
+1364,metalcore with symphonic elements
+1365,groove metal with industrial influences
+1366,progressive metal with jazz elements
+1367,brutal death metal with deathcore elements
+1368,folk metal
+1369,technical deathcore
+1370,technical heavy metal
+1371,progressive metal with thrash elements
+1372,metalcore with grindcore influences
+1373,classical medieval melodic
+1374,rock with middle eastern influences
+1375,progressive avant-garde black metal

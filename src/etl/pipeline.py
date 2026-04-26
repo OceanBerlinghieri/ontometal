@@ -33,31 +33,36 @@ class Pipeline:
         print("Running...")
 
         working_dir = os.getcwd()
+        # Data read
+
+        # Just get distinct genres for normalization, as labels has 'specializations' which are not musical genres
+        distinct_genres = self.genre_repository.get_band_genres(
+            path=os.path.join(working_dir, "src/etl/data/raw", "metal_bands_roster.csv")
+        ).drop_duplicates().dropna()
+
+        band_countries = self.country_repository.get_band_countries(
+            path=os.path.join(working_dir, "src/etl/data/raw", "metal_bands_roster.csv")
+        )
+
+        label_countries = self.country_repository.get_label_countries(
+            path=os.path.join(working_dir, "src/etl/data/raw", "labels_roster.csv")
+        )
+
+        releases = self.release_repository.get_releases(
+            path=os.path.join(
+                working_dir, "src/etl/data/raw", "all_bands_discography.csv"
+            )
+        )
+
+        bands = self.band_repository.get_bands(
+            path=os.path.join(working_dir, "src/etl/data/raw", "metal_bands_roster.csv")
+        ).drop_duplicates()
+
         # Genres
-        band_genres = self.genre_repository.get_band_genres(
-            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
-        )
-
-        label_specializations = self.genre_repository.get_label_specializations(
-            path=os.path.join(working_dir, "src/etl/raw", "labels_roster.csv")
-        )
-
-        distinct_genres = (
-            pd.concat([band_genres, label_specializations]).drop_duplicates().dropna()
-        )
-
         genre_normalization = GenreNormalization()
         normalized_genres = genre_normalization.normalize(distinct_genres)
 
         # Countries
-        band_countries = self.country_repository.get_band_countries(
-            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
-        )
-
-        label_countries = self.country_repository.get_label_countries(
-            path=os.path.join(working_dir, "src/etl/raw", "labels_roster.csv")
-        )
-
         distinct_countries = (
             pd.concat([band_countries, label_countries]).drop_duplicates().dropna()
         )
@@ -65,19 +70,11 @@ class Pipeline:
         normalized_countries = CountryNormalization().normalize(distinct_countries)
 
         # Releases
-        releases = self.release_repository.get_releases(
-            path=os.path.join(working_dir, "src/etl/raw", "all_bands_discography.csv")
-        )
-
-        bands = self.band_repository.get_bands(
-            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
-        )
-
         normalized_releases = ReleaseNormalization().normalize(releases, bands)
 
         # Labels
         labels = self.label_repository.get_labels(
-            path=os.path.join(working_dir, "src/etl/raw", "labels_roster.csv")
+            path=os.path.join(working_dir, "src/etl/data/raw", "labels_roster.csv")
         )
 
         normalized_labels = LabelNormalization().normalize(
@@ -85,14 +82,32 @@ class Pipeline:
         )
 
         # Bands
-        bands = self.band_repository.get_bands(
-            path=os.path.join(working_dir, "src/etl/raw", "metal_bands_roster.csv")
-        )
-
         normalized_bands = BandNormalization().normalize(
             bands,
             normalized_countries,
             normalized_labels,
             genre_normalization.genre_map,
             normalized_releases,
+        )
+
+        # Save normalized datasets
+        self.genre_repository.write_genres(
+            normalized_genres,
+            path=os.path.join(working_dir, "src/etl/data/normalized", "genres.csv"),
+        )
+        self.country_repository.write_countries(
+            normalized_countries,
+            path=os.path.join(working_dir, "src/etl/data/normalized", "countries.csv"),
+        )
+        self.release_repository.write_releases(
+            normalized_releases,
+            path=os.path.join(working_dir, "src/etl/data/normalized", "releases.csv"),
+        )
+        self.label_repository.write_labels(
+            normalized_labels,
+            path=os.path.join(working_dir, "src/etl/data/normalized", "labels.csv"),
+        )
+        self.band_repository.write_bands(
+            normalized_bands,
+            path=os.path.join(working_dir, "src/etl/data/normalized", "bands.csv"),
         )

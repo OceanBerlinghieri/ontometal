@@ -15,5 +15,5 @@ class CountryNormalization:
             normalized_countries.append(
                 Country(id=idx, name=country["Country"].strip().lower())
             )
-        result = DataFrame([vars(c) for c in normalized_countries])
-        return result
+        normalized_countries = DataFrame([vars(c) for c in normalized_countries])
+        return normalized_countries

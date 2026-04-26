@@ -10,5 +10,9 @@ class LabelRepository(ABC):
         self.resource = resource
 
     @abstractmethod
-    def get_labels(self, path, header=0) -> DataFrame:
+    def get_labels(self, path: str, header: int =0) -> DataFrame:
+        pass
+
+    @abstractmethod
+    def write_labels(self, labels: DataFrame, path: str):
         pass

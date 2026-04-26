@@ -1,3 +1,4 @@
+import re
 from pandas import DataFrame
 
 from src.etl.entities.genre import Genre
@@ -17,24 +18,32 @@ class GenreNormalization:
 
         all_genres = self._split_into_all_genres(genres)
 
-        unique_genres = list(set(g.lower() for g in all_genres))
+        all_genres = list(set(g.lower() for g in all_genres))
 
-        filtered_global = self._filter_non_specific_genres(unique_genres)
+        filtered_global = self._filter_non_specific_genres(all_genres)
 
-        self._build_genre_map(unique_genres, filtered_global)
+        self._build_genre_map(all_genres, filtered_global)
 
         normalized_genres = self._create_normalized_genres(all_genres, filtered_global)
 
-        result = DataFrame([vars(g) for g in normalized_genres])
-        return result.drop_duplicates(subset=["name"]).reset_index(drop=True)
+        normalized_genres = DataFrame([vars(g) for g in normalized_genres])
+        return normalized_genres.drop_duplicates(subset=["name"]).reset_index(drop=True)
 
     def _split_into_all_genres(self, genres: DataFrame) -> list[str]:
         all_genres = []
 
         for _, row in genres.iterrows():
             genre_str = str(row["Genre"]).strip()
+            # Clean up genre string by removing details in parentheses, quotes, etc.
+            cleaned_genre_str = re.sub(r"\(.*?\)|\'|’", "", genre_str)
+            cleaned_genre_str = re.sub(r"\s+", " ", cleaned_genre_str).strip()
+
             split_genres = [
-                g.strip() for g in genre_str.replace(",", "/").split("/") if g.strip()
+                g.strip() for g in cleaned_genre_str
+                .replace(",", "/")
+                .replace(";", "/")
+                .replace(".", "/")
+                .split("/") if g.strip() and len(g.strip()) > 3
             ]
             all_genres.extend(split_genres)
         return all_genres
