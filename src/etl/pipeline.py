@@ -34,6 +34,8 @@ class Pipeline:
 
         working_dir = os.getcwd()
         # Data read
+
+        # Just get distinct genres for normalization, as labels has 'specializations' which are not musical genres
         distinct_genres = self.genre_repository.get_band_genres(
             path=os.path.join(working_dir, "src/etl/data/raw", "metal_bands_roster.csv")
         ).drop_duplicates().dropna()
