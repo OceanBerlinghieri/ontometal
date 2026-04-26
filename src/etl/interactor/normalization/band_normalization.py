@@ -26,13 +26,13 @@ class BandNormalization:
     def _merge_countries(self, labels, normalized_countries):
         labels["_country_lower"] = labels["Country"].str.strip().str.lower()
         labels = labels.merge(
-            normalized_countries[["name"]],
+            normalized_countries[["name", "id"]],
             left_on="_country_lower",
             right_on="name",
             how="left",
         )
-        labels = labels.drop(columns=["Country", "_country_lower"])
-        labels = labels.rename(columns={"name": "country"})
+        labels = labels.drop(columns=["Country", "_country_lower", "name"])
+        labels = labels.rename(columns={"id": "hasCountry"})
         return labels
 
     def _merge_labels(self, bands, normalized_labels):
@@ -63,10 +63,10 @@ class BandNormalization:
 
     def _merge_releases(self, bands: DataFrame, releases: DataFrame) -> DataFrame:
         releases_grouped = (
-            releases.groupby("releasedBy")["releaseTitle"]
+            releases.groupby("releasedBy")["releaseId"]
             .apply(list)
             .reset_index()
-            .rename(columns={"releaseTitle": "releases"})
+            .rename(columns={"releaseId": "releases"})
         )
 
         bands = bands.merge(
@@ -89,9 +89,11 @@ class BandNormalization:
                     status=str(row["Status"]).strip().lower(),
                     metalArchiveUrl=str(row["URL"]).strip().lower(),
                     releases=row["releases"],
-                    producedBy=int(row["producedBy"]) if pd.notna(row["producedBy"]) else None,
+                    producedBy=(
+                        int(row["producedBy"]) if pd.notna(row["producedBy"]) else None
+                    ),
                     hasGenre=row["genre"],
-                    hasCountry=row["country"],
+                    hasCountry=int(row["hasCountry"]) if pd.notna(row["hasCountry"]) else None,
                 )
             )
 
