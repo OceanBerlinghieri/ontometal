@@ -9,13 +9,13 @@ class ReleaseNormalization:
         pass
 
     def normalize(self, releases: DataFrame, bands: DataFrame) -> DataFrame:
-        releases_with_bands = releases.merge(
+        normalized_releases = releases.merge(
             bands, left_on="Band ID", right_on="Band ID", how="left"
         )
 
-        normalized_releases = self._create_release_entities(releases_with_bands)
-        result = DataFrame([vars(r) for r in normalized_releases])
-        return result
+        normalized_releases = self._create_release_entities(normalized_releases)
+        normalized_releases = DataFrame([vars(r) for r in normalized_releases])
+        return normalized_releases
 
     def _create_release_entities(self, releases_with_bands: DataFrame) -> list[Release]:
         normalized_releases = []

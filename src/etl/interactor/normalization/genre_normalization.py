@@ -17,16 +17,16 @@ class GenreNormalization:
 
         all_genres = self._split_into_all_genres(genres)
 
-        unique_genres = list(set(g.lower() for g in all_genres))
+        all_genres = list(set(g.lower() for g in all_genres))
 
-        filtered_global = self._filter_non_specific_genres(unique_genres)
+        filtered_global = self._filter_non_specific_genres(all_genres)
 
-        self._build_genre_map(unique_genres, filtered_global)
+        self._build_genre_map(all_genres, filtered_global)
 
         normalized_genres = self._create_normalized_genres(all_genres, filtered_global)
 
-        result = DataFrame([vars(g) for g in normalized_genres])
-        return result.drop_duplicates(subset=["name"]).reset_index(drop=True)
+        normalized_genres = DataFrame([vars(g) for g in normalized_genres])
+        return normalized_genres.drop_duplicates(subset=["name"]).reset_index(drop=True)
 
     def _split_into_all_genres(self, genres: DataFrame) -> list[str]:
         all_genres = []
