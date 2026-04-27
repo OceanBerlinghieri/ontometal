@@ -2,6 +2,7 @@ import pandas as pd
 from pandas import DataFrame
 
 from etl.entities.label import Label
+from etl.interactor.normalization.genre_utils import clean_and_split_genres
 
 
 class LabelNormalization:
@@ -35,9 +36,7 @@ class LabelNormalization:
         def resolve_uncomplete_genres(spec):
             if pd.isna(spec) or not str(spec).strip():
                 return []
-            parts = [
-                g.strip() for g in str(spec).replace(",", "/").split("/") if g.strip()
-            ]
+            parts = clean_and_split_genres(spec)
             resolved = [genre_map.get(p.strip().lower()) for p in parts]
             return [r for r in resolved if r] or []
 
@@ -49,8 +48,14 @@ class LabelNormalization:
         return labels
 
     def _group_by_label(self, labels):
-        # Raw CSV has one row per label-band pair (a label appears N times for N bands). 
-        # Group by Label ID to get one row per label applying dict to keep one band occurence
+        # Raw CSV has one row per label-band pair (a label appears N times for N bands).
+        # For duplicate Label IDs, prefer active status and most complete data.
+        labels["_is_active"] = (labels["Status"].str.strip().str.lower() == "active").astype(int)
+        labels["_completeness"] = labels.notna().sum(axis=1)
+        labels = labels.sort_values(
+            ["_is_active", "_completeness"], ascending=[False, False]
+        )
+
         grouped = labels.groupby("Label ID", as_index=False).first()
 
         producer = (
@@ -63,7 +68,7 @@ class LabelNormalization:
 
         grouped["producer"] = producer
 
-        return grouped.drop(columns=["Band ID"])
+        return grouped.drop(columns=["Band ID", "_is_active", "_completeness"])
 
     def _create_normalized_labels(self, labels) -> list[Label]:
         normalized_labels = []

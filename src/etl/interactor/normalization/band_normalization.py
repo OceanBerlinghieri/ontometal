@@ -1,6 +1,7 @@
 import pandas as pd
 from pandas import DataFrame
 from etl.entities.band import Band
+from etl.interactor.normalization.genre_utils import clean_and_split_genres
 
 
 class BandNormalization:
@@ -12,12 +13,18 @@ class BandNormalization:
         bands: DataFrame,
         countries: DataFrame,
         labels: DataFrame,
-        genres: DataFrame,
+        genre_map: dict,
         releases: DataFrame,
     ) -> DataFrame:
+        # Remove bands with no name (NaN or literal "null") and discard all rows
+        # with non-unique Band ID for data consistency and idempotency. Only 0.2% of bands lost.
+        bands = bands.dropna(subset=["Name"])
+        bands = bands[~bands["Name"].str.strip().str.lower().isin(["null"])]
+        bands = bands.drop_duplicates(subset=["Band ID"], keep=False)
+
         normalized_bands = self._merge_countries(bands, countries)
         normalized_bands = self._merge_labels(normalized_bands, labels)
-        normalized_bands = self._merge_genres(normalized_bands, genres)
+        normalized_bands = self._merge_genres(normalized_bands, genre_map)
         normalized_bands = self._merge_releases(normalized_bands, releases)
         normalized_bands = self._create_band_entities(normalized_bands)
         normalized_bands = DataFrame([vars(b) for b in normalized_bands])
@@ -52,19 +59,18 @@ class BandNormalization:
         def resolve_genres(genre_str):
             if pd.isna(genre_str) or not str(genre_str).strip():
                 return [None]
-            parts = [
-                g.strip()
-                for g in str(genre_str).replace(",", "/").split("/")
-                if g.strip()
-            ]
+            parts = clean_and_split_genres(genre_str)
             resolved = [genre_map.get(p.strip().lower()) for p in parts]
-            return [r for r in resolved if r] or [] 
+            return [r for r in resolved if r] or []
 
         bands["genre"] = bands["Genre"].apply(resolve_genres)
         bands = bands.drop(columns=["Genre"])
         return bands
 
     def _merge_releases(self, bands: DataFrame, releases: DataFrame) -> DataFrame:
+        releases = releases.copy()
+        releases["releasedBy"] = releases["releasedBy"].astype(int)
+        releases["releaseId"] = releases["releaseId"].astype(int)
         releases_grouped = (
             releases.groupby("releasedBy")["releaseId"]
             .apply(list)

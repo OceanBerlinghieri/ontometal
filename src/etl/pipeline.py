@@ -93,21 +93,21 @@ class Pipeline:
         # Save normalized datasets
         self.genre_repository.write_genres(
             normalized_genres,
-            path=os.path.join(working_dir, "src/etl/data/normalized", "genres.csv"),
+            path=os.path.join(working_dir, "src/etl/data/normalized", "genres_v2.csv"),
         )
         self.country_repository.write_countries(
             normalized_countries,
-            path=os.path.join(working_dir, "src/etl/data/normalized", "countries.csv"),
+            path=os.path.join(working_dir, "src/etl/data/normalized", "countries_v2.csv"),
         )
         self.release_repository.write_releases(
             normalized_releases,
-            path=os.path.join(working_dir, "src/etl/data/normalized", "releases.csv"),
+            path=os.path.join(working_dir, "src/etl/data/normalized", "releases_v2.csv"),
         )
         self.label_repository.write_labels(
             normalized_labels,
-            path=os.path.join(working_dir, "src/etl/data/normalized", "labels.csv"),
+            path=os.path.join(working_dir, "src/etl/data/normalized", "labels_v2.csv"),
         )
         self.band_repository.write_bands(
             normalized_bands,
-            path=os.path.join(working_dir, "src/etl/data/normalized", "bands.csv"),
+            path=os.path.join(working_dir, "src/etl/data/normalized", "bands_v2.csv"),
         )
