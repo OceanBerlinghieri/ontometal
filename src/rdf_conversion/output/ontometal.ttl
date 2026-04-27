@@ -1,0 +1,690 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix om: <https://w3id.org/ontometal#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:available rdfs:subPropertyOf dcterms:date ;
+    owl:equivalentProperty om:releaseYear .
+
+<http://purl.org/ontology/mo/Genre> owl:equivalentClass om:Genre .
+
+<http://purl.org/ontology/mo/Label> owl:equivalentClass om:Label .
+
+<http://purl.org/ontology/mo/MusicGroup> owl:equivalentClass om:Band .
+
+<http://purl.org/ontology/mo/releaseType> rdfs:label "releaseType"@en ;
+    rdfs:comment "Defines de type of a release as album, single, compilation.."@en ;
+    rdfs:domain om:Release ;
+    rdfs:range <http://purl.org/ontology/mo/ReleaseType> .
+
+<https://w3id.org/ontometal> a owl:Ontology ;
+    dc:contributor "Ocean Berlinghieri García" ;
+    dc:created "2026-04-19" ;
+    dc:creator "Ocean Berlinghieri García" ;
+    dc:publisher "Ocean Berlinghieri García" ;
+    dc:title "ontometal" ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+    vann:preferredNamespacePrefix "om" ;
+    vann:preferredNamespaceUri "https://w3id.org/ontometal" ;
+    rdfs:comment "Ontology about metal music" ;
+    owl:imports <http://purl.org/ontology/mo/> ;
+    owl:versionIRI <https://w3id.org/ontometal-0.0.1_dev> ;
+    owl:versionInfo "0.0.1_dev - First ontology prototype" .
+
+om:Afghanistan a om:Country ;
+    om:countryName "afghanistan"^^xsd:string .
+
+om:Albania a om:Country ;
+    om:countryName "albania"^^xsd:string .
+
+om:Algeria a om:Country ;
+    om:countryName "algeria"^^xsd:string .
+
+om:Andorra a om:Country ;
+    om:countryName "andorra"^^xsd:string .
+
+om:Angola a om:Country ;
+    om:countryName "angola"^^xsd:string .
+
+om:Argentina a om:Country ;
+    om:countryName "argentina"^^xsd:string .
+
+om:Armenia a om:Country ;
+    om:countryName "armenia"^^xsd:string .
+
+om:Aruba a om:Country ;
+    om:countryName "aruba"^^xsd:string .
+
+om:Australia a om:Country ;
+    om:countryName "australia"^^xsd:string .
+
+om:Austria a om:Country ;
+    om:countryName "austria"^^xsd:string .
+
+om:Azerbaijan a om:Country ;
+    om:countryName "azerbaijan"^^xsd:string .
+
+om:Bahrain a om:Country ;
+    om:countryName "bahrain"^^xsd:string .
+
+om:Bangladesh a om:Country ;
+    om:countryName "bangladesh"^^xsd:string .
+
+om:Barbados a om:Country ;
+    om:countryName "barbados"^^xsd:string .
+
+om:Belarus a om:Country ;
+    om:countryName "belarus"^^xsd:string .
+
+om:Belgium a om:Country ;
+    om:countryName "belgium"^^xsd:string .
+
+om:Belize a om:Country ;
+    om:countryName "belize"^^xsd:string .
+
+om:Bolivia a om:Country ;
+    om:countryName "bolivia"^^xsd:string .
+
+om:BosniaAndHerzegovina a om:Country ;
+    om:countryName "bosnia and herzegovina"^^xsd:string .
+
+om:Botswana a om:Country ;
+    om:countryName "botswana"^^xsd:string .
+
+om:Brazil a om:Country ;
+    om:countryName "brazil"^^xsd:string .
+
+om:Brunei a om:Country ;
+    om:countryName "brunei"^^xsd:string .
+
+om:Bulgaria a om:Country ;
+    om:countryName "bulgaria"^^xsd:string .
+
+om:BurkinaFaso a om:Country ;
+    om:countryName "burkina faso"^^xsd:string .
+
+om:Cambodia a om:Country ;
+    om:countryName "cambodia"^^xsd:string .
+
+om:Canada a om:Country ;
+    om:countryName "canada"^^xsd:string .
+
+om:Chile a om:Country ;
+    om:countryName "chile"^^xsd:string .
+
+om:China a om:Country ;
+    om:countryName "china"^^xsd:string .
+
+om:Colombia a om:Country ;
+    om:countryName "colombia"^^xsd:string .
+
+om:CostaRica a om:Country ;
+    om:countryName "costa rica"^^xsd:string .
+
+om:Croatia a om:Country ;
+    om:countryName "croatia"^^xsd:string .
+
+om:Cuba a om:Country ;
+    om:countryName "cuba"^^xsd:string .
+
+om:Curaçao a om:Country ;
+    om:countryName "curaçao"^^xsd:string .
+
+om:Cyprus a om:Country ;
+    om:countryName "cyprus"^^xsd:string .
+
+om:Czechia a om:Country ;
+    om:countryName "czechia"^^xsd:string .
+
+om:Denmark a om:Country ;
+    om:countryName "denmark"^^xsd:string .
+
+om:DominicanRepublic a om:Country ;
+    om:countryName "dominican republic"^^xsd:string .
+
+om:EastTimor a om:Country ;
+    om:countryName "east timor"^^xsd:string .
+
+om:Ecuador a om:Country ;
+    om:countryName "ecuador"^^xsd:string .
+
+om:Egypt a om:Country ;
+    om:countryName "egypt"^^xsd:string .
+
+om:ElSalvador a om:Country ;
+    om:countryName "el salvador"^^xsd:string .
+
+om:Estonia a om:Country ;
+    om:countryName "estonia"^^xsd:string .
+
+om:Ethiopia a om:Country ;
+    om:countryName "ethiopia"^^xsd:string .
+
+om:FalklandIslands a om:Country ;
+    om:countryName "falkland islands"^^xsd:string .
+
+om:FaroeIslands a om:Country ;
+    om:countryName "faroe islands"^^xsd:string .
+
+om:Finland a om:Country ;
+    om:countryName "finland"^^xsd:string .
+
+om:France a om:Country ;
+    om:countryName "france"^^xsd:string .
+
+om:FrenchGuiana a om:Country ;
+    om:countryName "french guiana"^^xsd:string .
+
+om:FrenchPolynesia a om:Country ;
+    om:countryName "french polynesia"^^xsd:string .
+
+om:Georgia a om:Country ;
+    om:countryName "georgia"^^xsd:string .
+
+om:Germany a om:Country ;
+    om:countryName "germany"^^xsd:string .
+
+om:Gibraltar a om:Country ;
+    om:countryName "gibraltar"^^xsd:string .
+
+om:Greece a om:Country ;
+    om:countryName "greece"^^xsd:string .
+
+om:Greenland a om:Country ;
+    om:countryName "greenland"^^xsd:string .
+
+om:Guadeloupe a om:Country ;
+    om:countryName "guadeloupe"^^xsd:string .
+
+om:Guam a om:Country ;
+    om:countryName "guam"^^xsd:string .
+
+om:Guatemala a om:Country ;
+    om:countryName "guatemala"^^xsd:string .
+
+om:Guernsey a om:Country ;
+    om:countryName "guernsey"^^xsd:string .
+
+om:Guyana a om:Country ;
+    om:countryName "guyana"^^xsd:string .
+
+om:Honduras a om:Country ;
+    om:countryName "honduras"^^xsd:string .
+
+om:HongKong a om:Country ;
+    om:countryName "hong kong"^^xsd:string .
+
+om:Hungary a om:Country ;
+    om:countryName "hungary"^^xsd:string .
+
+om:Iceland a om:Country ;
+    om:countryName "iceland"^^xsd:string .
+
+om:India a om:Country ;
+    om:countryName "india"^^xsd:string .
+
+om:Indonesia a om:Country ;
+    om:countryName "indonesia"^^xsd:string .
+
+om:International a om:Country ;
+    om:countryName "international"^^xsd:string .
+
+om:Iran a om:Country ;
+    om:countryName "iran"^^xsd:string .
+
+om:Iraq a om:Country ;
+    om:countryName "iraq"^^xsd:string .
+
+om:Ireland a om:Country ;
+    om:countryName "ireland"^^xsd:string .
+
+om:IsleOfMan a om:Country ;
+    om:countryName "isle of man"^^xsd:string .
+
+om:Israel a om:Country ;
+    om:countryName "israel"^^xsd:string .
+
+om:Italy a om:Country ;
+    om:countryName "italy"^^xsd:string .
+
+om:Jamaica a om:Country ;
+    om:countryName "jamaica"^^xsd:string .
+
+om:Japan a om:Country ;
+    om:countryName "japan"^^xsd:string .
+
+om:Jersey a om:Country ;
+    om:countryName "jersey"^^xsd:string .
+
+om:Jordan a om:Country ;
+    om:countryName "jordan"^^xsd:string .
+
+om:Kazakhstan a om:Country ;
+    om:countryName "kazakhstan"^^xsd:string .
+
+om:Kenya a om:Country ;
+    om:countryName "kenya"^^xsd:string .
+
+<https://w3id.org/ontometal#Korea,South> a om:Country ;
+    om:countryName "korea, south"^^xsd:string .
+
+om:Kuwait a om:Country ;
+    om:countryName "kuwait"^^xsd:string .
+
+om:Kyrgyzstan a om:Country ;
+    om:countryName "kyrgyzstan"^^xsd:string .
+
+om:Laos a om:Country ;
+    om:countryName "laos"^^xsd:string .
+
+om:Latvia a om:Country ;
+    om:countryName "latvia"^^xsd:string .
+
+om:Lebanon a om:Country ;
+    om:countryName "lebanon"^^xsd:string .
+
+om:Libya a om:Country ;
+    om:countryName "libya"^^xsd:string .
+
+om:Liechtenstein a om:Country ;
+    om:countryName "liechtenstein"^^xsd:string .
+
+om:Lithuania a om:Country ;
+    om:countryName "lithuania"^^xsd:string .
+
+om:Luxembourg a om:Country ;
+    om:countryName "luxembourg"^^xsd:string .
+
+om:Madagascar a om:Country ;
+    om:countryName "madagascar"^^xsd:string .
+
+om:Malawi a om:Country ;
+    om:countryName "malawi"^^xsd:string .
+
+om:Malaysia a om:Country ;
+    om:countryName "malaysia"^^xsd:string .
+
+om:Maldives a om:Country ;
+    om:countryName "maldives"^^xsd:string .
+
+om:Malta a om:Country ;
+    om:countryName "malta"^^xsd:string .
+
+om:Mauritius a om:Country ;
+    om:countryName "mauritius"^^xsd:string .
+
+om:MetalGenre a owl:Class ;
+    rdfs:label "MetalGenre"@en ;
+    rdfs:comment "A class representing musical subgenres from metal music"@en ;
+    rdfs:subClassOf om:Genre .
+
+om:Mexico a om:Country ;
+    om:countryName "mexico"^^xsd:string .
+
+om:Moldova a om:Country ;
+    om:countryName "moldova"^^xsd:string .
+
+om:Monaco a om:Country ;
+    om:countryName "monaco"^^xsd:string .
+
+om:Mongolia a om:Country ;
+    om:countryName "mongolia"^^xsd:string .
+
+om:Montenegro a om:Country ;
+    om:countryName "montenegro"^^xsd:string .
+
+om:Morocco a om:Country ;
+    om:countryName "morocco"^^xsd:string .
+
+om:Mozambique a om:Country ;
+    om:countryName "mozambique"^^xsd:string .
+
+om:Myanmar a om:Country ;
+    om:countryName "myanmar"^^xsd:string .
+
+om:Namibia a om:Country ;
+    om:countryName "namibia"^^xsd:string .
+
+om:Nepal a om:Country ;
+    om:countryName "nepal"^^xsd:string .
+
+om:Netherlands a om:Country ;
+    om:countryName "netherlands"^^xsd:string .
+
+om:NewCaledonia a om:Country ;
+    om:countryName "new caledonia"^^xsd:string .
+
+om:NewZealand a om:Country ;
+    om:countryName "new zealand"^^xsd:string .
+
+om:Nicaragua a om:Country ;
+    om:countryName "nicaragua"^^xsd:string .
+
+om:NorthMacedonia a om:Country ;
+    om:countryName "north macedonia"^^xsd:string .
+
+om:Norway a om:Country ;
+    om:countryName "norway"^^xsd:string .
+
+om:Oman a om:Country ;
+    om:countryName "oman"^^xsd:string .
+
+om:Pakistan a om:Country ;
+    om:countryName "pakistan"^^xsd:string .
+
+om:Palestine a om:Country ;
+    om:countryName "palestine"^^xsd:string .
+
+om:Panama a om:Country ;
+    om:countryName "panama"^^xsd:string .
+
+om:Paraguay a om:Country ;
+    om:countryName "paraguay"^^xsd:string .
+
+om:Peru a om:Country ;
+    om:countryName "peru"^^xsd:string .
+
+om:Philippines a om:Country ;
+    om:countryName "philippines"^^xsd:string .
+
+om:Poland a om:Country ;
+    om:countryName "poland"^^xsd:string .
+
+om:Portugal a om:Country ;
+    om:countryName "portugal"^^xsd:string .
+
+om:PuertoRico a om:Country ;
+    om:countryName "puerto rico"^^xsd:string .
+
+om:Qatar a om:Country ;
+    om:countryName "qatar"^^xsd:string .
+
+om:Reunion a om:Country ;
+    om:countryName "reunion"^^xsd:string .
+
+om:Romania a om:Country ;
+    om:countryName "romania"^^xsd:string .
+
+om:Russia a om:Country ;
+    om:countryName "russia"^^xsd:string .
+
+om:SaintPierreAndMiquelon a om:Country ;
+    om:countryName "saint pierre and miquelon"^^xsd:string .
+
+om:SanMarino a om:Country ;
+    om:countryName "san marino"^^xsd:string .
+
+om:SaudiArabia a om:Country ;
+    om:countryName "saudi arabia"^^xsd:string .
+
+om:Serbia a om:Country ;
+    om:countryName "serbia"^^xsd:string .
+
+om:Singapore a om:Country ;
+    om:countryName "singapore"^^xsd:string .
+
+om:Slovakia a om:Country ;
+    om:countryName "slovakia"^^xsd:string .
+
+om:Slovenia a om:Country ;
+    om:countryName "slovenia"^^xsd:string .
+
+om:SouthAfrica a om:Country ;
+    om:countryName "south africa"^^xsd:string .
+
+om:Spain a om:Country ;
+    om:countryName "spain"^^xsd:string .
+
+om:SriLanka a om:Country ;
+    om:countryName "sri lanka"^^xsd:string .
+
+om:Suriname a om:Country ;
+    om:countryName "suriname"^^xsd:string .
+
+om:Svalbard a om:Country ;
+    om:countryName "svalbard"^^xsd:string .
+
+om:Sweden a om:Country ;
+    om:countryName "sweden"^^xsd:string .
+
+om:Switzerland a om:Country ;
+    om:countryName "switzerland"^^xsd:string .
+
+om:Syria a om:Country ;
+    om:countryName "syria"^^xsd:string .
+
+om:Taiwan a om:Country ;
+    om:countryName "taiwan"^^xsd:string .
+
+om:Tajikistan a om:Country ;
+    om:countryName "tajikistan"^^xsd:string .
+
+om:Thailand a om:Country ;
+    om:countryName "thailand"^^xsd:string .
+
+om:TrinidadAndTobago a om:Country ;
+    om:countryName "trinidad and tobago"^^xsd:string .
+
+om:Tunisia a om:Country ;
+    om:countryName "tunisia"^^xsd:string .
+
+om:Turkmenistan a om:Country ;
+    om:countryName "turkmenistan"^^xsd:string .
+
+om:Türkiye a om:Country ;
+    om:countryName "türkiye"^^xsd:string .
+
+om:Uganda a om:Country ;
+    om:countryName "uganda"^^xsd:string .
+
+om:Ukraine a om:Country ;
+    om:countryName "ukraine"^^xsd:string .
+
+om:UnitedArabEmirates a om:Country ;
+    om:countryName "united arab emirates"^^xsd:string .
+
+om:UnitedKingdom a om:Country ;
+    om:countryName "united kingdom"^^xsd:string .
+
+om:UnitedStates a om:Country ;
+    om:countryName "united states"^^xsd:string .
+
+om:Unknown a om:Country ;
+    om:countryName "unknown"^^xsd:string .
+
+om:Uruguay a om:Country ;
+    om:countryName "uruguay"^^xsd:string .
+
+om:Uzbekistan a om:Country ;
+    om:countryName "uzbekistan"^^xsd:string .
+
+om:Venezuela a om:Country ;
+    om:countryName "venezuela"^^xsd:string .
+
+om:Vietnam a om:Country ;
+    om:countryName "vietnam"^^xsd:string .
+
+om:Zimbabwe a om:Country ;
+    om:countryName "zimbabwe"^^xsd:string .
+
+om:bandID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "bandID"@en ;
+    rdfs:comment "Identifier by metal archives"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:long ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+om:bandName a owl:DatatypeProperty ;
+    rdfs:label "bandName"@en ;
+    rdfs:comment "Name of a given band"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:name .
+
+om:bandStatus a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "bandStatus" ;
+    rdfs:comment "Status of a band (active, split..)" ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:status .
+
+om:countryName a owl:DatatypeProperty ;
+    rdfs:label "countryName"@en ;
+    rdfs:comment "Name of a given country"@en ;
+    rdfs:domain om:Country ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:name .
+
+om:genreID a owl:DatatypeProperty ;
+    rdfs:label "genreID"@en ;
+    rdfs:comment "Identifier of a genre"@en ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+om:genreName a owl:DatatypeProperty ;
+    rdfs:label "genreName"@en ;
+    rdfs:comment "Name of a music genre"@en ;
+    rdfs:subPropertyOf foaf:name .
+
+om:hasCountry a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasCountry"@en ;
+    rdfs:comment "Relates an entity with its origin country"@en ;
+    rdfs:domain om:Band,
+        om:Label ;
+    rdfs:range om:Country ;
+    rdfs:subPropertyOf foaf:based_near .
+
+om:hasGenre a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "hasGenre"@en ;
+    rdfs:comment "Relates a band with one or more genres"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range om:Genre ;
+    rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> .
+
+om:hasSpecialization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "Relates a label with its preferred musical genre"@en,
+        "hasSpecialization"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range om:Genre ;
+    rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> .
+
+om:labelID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "labelID"@en ;
+    rdfs:comment "Identifier by metal archives"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:long ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+om:labelName a owl:DatatypeProperty ;
+    rdfs:label "labelName"@en ;
+    rdfs:comment "Name of a given label"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:name .
+
+om:labelStatus a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "labelStatus" ;
+    rdfs:comment "Status of a label (closed, active, changedName..)" ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:status .
+
+om:labelWebsiteURL a owl:DatatypeProperty ;
+    rdfs:label "labelWebsiteURL"@en ;
+    rdfs:comment "URL of a label website"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf om:url .
+
+om:metalArchivesURL a owl:DatatypeProperty ;
+    rdfs:label "metalArchivesURL"@en ;
+    rdfs:comment "URL of a band page in metal archives website"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf om:url .
+
+om:producedBy a owl:ObjectProperty ;
+    rdfs:label "producedBy" ;
+    rdfs:comment "Relates a band which is produces by a label"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range om:Band,
+        om:Label ;
+    rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ;
+    owl:inverseOf om:producer .
+
+om:releaseTitle a owl:DatatypeProperty ;
+    rdfs:label "releaseTitle"@en ;
+    rdfs:comment "Title of a band release"@en ;
+    rdfs:domain om:Release ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf dcterms:title .
+
+om:releasedBy a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "releasedBy"@en ;
+    rdfs:comment "Relates a release with the band that released it"@en ;
+    rdfs:domain om:Release ;
+    rdfs:range om:Band ;
+    rdfs:subPropertyOf foaf:made ;
+    owl:inverseOf om:releases .
+
+om:ÅlandIslands a om:Country ;
+    om:countryName "åland islands"^^xsd:string .
+
+om:producer a owl:ObjectProperty ;
+    rdfs:label "producer"@en ;
+    rdfs:comment "Relates a band or musical composition to its producer (label)"@en ;
+    rdfs:domain om:Band,
+        om:Label ;
+    rdfs:range om:Band ;
+    rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#agent> .
+
+om:releaseYear a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "releaseYear"@en ;
+    rdfs:comment "Year when a band release came out"@en ;
+    rdfs:domain om:Release ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf dcterms:date .
+
+om:releases a owl:ObjectProperty ;
+    rdfs:label "releases"@en ;
+    rdfs:comment "Relates a band with a release"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range om:Release ;
+    rdfs:subPropertyOf foaf:maker .
+
+om:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:comment "A link to acess a website" .
+
+om:Genre a owl:Class ;
+    rdfs:label "Genre"@en ;
+    rdfs:comment "Music genre class, equivalent to mo:Genre"@en .
+
+om:Release a owl:Class ;
+    rdfs:label "Release"@en ;
+    rdfs:comment "Music release from a band. Equivalent to mo:ReleaseType"@en .
+
+om:Label a owl:Class ;
+    rdfs:label "Label"@en ;
+    rdfs:comment "Comercial organization from music industry. Equivalent to mo:Label"@en .
+
+om:Band a owl:Class ;
+    rdfs:label "Band"@en ;
+    rdfs:comment "Class representing a music group. Equivalent to mo:MusicGroup"@en .
+
+om:Country a owl:Class ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "A class representing a country"@en .
+
