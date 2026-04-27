@@ -1,6 +1,8 @@
 import os
 
+from etl.repository.genre_repository import GenreRepository
 from rdf_conversion import ONTOMETAL
+from rdf_conversion.interactor.genre_converter import GenreConverter
 from rdf_conversion.repository.resource.turtle_resource import TurtleResource
 from rdflib import Graph
 
@@ -10,17 +12,18 @@ from rdf_conversion.repository.country_repository import CountryRepository
 
 class Pipeline:
     def __init__(
-        self, country_repository: CountryRepository, turtle_resource: TurtleResource
+        self, country_repository: CountryRepository, genre_repository: GenreRepository, turtle_resource: TurtleResource
     ):
         self.country_repository = country_repository
+        self.genre_repository = genre_repository
         self.turtle_resource = turtle_resource
 
     def run(self):
         working_dir = os.getcwd()
 
-        # Load existing ontology from output
+        # Load base ontology skeleton (TBox only, no individuals)
         ontology_path = os.path.join(
-            working_dir, "src/rdf_conversion/output", "ontometal.ttl"
+            working_dir, "ontology", "ontometal_skeleton.ttl"
         )
         graph = self.turtle_resource.load(ontology_path)
         graph.bind("om", ONTOMETAL)
@@ -33,7 +36,13 @@ class Pipeline:
         )
         graph = CountryConverter().convert(countries, graph)
 
-        print(f"Graph has {len(graph)} triples")
+        # Genres
+        genres = self.genre_repository.get_genres(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "genres_v2.csv"
+            )
+        )
+        graph = GenreConverter().convert(genres, graph)
 
         # Save
         output_path = os.path.join(
