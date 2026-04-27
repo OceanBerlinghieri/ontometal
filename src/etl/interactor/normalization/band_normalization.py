@@ -16,9 +16,10 @@ class BandNormalization:
         genre_map: dict,
         releases: DataFrame,
     ) -> DataFrame:
-        # Remove bands with no name and discard all rows with non-unique Band ID 
-        # for data consistency and idempotency. Only 0.2% of bands lost from raw to normalized.
+        # Remove bands with no name (NaN or literal "null") and discard all rows
+        # with non-unique Band ID for data consistency and idempotency. Only 0.2% of bands lost.
         bands = bands.dropna(subset=["Name"])
+        bands = bands[~bands["Name"].str.strip().str.lower().isin(["null"])]
         bands = bands.drop_duplicates(subset=["Band ID"], keep=False)
 
         normalized_bands = self._merge_countries(bands, countries)
@@ -67,6 +68,9 @@ class BandNormalization:
         return bands
 
     def _merge_releases(self, bands: DataFrame, releases: DataFrame) -> DataFrame:
+        releases = releases.copy()
+        releases["releasedBy"] = releases["releasedBy"].astype(int)
+        releases["releaseId"] = releases["releaseId"].astype(int)
         releases_grouped = (
             releases.groupby("releasedBy")["releaseId"]
             .apply(list)

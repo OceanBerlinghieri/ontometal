@@ -1,6 +1,5 @@
 from pandas import DataFrame
-
-from etl.entities.band import Band
+import pandas as pd
 from etl.entities.release import Release
 
 
@@ -9,12 +8,26 @@ class ReleaseNormalization:
         pass
 
     def normalize(self, releases: DataFrame, bands: DataFrame) -> DataFrame:
+        releases = releases.dropna(subset=["Album Name"])
+        releases = releases[
+            ~releases["Album Name"].str.strip().str.lower().isin(["null"])
+        ]
+
+        # Keep only bands that will survive band normalization
+        # (no null names, no duplicate Band IDs) to avoid orphan releases
+        valid_bands = bands.dropna(subset=["Name"])
+        valid_bands = valid_bands[
+            ~valid_bands["Name"].str.strip().str.lower().isin(["null"])
+        ]
+        valid_bands = valid_bands.drop_duplicates(subset=["Band ID"], keep=False)
+
         normalized_releases = releases.merge(
-            bands, left_on="Band ID", right_on="Band ID", how="left"
+            valid_bands, left_on="Band ID", right_on="Band ID", how="inner"
         )
 
         normalized_releases = self._create_release_entities(normalized_releases)
         normalized_releases = DataFrame([vars(r) for r in normalized_releases])
+
         return normalized_releases
 
     def _create_release_entities(self, releases_with_bands: DataFrame) -> list[Release]:
