@@ -8,7 +8,7 @@
 @base <https://w3id.org/ontometal#> .
 
 <https://w3id.org/ontometal> rdf:type owl:Ontology ;
-                              owl:versionIRI <https://w3id.org/ontometal-0.0.1_dev> ;
+                              owl:versionIRI "";
                               owl:imports <http://purl.org/ontology/mo/> ;
                               <http://purl.org/dc/elements/1.1/contributor> "Ocean Berlinghieri García" ;
                               <http://purl.org/dc/elements/1.1/created> "2026-04-19" ;
@@ -19,7 +19,7 @@
                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "om" ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontometal" ;
                               rdfs:comment "Ontology about metal music" ;
-                              owl:versionInfo "0.0.1_dev - First ontology prototype" .
+                              owl:versionInfo "".
 
 #################################################################
 #    Object Properties
