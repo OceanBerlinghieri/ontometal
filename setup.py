@@ -21,11 +21,13 @@ setup(
     entry_points={
         "console_scripts": [
             "ontometal=etl.main:main",
+            "conversion=rdf_conversion.main:main",
         ],
     },
     # Dependencies
     install_requires=[
         "pandas>=3.0.2",
+        "rdflib>=7.0.0",
     ],
     # Optional dependencies
     extras_require={
