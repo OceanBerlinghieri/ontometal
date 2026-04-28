@@ -32,8 +32,8 @@ dcterms:available rdfs:subPropertyOf dcterms:date ;
     vann:preferredNamespaceUri "https://w3id.org/ontometal" ;
     rdfs:comment "Ontology about metal music" ;
     owl:imports <http://purl.org/ontology/mo/> ;
-    owl:versionIRI <https://w3id.org/ontometal-0.0.1_dev> ;
-    owl:versionInfo "0.0.1_dev - First ontology prototype" .
+    owl:versionIRI "https://w3id.org/ontometal-0.0.0" ;
+    owl:versionInfo "Initial version" .
 
 om:ACappella a om:Genre ;
     om:genreName "a cappella"^^xsd:string .
