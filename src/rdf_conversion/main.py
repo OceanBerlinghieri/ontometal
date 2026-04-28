@@ -1,6 +1,6 @@
-from etl.repository.genre_repository_impl import GenreRepositoryImpl
 from rdf_conversion.pipeline import Pipeline
 from rdf_conversion.repository.country_repository_impl import CountryRepositoryImpl
+from rdf_conversion.repository.genres_repository_impl import GenreRepositoryImpl
 from rdf_conversion.repository.resource.csv_resource import CSVResource
 from rdf_conversion.repository.resource.turtle_resource import TurtleResource
 

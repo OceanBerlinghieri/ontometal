@@ -1,13 +1,12 @@
 from abc import ABC, abstractmethod
-from pandas import DataFrame
 
+from etl.entities.genre import Genre
 from rdf_conversion.repository.resource.base_resource import BaseResource
 
 
 class GenreRepository(ABC):
     def __init__(self, resource: BaseResource):
-        self.resource = resource
-
+        pass
     @abstractmethod
-    def get_genres(self, path: str) -> DataFrame:
+    def get_genres(self, path: str) -> list[Genre]:
         pass

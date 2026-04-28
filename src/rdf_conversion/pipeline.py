@@ -1,6 +1,5 @@
 import os
 
-from etl.repository.genre_repository import GenreRepository
 from rdf_conversion import ONTOMETAL
 from rdf_conversion.interactor.genre_converter import GenreConverter
 from rdf_conversion.repository.resource.turtle_resource import TurtleResource
@@ -8,6 +7,7 @@ from rdflib import Graph
 
 from rdf_conversion.interactor.country_converter import CountryConverter
 from rdf_conversion.repository.country_repository import CountryRepository
+from rdf_conversion.repository.genres_repository import GenreRepository
 
 
 class Pipeline:
@@ -21,7 +21,7 @@ class Pipeline:
     def run(self):
         working_dir = os.getcwd()
 
-        # Load base ontology skeleton (TBox only, no individuals)
+        # Load base ontology skeleton
         ontology_path = os.path.join(
             working_dir, "ontology", "ontometal_skeleton.ttl"
         )

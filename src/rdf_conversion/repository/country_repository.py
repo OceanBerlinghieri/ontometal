@@ -1,13 +1,13 @@
 from abc import ABC, abstractmethod
-from pandas import DataFrame
 
+from etl.entities.country import Country
 from rdf_conversion.repository.resource.base_resource import BaseResource
 
 
 class CountryRepository(ABC):
     def __init__(self, resource: BaseResource):
-        self.resource = resource
+        pass
 
     @abstractmethod
-    def get_countries(self, path: str) -> DataFrame:
+    def get_countries(self, path: str) -> list[Country]:
         pass
