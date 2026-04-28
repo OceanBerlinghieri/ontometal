@@ -1,0 +1,4814 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix om: <https://w3id.org/ontometal#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:available rdfs:subPropertyOf dcterms:date ;
+    owl:equivalentProperty om:releaseYear .
+
+<http://purl.org/ontology/mo/Genre> owl:equivalentClass om:Genre .
+
+<http://purl.org/ontology/mo/Label> owl:equivalentClass om:Label .
+
+<http://purl.org/ontology/mo/MusicGroup> owl:equivalentClass om:Band .
+
+<http://purl.org/ontology/mo/releaseType> rdfs:label "releaseType"@en ;
+    rdfs:comment "Defines de type of a release as album, single, compilation.."@en ;
+    rdfs:domain om:Release ;
+    rdfs:range <http://purl.org/ontology/mo/ReleaseType> .
+
+<https://w3id.org/ontometal> a owl:Ontology ;
+    dc:contributor "Ocean Berlinghieri García" ;
+    dc:created "2026-04-19" ;
+    dc:creator "Ocean Berlinghieri García" ;
+    dc:publisher "Ocean Berlinghieri García" ;
+    dc:title "ontometal" ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/" ;
+    vann:preferredNamespacePrefix "om" ;
+    vann:preferredNamespaceUri "https://w3id.org/ontometal" ;
+    rdfs:comment "Ontology about metal music" ;
+    owl:imports <http://purl.org/ontology/mo/> ;
+    owl:versionIRI <https://w3id.org/ontometal-0.0.1_dev> ;
+    owl:versionInfo "0.0.1_dev - First ontology prototype" .
+
+om:ACappella a om:Genre ;
+    om:genreName "a cappella"^^xsd:string .
+
+om:Acoustic a om:Genre ;
+    om:genreName "acoustic"^^xsd:string .
+
+om:AcousticDeath a om:Genre ;
+    om:genreName "acoustic death"^^xsd:string .
+
+om:AcousticFolk a om:Genre ;
+    om:genreName "acoustic folk"^^xsd:string .
+
+om:AcousticRock a om:Genre ;
+    om:genreName "acoustic rock"^^xsd:string .
+
+om:Afghanistan a om:Country ;
+    om:countryName "afghanistan"^^xsd:string .
+
+om:Albania a om:Country ;
+    om:countryName "albania"^^xsd:string .
+
+om:Algeria a om:Country ;
+    om:countryName "algeria"^^xsd:string .
+
+om:AlternativeHardRock a om:Genre ;
+    om:genreName "alternative hard rock"^^xsd:string .
+
+om:AlternativeHeavy a om:Genre ;
+    om:genreName "alternative heavy"^^xsd:string .
+
+om:AlternativeMetal a om:Genre ;
+    om:genreName "alternative metal"^^xsd:string .
+
+om:AlternativeRockWithIndustrialElements a om:Genre ;
+    om:genreName "alternative rock with industrial elements"^^xsd:string .
+
+om:AlternativeThrash a om:Genre ;
+    om:genreName "alternative thrash"^^xsd:string .
+
+om:AmbientBlackMetal a om:Genre ;
+    om:genreName "ambient black metal"^^xsd:string .
+
+om:AmbientBlackMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "ambient black metal with industrial influences"^^xsd:string .
+
+om:AmbientDoomMetal a om:Genre ;
+    om:genreName "ambient doom metal"^^xsd:string .
+
+om:AmbientDrone a om:Genre ;
+    om:genreName "ambient drone"^^xsd:string .
+
+om:AmbientFolk a om:Genre ;
+    om:genreName "ambient folk"^^xsd:string .
+
+om:AmbientPagan a om:Genre ;
+    om:genreName "ambient pagan"^^xsd:string .
+
+om:AmbientPost-BlackMetal a om:Genre ;
+    om:genreName "ambient post-black metal"^^xsd:string .
+
+om:AmbientProgressiveStoner a om:Genre ;
+    om:genreName "ambient progressive stoner"^^xsd:string .
+
+om:AmbientWithIndustrialInfluences a om:Genre ;
+    om:genreName "ambient with industrial influences"^^xsd:string .
+
+om:AmbientWithMetalInfluences a om:Genre ;
+    om:genreName "ambient with metal influences"^^xsd:string .
+
+om:Andorra a om:Country ;
+    om:countryName "andorra"^^xsd:string .
+
+om:Angola a om:Country ;
+    om:countryName "angola"^^xsd:string .
+
+om:Argentina a om:Country ;
+    om:countryName "argentina"^^xsd:string .
+
+om:Armenia a om:Country ;
+    om:countryName "armenia"^^xsd:string .
+
+om:Aruba a om:Country ;
+    om:countryName "aruba"^^xsd:string .
+
+om:AtmosphericAlternative a om:Genre ;
+    om:genreName "atmospheric alternative"^^xsd:string .
+
+om:AtmosphericAlternativeRock a om:Genre ;
+    om:genreName "atmospheric alternative rock"^^xsd:string .
+
+om:AtmosphericAmbientDoomMetal a om:Genre ;
+    om:genreName "atmospheric ambient doom metal"^^xsd:string .
+
+om:AtmosphericBlackMetal a om:Genre ;
+    om:genreName "atmospheric black metal"^^xsd:string .
+
+om:AtmosphericBlackMetalWithDarkwaveElements a om:Genre ;
+    om:genreName "atmospheric black metal with darkwave elements"^^xsd:string .
+
+om:AtmosphericBlackMetalWithFolkInfluences a om:Genre ;
+    om:genreName "atmospheric black metal with folk influences"^^xsd:string .
+
+om:AtmosphericBlackMetalWithGothicInfluences a om:Genre ;
+    om:genreName "atmospheric black metal with gothic influences"^^xsd:string .
+
+om:AtmosphericBlackMetalWithIndustrialElements a om:Genre ;
+    om:genreName "atmospheric black metal with industrial elements"^^xsd:string .
+
+om:AtmosphericBlackNRoll a om:Genre ;
+    om:genreName "atmospheric black n roll"^^xsd:string .
+
+om:AtmosphericBlackenedDeathMetal a om:Genre ;
+    om:genreName "atmospheric blackened death metal"^^xsd:string .
+
+om:AtmosphericBlackenedDoomMetal a om:Genre ;
+    om:genreName "atmospheric blackened doom metal"^^xsd:string .
+
+om:AtmosphericBlackenedSludgeMetal a om:Genre ;
+    om:genreName "atmospheric blackened sludge metal"^^xsd:string .
+
+om:AtmosphericDeathMetal a om:Genre ;
+    om:genreName "atmospheric death metal"^^xsd:string .
+
+om:AtmosphericDeathMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "atmospheric death metal with industrial influences"^^xsd:string .
+
+om:AtmosphericDeathcore a om:Genre ;
+    om:genreName "atmospheric deathcore"^^xsd:string .
+
+om:AtmosphericDepressiveBlackMetal a om:Genre ;
+    om:genreName "atmospheric depressive black metal"^^xsd:string .
+
+om:AtmosphericDoomMetal a om:Genre ;
+    om:genreName "atmospheric doom metal"^^xsd:string .
+
+om:AtmosphericDrone a om:Genre ;
+    om:genreName "atmospheric drone"^^xsd:string .
+
+om:AtmosphericEpicBlackMetal a om:Genre ;
+    om:genreName "atmospheric epic black metal"^^xsd:string .
+
+om:AtmosphericExtremeMetal a om:Genre ;
+    om:genreName "atmospheric extreme metal"^^xsd:string .
+
+om:AtmosphericFolkMetal a om:Genre ;
+    om:genreName "atmospheric folk metal"^^xsd:string .
+
+om:AtmosphericFuneralDoomMetal a om:Genre ;
+    om:genreName "atmospheric funeral doom metal"^^xsd:string .
+
+om:AtmosphericGothicMetal a om:Genre ;
+    om:genreName "atmospheric gothic metal"^^xsd:string .
+
+om:AtmosphericGothicMetalWithClassicalInfluences a om:Genre ;
+    om:genreName "atmospheric gothic metal with classical influences"^^xsd:string .
+
+om:AtmosphericGothicRock a om:Genre ;
+    om:genreName "atmospheric gothic rock"^^xsd:string .
+
+om:AtmosphericGrindcore a om:Genre ;
+    om:genreName "atmospheric grindcore"^^xsd:string .
+
+om:AtmosphericGroove a om:Genre ;
+    om:genreName "atmospheric groove"^^xsd:string .
+
+om:AtmosphericHeavyMetal a om:Genre ;
+    om:genreName "atmospheric heavy metal"^^xsd:string .
+
+om:AtmosphericHeavyMetalWithHardRockInfluences a om:Genre ;
+    om:genreName "atmospheric heavy metal with hard rock influences"^^xsd:string .
+
+om:AtmosphericIndustrial a om:Genre ;
+    om:genreName "atmospheric industrial"^^xsd:string .
+
+om:AtmosphericMelodicBlackMetal a om:Genre ;
+    om:genreName "atmospheric melodic black metal"^^xsd:string .
+
+om:AtmosphericMelodicDoom a om:Genre ;
+    om:genreName "atmospheric melodic doom"^^xsd:string .
+
+om:AtmosphericMelodicViking a om:Genre ;
+    om:genreName "atmospheric melodic viking"^^xsd:string .
+
+om:AtmosphericMetal a om:Genre ;
+    om:genreName "atmospheric metal"^^xsd:string .
+
+om:AtmosphericNeoclassicalMetal a om:Genre ;
+    om:genreName "atmospheric neoclassical metal"^^xsd:string .
+
+om:AtmosphericNeofolk a om:Genre ;
+    om:genreName "atmospheric neofolk"^^xsd:string .
+
+om:AtmosphericPaganBlackMetal a om:Genre ;
+    om:genreName "atmospheric pagan black metal"^^xsd:string .
+
+om:AtmosphericPaganMetal a om:Genre ;
+    om:genreName "atmospheric pagan metal"^^xsd:string .
+
+om:AtmosphericPost-BlackMetal a om:Genre ;
+    om:genreName "atmospheric post-black metal"^^xsd:string .
+
+om:AtmosphericPost-BlackMetalWithDoomMetalInfluences a om:Genre ;
+    om:genreName "atmospheric post-black metal with doom metal influences"^^xsd:string .
+
+om:AtmosphericPost-Metal a om:Genre ;
+    om:genreName "atmospheric post-metal"^^xsd:string .
+
+om:AtmosphericPowerMetal a om:Genre ;
+    om:genreName "atmospheric power metal"^^xsd:string .
+
+om:AtmosphericProgressiveBlackMetal a om:Genre ;
+    om:genreName "atmospheric progressive black metal"^^xsd:string .
+
+om:AtmosphericProgressiveMetal a om:Genre ;
+    om:genreName "atmospheric progressive metal"^^xsd:string .
+
+om:AtmosphericProgressiveRock a om:Genre ;
+    om:genreName "atmospheric progressive rock"^^xsd:string .
+
+om:AtmosphericProgressiveSludge a om:Genre ;
+    om:genreName "atmospheric progressive sludge"^^xsd:string .
+
+om:AtmosphericRawBlackMetal a om:Genre ;
+    om:genreName "atmospheric raw black metal"^^xsd:string .
+
+om:AtmosphericRock a om:Genre ;
+    om:genreName "atmospheric rock"^^xsd:string .
+
+om:AtmosphericSludgeMetal a om:Genre ;
+    om:genreName "atmospheric sludge metal"^^xsd:string .
+
+om:AtmosphericSludgeMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "atmospheric sludge metal with hardcore influences"^^xsd:string .
+
+om:AtmosphericStoner a om:Genre ;
+    om:genreName "atmospheric stoner"^^xsd:string .
+
+om:AtmosphericSymphonicDeathMetal a om:Genre ;
+    om:genreName "atmospheric symphonic death metal"^^xsd:string .
+
+om:AtmosphericSymphonicMetal a om:Genre ;
+    om:genreName "atmospheric symphonic metal"^^xsd:string .
+
+om:AtmosphericThrash a om:Genre ;
+    om:genreName "atmospheric thrash"^^xsd:string .
+
+om:AtmsophericPost-BlackMetal a om:Genre ;
+    om:genreName "atmsopheric post-black metal"^^xsd:string .
+
+om:AtmsosphericBlackMetal a om:Genre ;
+    om:genreName "atmsospheric black metal"^^xsd:string .
+
+om:AtomsphericFuneralDoomMetal a om:Genre ;
+    om:genreName "atomspheric funeral doom metal"^^xsd:string .
+
+om:Australia a om:Country ;
+    om:countryName "australia"^^xsd:string .
+
+om:Austria a om:Country ;
+    om:countryName "austria"^^xsd:string .
+
+om:Avant-GardeAtmosphericDoomMetal a om:Genre ;
+    om:genreName "avant-garde atmospheric doom metal"^^xsd:string .
+
+om:Avant-GardeBlackMetal a om:Genre ;
+    om:genreName "avant-garde black metal"^^xsd:string .
+
+om:Avant-GardeBlackenedDeathMetal a om:Genre ;
+    om:genreName "avant-garde blackened death metal"^^xsd:string .
+
+om:Avant-GardeBrutalDeathMetal a om:Genre ;
+    om:genreName "avant-garde brutal death metal"^^xsd:string .
+
+om:Avant-GardeDeathMetal a om:Genre ;
+    om:genreName "avant-garde death metal"^^xsd:string .
+
+om:Avant-GardeDeathMetalWithJazzInfluences a om:Genre ;
+    om:genreName "avant-garde death metal with jazz influences"^^xsd:string .
+
+om:Avant-GardeDoomMetal a om:Genre ;
+    om:genreName "avant-garde doom metal"^^xsd:string .
+
+om:Avant-GardeDrone a om:Genre ;
+    om:genreName "avant-garde drone"^^xsd:string .
+
+om:Avant-GardeElectronicBlackMetal a om:Genre ;
+    om:genreName "avant-garde electronic black metal"^^xsd:string .
+
+om:Avant-GardeExtremeMetal a om:Genre ;
+    om:genreName "avant-garde extreme metal"^^xsd:string .
+
+om:Avant-GardeFolk a om:Genre ;
+    om:genreName "avant-garde folk"^^xsd:string .
+
+om:Avant-GardeFolkRock a om:Genre ;
+    om:genreName "avant-garde folk rock"^^xsd:string .
+
+om:Avant-GardeGothicMetal a om:Genre ;
+    om:genreName "avant-garde gothic metal"^^xsd:string .
+
+om:Avant-GardeGrindcore a om:Genre ;
+    om:genreName "avant-garde grindcore"^^xsd:string .
+
+om:Avant-GardeHeavyMetal a om:Genre ;
+    om:genreName "avant-garde heavy metal"^^xsd:string .
+
+om:Avant-GardeIndustrialDeathMetal a om:Genre ;
+    om:genreName "avant-garde industrial death metal"^^xsd:string .
+
+om:Avant-GardeJazz a om:Genre ;
+    om:genreName "avant-garde jazz"^^xsd:string .
+
+om:Avant-GardeMetal a om:Genre ;
+    om:genreName "avant-garde metal"^^xsd:string .
+
+om:Avant-GardeMetalWithFolkElements a om:Genre ;
+    om:genreName "avant-garde metal with folk elements"^^xsd:string .
+
+om:Avant-GardePaganMetal a om:Genre ;
+    om:genreName "avant-garde pagan metal"^^xsd:string .
+
+om:Avant-GardePost-BlackMetal a om:Genre ;
+    om:genreName "avant-garde post-black metal"^^xsd:string .
+
+om:Avant-GardeProgressiveBlack a om:Genre ;
+    om:genreName "avant-garde progressive black"^^xsd:string .
+
+om:Avant-GardeProgressiveMetal a om:Genre ;
+    om:genreName "avant-garde progressive metal"^^xsd:string .
+
+om:Avant-GardeRock a om:Genre ;
+    om:genreName "avant-garde rock"^^xsd:string .
+
+om:Avant-GardeSludge a om:Genre ;
+    om:genreName "avant-garde sludge"^^xsd:string .
+
+om:Avant-GardeStoner a om:Genre ;
+    om:genreName "avant-garde stoner"^^xsd:string .
+
+om:Avant-GardeSymphonicBlackMetal a om:Genre ;
+    om:genreName "avant-garde symphonic black metal"^^xsd:string .
+
+om:Avant-GardeSymphonicMetal a om:Genre ;
+    om:genreName "avant-garde symphonic metal"^^xsd:string .
+
+om:Avant-GardeThrashMetal a om:Genre ;
+    om:genreName "avant-garde thrash metal"^^xsd:string .
+
+om:Avante-Garde a om:Genre ;
+    om:genreName "avante-garde"^^xsd:string .
+
+om:Azerbaijan a om:Country ;
+    om:countryName "azerbaijan"^^xsd:string .
+
+om:Bahrain a om:Country ;
+    om:countryName "bahrain"^^xsd:string .
+
+om:Bangladesh a om:Country ;
+    om:countryName "bangladesh"^^xsd:string .
+
+om:Barbados a om:Country ;
+    om:countryName "barbados"^^xsd:string .
+
+om:Belarus a om:Country ;
+    om:countryName "belarus"^^xsd:string .
+
+om:Belgium a om:Country ;
+    om:countryName "belgium"^^xsd:string .
+
+om:Belize a om:Country ;
+    om:countryName "belize"^^xsd:string .
+
+om:BlackMetal a om:Genre ;
+    om:genreName "black metal"^^xsd:string .
+
+om:BlackMetalInfluences a om:Genre ;
+    om:genreName "black metal influences"^^xsd:string .
+
+om:BlackMetalWithAmbientElements a om:Genre ;
+    om:genreName "black metal with ambient elements"^^xsd:string .
+
+om:BlackMetalWithAmbientInfluences a om:Genre ;
+    om:genreName "black metal with ambient influences"^^xsd:string .
+
+om:BlackMetalWithCrust a om:Genre ;
+    om:genreName "black metal with crust"^^xsd:string .
+
+om:BlackMetalWithCrustInfluences a om:Genre ;
+    om:genreName "black metal with crust influences"^^xsd:string .
+
+om:BlackMetalWithDeathAndThrashInfluences a om:Genre ;
+    om:genreName "black metal with death and thrash influences"^^xsd:string .
+
+om:BlackMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "black metal with death metal influences"^^xsd:string .
+
+om:BlackMetalWithDoom a om:Genre ;
+    om:genreName "black metal with doom"^^xsd:string .
+
+om:BlackMetalWithDoomInfluences a om:Genre ;
+    om:genreName "black metal with doom influences"^^xsd:string .
+
+om:BlackMetalWithDrone a om:Genre ;
+    om:genreName "black metal with drone"^^xsd:string .
+
+om:BlackMetalWithDroneInfluences a om:Genre ;
+    om:genreName "black metal with drone influences"^^xsd:string .
+
+om:BlackMetalWithElectronica a om:Genre ;
+    om:genreName "black metal with electronica"^^xsd:string .
+
+om:BlackMetalWithFolk a om:Genre ;
+    om:genreName "black metal with folk"^^xsd:string .
+
+om:BlackMetalWithFolkAndDoomMetalInfluences a om:Genre ;
+    om:genreName "black metal with folk and doom metal influences"^^xsd:string .
+
+om:BlackMetalWithFolkInfluences a om:Genre ;
+    om:genreName "black metal with folk influences"^^xsd:string .
+
+om:BlackMetalWithGothic a om:Genre ;
+    om:genreName "black metal with gothic"^^xsd:string .
+
+om:BlackMetalWithGothicInfluences a om:Genre ;
+    om:genreName "black metal with gothic influences"^^xsd:string .
+
+om:BlackMetalWithGrindcoreElements a om:Genre ;
+    om:genreName "black metal with grindcore elements"^^xsd:string .
+
+om:BlackMetalWithGrindcoreInfluences a om:Genre ;
+    om:genreName "black metal with grindcore influences"^^xsd:string .
+
+om:BlackMetalWithHardcoreElements a om:Genre ;
+    om:genreName "black metal with hardcore elements"^^xsd:string .
+
+om:BlackMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "black metal with hardcore influences"^^xsd:string .
+
+om:BlackMetalWithHeavyMetalInfluences a om:Genre ;
+    om:genreName "black metal with heavy metal influences"^^xsd:string .
+
+om:BlackMetalWithIndustrialElements a om:Genre ;
+    om:genreName "black metal with industrial elements"^^xsd:string .
+
+om:BlackMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "black metal with industrial influences"^^xsd:string .
+
+om:BlackMetalWithMedievalInfluences a om:Genre ;
+    om:genreName "black metal with medieval influences"^^xsd:string .
+
+om:BlackMetalWithMetalcoreInfluences a om:Genre ;
+    om:genreName "black metal with metalcore influences"^^xsd:string .
+
+om:BlackMetalWithMiddleEasternFolkInfluences a om:Genre ;
+    om:genreName "black metal with middle eastern folk influences"^^xsd:string .
+
+om:BlackMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "black metal with middle eastern influences"^^xsd:string .
+
+om:BlackMetalWithPost-Metal a om:Genre ;
+    om:genreName "black metal with post-metal"^^xsd:string .
+
+om:BlackMetalWithPost-Punk a om:Genre ;
+    om:genreName "black metal with post-punk"^^xsd:string .
+
+om:BlackMetalWithPost-RockInfluences a om:Genre ;
+    om:genreName "black metal with post-rock influences"^^xsd:string .
+
+om:BlackMetalWithProgressiveElements a om:Genre ;
+    om:genreName "black metal with progressive elements"^^xsd:string .
+
+om:BlackMetalWithPsychobillyInfluences a om:Genre ;
+    om:genreName "black metal with psychobilly influences"^^xsd:string .
+
+om:BlackMetalWithPunk a om:Genre ;
+    om:genreName "black metal with punk"^^xsd:string .
+
+om:BlackMetalWithPunkElements a om:Genre ;
+    om:genreName "black metal with punk elements"^^xsd:string .
+
+om:BlackMetalWithPunkInfluences a om:Genre ;
+    om:genreName "black metal with punk influences"^^xsd:string .
+
+om:BlackMetalWithRac a om:Genre ;
+    om:genreName "black metal with rac"^^xsd:string .
+
+om:BlackMetalWithRacInfluences a om:Genre ;
+    om:genreName "black metal with rac influences"^^xsd:string .
+
+om:BlackMetalWithSurfRockInfluences a om:Genre ;
+    om:genreName "black metal with surf rock influences"^^xsd:string .
+
+om:BlackMetalWithSymphonicElements a om:Genre ;
+    om:genreName "black metal with symphonic elements"^^xsd:string .
+
+om:BlackMetalWithThrashInfluences a om:Genre ;
+    om:genreName "black metal with thrash influences"^^xsd:string .
+
+om:BlackNRoll a om:Genre ;
+    om:genreName "black n roll"^^xsd:string .
+
+om:BlackNoise a om:Genre ;
+    om:genreName "black noise"^^xsd:string .
+
+om:BlackendDeath a om:Genre ;
+    om:genreName "blackend death"^^xsd:string .
+
+om:BlackenedAtmosphericDeathMetal a om:Genre ;
+    om:genreName "blackened atmospheric death metal"^^xsd:string .
+
+om:BlackenedBrutalDeathMetal a om:Genre ;
+    om:genreName "blackened brutal death metal"^^xsd:string .
+
+om:BlackenedCrossover a om:Genre ;
+    om:genreName "blackened crossover"^^xsd:string .
+
+om:BlackenedCrust a om:Genre ;
+    om:genreName "blackened crust"^^xsd:string .
+
+om:BlackenedCrustPunk a om:Genre ;
+    om:genreName "blackened crust punk"^^xsd:string .
+
+om:BlackenedDeathMetal a om:Genre ;
+    om:genreName "blackened death metal"^^xsd:string .
+
+om:BlackenedDeathMetalWithCrustPunkInfluences a om:Genre ;
+    om:genreName "blackened death metal with crust punk influences"^^xsd:string .
+
+om:BlackenedDeathMetalWithThrashElements a om:Genre ;
+    om:genreName "blackened death metal with thrash elements"^^xsd:string .
+
+om:BlackenedDeathcore a om:Genre ;
+    om:genreName "blackened deathcore"^^xsd:string .
+
+om:BlackenedDoomMetal a om:Genre ;
+    om:genreName "blackened doom metal"^^xsd:string .
+
+om:BlackenedDrone a om:Genre ;
+    om:genreName "blackened drone"^^xsd:string .
+
+om:BlackenedEbm a om:Genre ;
+    om:genreName "blackened ebm"^^xsd:string .
+
+om:BlackenedElectronic a om:Genre ;
+    om:genreName "blackened electronic"^^xsd:string .
+
+om:BlackenedEpicDoomMetal a om:Genre ;
+    om:genreName "blackened epic doom metal"^^xsd:string .
+
+om:BlackenedEpicHeavyMetal a om:Genre ;
+    om:genreName "blackened epic heavy metal"^^xsd:string .
+
+om:BlackenedExperimentalMetal a om:Genre ;
+    om:genreName "blackened experimental metal"^^xsd:string .
+
+om:BlackenedFolkMetal a om:Genre ;
+    om:genreName "blackened folk metal"^^xsd:string .
+
+om:BlackenedFuneralDoomMetal a om:Genre ;
+    om:genreName "blackened funeral doom metal"^^xsd:string .
+
+om:BlackenedGoregrind a om:Genre ;
+    om:genreName "blackened goregrind"^^xsd:string .
+
+om:BlackenedGothicMetal a om:Genre ;
+    om:genreName "blackened gothic metal"^^xsd:string .
+
+om:BlackenedGrindcore a om:Genre ;
+    om:genreName "blackened grindcore"^^xsd:string .
+
+om:BlackenedGrooveMetal a om:Genre ;
+    om:genreName "blackened groove metal"^^xsd:string .
+
+om:BlackenedHardcore a om:Genre ;
+    om:genreName "blackened hardcore"^^xsd:string .
+
+om:BlackenedHeavyMetal a om:Genre ;
+    om:genreName "blackened heavy metal"^^xsd:string .
+
+om:BlackenedHeavyMetalWithFolkInfluences a om:Genre ;
+    om:genreName "blackened heavy metal with folk influences"^^xsd:string .
+
+om:BlackenedIndustrialMetal a om:Genre ;
+    om:genreName "blackened industrial metal"^^xsd:string .
+
+om:BlackenedMelodicDeathMetal a om:Genre ;
+    om:genreName "blackened melodic death metal"^^xsd:string .
+
+om:BlackenedMelodicThrashMetal a om:Genre ;
+    om:genreName "blackened melodic thrash metal"^^xsd:string .
+
+om:BlackenedMetalcore a om:Genre ;
+    om:genreName "blackened metalcore"^^xsd:string .
+
+om:BlackenedNoise a om:Genre ;
+    om:genreName "blackened noise"^^xsd:string .
+
+om:BlackenedPaganMetal a om:Genre ;
+    om:genreName "blackened pagan metal"^^xsd:string .
+
+om:BlackenedPost-Hardcore a om:Genre ;
+    om:genreName "blackened post-hardcore"^^xsd:string .
+
+om:BlackenedPost-Metal a om:Genre ;
+    om:genreName "blackened post-metal"^^xsd:string .
+
+om:BlackenedPowerMetal a om:Genre ;
+    om:genreName "blackened power metal"^^xsd:string .
+
+om:BlackenedProgressiveDeathMetal a om:Genre ;
+    om:genreName "blackened progressive death metal"^^xsd:string .
+
+om:BlackenedProgressiveHeavy a om:Genre ;
+    om:genreName "blackened progressive heavy"^^xsd:string .
+
+om:BlackenedProgressiveMetal a om:Genre ;
+    om:genreName "blackened progressive metal"^^xsd:string .
+
+om:BlackenedProgressiveRock a om:Genre ;
+    om:genreName "blackened progressive rock"^^xsd:string .
+
+om:BlackenedProgressiveSludge a om:Genre ;
+    om:genreName "blackened progressive sludge"^^xsd:string .
+
+om:BlackenedPsychedelicStoner a om:Genre ;
+    om:genreName "blackened psychedelic stoner"^^xsd:string .
+
+om:BlackenedPunk a om:Genre ;
+    om:genreName "blackened punk"^^xsd:string .
+
+om:BlackenedRac a om:Genre ;
+    om:genreName "blackened rac"^^xsd:string .
+
+om:BlackenedShoegaze a om:Genre ;
+    om:genreName "blackened shoegaze"^^xsd:string .
+
+om:BlackenedSludgeMetal a om:Genre ;
+    om:genreName "blackened sludge metal"^^xsd:string .
+
+om:BlackenedSpeedMetal a om:Genre ;
+    om:genreName "blackened speed metal"^^xsd:string .
+
+om:BlackenedStonerMetal a om:Genre ;
+    om:genreName "blackened stoner metal"^^xsd:string .
+
+om:BlackenedSymphonicDeathMetal a om:Genre ;
+    om:genreName "blackened symphonic death metal"^^xsd:string .
+
+om:BlackenedSymphonicHeavyMetal a om:Genre ;
+    om:genreName "blackened symphonic heavy metal"^^xsd:string .
+
+om:BlackenedSymphonicMetal a om:Genre ;
+    om:genreName "blackened symphonic metal"^^xsd:string .
+
+om:BlackenedSymphonicMetalcore a om:Genre ;
+    om:genreName "blackened symphonic metalcore"^^xsd:string .
+
+om:BlackenedSymphonicPaganMetal a om:Genre ;
+    om:genreName "blackened symphonic pagan metal"^^xsd:string .
+
+om:BlackenedTechnicalDeathMetal a om:Genre ;
+    om:genreName "blackened technical death metal"^^xsd:string .
+
+om:BlackenedTechnicalDeathcore a om:Genre ;
+    om:genreName "blackened technical deathcore"^^xsd:string .
+
+om:BlackenedThrashMetal a om:Genre ;
+    om:genreName "blackened thrash metal"^^xsd:string .
+
+om:BlackenedThrashNRoll a om:Genre ;
+    om:genreName "blackened thrash n roll"^^xsd:string .
+
+om:BlackenedViking a om:Genre ;
+    om:genreName "blackened viking"^^xsd:string .
+
+om:Bluegrass a om:Genre ;
+    om:genreName "bluegrass"^^xsd:string .
+
+om:BluesRock a om:Genre ;
+    om:genreName "blues rock"^^xsd:string .
+
+om:Bolivia a om:Country ;
+    om:countryName "bolivia"^^xsd:string .
+
+om:BosniaAndHerzegovina a om:Country ;
+    om:countryName "bosnia and herzegovina"^^xsd:string .
+
+om:BossaNova a om:Genre ;
+    om:genreName "bossa nova"^^xsd:string .
+
+om:Botswana a om:Country ;
+    om:countryName "botswana"^^xsd:string .
+
+om:Brazil a om:Country ;
+    om:countryName "brazil"^^xsd:string .
+
+om:Breakcore a om:Genre ;
+    om:genreName "breakcore"^^xsd:string .
+
+om:Brunei a om:Country ;
+    om:countryName "brunei"^^xsd:string .
+
+om:BrutalBlackenedDeathMetal a om:Genre ;
+    om:genreName "brutal blackened death metal"^^xsd:string .
+
+om:BrutalDeathMetal a om:Genre ;
+    om:genreName "brutal death metal"^^xsd:string .
+
+om:BrutalDeathMetalWithDeathcoreElements a om:Genre ;
+    om:genreName "brutal death metal with deathcore elements"^^xsd:string .
+
+om:BrutalDeathMetalWithDoomInfluences a om:Genre ;
+    om:genreName "brutal death metal with doom influences"^^xsd:string .
+
+om:BrutalDeathMetalWithFolkInfluences a om:Genre ;
+    om:genreName "brutal death metal with folk influences"^^xsd:string .
+
+om:BrutalDeathMetalWithGoregrindElements a om:Genre ;
+    om:genreName "brutal death metal with goregrind elements"^^xsd:string .
+
+om:BrutalDeathMetalWithGrindcoreInfluences a om:Genre ;
+    om:genreName "brutal death metal with grindcore influences"^^xsd:string .
+
+om:BrutalDeathMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "brutal death metal with groove influences"^^xsd:string .
+
+om:BrutalDeathMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "brutal death metal with hardcore influences"^^xsd:string .
+
+om:BrutalDeathMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "brutal death metal with industrial influences"^^xsd:string .
+
+om:BrutalDeathMetalWithJazzElements a om:Genre ;
+    om:genreName "brutal death metal with jazz elements"^^xsd:string .
+
+om:BrutalDeathMetalWithNeoclassicalInfluences a om:Genre ;
+    om:genreName "brutal death metal with neoclassical influences"^^xsd:string .
+
+om:BrutalDeathcore a om:Genre ;
+    om:genreName "brutal deathcore"^^xsd:string .
+
+om:BrutalTechnicalDeathMetal a om:Genre ;
+    om:genreName "brutal technical death metal"^^xsd:string .
+
+om:Bulgaria a om:Country ;
+    om:countryName "bulgaria"^^xsd:string .
+
+om:BurkinaFaso a om:Country ;
+    om:countryName "burkina faso"^^xsd:string .
+
+om:Cambodia a om:Country ;
+    om:countryName "cambodia"^^xsd:string .
+
+om:Canada a om:Country ;
+    om:countryName "canada"^^xsd:string .
+
+om:CelticDeathMetal a om:Genre ;
+    om:genreName "celtic death metal"^^xsd:string .
+
+om:CelticFolkMetal a om:Genre ;
+    om:genreName "celtic folk metal"^^xsd:string .
+
+om:CelticRock a om:Genre ;
+    om:genreName "celtic rock"^^xsd:string .
+
+om:CelticSymphonicMetal a om:Genre ;
+    om:genreName "celtic symphonic metal"^^xsd:string .
+
+om:Chile a om:Country ;
+    om:countryName "chile"^^xsd:string .
+
+om:Chillwave a om:Genre ;
+    om:genreName "chillwave"^^xsd:string .
+
+om:China a om:Country ;
+    om:countryName "china"^^xsd:string .
+
+om:CityPop a om:Genre ;
+    om:genreName "city pop"^^xsd:string .
+
+om:ClassicalCrossover a om:Genre ;
+    om:genreName "classical crossover"^^xsd:string .
+
+om:ClassicalElements a om:Genre ;
+    om:genreName "classical elements"^^xsd:string .
+
+om:ClassicalMedievalMelodic a om:Genre ;
+    om:genreName "classical medieval melodic"^^xsd:string .
+
+om:CloudRap a om:Genre ;
+    om:genreName "cloud rap"^^xsd:string .
+
+om:Coldwave a om:Genre ;
+    om:genreName "coldwave"^^xsd:string .
+
+om:Colombia a om:Country ;
+    om:countryName "colombia"^^xsd:string .
+
+om:CostaRica a om:Country ;
+    om:countryName "costa rica"^^xsd:string .
+
+om:Cowpunk a om:Genre ;
+    om:genreName "cowpunk"^^xsd:string .
+
+om:Croatia a om:Country ;
+    om:countryName "croatia"^^xsd:string .
+
+om:CrossoverMetal a om:Genre ;
+    om:genreName "crossover metal"^^xsd:string .
+
+om:CrossoverThrashMetal a om:Genre ;
+    om:genreName "crossover thrash metal"^^xsd:string .
+
+om:CrossoverWithFunkElements a om:Genre ;
+    om:genreName "crossover with funk elements"^^xsd:string .
+
+om:CrossoverWithGrindcoreElements a om:Genre ;
+    om:genreName "crossover with grindcore elements"^^xsd:string .
+
+om:CrossoverWithHeavyMetalInfluences a om:Genre ;
+    om:genreName "crossover with heavy metal influences"^^xsd:string .
+
+om:CrossoverWithIndustrialElements a om:Genre ;
+    om:genreName "crossover with industrial elements"^^xsd:string .
+
+om:Crossver a om:Genre ;
+    om:genreName "crossver"^^xsd:string .
+
+om:CrustNRoll a om:Genre ;
+    om:genreName "crust n roll"^^xsd:string .
+
+om:CrustPunkWithDoomMetalInfluences a om:Genre ;
+    om:genreName "crust punk with doom metal influences"^^xsd:string .
+
+om:Crustcore a om:Genre ;
+    om:genreName "crustcore"^^xsd:string .
+
+om:Cuba a om:Country ;
+    om:countryName "cuba"^^xsd:string .
+
+om:Curaçao a om:Country ;
+    om:countryName "curaçao"^^xsd:string .
+
+om:Cybergrind a om:Genre ;
+    om:genreName "cybergrind"^^xsd:string .
+
+om:Cyprus a om:Country ;
+    om:countryName "cyprus"^^xsd:string .
+
+om:Czechia a om:Country ;
+    om:countryName "czechia"^^xsd:string .
+
+om:D-Beat a om:Genre ;
+    om:genreName "d-beat"^^xsd:string .
+
+om:Dance a om:Genre ;
+    om:genreName "dance"^^xsd:string .
+
+om:DancePop a om:Genre ;
+    om:genreName "dance pop"^^xsd:string .
+
+om:DarkIndustrialNoise a om:Genre ;
+    om:genreName "dark industrial noise"^^xsd:string .
+
+om:DarkJazz a om:Genre ;
+    om:genreName "dark jazz"^^xsd:string .
+
+om:DarkRitualAmbient a om:Genre ;
+    om:genreName "dark ritual ambient"^^xsd:string .
+
+om:DeathAndPunkElements a om:Genre ;
+    om:genreName "death and punk elements"^^xsd:string .
+
+om:DeathElements a om:Genre ;
+    om:genreName "death elements"^^xsd:string .
+
+om:DeathIndustrial a om:Genre ;
+    om:genreName "death industrial"^^xsd:string .
+
+om:DeathMetal a om:Genre ;
+    om:genreName "death metal"^^xsd:string .
+
+om:DeathMetalInfluences a om:Genre ;
+    om:genreName "death metal influences"^^xsd:string .
+
+om:DeathMetalWithAlternativeInfluences a om:Genre ;
+    om:genreName "death metal with alternative influences"^^xsd:string .
+
+om:DeathMetalWithAmbientInfluences a om:Genre ;
+    om:genreName "death metal with ambient influences"^^xsd:string .
+
+om:DeathMetalWithBlack a om:Genre ;
+    om:genreName "death metal with black"^^xsd:string .
+
+om:DeathMetalWithBlackMetal a om:Genre ;
+    om:genreName "death metal with black metal"^^xsd:string .
+
+om:DeathMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "death metal with black metal influences"^^xsd:string .
+
+om:DeathMetalWithClassicalInfluences a om:Genre ;
+    om:genreName "death metal with classical influences"^^xsd:string .
+
+om:DeathMetalWithCrossoverInfluences a om:Genre ;
+    om:genreName "death metal with crossover influences"^^xsd:string .
+
+om:DeathMetalWithCrustInfluences a om:Genre ;
+    om:genreName "death metal with crust influences"^^xsd:string .
+
+om:DeathMetalWithDeathcoreInfluences a om:Genre ;
+    om:genreName "death metal with deathcore influences"^^xsd:string .
+
+om:DeathMetalWithDoom a om:Genre ;
+    om:genreName "death metal with doom"^^xsd:string .
+
+om:DeathMetalWithDoomInfluences a om:Genre ;
+    om:genreName "death metal with doom influences"^^xsd:string .
+
+om:DeathMetalWithDoomMetalInfluences a om:Genre ;
+    om:genreName "death metal with doom metal influences"^^xsd:string .
+
+om:DeathMetalWithDrumAndBassInfluences a om:Genre ;
+    om:genreName "death metal with drum and bass influences"^^xsd:string .
+
+om:DeathMetalWithElectronicElements a om:Genre ;
+    om:genreName "death metal with electronic elements"^^xsd:string .
+
+om:DeathMetalWithElectronicInfluences a om:Genre ;
+    om:genreName "death metal with electronic influences"^^xsd:string .
+
+om:DeathMetalWithFlamencoElements a om:Genre ;
+    om:genreName "death metal with flamenco elements"^^xsd:string .
+
+om:DeathMetalWithFolkInfluences a om:Genre ;
+    om:genreName "death metal with folk influences"^^xsd:string .
+
+om:DeathMetalWithFunkElements a om:Genre ;
+    om:genreName "death metal with funk elements"^^xsd:string .
+
+om:DeathMetalWithGothic a om:Genre ;
+    om:genreName "death metal with gothic"^^xsd:string .
+
+om:DeathMetalWithGothicInfluences a om:Genre ;
+    om:genreName "death metal with gothic influences"^^xsd:string .
+
+om:DeathMetalWithGrindcore a om:Genre ;
+    om:genreName "death metal with grindcore"^^xsd:string .
+
+om:DeathMetalWithGrindcoreAndStonerMetalInfluences a om:Genre ;
+    om:genreName "death metal with grindcore and stoner metal influences"^^xsd:string .
+
+om:DeathMetalWithGrindcoreInfluences a om:Genre ;
+    om:genreName "death metal with grindcore influences"^^xsd:string .
+
+om:DeathMetalWithGrooveElements a om:Genre ;
+    om:genreName "death metal with groove elements"^^xsd:string .
+
+om:DeathMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "death metal with groove influences"^^xsd:string .
+
+om:DeathMetalWithGrooveMetalInfluences a om:Genre ;
+    om:genreName "death metal with groove metal influences"^^xsd:string .
+
+om:DeathMetalWithHardcore a om:Genre ;
+    om:genreName "death metal with hardcore"^^xsd:string .
+
+om:DeathMetalWithHardcoreElements a om:Genre ;
+    om:genreName "death metal with hardcore elements"^^xsd:string .
+
+om:DeathMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "death metal with hardcore influences"^^xsd:string .
+
+om:DeathMetalWithHardcorePunkInfluences a om:Genre ;
+    om:genreName "death metal with hardcore punk influences"^^xsd:string .
+
+om:DeathMetalWithHeavyAndThrashElements a om:Genre ;
+    om:genreName "death metal with heavy and thrash elements"^^xsd:string .
+
+om:DeathMetalWithHeavyMetalInfluences a om:Genre ;
+    om:genreName "death metal with heavy metal influences"^^xsd:string .
+
+om:DeathMetalWithHeavyRockInfluences a om:Genre ;
+    om:genreName "death metal with heavy rock influences"^^xsd:string .
+
+om:DeathMetalWithIndustrial a om:Genre ;
+    om:genreName "death metal with industrial"^^xsd:string .
+
+om:DeathMetalWithIndustrialAndNoiseInfluences a om:Genre ;
+    om:genreName "death metal with industrial and noise influences"^^xsd:string .
+
+om:DeathMetalWithIndustrialElements a om:Genre ;
+    om:genreName "death metal with industrial elements"^^xsd:string .
+
+om:DeathMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "death metal with industrial influences"^^xsd:string .
+
+om:DeathMetalWithJazzElements a om:Genre ;
+    om:genreName "death metal with jazz elements"^^xsd:string .
+
+om:DeathMetalWithJazzInfluences a om:Genre ;
+    om:genreName "death metal with jazz influences"^^xsd:string .
+
+om:DeathMetalWithMelodic a om:Genre ;
+    om:genreName "death metal with melodic"^^xsd:string .
+
+om:DeathMetalWithMetalcoreInfluences a om:Genre ;
+    om:genreName "death metal with metalcore influences"^^xsd:string .
+
+om:DeathMetalWithMiddleEasternFolkInfluences a om:Genre ;
+    om:genreName "death metal with middle eastern folk influences"^^xsd:string .
+
+om:DeathMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "death metal with middle eastern influences"^^xsd:string .
+
+om:DeathMetalWithNoiseElements a om:Genre ;
+    om:genreName "death metal with noise elements"^^xsd:string .
+
+om:DeathMetalWithPowerMetalInfluences a om:Genre ;
+    om:genreName "death metal with power metal influences"^^xsd:string .
+
+om:DeathMetalWithPrehispanicFolkInfluences a om:Genre ;
+    om:genreName "death metal with prehispanic folk influences"^^xsd:string .
+
+om:DeathMetalWithProgressive a om:Genre ;
+    om:genreName "death metal with progressive"^^xsd:string .
+
+om:DeathMetalWithProgressiveAndThrashElements a om:Genre ;
+    om:genreName "death metal with progressive and thrash elements"^^xsd:string .
+
+om:DeathMetalWithProgressiveElements a om:Genre ;
+    om:genreName "death metal with progressive elements"^^xsd:string .
+
+om:DeathMetalWithProgressiveInfluences a om:Genre ;
+    om:genreName "death metal with progressive influences"^^xsd:string .
+
+om:DeathMetalWithProgressiveRockInfluences a om:Genre ;
+    om:genreName "death metal with progressive rock influences"^^xsd:string .
+
+om:DeathMetalWithPunkElements a om:Genre ;
+    om:genreName "death metal with punk elements"^^xsd:string .
+
+om:DeathMetalWithPunkInfluences a om:Genre ;
+    om:genreName "death metal with punk influences"^^xsd:string .
+
+om:DeathMetalWithRacInfluences a om:Genre ;
+    om:genreName "death metal with rac influences"^^xsd:string .
+
+om:DeathMetalWithRockInfluences a om:Genre ;
+    om:genreName "death metal with rock influences"^^xsd:string .
+
+om:DeathMetalWithSouthernRockInfluences a om:Genre ;
+    om:genreName "death metal with southern rock influences"^^xsd:string .
+
+om:DeathMetalWithSpeed a om:Genre ;
+    om:genreName "death metal with speed"^^xsd:string .
+
+om:DeathMetalWithThrash a om:Genre ;
+    om:genreName "death metal with thrash"^^xsd:string .
+
+om:DeathMetalWithThrashInfluences a om:Genre ;
+    om:genreName "death metal with thrash influences"^^xsd:string .
+
+om:DeathMetalWithThrashMetalElements a om:Genre ;
+    om:genreName "death metal with thrash metal elements"^^xsd:string .
+
+om:DeathMetalWithVariousInfluences a om:Genre ;
+    om:genreName "death metal with various influences"^^xsd:string .
+
+om:DeathNRoll a om:Genre ;
+    om:genreName "death n roll"^^xsd:string .
+
+om:DeathNRollInfluences a om:Genre ;
+    om:genreName "death n roll influences"^^xsd:string .
+
+om:DeathVikingMetal a om:Genre ;
+    om:genreName "death viking metal"^^xsd:string .
+
+om:DeathWithBlackMetalInfluences a om:Genre ;
+    om:genreName "death with black metal influences"^^xsd:string .
+
+om:DeathcoreWithDjent a om:Genre ;
+    om:genreName "deathcore with djent"^^xsd:string .
+
+om:DeathcoreWithGrindcoreInfluences a om:Genre ;
+    om:genreName "deathcore with grindcore influences"^^xsd:string .
+
+om:DeathcoreWithJazzFusionElements a om:Genre ;
+    om:genreName "deathcore with jazz fusion elements"^^xsd:string .
+
+om:DeathcoreWithSludgeMetalInfluences a om:Genre ;
+    om:genreName "deathcore with sludge metal influences"^^xsd:string .
+
+om:DeathcoreWithTechnical a om:Genre ;
+    om:genreName "deathcore with technical"^^xsd:string .
+
+om:Deathrock a om:Genre ;
+    om:genreName "deathrock"^^xsd:string .
+
+om:Denmark a om:Country ;
+    om:countryName "denmark"^^xsd:string .
+
+om:DepressiveBlackMetal a om:Genre ;
+    om:genreName "depressive black metal"^^xsd:string .
+
+om:DepressiveBlackNRoll a om:Genre ;
+    om:genreName "depressive black n roll"^^xsd:string .
+
+om:DepressiveDoom a om:Genre ;
+    om:genreName "depressive doom"^^xsd:string .
+
+om:DepressiveGothic a om:Genre ;
+    om:genreName "depressive gothic"^^xsd:string .
+
+om:DepressiveMelodicBlackMetal a om:Genre ;
+    om:genreName "depressive melodic black metal"^^xsd:string .
+
+om:DepressivePost-BlackMetal a om:Genre ;
+    om:genreName "depressive post-black metal"^^xsd:string .
+
+om:DigitalHardcore a om:Genre ;
+    om:genreName "digital hardcore"^^xsd:string .
+
+om:Djent a om:Genre ;
+    om:genreName "djent"^^xsd:string .
+
+om:DominicanRepublic a om:Country ;
+    om:countryName "dominican republic"^^xsd:string .
+
+om:DoomMetal a om:Genre ;
+    om:genreName "doom metal"^^xsd:string .
+
+om:DoomMetalElements a om:Genre ;
+    om:genreName "doom metal elements"^^xsd:string .
+
+om:DoomMetalInfluences a om:Genre ;
+    om:genreName "doom metal influences"^^xsd:string .
+
+om:DoomMetalWithAlternativeInfluences a om:Genre ;
+    om:genreName "doom metal with alternative influences"^^xsd:string .
+
+om:DoomMetalWithAmbientInfluences a om:Genre ;
+    om:genreName "doom metal with ambient influences"^^xsd:string .
+
+om:DoomMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "doom metal with black metal influences"^^xsd:string .
+
+om:DoomMetalWithCrossoverInfluences a om:Genre ;
+    om:genreName "doom metal with crossover influences"^^xsd:string .
+
+om:DoomMetalWithCrustInfluences a om:Genre ;
+    om:genreName "doom metal with crust influences"^^xsd:string .
+
+om:DoomMetalWithDeathMetalElements a om:Genre ;
+    om:genreName "doom metal with death metal elements"^^xsd:string .
+
+om:DoomMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "doom metal with death metal influences"^^xsd:string .
+
+om:DoomMetalWithElectronicElements a om:Genre ;
+    om:genreName "doom metal with electronic elements"^^xsd:string .
+
+om:DoomMetalWithElectronicaInfluences a om:Genre ;
+    om:genreName "doom metal with electronica influences"^^xsd:string .
+
+om:DoomMetalWithFolkElements a om:Genre ;
+    om:genreName "doom metal with folk elements"^^xsd:string .
+
+om:DoomMetalWithFolkInfluences a om:Genre ;
+    om:genreName "doom metal with folk influences"^^xsd:string .
+
+om:DoomMetalWithGothicInfluences a om:Genre ;
+    om:genreName "doom metal with gothic influences"^^xsd:string .
+
+om:DoomMetalWithGrindcoreInfluences a om:Genre ;
+    om:genreName "doom metal with grindcore influences"^^xsd:string .
+
+om:DoomMetalWithGrungeElements a om:Genre ;
+    om:genreName "doom metal with grunge elements"^^xsd:string .
+
+om:DoomMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "doom metal with hardcore influences"^^xsd:string .
+
+om:DoomMetalWithIndustrial a om:Genre ;
+    om:genreName "doom metal with industrial"^^xsd:string .
+
+om:DoomMetalWithIndustrialAndNoiseInfluences a om:Genre ;
+    om:genreName "doom metal with industrial and noise influences"^^xsd:string .
+
+om:DoomMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "doom metal with industrial influences"^^xsd:string .
+
+om:DoomMetalWithMiddleEasternFolkInfluences a om:Genre ;
+    om:genreName "doom metal with middle eastern folk influences"^^xsd:string .
+
+om:DoomMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "doom metal with middle eastern influences"^^xsd:string .
+
+om:DoomMetalWithPowerMetalInfluences a om:Genre ;
+    om:genreName "doom metal with power metal influences"^^xsd:string .
+
+om:DoomMetalWithProgressiveElements a om:Genre ;
+    om:genreName "doom metal with progressive elements"^^xsd:string .
+
+om:DoomMetalWithProgressiveInfluences a om:Genre ;
+    om:genreName "doom metal with progressive influences"^^xsd:string .
+
+om:DoomMetalWithPsychedelicInfluences a om:Genre ;
+    om:genreName "doom metal with psychedelic influences"^^xsd:string .
+
+om:DoomMetalWithPunkAndBlackMetalElements a om:Genre ;
+    om:genreName "doom metal with punk and black metal elements"^^xsd:string .
+
+om:DoomMetalWithPunkInfluences a om:Genre ;
+    om:genreName "doom metal with punk influences"^^xsd:string .
+
+om:DoomMetalWithThrash a om:Genre ;
+    om:genreName "doom metal with thrash"^^xsd:string .
+
+om:DoomMetalWithThrashElements a om:Genre ;
+    om:genreName "doom metal with thrash elements"^^xsd:string .
+
+om:DoomMetalWithThrashInfluences a om:Genre ;
+    om:genreName "doom metal with thrash influences"^^xsd:string .
+
+om:DoomMetalWithThrashMetal a om:Genre ;
+    om:genreName "doom metal with thrash metal"^^xsd:string .
+
+om:DoomMetalWithThrashMetalInfluences a om:Genre ;
+    om:genreName "doom metal with thrash metal influences"^^xsd:string .
+
+om:DoomMetalWithVariousInfluences a om:Genre ;
+    om:genreName "doom metal with various influences"^^xsd:string .
+
+om:DoomRock a om:Genre ;
+    om:genreName "doom rock"^^xsd:string .
+
+om:Downtempo a om:Genre ;
+    om:genreName "downtempo"^^xsd:string .
+
+om:DroneAmbient a om:Genre ;
+    om:genreName "drone ambient"^^xsd:string .
+
+om:DroneDoomMetal a om:Genre ;
+    om:genreName "drone doom metal"^^xsd:string .
+
+om:DroneMetal a om:Genre ;
+    om:genreName "drone metal"^^xsd:string .
+
+om:Dubstep a om:Genre ;
+    om:genreName "dubstep"^^xsd:string .
+
+om:DungeonSynth a om:Genre ;
+    om:genreName "dungeon synth"^^xsd:string .
+
+om:EastTimor a om:Country ;
+    om:countryName "east timor"^^xsd:string .
+
+om:EasyListening a om:Genre ;
+    om:genreName "easy listening"^^xsd:string .
+
+om:Ecuador a om:Country ;
+    om:countryName "ecuador"^^xsd:string .
+
+om:Egypt a om:Country ;
+    om:countryName "egypt"^^xsd:string .
+
+om:EgyptianAmbient a om:Genre ;
+    om:genreName "egyptian ambient"^^xsd:string .
+
+om:ElSalvador a om:Country ;
+    om:countryName "el salvador"^^xsd:string .
+
+om:ElectronicAmbient a om:Genre ;
+    om:genreName "electronic ambient"^^xsd:string .
+
+om:ElectronicBlackMetal a om:Genre ;
+    om:genreName "electronic black metal"^^xsd:string .
+
+om:ElectronicDeathMetal a om:Genre ;
+    om:genreName "electronic death metal"^^xsd:string .
+
+om:ElectronicDeathcore a om:Genre ;
+    om:genreName "electronic deathcore"^^xsd:string .
+
+om:ElectronicDoomMetal a om:Genre ;
+    om:genreName "electronic doom metal"^^xsd:string .
+
+om:ElectronicGoregrind a om:Genre ;
+    om:genreName "electronic goregrind"^^xsd:string .
+
+om:ElectronicGothicMetal a om:Genre ;
+    om:genreName "electronic gothic metal"^^xsd:string .
+
+om:ElectronicGrooveMetal a om:Genre ;
+    om:genreName "electronic groove metal"^^xsd:string .
+
+om:ElectronicHeavyMetal a om:Genre ;
+    om:genreName "electronic heavy metal"^^xsd:string .
+
+om:ElectronicMetal a om:Genre ;
+    om:genreName "electronic metal"^^xsd:string .
+
+om:ElectronicMetalcore a om:Genre ;
+    om:genreName "electronic metalcore"^^xsd:string .
+
+om:ElectronicPowerMetal a om:Genre ;
+    om:genreName "electronic power metal"^^xsd:string .
+
+om:ElectronicProgressiveDeath a om:Genre ;
+    om:genreName "electronic progressive death"^^xsd:string .
+
+om:ElectronicProgressiveMetal a om:Genre ;
+    om:genreName "electronic progressive metal"^^xsd:string .
+
+om:ElectronicProgressiveMetalcore a om:Genre ;
+    om:genreName "electronic progressive metalcore"^^xsd:string .
+
+om:ElectronicRock a om:Genre ;
+    om:genreName "electronic rock"^^xsd:string .
+
+om:ElectronicThrash a om:Genre ;
+    om:genreName "electronic thrash"^^xsd:string .
+
+om:Enka a om:Genre ;
+    om:genreName "enka"^^xsd:string .
+
+om:EpicAtmosphericAvant-GardeMetal a om:Genre ;
+    om:genreName "epic atmospheric avant-garde metal"^^xsd:string .
+
+om:EpicAtmosphericBlackMetal a om:Genre ;
+    om:genreName "epic atmospheric black metal"^^xsd:string .
+
+om:EpicBlackMetal a om:Genre ;
+    om:genreName "epic black metal"^^xsd:string .
+
+om:EpicBlackMetalWithFolkInfluences a om:Genre ;
+    om:genreName "epic black metal with folk influences"^^xsd:string .
+
+om:EpicBlackenedDoomMetal a om:Genre ;
+    om:genreName "epic blackened doom metal"^^xsd:string .
+
+om:EpicCrust a om:Genre ;
+    om:genreName "epic crust"^^xsd:string .
+
+om:EpicDeathMetal a om:Genre ;
+    om:genreName "epic death metal"^^xsd:string .
+
+om:EpicDoomMetal a om:Genre ;
+    om:genreName "epic doom metal"^^xsd:string .
+
+om:EpicFolkBlack a om:Genre ;
+    om:genreName "epic folk black"^^xsd:string .
+
+om:EpicFolkMetal a om:Genre ;
+    om:genreName "epic folk metal"^^xsd:string .
+
+om:EpicFuneralDoomMetal a om:Genre ;
+    om:genreName "epic funeral doom metal"^^xsd:string .
+
+om:EpicGothic a om:Genre ;
+    om:genreName "epic gothic"^^xsd:string .
+
+om:EpicHeavyMetal a om:Genre ;
+    om:genreName "epic heavy metal"^^xsd:string .
+
+om:EpicHeavyMetalWithProgressiveElements a om:Genre ;
+    om:genreName "epic heavy metal with progressive elements"^^xsd:string .
+
+om:EpicMelodicDeathMetal a om:Genre ;
+    om:genreName "epic melodic death metal"^^xsd:string .
+
+om:EpicMelodicHeavyMetal a om:Genre ;
+    om:genreName "epic melodic heavy metal"^^xsd:string .
+
+om:EpicPaganBlackMetal a om:Genre ;
+    om:genreName "epic pagan black metal"^^xsd:string .
+
+om:EpicPaganMetal a om:Genre ;
+    om:genreName "epic pagan metal"^^xsd:string .
+
+om:EpicPowerMetal a om:Genre ;
+    om:genreName "epic power metal"^^xsd:string .
+
+om:EpicPowerMetalWithFolkInfluences a om:Genre ;
+    om:genreName "epic power metal with folk influences"^^xsd:string .
+
+om:EpicProgressiveDoomMetal a om:Genre ;
+    om:genreName "epic progressive doom metal"^^xsd:string .
+
+om:EpicProgressiveHeavyMetal a om:Genre ;
+    om:genreName "epic progressive heavy metal"^^xsd:string .
+
+om:EpicProgressiveMetal a om:Genre ;
+    om:genreName "epic progressive metal"^^xsd:string .
+
+om:EpicSpeedMetal a om:Genre ;
+    om:genreName "epic speed metal"^^xsd:string .
+
+om:EpicStoner a om:Genre ;
+    om:genreName "epic stoner"^^xsd:string .
+
+om:EpicSymphonicBlackMetal a om:Genre ;
+    om:genreName "epic symphonic black metal"^^xsd:string .
+
+om:EpicSymphonicMetal a om:Genre ;
+    om:genreName "epic symphonic metal"^^xsd:string .
+
+om:EpicSymphonicPowerMetal a om:Genre ;
+    om:genreName "epic symphonic power metal"^^xsd:string .
+
+om:EpicTechnicalDeath a om:Genre ;
+    om:genreName "epic technical death"^^xsd:string .
+
+om:EpicVikingMetal a om:Genre ;
+    om:genreName "epic viking metal"^^xsd:string .
+
+om:Estonia a om:Country ;
+    om:countryName "estonia"^^xsd:string .
+
+om:Ethiopia a om:Country ;
+    om:countryName "ethiopia"^^xsd:string .
+
+om:ExperimentalAcoustic a om:Genre ;
+    om:genreName "experimental acoustic"^^xsd:string .
+
+om:ExperimentalAmbientBlackMetal a om:Genre ;
+    om:genreName "experimental ambient black metal"^^xsd:string .
+
+om:ExperimentalAvant-GardeDeathMetal a om:Genre ;
+    om:genreName "experimental avant-garde death metal"^^xsd:string .
+
+om:ExperimentalBlackMetal a om:Genre ;
+    om:genreName "experimental black metal"^^xsd:string .
+
+om:ExperimentalBlackMetalWithVariousRockInfluences a om:Genre ;
+    om:genreName "experimental black metal with various rock influences"^^xsd:string .
+
+om:ExperimentalBlackenedDeathMetal a om:Genre ;
+    om:genreName "experimental blackened death metal"^^xsd:string .
+
+om:ExperimentalBrutalDeathMetal a om:Genre ;
+    om:genreName "experimental brutal death metal"^^xsd:string .
+
+om:ExperimentalDarkAmbient a om:Genre ;
+    om:genreName "experimental dark ambient"^^xsd:string .
+
+om:ExperimentalDeathMetal a om:Genre ;
+    om:genreName "experimental death metal"^^xsd:string .
+
+om:ExperimentalDeathcore a om:Genre ;
+    om:genreName "experimental deathcore"^^xsd:string .
+
+om:ExperimentalDepressiveBlackMetal a om:Genre ;
+    om:genreName "experimental depressive black metal"^^xsd:string .
+
+om:ExperimentalDoomMetal a om:Genre ;
+    om:genreName "experimental doom metal"^^xsd:string .
+
+om:ExperimentalDrone a om:Genre ;
+    om:genreName "experimental drone"^^xsd:string .
+
+om:ExperimentalDroneDoom a om:Genre ;
+    om:genreName "experimental drone doom"^^xsd:string .
+
+om:ExperimentalElectronic a om:Genre ;
+    om:genreName "experimental electronic"^^xsd:string .
+
+om:ExperimentalExtremeMetal a om:Genre ;
+    om:genreName "experimental extreme metal"^^xsd:string .
+
+om:ExperimentalFolkMetal a om:Genre ;
+    om:genreName "experimental folk metal"^^xsd:string .
+
+om:ExperimentalFuneralDoomMetal a om:Genre ;
+    om:genreName "experimental funeral doom metal"^^xsd:string .
+
+om:ExperimentalFunk a om:Genre ;
+    om:genreName "experimental funk"^^xsd:string .
+
+om:ExperimentalGothic a om:Genre ;
+    om:genreName "experimental gothic"^^xsd:string .
+
+om:ExperimentalGothicRock a om:Genre ;
+    om:genreName "experimental gothic rock"^^xsd:string .
+
+om:ExperimentalGrindcore a om:Genre ;
+    om:genreName "experimental grindcore"^^xsd:string .
+
+om:ExperimentalGrindcoreWithJazzInfluences a om:Genre ;
+    om:genreName "experimental grindcore with jazz influences"^^xsd:string .
+
+om:ExperimentalGrooveMetal a om:Genre ;
+    om:genreName "experimental groove metal"^^xsd:string .
+
+om:ExperimentalHeavyMetal a om:Genre ;
+    om:genreName "experimental heavy metal"^^xsd:string .
+
+om:ExperimentalIndustrialBlackMetal a om:Genre ;
+    om:genreName "experimental industrial black metal"^^xsd:string .
+
+om:ExperimentalIndustrialDoom a om:Genre ;
+    om:genreName "experimental industrial doom"^^xsd:string .
+
+om:ExperimentalIndustrialMetal a om:Genre ;
+    om:genreName "experimental industrial metal"^^xsd:string .
+
+om:ExperimentalMelodicBlack a om:Genre ;
+    om:genreName "experimental melodic black"^^xsd:string .
+
+om:ExperimentalMelodicDeathMetal a om:Genre ;
+    om:genreName "experimental melodic death metal"^^xsd:string .
+
+om:ExperimentalMelodicDeathMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "experimental melodic death metal with industrial influences"^^xsd:string .
+
+om:ExperimentalMetal a om:Genre ;
+    om:genreName "experimental metal"^^xsd:string .
+
+om:ExperimentalMetalcore a om:Genre ;
+    om:genreName "experimental metalcore"^^xsd:string .
+
+om:ExperimentalNoise a om:Genre ;
+    om:genreName "experimental noise"^^xsd:string .
+
+om:ExperimentalPost-BlackMetal a om:Genre ;
+    om:genreName "experimental post-black metal"^^xsd:string .
+
+om:ExperimentalPost-Hardcore a om:Genre ;
+    om:genreName "experimental post-hardcore"^^xsd:string .
+
+om:ExperimentalPost-Metal a om:Genre ;
+    om:genreName "experimental post-metal"^^xsd:string .
+
+om:ExperimentalPost-Rock a om:Genre ;
+    om:genreName "experimental post-rock"^^xsd:string .
+
+om:ExperimentalPowerMetal a om:Genre ;
+    om:genreName "experimental power metal"^^xsd:string .
+
+om:ExperimentalProgressiveDeathMetal a om:Genre ;
+    om:genreName "experimental progressive death metal"^^xsd:string .
+
+om:ExperimentalProgressiveGrooveMetal a om:Genre ;
+    om:genreName "experimental progressive groove metal"^^xsd:string .
+
+om:ExperimentalProgressiveMetal a om:Genre ;
+    om:genreName "experimental progressive metal"^^xsd:string .
+
+om:ExperimentalProgressiveRock a om:Genre ;
+    om:genreName "experimental progressive rock"^^xsd:string .
+
+om:ExperimentalPsychedelicBlackMetal a om:Genre ;
+    om:genreName "experimental psychedelic black metal"^^xsd:string .
+
+om:ExperimentalPsychedelicDoom a om:Genre ;
+    om:genreName "experimental psychedelic doom"^^xsd:string .
+
+om:ExperimentalRawBlackMetal a om:Genre ;
+    om:genreName "experimental raw black metal"^^xsd:string .
+
+om:ExperimentalRock a om:Genre ;
+    om:genreName "experimental rock"^^xsd:string .
+
+om:ExperimentalSlam a om:Genre ;
+    om:genreName "experimental slam"^^xsd:string .
+
+om:ExperimentalSludgeMetal a om:Genre ;
+    om:genreName "experimental sludge metal"^^xsd:string .
+
+om:ExperimentalSouthern a om:Genre ;
+    om:genreName "experimental southern"^^xsd:string .
+
+om:ExperimentalStonerMetal a om:Genre ;
+    om:genreName "experimental stoner metal"^^xsd:string .
+
+om:ExperimentalSymphonicBlackMetal a om:Genre ;
+    om:genreName "experimental symphonic black metal"^^xsd:string .
+
+om:ExperimentalSymphonicMetal a om:Genre ;
+    om:genreName "experimental symphonic metal"^^xsd:string .
+
+om:ExperimentalTechnicalDeathMetal a om:Genre ;
+    om:genreName "experimental technical death metal"^^xsd:string .
+
+om:ExperimentalTechnicalMelodicDeathMetal a om:Genre ;
+    om:genreName "experimental technical melodic death metal"^^xsd:string .
+
+om:ExperimentalTechnicalThrashMetal a om:Genre ;
+    om:genreName "experimental technical thrash metal"^^xsd:string .
+
+om:ExperimentalThrashMetal a om:Genre ;
+    om:genreName "experimental thrash metal"^^xsd:string .
+
+om:ExperimentalThrashMetalWithBlack a om:Genre ;
+    om:genreName "experimental thrash metal with black"^^xsd:string .
+
+om:ExtremeAvant-GardeMetal a om:Genre ;
+    om:genreName "extreme avant-garde metal"^^xsd:string .
+
+om:ExtremeEpic a om:Genre ;
+    om:genreName "extreme epic"^^xsd:string .
+
+om:ExtremeFolkMetal a om:Genre ;
+    om:genreName "extreme folk metal"^^xsd:string .
+
+om:ExtremeGothicMetal a om:Genre ;
+    om:genreName "extreme gothic metal"^^xsd:string .
+
+om:ExtremeGrooveMetal a om:Genre ;
+    om:genreName "extreme groove metal"^^xsd:string .
+
+om:ExtremeHeavyMetal a om:Genre ;
+    om:genreName "extreme heavy metal"^^xsd:string .
+
+om:ExtremeIndustrialMetal a om:Genre ;
+    om:genreName "extreme industrial metal"^^xsd:string .
+
+om:ExtremeIndustrialNoise a om:Genre ;
+    om:genreName "extreme industrial noise"^^xsd:string .
+
+om:ExtremeMelodicProgressiveMetal a om:Genre ;
+    om:genreName "extreme melodic progressive metal"^^xsd:string .
+
+om:ExtremeMetal a om:Genre ;
+    om:genreName "extreme metal"^^xsd:string .
+
+om:ExtremePowerMetal a om:Genre ;
+    om:genreName "extreme power metal"^^xsd:string .
+
+om:ExtremeProgressiveMetal a om:Genre ;
+    om:genreName "extreme progressive metal"^^xsd:string .
+
+om:ExtremeSymphonicMetal a om:Genre ;
+    om:genreName "extreme symphonic metal"^^xsd:string .
+
+om:FalklandIslands a om:Country ;
+    om:countryName "falkland islands"^^xsd:string .
+
+om:FaroeIslands a om:Country ;
+    om:countryName "faroe islands"^^xsd:string .
+
+om:FilmScore a om:Genre ;
+    om:genreName "film score"^^xsd:string .
+
+om:Finland a om:Country ;
+    om:countryName "finland"^^xsd:string .
+
+om:FolkBlackMetal a om:Genre ;
+    om:genreName "folk black metal"^^xsd:string .
+
+om:FolkDeathMetal a om:Genre ;
+    om:genreName "folk death metal"^^xsd:string .
+
+om:FolkDoom a om:Genre ;
+    om:genreName "folk doom"^^xsd:string .
+
+om:FolkGothicMetal a om:Genre ;
+    om:genreName "folk gothic metal"^^xsd:string .
+
+om:FolkHeavyMetal a om:Genre ;
+    om:genreName "folk heavy metal"^^xsd:string .
+
+om:FolkMetal a om:Genre ;
+    om:genreName "folk metal"^^xsd:string .
+
+om:FolkMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "folk metal with black metal influences"^^xsd:string .
+
+om:FolkMetalWithHardRockElements a om:Genre ;
+    om:genreName "folk metal with hard rock elements"^^xsd:string .
+
+om:FolkMetalWithIndustrialElements a om:Genre ;
+    om:genreName "folk metal with industrial elements"^^xsd:string .
+
+om:FolkMetalWithPunkInfluences a om:Genre ;
+    om:genreName "folk metal with punk influences"^^xsd:string .
+
+om:FolkMetalcore a om:Genre ;
+    om:genreName "folk metalcore"^^xsd:string .
+
+om:FolkPowerMetal a om:Genre ;
+    om:genreName "folk power metal"^^xsd:string .
+
+om:FolkRock a om:Genre ;
+    om:genreName "folk rock"^^xsd:string .
+
+om:FolkVikingMetal a om:Genre ;
+    om:genreName "folk viking metal"^^xsd:string .
+
+om:France a om:Country ;
+    om:countryName "france"^^xsd:string .
+
+om:FreeJazz a om:Genre ;
+    om:genreName "free jazz"^^xsd:string .
+
+om:FrenchGuiana a om:Country ;
+    om:countryName "french guiana"^^xsd:string .
+
+om:FrenchPolynesia a om:Country ;
+    om:countryName "french polynesia"^^xsd:string .
+
+om:FuneralDeath a om:Genre ;
+    om:genreName "funeral death"^^xsd:string .
+
+om:FuneralDoomMetal a om:Genre ;
+    om:genreName "funeral doom metal"^^xsd:string .
+
+om:FuneralDoomMetalWithAvant-GardeElements a om:Genre ;
+    om:genreName "funeral doom metal with avant-garde elements"^^xsd:string .
+
+om:FunkMetal a om:Genre ;
+    om:genreName "funk metal"^^xsd:string .
+
+om:FunkRock a om:Genre ;
+    om:genreName "funk rock"^^xsd:string .
+
+om:Fusion a om:Genre ;
+    om:genreName "fusion"^^xsd:string .
+
+om:FusionWithHardRockInfluences a om:Genre ;
+    om:genreName "fusion with hard rock influences"^^xsd:string .
+
+om:GarageRock a om:Genre ;
+    om:genreName "garage rock"^^xsd:string .
+
+om:Georgia a om:Country ;
+    om:countryName "georgia"^^xsd:string .
+
+om:Germany a om:Country ;
+    om:countryName "germany"^^xsd:string .
+
+om:Gibraltar a om:Country ;
+    om:countryName "gibraltar"^^xsd:string .
+
+om:GlamMetal a om:Genre ;
+    om:genreName "glam metal"^^xsd:string .
+
+om:GlamRock a om:Genre ;
+    om:genreName "glam rock"^^xsd:string .
+
+om:Glitch a om:Genre ;
+    om:genreName "glitch"^^xsd:string .
+
+om:GoregrindWithDoomMetalElements a om:Genre ;
+    om:genreName "goregrind with doom metal elements"^^xsd:string .
+
+om:GoregrindWithGrooveMetalInfluences a om:Genre ;
+    om:genreName "goregrind with groove metal influences"^^xsd:string .
+
+om:Gorenoise a om:Genre ;
+    om:genreName "gorenoise"^^xsd:string .
+
+om:Gospel a om:Genre ;
+    om:genreName "gospel"^^xsd:string .
+
+om:GothicBlackMetal a om:Genre ;
+    om:genreName "gothic black metal"^^xsd:string .
+
+om:GothicDeathMetal a om:Genre ;
+    om:genreName "gothic death metal"^^xsd:string .
+
+om:GothicDoomMetal a om:Genre ;
+    om:genreName "gothic doom metal"^^xsd:string .
+
+om:GothicFolkMetal a om:Genre ;
+    om:genreName "gothic folk metal"^^xsd:string .
+
+om:GothicHeavyMetal a om:Genre ;
+    om:genreName "gothic heavy metal"^^xsd:string .
+
+om:GothicIndustrial a om:Genre ;
+    om:genreName "gothic industrial"^^xsd:string .
+
+om:GothicMelodicThrash a om:Genre ;
+    om:genreName "gothic melodic thrash"^^xsd:string .
+
+om:GothicMetal a om:Genre ;
+    om:genreName "gothic metal"^^xsd:string .
+
+om:GothicMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "gothic metal with black metal influences"^^xsd:string .
+
+om:GothicMetalWithClassicalAndFolkInfluences a om:Genre ;
+    om:genreName "gothic metal with classical and folk influences"^^xsd:string .
+
+om:GothicMetalWithDarkwaveInfluences a om:Genre ;
+    om:genreName "gothic metal with darkwave influences"^^xsd:string .
+
+om:GothicMetalWithDeath a om:Genre ;
+    om:genreName "gothic metal with death"^^xsd:string .
+
+om:GothicMetalWithDoomElements a om:Genre ;
+    om:genreName "gothic metal with doom elements"^^xsd:string .
+
+om:GothicMetalWithDoomInfluences a om:Genre ;
+    om:genreName "gothic metal with doom influences"^^xsd:string .
+
+om:GothicMetalWithFolk a om:Genre ;
+    om:genreName "gothic metal with folk"^^xsd:string .
+
+om:GothicMetalWithFolkInfluences a om:Genre ;
+    om:genreName "gothic metal with folk influences"^^xsd:string .
+
+om:GothicMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "gothic metal with industrial influences"^^xsd:string .
+
+om:GothicMetalWithMedievalInfluences a om:Genre ;
+    om:genreName "gothic metal with medieval influences"^^xsd:string .
+
+om:GothicMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "gothic metal with middle eastern influences"^^xsd:string .
+
+om:GothicMetalWithPowerMetalElements a om:Genre ;
+    om:genreName "gothic metal with power metal elements"^^xsd:string .
+
+om:GothicMetalWithPowerMetalInfluences a om:Genre ;
+    om:genreName "gothic metal with power metal influences"^^xsd:string .
+
+om:GothicMetalWithProgressiveElements a om:Genre ;
+    om:genreName "gothic metal with progressive elements"^^xsd:string .
+
+om:GothicMetalWithPunkInfluences a om:Genre ;
+    om:genreName "gothic metal with punk influences"^^xsd:string .
+
+om:GothicMetalWithRockInfluences a om:Genre ;
+    om:genreName "gothic metal with rock influences"^^xsd:string .
+
+om:GothicMetalWithThrashAndDeathMetalElements a om:Genre ;
+    om:genreName "gothic metal with thrash and death metal elements"^^xsd:string .
+
+om:GothicMetalWithThrashInfluences a om:Genre ;
+    om:genreName "gothic metal with thrash influences"^^xsd:string .
+
+om:Greece a om:Country ;
+    om:countryName "greece"^^xsd:string .
+
+om:Greenland a om:Country ;
+    om:countryName "greenland"^^xsd:string .
+
+om:GrindNRoll a om:Genre ;
+    om:genreName "grind n roll"^^xsd:string .
+
+om:GrindcoreWithBlackMetalElements a om:Genre ;
+    om:genreName "grindcore with black metal elements"^^xsd:string .
+
+om:GrindcoreWithClassicalInfluences a om:Genre ;
+    om:genreName "grindcore with classical influences"^^xsd:string .
+
+om:GrindcoreWithDeathMetalElements a om:Genre ;
+    om:genreName "grindcore with death metal elements"^^xsd:string .
+
+om:GrindcoreWithDeathMetalInfluences a om:Genre ;
+    om:genreName "grindcore with death metal influences"^^xsd:string .
+
+om:GrindcoreWithElectronicInfluences a om:Genre ;
+    om:genreName "grindcore with electronic influences"^^xsd:string .
+
+om:GrindcoreWithHardcoreElements a om:Genre ;
+    om:genreName "grindcore with hardcore elements"^^xsd:string .
+
+om:GrindcoreWithHardcoreInfluences a om:Genre ;
+    om:genreName "grindcore with hardcore influences"^^xsd:string .
+
+om:GrindcoreWithHeavyMetalInfluences a om:Genre ;
+    om:genreName "grindcore with heavy metal influences"^^xsd:string .
+
+om:GrindcoreWithIndustrialInfluences a om:Genre ;
+    om:genreName "grindcore with industrial influences"^^xsd:string .
+
+om:GrindcoreWithJazzInfluences a om:Genre ;
+    om:genreName "grindcore with jazz influences"^^xsd:string .
+
+om:GrindcoreWithMelodicAndPowerMetalElements a om:Genre ;
+    om:genreName "grindcore with melodic and power metal elements"^^xsd:string .
+
+om:GrindcoreWithRock a om:Genre ;
+    om:genreName "grindcore with rock"^^xsd:string .
+
+om:GrindcoreWithThrashElements a om:Genre ;
+    om:genreName "grindcore with thrash elements"^^xsd:string .
+
+om:GrindcoreWithThrashMetalInfluences a om:Genre ;
+    om:genreName "grindcore with thrash metal influences"^^xsd:string .
+
+om:GrooveMetal a om:Genre ;
+    om:genreName "groove metal"^^xsd:string .
+
+om:GrooveMetalInfluences a om:Genre ;
+    om:genreName "groove metal influences"^^xsd:string .
+
+om:GrooveMetalWithAlternative a om:Genre ;
+    om:genreName "groove metal with alternative"^^xsd:string .
+
+om:GrooveMetalWithAlternativeInfluences a om:Genre ;
+    om:genreName "groove metal with alternative influences"^^xsd:string .
+
+om:GrooveMetalWithAlternativeRockElements a om:Genre ;
+    om:genreName "groove metal with alternative rock elements"^^xsd:string .
+
+om:GrooveMetalWithBluesInfluences a om:Genre ;
+    om:genreName "groove metal with blues influences"^^xsd:string .
+
+om:GrooveMetalWithDeath a om:Genre ;
+    om:genreName "groove metal with death"^^xsd:string .
+
+om:GrooveMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "groove metal with death metal influences"^^xsd:string .
+
+om:GrooveMetalWithFolkInfluences a om:Genre ;
+    om:genreName "groove metal with folk influences"^^xsd:string .
+
+om:GrooveMetalWithFunkElements a om:Genre ;
+    om:genreName "groove metal with funk elements"^^xsd:string .
+
+om:GrooveMetalWithFunkInfluences a om:Genre ;
+    om:genreName "groove metal with funk influences"^^xsd:string .
+
+om:GrooveMetalWithGothic a om:Genre ;
+    om:genreName "groove metal with gothic"^^xsd:string .
+
+om:GrooveMetalWithGrindcoreInfluences a om:Genre ;
+    om:genreName "groove metal with grindcore influences"^^xsd:string .
+
+om:GrooveMetalWithGrungeElements a om:Genre ;
+    om:genreName "groove metal with grunge elements"^^xsd:string .
+
+om:GrooveMetalWithGrungeInfluences a om:Genre ;
+    om:genreName "groove metal with grunge influences"^^xsd:string .
+
+om:GrooveMetalWithHardcoreElements a om:Genre ;
+    om:genreName "groove metal with hardcore elements"^^xsd:string .
+
+om:GrooveMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "groove metal with hardcore influences"^^xsd:string .
+
+om:GrooveMetalWithHorrorRockInfluences a om:Genre ;
+    om:genreName "groove metal with horror rock influences"^^xsd:string .
+
+om:GrooveMetalWithIndustrialElements a om:Genre ;
+    om:genreName "groove metal with industrial elements"^^xsd:string .
+
+om:GrooveMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "groove metal with industrial influences"^^xsd:string .
+
+om:GrooveMetalWithJazzInfluences a om:Genre ;
+    om:genreName "groove metal with jazz influences"^^xsd:string .
+
+om:GrooveMetalWithMetalcoreElements a om:Genre ;
+    om:genreName "groove metal with metalcore elements"^^xsd:string .
+
+om:GrooveMetalWithPowerMetalInfluences a om:Genre ;
+    om:genreName "groove metal with power metal influences"^^xsd:string .
+
+om:GrooveMetalWithPunkInfluences a om:Genre ;
+    om:genreName "groove metal with punk influences"^^xsd:string .
+
+om:GrooveMetalWithSludge a om:Genre ;
+    om:genreName "groove metal with sludge"^^xsd:string .
+
+om:GrooveMetalWithThrashElements a om:Genre ;
+    om:genreName "groove metal with thrash elements"^^xsd:string .
+
+om:GrooveMetalWithThrashMetalElements a om:Genre ;
+    om:genreName "groove metal with thrash metal elements"^^xsd:string .
+
+om:GrooveMetalWithThrashMetalInfluences a om:Genre ;
+    om:genreName "groove metal with thrash metal influences"^^xsd:string .
+
+om:GrooveMetalWithVariousInfluences a om:Genre ;
+    om:genreName "groove metal with various influences"^^xsd:string .
+
+om:Guadeloupe a om:Country ;
+    om:countryName "guadeloupe"^^xsd:string .
+
+om:Guam a om:Country ;
+    om:countryName "guam"^^xsd:string .
+
+om:Guatemala a om:Country ;
+    om:countryName "guatemala"^^xsd:string .
+
+om:Guernsey a om:Country ;
+    om:countryName "guernsey"^^xsd:string .
+
+om:Guyana a om:Country ;
+    om:countryName "guyana"^^xsd:string .
+
+om:GypsyJazz a om:Genre ;
+    om:genreName "gypsy jazz"^^xsd:string .
+
+om:HardRockWithFunkElements a om:Genre ;
+    om:genreName "hard rock with funk elements"^^xsd:string .
+
+om:HardRockWithFunkInfluences a om:Genre ;
+    om:genreName "hard rock with funk influences"^^xsd:string .
+
+om:HardRockWithGothicInfluences a om:Genre ;
+    om:genreName "hard rock with gothic influences"^^xsd:string .
+
+om:HardRockWithIndustrialElements a om:Genre ;
+    om:genreName "hard rock with industrial elements"^^xsd:string .
+
+om:HardRockWithNu-MetalInfluences a om:Genre ;
+    om:genreName "hard rock with nu-metal influences"^^xsd:string .
+
+<https://w3id.org/ontometal#HardRockWithOi!> a om:Genre ;
+    om:genreName "hard rock with oi!"^^xsd:string .
+
+om:HardRockWithPunkElements a om:Genre ;
+    om:genreName "hard rock with punk elements"^^xsd:string .
+
+om:HardRockWithPunkInfluences a om:Genre ;
+    om:genreName "hard rock with punk influences"^^xsd:string .
+
+om:HardRockWithThrashAndGrooveInfluences a om:Genre ;
+    om:genreName "hard rock with thrash and groove influences"^^xsd:string .
+
+om:HardRockWithThrashInfluences a om:Genre ;
+    om:genreName "hard rock with thrash influences"^^xsd:string .
+
+om:HardRockWithThrashMetalElements a om:Genre ;
+    om:genreName "hard rock with thrash metal elements"^^xsd:string .
+
+om:HardRockWithThrashMetalInfluences a om:Genre ;
+    om:genreName "hard rock with thrash metal influences"^^xsd:string .
+
+om:HardRockWithVariousInfluences a om:Genre ;
+    om:genreName "hard rock with various influences"^^xsd:string .
+
+om:HardcoreWithDeathMetalElements a om:Genre ;
+    om:genreName "hardcore with death metal elements"^^xsd:string .
+
+om:HardcoreWithDeathMetalInfluences a om:Genre ;
+    om:genreName "hardcore with death metal influences"^^xsd:string .
+
+om:HardcoreWithDjentElements a om:Genre ;
+    om:genreName "hardcore with djent elements"^^xsd:string .
+
+om:HardcoreWithDoomMetalInfluences a om:Genre ;
+    om:genreName "hardcore with doom metal influences"^^xsd:string .
+
+om:HardcoreWithFlamencoInfluences a om:Genre ;
+    om:genreName "hardcore with flamenco influences"^^xsd:string .
+
+om:HardcoreWithFolkInfluences a om:Genre ;
+    om:genreName "hardcore with folk influences"^^xsd:string .
+
+om:HardcoreWithGothicInfluences a om:Genre ;
+    om:genreName "hardcore with gothic influences"^^xsd:string .
+
+om:HardcoreWithGrindcoreInfluences a om:Genre ;
+    om:genreName "hardcore with grindcore influences"^^xsd:string .
+
+om:HardcoreWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "hardcore with middle eastern influences"^^xsd:string .
+
+om:HardcoreWithNu-MetalElements a om:Genre ;
+    om:genreName "hardcore with nu-metal elements"^^xsd:string .
+
+om:HardcoreWithNu-MetalInfluences a om:Genre ;
+    om:genreName "hardcore with nu-metal influences"^^xsd:string .
+
+om:HardcoreWithThrashMetalElements a om:Genre ;
+    om:genreName "hardcore with thrash metal elements"^^xsd:string .
+
+om:HarshNoise a om:Genre ;
+    om:genreName "harsh noise"^^xsd:string .
+
+om:HeavyGroove a om:Genre ;
+    om:genreName "heavy groove"^^xsd:string .
+
+om:HeavyMetal a om:Genre ;
+    om:genreName "heavy metal"^^xsd:string .
+
+om:HeavyMetalInfluences a om:Genre ;
+    om:genreName "heavy metal influences"^^xsd:string .
+
+om:HeavyMetalWithAlternativeInfluences a om:Genre ;
+    om:genreName "heavy metal with alternative influences"^^xsd:string .
+
+om:HeavyMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "heavy metal with black metal influences"^^xsd:string .
+
+om:HeavyMetalWithBluesInfluences a om:Genre ;
+    om:genreName "heavy metal with blues influences"^^xsd:string .
+
+om:HeavyMetalWithDeath a om:Genre ;
+    om:genreName "heavy metal with death"^^xsd:string .
+
+om:HeavyMetalWithDeathMetalElements a om:Genre ;
+    om:genreName "heavy metal with death metal elements"^^xsd:string .
+
+om:HeavyMetalWithDeathcoreInfluences a om:Genre ;
+    om:genreName "heavy metal with deathcore influences"^^xsd:string .
+
+om:HeavyMetalWithDoom a om:Genre ;
+    om:genreName "heavy metal with doom"^^xsd:string .
+
+om:HeavyMetalWithDoomElements a om:Genre ;
+    om:genreName "heavy metal with doom elements"^^xsd:string .
+
+om:HeavyMetalWithDoomInfluences a om:Genre ;
+    om:genreName "heavy metal with doom influences"^^xsd:string .
+
+om:HeavyMetalWithDoomMetal a om:Genre ;
+    om:genreName "heavy metal with doom metal"^^xsd:string .
+
+om:HeavyMetalWithDoomMetalElements a om:Genre ;
+    om:genreName "heavy metal with doom metal elements"^^xsd:string .
+
+om:HeavyMetalWithFolk a om:Genre ;
+    om:genreName "heavy metal with folk"^^xsd:string .
+
+om:HeavyMetalWithFolkAndThrashInfluences a om:Genre ;
+    om:genreName "heavy metal with folk and thrash influences"^^xsd:string .
+
+om:HeavyMetalWithFolkElements a om:Genre ;
+    om:genreName "heavy metal with folk elements"^^xsd:string .
+
+om:HeavyMetalWithFolkInfluences a om:Genre ;
+    om:genreName "heavy metal with folk influences"^^xsd:string .
+
+om:HeavyMetalWithFunkInfluences a om:Genre ;
+    om:genreName "heavy metal with funk influences"^^xsd:string .
+
+om:HeavyMetalWithGothic a om:Genre ;
+    om:genreName "heavy metal with gothic"^^xsd:string .
+
+om:HeavyMetalWithGothicInfluences a om:Genre ;
+    om:genreName "heavy metal with gothic influences"^^xsd:string .
+
+om:HeavyMetalWithGothicRockInfluences a om:Genre ;
+    om:genreName "heavy metal with gothic rock influences"^^xsd:string .
+
+om:HeavyMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "heavy metal with groove influences"^^xsd:string .
+
+om:HeavyMetalWithHardRock a om:Genre ;
+    om:genreName "heavy metal with hard rock"^^xsd:string .
+
+om:HeavyMetalWithHardcore a om:Genre ;
+    om:genreName "heavy metal with hardcore"^^xsd:string .
+
+om:HeavyMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "heavy metal with hardcore influences"^^xsd:string .
+
+om:HeavyMetalWithHardcorePunk a om:Genre ;
+    om:genreName "heavy metal with hardcore punk"^^xsd:string .
+
+om:HeavyMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "heavy metal with industrial influences"^^xsd:string .
+
+om:HeavyMetalWithMedievalInfluences a om:Genre ;
+    om:genreName "heavy metal with medieval influences"^^xsd:string .
+
+om:HeavyMetalWithMelodicDeathInfluences a om:Genre ;
+    om:genreName "heavy metal with melodic death influences"^^xsd:string .
+
+om:HeavyMetalWithMelodicThrashInfluences a om:Genre ;
+    om:genreName "heavy metal with melodic thrash influences"^^xsd:string .
+
+om:HeavyMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "heavy metal with middle eastern influences"^^xsd:string .
+
+<https://w3id.org/ontometal#HeavyMetalWithOi!> a om:Genre ;
+    om:genreName "heavy metal with oi!"^^xsd:string .
+
+om:HeavyMetalWithPost-PunkInfluences a om:Genre ;
+    om:genreName "heavy metal with post-punk influences"^^xsd:string .
+
+om:HeavyMetalWithPowerAndSpeedInfluences a om:Genre ;
+    om:genreName "heavy metal with power and speed influences"^^xsd:string .
+
+om:HeavyMetalWithPowerAndThrashInfluences a om:Genre ;
+    om:genreName "heavy metal with power and thrash influences"^^xsd:string .
+
+om:HeavyMetalWithPowerMetalAndHardRockInfluences a om:Genre ;
+    om:genreName "heavy metal with power metal and hard rock influences"^^xsd:string .
+
+om:HeavyMetalWithPowerMetalElements a om:Genre ;
+    om:genreName "heavy metal with power metal elements"^^xsd:string .
+
+om:HeavyMetalWithPrehispanicFolkInfluences a om:Genre ;
+    om:genreName "heavy metal with prehispanic folk influences"^^xsd:string .
+
+om:HeavyMetalWithProgressiveAndPowerInfluences a om:Genre ;
+    om:genreName "heavy metal with progressive and power influences"^^xsd:string .
+
+om:HeavyMetalWithProgressiveElements a om:Genre ;
+    om:genreName "heavy metal with progressive elements"^^xsd:string .
+
+om:HeavyMetalWithProgressiveInfluences a om:Genre ;
+    om:genreName "heavy metal with progressive influences"^^xsd:string .
+
+om:HeavyMetalWithProgressiveMetalInfluences a om:Genre ;
+    om:genreName "heavy metal with progressive metal influences"^^xsd:string .
+
+om:HeavyMetalWithProgressiveRockInfluences a om:Genre ;
+    om:genreName "heavy metal with progressive rock influences"^^xsd:string .
+
+om:HeavyMetalWithPsychedelicInfluences a om:Genre ;
+    om:genreName "heavy metal with psychedelic influences"^^xsd:string .
+
+om:HeavyMetalWithPunkElements a om:Genre ;
+    om:genreName "heavy metal with punk elements"^^xsd:string .
+
+om:HeavyMetalWithPunkInfluences a om:Genre ;
+    om:genreName "heavy metal with punk influences"^^xsd:string .
+
+om:HeavyMetalWithRacInfluences a om:Genre ;
+    om:genreName "heavy metal with rac influences"^^xsd:string .
+
+om:HeavyMetalWithRockElements a om:Genre ;
+    om:genreName "heavy metal with rock elements"^^xsd:string .
+
+om:HeavyMetalWithRockInfluences a om:Genre ;
+    om:genreName "heavy metal with rock influences"^^xsd:string .
+
+om:HeavyMetalWithSludge a om:Genre ;
+    om:genreName "heavy metal with sludge"^^xsd:string .
+
+om:HeavyMetalWithStonerRockInfluences a om:Genre ;
+    om:genreName "heavy metal with stoner rock influences"^^xsd:string .
+
+om:HeavyMetalWithThrash a om:Genre ;
+    om:genreName "heavy metal with thrash"^^xsd:string .
+
+om:HeavyMetalWithThrashAndDoomMetalElements a om:Genre ;
+    om:genreName "heavy metal with thrash and doom metal elements"^^xsd:string .
+
+om:HeavyMetalWithThrashElements a om:Genre ;
+    om:genreName "heavy metal with thrash elements"^^xsd:string .
+
+om:HeavyMetalWithThrashInfluences a om:Genre ;
+    om:genreName "heavy metal with thrash influences"^^xsd:string .
+
+om:HeavyMetalWithThrashMetalElements a om:Genre ;
+    om:genreName "heavy metal with thrash metal elements"^^xsd:string .
+
+om:HeavyMetalWithThrashMetalInfluences a om:Genre ;
+    om:genreName "heavy metal with thrash metal influences"^^xsd:string .
+
+om:HeavyMetalWithVariousInfluences a om:Genre ;
+    om:genreName "heavy metal with various influences"^^xsd:string .
+
+om:HeavyProgressive a om:Genre ;
+    om:genreName "heavy progressive"^^xsd:string .
+
+om:Hip-Hop a om:Genre ;
+    om:genreName "hip-hop"^^xsd:string .
+
+om:Honduras a om:Country ;
+    om:countryName "honduras"^^xsd:string .
+
+om:HongKong a om:Country ;
+    om:countryName "hong kong"^^xsd:string .
+
+om:HorrorPunk a om:Genre ;
+    om:genreName "horror punk"^^xsd:string .
+
+om:Hungary a om:Country ;
+    om:countryName "hungary"^^xsd:string .
+
+om:Iceland a om:Country ;
+    om:countryName "iceland"^^xsd:string .
+
+om:India a om:Country ;
+    om:countryName "india"^^xsd:string .
+
+om:Indie a om:Genre ;
+    om:genreName "indie"^^xsd:string .
+
+om:IndieRock a om:Genre ;
+    om:genreName "indie rock"^^xsd:string .
+
+om:Indonesia a om:Country ;
+    om:countryName "indonesia"^^xsd:string .
+
+om:IndustrialAlternative a om:Genre ;
+    om:genreName "industrial alternative"^^xsd:string .
+
+om:IndustrialAvant-GardeMetal a om:Genre ;
+    om:genreName "industrial avant-garde metal"^^xsd:string .
+
+om:IndustrialBlackMetal a om:Genre ;
+    om:genreName "industrial black metal"^^xsd:string .
+
+om:IndustrialBlackMetalWithDeath a om:Genre ;
+    om:genreName "industrial black metal with death"^^xsd:string .
+
+om:IndustrialBlackMetalWithNewWaveInfluences a om:Genre ;
+    om:genreName "industrial black metal with new wave influences"^^xsd:string .
+
+om:IndustrialBlackenedDeathMetal a om:Genre ;
+    om:genreName "industrial blackened death metal"^^xsd:string .
+
+om:IndustrialBlackenedGothicMetal a om:Genre ;
+    om:genreName "industrial blackened gothic metal"^^xsd:string .
+
+om:IndustrialBlackenedSludgeMetal a om:Genre ;
+    om:genreName "industrial blackened sludge metal"^^xsd:string .
+
+om:IndustrialBrutalDeathMetal a om:Genre ;
+    om:genreName "industrial brutal death metal"^^xsd:string .
+
+om:IndustrialCybergrind a om:Genre ;
+    om:genreName "industrial cybergrind"^^xsd:string .
+
+om:IndustrialDeathMetal a om:Genre ;
+    om:genreName "industrial death metal"^^xsd:string .
+
+om:IndustrialDeathcore a om:Genre ;
+    om:genreName "industrial deathcore"^^xsd:string .
+
+om:IndustrialDoomMetal a om:Genre ;
+    om:genreName "industrial doom metal"^^xsd:string .
+
+om:IndustrialDroneDoomMetal a om:Genre ;
+    om:genreName "industrial drone doom metal"^^xsd:string .
+
+om:IndustrialExperimentalMetal a om:Genre ;
+    om:genreName "industrial experimental metal"^^xsd:string .
+
+om:IndustrialGothicDoomMetal a om:Genre ;
+    om:genreName "industrial gothic doom metal"^^xsd:string .
+
+om:IndustrialGothicMetal a om:Genre ;
+    om:genreName "industrial gothic metal"^^xsd:string .
+
+om:IndustrialGothicMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "industrial gothic metal with black metal influences"^^xsd:string .
+
+om:IndustrialGothicRock a om:Genre ;
+    om:genreName "industrial gothic rock"^^xsd:string .
+
+om:IndustrialGrindcore a om:Genre ;
+    om:genreName "industrial grindcore"^^xsd:string .
+
+om:IndustrialGrooveMetal a om:Genre ;
+    om:genreName "industrial groove metal"^^xsd:string .
+
+om:IndustrialHardRock a om:Genre ;
+    om:genreName "industrial hard rock"^^xsd:string .
+
+om:IndustrialHeavyMetal a om:Genre ;
+    om:genreName "industrial heavy metal"^^xsd:string .
+
+om:IndustrialHip-Hop a om:Genre ;
+    om:genreName "industrial hip-hop"^^xsd:string .
+
+om:IndustrialMelodicDeathMetal a om:Genre ;
+    om:genreName "industrial melodic death metal"^^xsd:string .
+
+om:IndustrialMetal a om:Genre ;
+    om:genreName "industrial metal"^^xsd:string .
+
+om:IndustrialMetalWithBlackMetalElements a om:Genre ;
+    om:genreName "industrial metal with black metal elements"^^xsd:string .
+
+om:IndustrialMetalWithDeathMetal a om:Genre ;
+    om:genreName "industrial metal with death metal"^^xsd:string .
+
+om:IndustrialMetalWithSludgeMetalElements a om:Genre ;
+    om:genreName "industrial metal with sludge metal elements"^^xsd:string .
+
+om:IndustrialMetalcore a om:Genre ;
+    om:genreName "industrial metalcore"^^xsd:string .
+
+om:IndustrialNoise a om:Genre ;
+    om:genreName "industrial noise"^^xsd:string .
+
+om:IndustrialPost-BlackMetal a om:Genre ;
+    om:genreName "industrial post-black metal"^^xsd:string .
+
+om:IndustrialPost-Metal a om:Genre ;
+    om:genreName "industrial post-metal"^^xsd:string .
+
+om:IndustrialProgressiveMetal a om:Genre ;
+    om:genreName "industrial progressive metal"^^xsd:string .
+
+om:IndustrialRock a om:Genre ;
+    om:genreName "industrial rock"^^xsd:string .
+
+om:IndustrialSludgeMetal a om:Genre ;
+    om:genreName "industrial sludge metal"^^xsd:string .
+
+om:IndustrialStonerMetal a om:Genre ;
+    om:genreName "industrial stoner metal"^^xsd:string .
+
+om:IndustrialSymphonicBlackMetal a om:Genre ;
+    om:genreName "industrial symphonic black metal"^^xsd:string .
+
+om:IndustrialSymphonicDeath a om:Genre ;
+    om:genreName "industrial symphonic death"^^xsd:string .
+
+om:IndustrialThrashMetal a om:Genre ;
+    om:genreName "industrial thrash metal"^^xsd:string .
+
+om:International a om:Country ;
+    om:countryName "international"^^xsd:string .
+
+om:Iran a om:Country ;
+    om:countryName "iran"^^xsd:string .
+
+om:Iraq a om:Country ;
+    om:countryName "iraq"^^xsd:string .
+
+om:Ireland a om:Country ;
+    om:countryName "ireland"^^xsd:string .
+
+om:IsleOfMan a om:Country ;
+    om:countryName "isle of man"^^xsd:string .
+
+om:Israel a om:Country ;
+    om:countryName "israel"^^xsd:string .
+
+om:Italy a om:Country ;
+    om:countryName "italy"^^xsd:string .
+
+om:J-Rock a om:Genre ;
+    om:genreName "j-rock"^^xsd:string .
+
+om:Jamaica a om:Country ;
+    om:countryName "jamaica"^^xsd:string .
+
+om:Japan a om:Country ;
+    om:countryName "japan"^^xsd:string .
+
+om:JazzFusion a om:Genre ;
+    om:genreName "jazz fusion"^^xsd:string .
+
+om:JazzRock a om:Genre ;
+    om:genreName "jazz rock"^^xsd:string .
+
+om:Jersey a om:Country ;
+    om:countryName "jersey"^^xsd:string .
+
+om:Jordan a om:Country ;
+    om:countryName "jordan"^^xsd:string .
+
+om:Kazakhstan a om:Country ;
+    om:countryName "kazakhstan"^^xsd:string .
+
+om:Kenya a om:Country ;
+    om:countryName "kenya"^^xsd:string .
+
+<https://w3id.org/ontometal#Korea,South> a om:Country ;
+    om:countryName "korea, south"^^xsd:string .
+
+om:Krautrock a om:Genre ;
+    om:genreName "krautrock"^^xsd:string .
+
+om:Kuwait a om:Country ;
+    om:countryName "kuwait"^^xsd:string .
+
+om:Kyrgyzstan a om:Country ;
+    om:countryName "kyrgyzstan"^^xsd:string .
+
+om:Laos a om:Country ;
+    om:countryName "laos"^^xsd:string .
+
+om:Latvia a om:Country ;
+    om:countryName "latvia"^^xsd:string .
+
+om:Lebanon a om:Country ;
+    om:countryName "lebanon"^^xsd:string .
+
+om:Libya a om:Country ;
+    om:countryName "libya"^^xsd:string .
+
+om:Liechtenstein a om:Country ;
+    om:countryName "liechtenstein"^^xsd:string .
+
+om:Lithuania a om:Country ;
+    om:countryName "lithuania"^^xsd:string .
+
+om:Luxembourg a om:Country ;
+    om:countryName "luxembourg"^^xsd:string .
+
+om:Madagascar a om:Country ;
+    om:countryName "madagascar"^^xsd:string .
+
+om:Malawi a om:Country ;
+    om:countryName "malawi"^^xsd:string .
+
+om:Malaysia a om:Country ;
+    om:countryName "malaysia"^^xsd:string .
+
+om:Maldives a om:Country ;
+    om:countryName "maldives"^^xsd:string .
+
+om:Malta a om:Country ;
+    om:countryName "malta"^^xsd:string .
+
+om:MartialDarkAmbient a om:Genre ;
+    om:genreName "martial dark ambient"^^xsd:string .
+
+om:MartialIndustrial a om:Genre ;
+    om:genreName "martial industrial"^^xsd:string .
+
+om:MathRock a om:Genre ;
+    om:genreName "math rock"^^xsd:string .
+
+om:Mathcore a om:Genre ;
+    om:genreName "mathcore"^^xsd:string .
+
+om:Mauritius a om:Country ;
+    om:countryName "mauritius"^^xsd:string .
+
+om:MedievalBlackMetal a om:Genre ;
+    om:genreName "medieval black metal"^^xsd:string .
+
+om:MedievalFolkMetal a om:Genre ;
+    om:genreName "medieval folk metal"^^xsd:string .
+
+om:MedievalGothicRock a om:Genre ;
+    om:genreName "medieval gothic rock"^^xsd:string .
+
+om:MedievalMetal a om:Genre ;
+    om:genreName "medieval metal"^^xsd:string .
+
+om:MelodicAtmosphericDeathMetal a om:Genre ;
+    om:genreName "melodic atmospheric death metal"^^xsd:string .
+
+om:MelodicAtmosphericDoom a om:Genre ;
+    om:genreName "melodic atmospheric doom"^^xsd:string .
+
+om:MelodicAtmosphericSludgeMetal a om:Genre ;
+    om:genreName "melodic atmospheric sludge metal"^^xsd:string .
+
+om:MelodicBlackMetal a om:Genre ;
+    om:genreName "melodic black metal"^^xsd:string .
+
+om:MelodicBlackMetalWithDoomInfluences a om:Genre ;
+    om:genreName "melodic black metal with doom influences"^^xsd:string .
+
+om:MelodicBlackMetalWithFolk a om:Genre ;
+    om:genreName "melodic black metal with folk"^^xsd:string .
+
+om:MelodicBlackMetalWithFolkInfluences a om:Genre ;
+    om:genreName "melodic black metal with folk influences"^^xsd:string .
+
+om:MelodicBlackMetalWithHardcorePunkInfluences a om:Genre ;
+    om:genreName "melodic black metal with hardcore punk influences"^^xsd:string .
+
+<https://w3id.org/ontometal#MelodicBlackMetalWithOi!> a om:Genre ;
+    om:genreName "melodic black metal with oi!"^^xsd:string .
+
+om:MelodicBlackMetalWithPowerMetalInfluences a om:Genre ;
+    om:genreName "melodic black metal with power metal influences"^^xsd:string .
+
+om:MelodicBlackMetalWithPunkInfluences a om:Genre ;
+    om:genreName "melodic black metal with punk influences"^^xsd:string .
+
+om:MelodicBlackenedDeathMetal a om:Genre ;
+    om:genreName "melodic blackened death metal"^^xsd:string .
+
+om:MelodicBlackenedDeathcore a om:Genre ;
+    om:genreName "melodic blackened deathcore"^^xsd:string .
+
+om:MelodicBlackenedDoomMetal a om:Genre ;
+    om:genreName "melodic blackened doom metal"^^xsd:string .
+
+om:MelodicBrutalDeathMetal a om:Genre ;
+    om:genreName "melodic brutal death metal"^^xsd:string .
+
+om:MelodicCrossover a om:Genre ;
+    om:genreName "melodic crossover"^^xsd:string .
+
+om:MelodicCrust a om:Genre ;
+    om:genreName "melodic crust"^^xsd:string .
+
+om:MelodicCrustPunk a om:Genre ;
+    om:genreName "melodic crust punk"^^xsd:string .
+
+om:MelodicDeathMetal a om:Genre ;
+    om:genreName "melodic death metal"^^xsd:string .
+
+om:MelodicDeathMetalInfluences a om:Genre ;
+    om:genreName "melodic death metal influences"^^xsd:string .
+
+om:MelodicDeathMetalWithAlternativeInfluences a om:Genre ;
+    om:genreName "melodic death metal with alternative influences"^^xsd:string .
+
+om:MelodicDeathMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "melodic death metal with black metal influences"^^xsd:string .
+
+om:MelodicDeathMetalWithChiptuneElements a om:Genre ;
+    om:genreName "melodic death metal with chiptune elements"^^xsd:string .
+
+om:MelodicDeathMetalWithDoomInfluences a om:Genre ;
+    om:genreName "melodic death metal with doom influences"^^xsd:string .
+
+om:MelodicDeathMetalWithElectronic a om:Genre ;
+    om:genreName "melodic death metal with electronic"^^xsd:string .
+
+om:MelodicDeathMetalWithFolk a om:Genre ;
+    om:genreName "melodic death metal with folk"^^xsd:string .
+
+om:MelodicDeathMetalWithFolkInfluences a om:Genre ;
+    om:genreName "melodic death metal with folk influences"^^xsd:string .
+
+om:MelodicDeathMetalWithFolkMetalInfluences a om:Genre ;
+    om:genreName "melodic death metal with folk metal influences"^^xsd:string .
+
+om:MelodicDeathMetalWithGothicInfluences a om:Genre ;
+    om:genreName "melodic death metal with gothic influences"^^xsd:string .
+
+om:MelodicDeathMetalWithGrindcoreElements a om:Genre ;
+    om:genreName "melodic death metal with grindcore elements"^^xsd:string .
+
+om:MelodicDeathMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "melodic death metal with groove influences"^^xsd:string .
+
+om:MelodicDeathMetalWithHardRockInfluences a om:Genre ;
+    om:genreName "melodic death metal with hard rock influences"^^xsd:string .
+
+om:MelodicDeathMetalWithHardcoreElements a om:Genre ;
+    om:genreName "melodic death metal with hardcore elements"^^xsd:string .
+
+om:MelodicDeathMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "melodic death metal with hardcore influences"^^xsd:string .
+
+om:MelodicDeathMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "melodic death metal with middle eastern influences"^^xsd:string .
+
+om:MelodicDeathMetalWithNu-MetalInfluences a om:Genre ;
+    om:genreName "melodic death metal with nu-metal influences"^^xsd:string .
+
+om:MelodicDeathMetalWithProgressiveThrashMetalInfluences a om:Genre ;
+    om:genreName "melodic death metal with progressive thrash metal influences"^^xsd:string .
+
+om:MelodicDeathMetalWithRockAndJazzInfluences a om:Genre ;
+    om:genreName "melodic death metal with rock and jazz influences"^^xsd:string .
+
+om:MelodicDeathMetalWithRockElements a om:Genre ;
+    om:genreName "melodic death metal with rock elements"^^xsd:string .
+
+om:MelodicDeathMetalWithRockInfluences a om:Genre ;
+    om:genreName "melodic death metal with rock influences"^^xsd:string .
+
+om:MelodicDeathMetalWithSymphonicInfluences a om:Genre ;
+    om:genreName "melodic death metal with symphonic influences"^^xsd:string .
+
+om:MelodicDeathMetalWithThrash a om:Genre ;
+    om:genreName "melodic death metal with thrash"^^xsd:string .
+
+om:MelodicDeathMetalWithThrashInfluences a om:Genre ;
+    om:genreName "melodic death metal with thrash influences"^^xsd:string .
+
+om:MelodicDeathMetalWithTranceElements a om:Genre ;
+    om:genreName "melodic death metal with trance elements"^^xsd:string .
+
+om:MelodicDeathcore a om:Genre ;
+    om:genreName "melodic deathcore"^^xsd:string .
+
+om:MelodicDepressiveBlackMetal a om:Genre ;
+    om:genreName "melodic depressive black metal"^^xsd:string .
+
+om:MelodicDoomMetal a om:Genre ;
+    om:genreName "melodic doom metal"^^xsd:string .
+
+om:MelodicEpicBlackMetal a om:Genre ;
+    om:genreName "melodic epic black metal"^^xsd:string .
+
+om:MelodicEpicDeathMetal a om:Genre ;
+    om:genreName "melodic epic death metal"^^xsd:string .
+
+om:MelodicEpicHeavyMetal a om:Genre ;
+    om:genreName "melodic epic heavy metal"^^xsd:string .
+
+om:MelodicExperimentalBlackMetal a om:Genre ;
+    om:genreName "melodic experimental black metal"^^xsd:string .
+
+om:MelodicExperimentalMetal a om:Genre ;
+    om:genreName "melodic experimental metal"^^xsd:string .
+
+om:MelodicFolkBlackMetal a om:Genre ;
+    om:genreName "melodic folk black metal"^^xsd:string .
+
+om:MelodicFolkMetal a om:Genre ;
+    om:genreName "melodic folk metal"^^xsd:string .
+
+om:MelodicGothicMetal a om:Genre ;
+    om:genreName "melodic gothic metal"^^xsd:string .
+
+om:MelodicGrindcore a om:Genre ;
+    om:genreName "melodic grindcore"^^xsd:string .
+
+om:MelodicGrooveMetal a om:Genre ;
+    om:genreName "melodic groove metal"^^xsd:string .
+
+om:MelodicGrooveMetalWithIndustrialElements a om:Genre ;
+    om:genreName "melodic groove metal with industrial elements"^^xsd:string .
+
+om:MelodicHardRock a om:Genre ;
+    om:genreName "melodic hard rock"^^xsd:string .
+
+om:MelodicHardcore a om:Genre ;
+    om:genreName "melodic hardcore"^^xsd:string .
+
+om:MelodicHeavyMetal a om:Genre ;
+    om:genreName "melodic heavy metal"^^xsd:string .
+
+om:MelodicHeavyMetalWithDeathMetal a om:Genre ;
+    om:genreName "melodic heavy metal with death metal"^^xsd:string .
+
+om:MelodicHeavyMetalWithDeathMetalElements a om:Genre ;
+    om:genreName "melodic heavy metal with death metal elements"^^xsd:string .
+
+om:MelodicHeavyMetalWithFolkElements a om:Genre ;
+    om:genreName "melodic heavy metal with folk elements"^^xsd:string .
+
+om:MelodicHeavyMetalWithGothicInfluences a om:Genre ;
+    om:genreName "melodic heavy metal with gothic influences"^^xsd:string .
+
+om:MelodicHeavyMetalWithHardRockInfluences a om:Genre ;
+    om:genreName "melodic heavy metal with hard rock influences"^^xsd:string .
+
+om:MelodicHeavyMetalWithNeoclassicalInfluences a om:Genre ;
+    om:genreName "melodic heavy metal with neoclassical influences"^^xsd:string .
+
+om:MelodicHeavyMetalWithProgressiveRockElements a om:Genre ;
+    om:genreName "melodic heavy metal with progressive rock elements"^^xsd:string .
+
+om:MelodicHeavyMetalWithSchlagerInfluences a om:Genre ;
+    om:genreName "melodic heavy metal with schlager influences"^^xsd:string .
+
+om:MelodicIndustrialDeathMetal a om:Genre ;
+    om:genreName "melodic industrial death metal"^^xsd:string .
+
+om:MelodicIndustrialMetal a om:Genre ;
+    om:genreName "melodic industrial metal"^^xsd:string .
+
+om:MelodicMetalcore a om:Genre ;
+    om:genreName "melodic metalcore"^^xsd:string .
+
+om:MelodicNeoclassicalPowerMetal a om:Genre ;
+    om:genreName "melodic neoclassical power metal"^^xsd:string .
+
+om:MelodicPaganBlackMetal a om:Genre ;
+    om:genreName "melodic pagan black metal"^^xsd:string .
+
+om:MelodicPaganMetal a om:Genre ;
+    om:genreName "melodic pagan metal"^^xsd:string .
+
+om:MelodicPop a om:Genre ;
+    om:genreName "melodic pop"^^xsd:string .
+
+om:MelodicPost-BlackMetal a om:Genre ;
+    om:genreName "melodic post-black metal"^^xsd:string .
+
+om:MelodicPowerMetal a om:Genre ;
+    om:genreName "melodic power metal"^^xsd:string .
+
+om:MelodicPowerMetalWithClassicalInfluences a om:Genre ;
+    om:genreName "melodic power metal with classical influences"^^xsd:string .
+
+om:MelodicPowerMetalWithFlamencoInfluences a om:Genre ;
+    om:genreName "melodic power metal with flamenco influences"^^xsd:string .
+
+om:MelodicProgressiveDeathMetal a om:Genre ;
+    om:genreName "melodic progressive death metal"^^xsd:string .
+
+om:MelodicProgressiveDoom a om:Genre ;
+    om:genreName "melodic progressive doom"^^xsd:string .
+
+om:MelodicProgressiveHeavyMetal a om:Genre ;
+    om:genreName "melodic progressive heavy metal"^^xsd:string .
+
+om:MelodicProgressiveMetal a om:Genre ;
+    om:genreName "melodic progressive metal"^^xsd:string .
+
+om:MelodicProgressivePowerMetal a om:Genre ;
+    om:genreName "melodic progressive power metal"^^xsd:string .
+
+om:MelodicProgressiveRock a om:Genre ;
+    om:genreName "melodic progressive rock"^^xsd:string .
+
+om:MelodicProgressiveThrashMetal a om:Genre ;
+    om:genreName "melodic progressive thrash metal"^^xsd:string .
+
+om:MelodicPunk a om:Genre ;
+    om:genreName "melodic punk"^^xsd:string .
+
+om:MelodicRock a om:Genre ;
+    om:genreName "melodic rock"^^xsd:string .
+
+om:MelodicShred a om:Genre ;
+    om:genreName "melodic shred"^^xsd:string .
+
+om:MelodicSludgeMetal a om:Genre ;
+    om:genreName "melodic sludge metal"^^xsd:string .
+
+om:MelodicSpeedMetal a om:Genre ;
+    om:genreName "melodic speed metal"^^xsd:string .
+
+om:MelodicSymphonicBlackMetal a om:Genre ;
+    om:genreName "melodic symphonic black metal"^^xsd:string .
+
+om:MelodicSymphonicDeathMetal a om:Genre ;
+    om:genreName "melodic symphonic death metal"^^xsd:string .
+
+om:MelodicSymphonicHeavyMetal a om:Genre ;
+    om:genreName "melodic symphonic heavy metal"^^xsd:string .
+
+om:MelodicSymphonicMetal a om:Genre ;
+    om:genreName "melodic symphonic metal"^^xsd:string .
+
+om:MelodicSymphonicPowerMetal a om:Genre ;
+    om:genreName "melodic symphonic power metal"^^xsd:string .
+
+om:MelodicTechnicalDeathMetal a om:Genre ;
+    om:genreName "melodic technical death metal"^^xsd:string .
+
+om:MelodicTechnicalDeathcore a om:Genre ;
+    om:genreName "melodic technical deathcore"^^xsd:string .
+
+om:MelodicThrashMetal a om:Genre ;
+    om:genreName "melodic thrash metal"^^xsd:string .
+
+om:MelodicThrashMetalWithAlternativeInfluences a om:Genre ;
+    om:genreName "melodic thrash metal with alternative influences"^^xsd:string .
+
+om:MelodicThrashMetalWithDeath a om:Genre ;
+    om:genreName "melodic thrash metal with death"^^xsd:string .
+
+om:MelodicThrashMetalWithProgressiveInfluences a om:Genre ;
+    om:genreName "melodic thrash metal with progressive influences"^^xsd:string .
+
+om:MelodicVikingMetal a om:Genre ;
+    om:genreName "melodic viking metal"^^xsd:string .
+
+om:MeodicHeavy a om:Genre ;
+    om:genreName "meodic heavy"^^xsd:string .
+
+om:Metal a om:Genre ;
+    om:genreName "metal"^^xsd:string .
+
+om:MetalGenre a owl:Class ;
+    rdfs:label "MetalGenre"@en ;
+    rdfs:comment "A class representing musical subgenres from metal music"@en ;
+    rdfs:subClassOf om:Genre .
+
+om:MetalWithBlackMetalElements a om:Genre ;
+    om:genreName "metal with black metal elements"^^xsd:string .
+
+om:MetalWithClassicalInfluences a om:Genre ;
+    om:genreName "metal with classical influences"^^xsd:string .
+
+om:MetalWithDeathMetalAndIndustrialInfluences a om:Genre ;
+    om:genreName "metal with death metal and industrial influences"^^xsd:string .
+
+om:MetalWithElectronicInfluences a om:Genre ;
+    om:genreName "metal with electronic influences"^^xsd:string .
+
+om:MetalWithFolkInfluences a om:Genre ;
+    om:genreName "metal with folk influences"^^xsd:string .
+
+om:MetalWithLatinInfluences a om:Genre ;
+    om:genreName "metal with latin influences"^^xsd:string .
+
+om:Metalcore a om:Genre ;
+    om:genreName "metalcore"^^xsd:string .
+
+om:MetalcoreWithAlternativeRockInfluences a om:Genre ;
+    om:genreName "metalcore with alternative rock influences"^^xsd:string .
+
+om:MetalcoreWithBlackMetalElements a om:Genre ;
+    om:genreName "metalcore with black metal elements"^^xsd:string .
+
+om:MetalcoreWithCrossover a om:Genre ;
+    om:genreName "metalcore with crossover"^^xsd:string .
+
+om:MetalcoreWithDeath a om:Genre ;
+    om:genreName "metalcore with death"^^xsd:string .
+
+om:MetalcoreWithDeathInfluences a om:Genre ;
+    om:genreName "metalcore with death influences"^^xsd:string .
+
+om:MetalcoreWithDeathMetal a om:Genre ;
+    om:genreName "metalcore with death metal"^^xsd:string .
+
+om:MetalcoreWithDeathMetalElements a om:Genre ;
+    om:genreName "metalcore with death metal elements"^^xsd:string .
+
+om:MetalcoreWithDeathMetalInfluences a om:Genre ;
+    om:genreName "metalcore with death metal influences"^^xsd:string .
+
+om:MetalcoreWithEasternFolkInfluences a om:Genre ;
+    om:genreName "metalcore with eastern folk influences"^^xsd:string .
+
+om:MetalcoreWithElectronicElements a om:Genre ;
+    om:genreName "metalcore with electronic elements"^^xsd:string .
+
+om:MetalcoreWithElectronicInfluences a om:Genre ;
+    om:genreName "metalcore with electronic influences"^^xsd:string .
+
+om:MetalcoreWithFolkInfluences a om:Genre ;
+    om:genreName "metalcore with folk influences"^^xsd:string .
+
+om:MetalcoreWithGothicMetalInfluences a om:Genre ;
+    om:genreName "metalcore with gothic metal influences"^^xsd:string .
+
+om:MetalcoreWithGrindcoreInfluences a om:Genre ;
+    om:genreName "metalcore with grindcore influences"^^xsd:string .
+
+om:MetalcoreWithGrooveMetalElements a om:Genre ;
+    om:genreName "metalcore with groove metal elements"^^xsd:string .
+
+om:MetalcoreWithHeavyMetalInfluences a om:Genre ;
+    om:genreName "metalcore with heavy metal influences"^^xsd:string .
+
+om:MetalcoreWithIndustrialInfluences a om:Genre ;
+    om:genreName "metalcore with industrial influences"^^xsd:string .
+
+om:MetalcoreWithSludgeMetalInfluences a om:Genre ;
+    om:genreName "metalcore with sludge metal influences"^^xsd:string .
+
+om:MetalcoreWithSymphonicElements a om:Genre ;
+    om:genreName "metalcore with symphonic elements"^^xsd:string .
+
+om:MetalcoreWithThrashElements a om:Genre ;
+    om:genreName "metalcore with thrash elements"^^xsd:string .
+
+om:MetalcoreWithThrashMetalElements a om:Genre ;
+    om:genreName "metalcore with thrash metal elements"^^xsd:string .
+
+om:MetalcoreWithThrashMetalInfluences a om:Genre ;
+    om:genreName "metalcore with thrash metal influences"^^xsd:string .
+
+om:MetalcoreWithTranceElements a om:Genre ;
+    om:genreName "metalcore with trance elements"^^xsd:string .
+
+om:MetalcoreWithViking a om:Genre ;
+    om:genreName "metalcore with viking"^^xsd:string .
+
+om:Mexico a om:Country ;
+    om:countryName "mexico"^^xsd:string .
+
+om:MiddleEasternFolkMetal a om:Genre ;
+    om:genreName "middle eastern folk metal"^^xsd:string .
+
+om:Moldova a om:Country ;
+    om:countryName "moldova"^^xsd:string .
+
+om:Monaco a om:Country ;
+    om:countryName "monaco"^^xsd:string .
+
+om:Mongolia a om:Country ;
+    om:countryName "mongolia"^^xsd:string .
+
+om:Montenegro a om:Country ;
+    om:countryName "montenegro"^^xsd:string .
+
+om:Morocco a om:Country ;
+    om:countryName "morocco"^^xsd:string .
+
+om:Mozambique a om:Country ;
+    om:countryName "mozambique"^^xsd:string .
+
+om:Myanmar a om:Country ;
+    om:countryName "myanmar"^^xsd:string .
+
+om:Namibia a om:Country ;
+    om:countryName "namibia"^^xsd:string .
+
+om:NeoclassicalAmbient a om:Genre ;
+    om:genreName "neoclassical ambient"^^xsd:string .
+
+om:NeoclassicalBlackMetal a om:Genre ;
+    om:genreName "neoclassical black metal"^^xsd:string .
+
+om:NeoclassicalDarkwave a om:Genre ;
+    om:genreName "neoclassical darkwave"^^xsd:string .
+
+om:NeoclassicalGothicMetal a om:Genre ;
+    om:genreName "neoclassical gothic metal"^^xsd:string .
+
+om:NeoclassicalHeavyMetal a om:Genre ;
+    om:genreName "neoclassical heavy metal"^^xsd:string .
+
+om:NeoclassicalMelodicDeathMetal a om:Genre ;
+    om:genreName "neoclassical melodic death metal"^^xsd:string .
+
+om:NeoclassicalMelodicPowerMetal a om:Genre ;
+    om:genreName "neoclassical melodic power metal"^^xsd:string .
+
+om:NeoclassicalMetal a om:Genre ;
+    om:genreName "neoclassical metal"^^xsd:string .
+
+om:NeoclassicalPowerMetal a om:Genre ;
+    om:genreName "neoclassical power metal"^^xsd:string .
+
+om:NeoclassicalProgressiveHeavyMetal a om:Genre ;
+    om:genreName "neoclassical progressive heavy metal"^^xsd:string .
+
+om:NeoclassicalProgressiveMetal a om:Genre ;
+    om:genreName "neoclassical progressive metal"^^xsd:string .
+
+om:NeoclassicalProgressivePowerMetal a om:Genre ;
+    om:genreName "neoclassical progressive power metal"^^xsd:string .
+
+om:NeoclassicalSpeedMetal a om:Genre ;
+    om:genreName "neoclassical speed metal"^^xsd:string .
+
+om:NeoclassicalSymphonicMetal a om:Genre ;
+    om:genreName "neoclassical symphonic metal"^^xsd:string .
+
+om:NeofolkBlackMetal a om:Genre ;
+    om:genreName "neofolk black metal"^^xsd:string .
+
+om:NeofolkWithProgressiveBlackMetalInfluences a om:Genre ;
+    om:genreName "neofolk with progressive black metal influences"^^xsd:string .
+
+om:Nepal a om:Country ;
+    om:countryName "nepal"^^xsd:string .
+
+om:Netherlands a om:Country ;
+    om:countryName "netherlands"^^xsd:string .
+
+om:NewAge a om:Genre ;
+    om:genreName "new age"^^xsd:string .
+
+om:NewCaledonia a om:Country ;
+    om:countryName "new caledonia"^^xsd:string .
+
+om:NewZealand a om:Country ;
+    om:countryName "new zealand"^^xsd:string .
+
+om:Nicaragua a om:Country ;
+    om:countryName "nicaragua"^^xsd:string .
+
+om:NoiseRock a om:Genre ;
+    om:genreName "noise rock"^^xsd:string .
+
+om:NoiseRockInfluences a om:Genre ;
+    om:genreName "noise rock influences"^^xsd:string .
+
+om:Noisecore a om:Genre ;
+    om:genreName "noisecore"^^xsd:string .
+
+om:Noisegrind a om:Genre ;
+    om:genreName "noisegrind"^^xsd:string .
+
+om:NorthMacedonia a om:Country ;
+    om:countryName "north macedonia"^^xsd:string .
+
+om:Norway a om:Country ;
+    om:countryName "norway"^^xsd:string .
+
+om:Nu-Metal a om:Genre ;
+    om:genreName "nu-metal"^^xsd:string .
+
+om:Nu-MetalInfluences a om:Genre ;
+    om:genreName "nu-metal influences"^^xsd:string .
+
+om:Nu-MetalWithFolkInfluences a om:Genre ;
+    om:genreName "nu-metal with folk influences"^^xsd:string .
+
+om:Nu-MetalWithFunkInfluences a om:Genre ;
+    om:genreName "nu-metal with funk influences"^^xsd:string .
+
+om:Nu-MetalWithThrashMetalElements a om:Genre ;
+    om:genreName "nu-metal with thrash metal elements"^^xsd:string .
+
+om:Nwobhm a om:Genre ;
+    om:genreName "nwobhm"^^xsd:string .
+
+om:Oman a om:Country ;
+    om:countryName "oman"^^xsd:string .
+
+om:OperaticAvant-GardeMetal a om:Genre ;
+    om:genreName "operatic avant-garde metal"^^xsd:string .
+
+om:OperaticGothicMetal a om:Genre ;
+    om:genreName "operatic gothic metal"^^xsd:string .
+
+om:OperaticHeavyMetal a om:Genre ;
+    om:genreName "operatic heavy metal"^^xsd:string .
+
+om:OperaticProgressive a om:Genre ;
+    om:genreName "operatic progressive"^^xsd:string .
+
+om:OperaticSymphonicMetal a om:Genre ;
+    om:genreName "operatic symphonic metal"^^xsd:string .
+
+om:OrchestralFolkMetal a om:Genre ;
+    om:genreName "orchestral folk metal"^^xsd:string .
+
+om:OrchestralPop a om:Genre ;
+    om:genreName "orchestral pop"^^xsd:string .
+
+om:OrientalFolk a om:Genre ;
+    om:genreName "oriental folk"^^xsd:string .
+
+om:PaganBlackMetal a om:Genre ;
+    om:genreName "pagan black metal"^^xsd:string .
+
+om:PaganBlackMetalWithFolk a om:Genre ;
+    om:genreName "pagan black metal with folk"^^xsd:string .
+
+om:PaganCeltic a om:Genre ;
+    om:genreName "pagan celtic"^^xsd:string .
+
+om:PaganDeathMetal a om:Genre ;
+    om:genreName "pagan death metal"^^xsd:string .
+
+om:PaganDoomMetalWithFolkInfluences a om:Genre ;
+    om:genreName "pagan doom metal with folk influences"^^xsd:string .
+
+om:PaganFolkMetal a om:Genre ;
+    om:genreName "pagan folk metal"^^xsd:string .
+
+om:PaganHeavyMetal a om:Genre ;
+    om:genreName "pagan heavy metal"^^xsd:string .
+
+om:PaganMetal a om:Genre ;
+    om:genreName "pagan metal"^^xsd:string .
+
+om:PaganThrash a om:Genre ;
+    om:genreName "pagan thrash"^^xsd:string .
+
+om:Pakistan a om:Country ;
+    om:countryName "pakistan"^^xsd:string .
+
+om:Palestine a om:Country ;
+    om:countryName "palestine"^^xsd:string .
+
+om:Panama a om:Country ;
+    om:countryName "panama"^^xsd:string .
+
+om:Paraguay a om:Country ;
+    om:countryName "paraguay"^^xsd:string .
+
+om:Peru a om:Country ;
+    om:countryName "peru"^^xsd:string .
+
+om:Philippines a om:Country ;
+    om:countryName "philippines"^^xsd:string .
+
+om:Phonk a om:Genre ;
+    om:genreName "phonk"^^xsd:string .
+
+om:Poland a om:Country ;
+    om:countryName "poland"^^xsd:string .
+
+om:PopPunk a om:Genre ;
+    om:genreName "pop punk"^^xsd:string .
+
+om:PopRock a om:Genre ;
+    om:genreName "pop rock"^^xsd:string .
+
+om:Portugal a om:Country ;
+    om:countryName "portugal"^^xsd:string .
+
+om:Post-BlackMetal a om:Genre ;
+    om:genreName "post-black metal"^^xsd:string .
+
+om:Post-BlackMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "post-black metal with hardcore influences"^^xsd:string .
+
+om:Post-IndustrialMetal a om:Genre ;
+    om:genreName "post-industrial metal"^^xsd:string .
+
+om:Post-Metal a om:Genre ;
+    om:genreName "post-metal"^^xsd:string .
+
+om:Post-MetalWithFolkInfluences a om:Genre ;
+    om:genreName "post-metal with folk influences"^^xsd:string .
+
+om:Post-PunkElements a om:Genre ;
+    om:genreName "post-punk elements"^^xsd:string .
+
+om:Post-PunkWithDepressiveBlackMetalElements a om:Genre ;
+    om:genreName "post-punk with depressive black metal elements"^^xsd:string .
+
+om:Post-PunkWithVariousInfluences a om:Genre ;
+    om:genreName "post-punk with various influences"^^xsd:string .
+
+om:PostMetal a om:Genre ;
+    om:genreName "post metal"^^xsd:string .
+
+om:PowerElectronics a om:Genre ;
+    om:genreName "power electronics"^^xsd:string .
+
+om:PowerMetal a om:Genre ;
+    om:genreName "power metal"^^xsd:string .
+
+om:PowerMetalWithBlack a om:Genre ;
+    om:genreName "power metal with black"^^xsd:string .
+
+om:PowerMetalWithDarkAmbientInfluences a om:Genre ;
+    om:genreName "power metal with dark ambient influences"^^xsd:string .
+
+om:PowerMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "power metal with death metal influences"^^xsd:string .
+
+om:PowerMetalWithEasternFolkElements a om:Genre ;
+    om:genreName "power metal with eastern folk elements"^^xsd:string .
+
+om:PowerMetalWithEasternFolkInfluences a om:Genre ;
+    om:genreName "power metal with eastern folk influences"^^xsd:string .
+
+om:PowerMetalWithElectronic a om:Genre ;
+    om:genreName "power metal with electronic"^^xsd:string .
+
+om:PowerMetalWithElectronicElements a om:Genre ;
+    om:genreName "power metal with electronic elements"^^xsd:string .
+
+om:PowerMetalWithElectronicInfluences a om:Genre ;
+    om:genreName "power metal with electronic influences"^^xsd:string .
+
+om:PowerMetalWithFolkElements a om:Genre ;
+    om:genreName "power metal with folk elements"^^xsd:string .
+
+om:PowerMetalWithFolkInfluences a om:Genre ;
+    om:genreName "power metal with folk influences"^^xsd:string .
+
+om:PowerMetalWithGothicAndDoomInfluences a om:Genre ;
+    om:genreName "power metal with gothic and doom influences"^^xsd:string .
+
+om:PowerMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "power metal with groove influences"^^xsd:string .
+
+om:PowerMetalWithHardcoreElements a om:Genre ;
+    om:genreName "power metal with hardcore elements"^^xsd:string .
+
+om:PowerMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "power metal with industrial influences"^^xsd:string .
+
+om:PowerMetalWithMelodicDeathInfluences a om:Genre ;
+    om:genreName "power metal with melodic death influences"^^xsd:string .
+
+om:PowerMetalWithProgressiveElements a om:Genre ;
+    om:genreName "power metal with progressive elements"^^xsd:string .
+
+om:PowerMetalWithProgressiveInfluences a om:Genre ;
+    om:genreName "power metal with progressive influences"^^xsd:string .
+
+om:PowerMetalWithStonerInfluences a om:Genre ;
+    om:genreName "power metal with stoner influences"^^xsd:string .
+
+om:PowerMetalWithSymphonic a om:Genre ;
+    om:genreName "power metal with symphonic"^^xsd:string .
+
+om:PowerMetalWithThrashElements a om:Genre ;
+    om:genreName "power metal with thrash elements"^^xsd:string .
+
+om:PowerMetalWithThrashMetalElements a om:Genre ;
+    om:genreName "power metal with thrash metal elements"^^xsd:string .
+
+om:PowerMetalWithVariousRockElements a om:Genre ;
+    om:genreName "power metal with various rock elements"^^xsd:string .
+
+om:PowerMetalWithVariousRockInfluences a om:Genre ;
+    om:genreName "power metal with various rock influences"^^xsd:string .
+
+om:PowerMetalWithVikingInfluences a om:Genre ;
+    om:genreName "power metal with viking influences"^^xsd:string .
+
+om:Powerviolence a om:Genre ;
+    om:genreName "powerviolence"^^xsd:string .
+
+om:PowerviolenceWithSludgeInfluences a om:Genre ;
+    om:genreName "powerviolence with sludge influences"^^xsd:string .
+
+om:Progessive a om:Genre ;
+    om:genreName "progessive"^^xsd:string .
+
+om:ProgessiveBlack a om:Genre ;
+    om:genreName "progessive black"^^xsd:string .
+
+om:ProgressiveAmbient a om:Genre ;
+    om:genreName "progressive ambient"^^xsd:string .
+
+om:ProgressiveAndJazzInfluences a om:Genre ;
+    om:genreName "progressive and jazz influences"^^xsd:string .
+
+om:ProgressiveAndRockElements a om:Genre ;
+    om:genreName "progressive and rock elements"^^xsd:string .
+
+om:ProgressiveAvant-GardeBlackMetal a om:Genre ;
+    om:genreName "progressive avant-garde black metal"^^xsd:string .
+
+om:ProgressiveBlackMetal a om:Genre ;
+    om:genreName "progressive black metal"^^xsd:string .
+
+om:ProgressiveBlackMetalWithIndustrial a om:Genre ;
+    om:genreName "progressive black metal with industrial"^^xsd:string .
+
+om:ProgressiveBlackMetalWithMiddleEasternFolk a om:Genre ;
+    om:genreName "progressive black metal with middle eastern folk"^^xsd:string .
+
+om:ProgressiveBlackenedDeathMetal a om:Genre ;
+    om:genreName "progressive blackened death metal"^^xsd:string .
+
+om:ProgressiveBlackenedDoomMetal a om:Genre ;
+    om:genreName "progressive blackened doom metal"^^xsd:string .
+
+om:ProgressiveBrutalDeathMetal a om:Genre ;
+    om:genreName "progressive brutal death metal"^^xsd:string .
+
+om:ProgressiveDeathMetal a om:Genre ;
+    om:genreName "progressive death metal"^^xsd:string .
+
+om:ProgressiveDeathMetalWithHardcoreElements a om:Genre ;
+    om:genreName "progressive death metal with hardcore elements"^^xsd:string .
+
+om:ProgressiveDeathMetalWithJazzElements a om:Genre ;
+    om:genreName "progressive death metal with jazz elements"^^xsd:string .
+
+om:ProgressiveDeathMetalWithJazzInfluences a om:Genre ;
+    om:genreName "progressive death metal with jazz influences"^^xsd:string .
+
+om:ProgressiveDeathMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "progressive death metal with middle eastern influences"^^xsd:string .
+
+om:ProgressiveDeathMetalWithPunkInfluences a om:Genre ;
+    om:genreName "progressive death metal with punk influences"^^xsd:string .
+
+om:ProgressiveDeathNRoll a om:Genre ;
+    om:genreName "progressive death n roll"^^xsd:string .
+
+om:ProgressiveDeathcore a om:Genre ;
+    om:genreName "progressive deathcore"^^xsd:string .
+
+om:ProgressiveDoomMetal a om:Genre ;
+    om:genreName "progressive doom metal"^^xsd:string .
+
+om:ProgressiveElectronicRock a om:Genre ;
+    om:genreName "progressive electronic rock"^^xsd:string .
+
+om:ProgressiveEpicHeavyMetal a om:Genre ;
+    om:genreName "progressive epic heavy metal"^^xsd:string .
+
+om:ProgressiveExtremeMetal a om:Genre ;
+    om:genreName "progressive extreme metal"^^xsd:string .
+
+om:ProgressiveFolkHeavy a om:Genre ;
+    om:genreName "progressive folk heavy"^^xsd:string .
+
+om:ProgressiveFolkMetal a om:Genre ;
+    om:genreName "progressive folk metal"^^xsd:string .
+
+om:ProgressiveFolkMetalWithClassicalInfluences a om:Genre ;
+    om:genreName "progressive folk metal with classical influences"^^xsd:string .
+
+om:ProgressiveGothicMetal a om:Genre ;
+    om:genreName "progressive gothic metal"^^xsd:string .
+
+om:ProgressiveGothicRock a om:Genre ;
+    om:genreName "progressive gothic rock"^^xsd:string .
+
+om:ProgressiveGrooveMetal a om:Genre ;
+    om:genreName "progressive groove metal"^^xsd:string .
+
+om:ProgressiveHardRock a om:Genre ;
+    om:genreName "progressive hard rock"^^xsd:string .
+
+om:ProgressiveHardcore a om:Genre ;
+    om:genreName "progressive hardcore"^^xsd:string .
+
+om:ProgressiveHeavyMetal a om:Genre ;
+    om:genreName "progressive heavy metal"^^xsd:string .
+
+om:ProgressiveHeavyMetalWithThrashMetalInfluences a om:Genre ;
+    om:genreName "progressive heavy metal with thrash metal influences"^^xsd:string .
+
+om:ProgressiveIndustrialMetal a om:Genre ;
+    om:genreName "progressive industrial metal"^^xsd:string .
+
+om:ProgressiveMathcore a om:Genre ;
+    om:genreName "progressive mathcore"^^xsd:string .
+
+om:ProgressiveMelodicBlackMetal a om:Genre ;
+    om:genreName "progressive melodic black metal"^^xsd:string .
+
+om:ProgressiveMelodicDeathMetal a om:Genre ;
+    om:genreName "progressive melodic death metal"^^xsd:string .
+
+om:ProgressiveMelodicDoom a om:Genre ;
+    om:genreName "progressive melodic doom"^^xsd:string .
+
+om:ProgressiveMelodicGrooveMetal a om:Genre ;
+    om:genreName "progressive melodic groove metal"^^xsd:string .
+
+om:ProgressiveMelodicHeavyMetal a om:Genre ;
+    om:genreName "progressive melodic heavy metal"^^xsd:string .
+
+om:ProgressiveMelodicPowerMetal a om:Genre ;
+    om:genreName "progressive melodic power metal"^^xsd:string .
+
+om:ProgressiveMetal a om:Genre ;
+    om:genreName "progressive metal"^^xsd:string .
+
+om:ProgressiveMetalWithBlack a om:Genre ;
+    om:genreName "progressive metal with black"^^xsd:string .
+
+om:ProgressiveMetalWithBlackAndDoomInfluences a om:Genre ;
+    om:genreName "progressive metal with black and doom influences"^^xsd:string .
+
+om:ProgressiveMetalWithDarkAmbientElements a om:Genre ;
+    om:genreName "progressive metal with dark ambient elements"^^xsd:string .
+
+om:ProgressiveMetalWithDeathMetalElements a om:Genre ;
+    om:genreName "progressive metal with death metal elements"^^xsd:string .
+
+om:ProgressiveMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "progressive metal with death metal influences"^^xsd:string .
+
+om:ProgressiveMetalWithDoomInfluences a om:Genre ;
+    om:genreName "progressive metal with doom influences"^^xsd:string .
+
+om:ProgressiveMetalWithElectronicElements a om:Genre ;
+    om:genreName "progressive metal with electronic elements"^^xsd:string .
+
+om:ProgressiveMetalWithFolk a om:Genre ;
+    om:genreName "progressive metal with folk"^^xsd:string .
+
+om:ProgressiveMetalWithFolkInfluences a om:Genre ;
+    om:genreName "progressive metal with folk influences"^^xsd:string .
+
+om:ProgressiveMetalWithGothicInfluences a om:Genre ;
+    om:genreName "progressive metal with gothic influences"^^xsd:string .
+
+om:ProgressiveMetalWithGroove a om:Genre ;
+    om:genreName "progressive metal with groove"^^xsd:string .
+
+om:ProgressiveMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "progressive metal with groove influences"^^xsd:string .
+
+om:ProgressiveMetalWithJazzElements a om:Genre ;
+    om:genreName "progressive metal with jazz elements"^^xsd:string .
+
+om:ProgressiveMetalWithJazzInfluences a om:Genre ;
+    om:genreName "progressive metal with jazz influences"^^xsd:string .
+
+om:ProgressiveMetalWithMelodicDeathMetal a om:Genre ;
+    om:genreName "progressive metal with melodic death metal"^^xsd:string .
+
+om:ProgressiveMetalWithMelodicDeathMetalInfluences a om:Genre ;
+    om:genreName "progressive metal with melodic death metal influences"^^xsd:string .
+
+om:ProgressiveMetalWithMiddle-EasternFolkInfluences a om:Genre ;
+    om:genreName "progressive metal with middle-eastern folk influences"^^xsd:string .
+
+om:ProgressiveMetalWithMiddleEasternFolkInfluences a om:Genre ;
+    om:genreName "progressive metal with middle eastern folk influences"^^xsd:string .
+
+om:ProgressiveMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "progressive metal with middle eastern influences"^^xsd:string .
+
+om:ProgressiveMetalWithRockInfluences a om:Genre ;
+    om:genreName "progressive metal with rock influences"^^xsd:string .
+
+om:ProgressiveMetalWithThrash a om:Genre ;
+    om:genreName "progressive metal with thrash"^^xsd:string .
+
+om:ProgressiveMetalWithThrashElements a om:Genre ;
+    om:genreName "progressive metal with thrash elements"^^xsd:string .
+
+om:ProgressiveMetalWithThrashMetalElements a om:Genre ;
+    om:genreName "progressive metal with thrash metal elements"^^xsd:string .
+
+om:ProgressiveMetalWithThrashMetalInfluences a om:Genre ;
+    om:genreName "progressive metal with thrash metal influences"^^xsd:string .
+
+om:ProgressiveMetalWithVariousInfluences a om:Genre ;
+    om:genreName "progressive metal with various influences"^^xsd:string .
+
+om:ProgressiveMetalcore a om:Genre ;
+    om:genreName "progressive metalcore"^^xsd:string .
+
+om:ProgressiveNeoclassicalGothicMetal a om:Genre ;
+    om:genreName "progressive neoclassical gothic metal"^^xsd:string .
+
+om:ProgressiveNeoclassicalMetal a om:Genre ;
+    om:genreName "progressive neoclassical metal"^^xsd:string .
+
+om:ProgressiveNeoclassicalPower a om:Genre ;
+    om:genreName "progressive neoclassical power"^^xsd:string .
+
+om:ProgressivePaganBlackMetal a om:Genre ;
+    om:genreName "progressive pagan black metal"^^xsd:string .
+
+om:ProgressivePost-BlackMetal a om:Genre ;
+    om:genreName "progressive post-black metal"^^xsd:string .
+
+om:ProgressivePost-Metal a om:Genre ;
+    om:genreName "progressive post-metal"^^xsd:string .
+
+om:ProgressivePost-Rock a om:Genre ;
+    om:genreName "progressive post-rock"^^xsd:string .
+
+om:ProgressivePowerMetal a om:Genre ;
+    om:genreName "progressive power metal"^^xsd:string .
+
+om:ProgressivePsychedelicDoom a om:Genre ;
+    om:genreName "progressive psychedelic doom"^^xsd:string .
+
+om:ProgressiveRockWithJazzInfluences a om:Genre ;
+    om:genreName "progressive rock with jazz influences"^^xsd:string .
+
+om:ProgressiveSludgeMetal a om:Genre ;
+    om:genreName "progressive sludge metal"^^xsd:string .
+
+om:ProgressiveSludgeMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "progressive sludge metal with middle eastern influences"^^xsd:string .
+
+om:ProgressiveSludgeMetalWithPost-RockInfluences a om:Genre ;
+    om:genreName "progressive sludge metal with post-rock influences"^^xsd:string .
+
+om:ProgressiveSpeedMetal a om:Genre ;
+    om:genreName "progressive speed metal"^^xsd:string .
+
+om:ProgressiveStonerMetal a om:Genre ;
+    om:genreName "progressive stoner metal"^^xsd:string .
+
+om:ProgressiveStonerRock a om:Genre ;
+    om:genreName "progressive stoner rock"^^xsd:string .
+
+om:ProgressiveSymphonicBlackMetal a om:Genre ;
+    om:genreName "progressive symphonic black metal"^^xsd:string .
+
+om:ProgressiveSymphonicMetal a om:Genre ;
+    om:genreName "progressive symphonic metal"^^xsd:string .
+
+om:ProgressiveSymphonicPowerMetal a om:Genre ;
+    om:genreName "progressive symphonic power metal"^^xsd:string .
+
+om:ProgressiveSymphonicRock a om:Genre ;
+    om:genreName "progressive symphonic rock"^^xsd:string .
+
+om:ProgressiveTechnicalDeathMetal a om:Genre ;
+    om:genreName "progressive technical death metal"^^xsd:string .
+
+om:ProgressiveTechnicalDeathcore a om:Genre ;
+    om:genreName "progressive technical deathcore"^^xsd:string .
+
+om:ProgressiveThrashMetal a om:Genre ;
+    om:genreName "progressive thrash metal"^^xsd:string .
+
+om:ProgressiveThrashMetalWithDoomElements a om:Genre ;
+    om:genreName "progressive thrash metal with doom elements"^^xsd:string .
+
+om:ProgressiveThrashMetalWithIndustrialElements a om:Genre ;
+    om:genreName "progressive thrash metal with industrial elements"^^xsd:string .
+
+om:ProgressiveThrashMetalWithPunkElements a om:Genre ;
+    om:genreName "progressive thrash metal with punk elements"^^xsd:string .
+
+om:ProgressiveViking a om:Genre ;
+    om:genreName "progressive viking"^^xsd:string .
+
+om:ProgressiveWithRockAndMetalElements a om:Genre ;
+    om:genreName "progressive with rock and metal elements"^^xsd:string .
+
+om:Psybient a om:Genre ;
+    om:genreName "psybient"^^xsd:string .
+
+om:PsychedelicAvant-GardeMetal a om:Genre ;
+    om:genreName "psychedelic avant-garde metal"^^xsd:string .
+
+om:PsychedelicBlackMetal a om:Genre ;
+    om:genreName "psychedelic black metal"^^xsd:string .
+
+om:PsychedelicBlackNRoll a om:Genre ;
+    om:genreName "psychedelic black n roll"^^xsd:string .
+
+om:PsychedelicBlackenedDeath a om:Genre ;
+    om:genreName "psychedelic blackened death"^^xsd:string .
+
+om:PsychedelicBlues a om:Genre ;
+    om:genreName "psychedelic blues"^^xsd:string .
+
+om:PsychedelicDeathMetal a om:Genre ;
+    om:genreName "psychedelic death metal"^^xsd:string .
+
+om:PsychedelicDoomMetal a om:Genre ;
+    om:genreName "psychedelic doom metal"^^xsd:string .
+
+om:PsychedelicDrone a om:Genre ;
+    om:genreName "psychedelic drone"^^xsd:string .
+
+om:PsychedelicExperimentalMetal a om:Genre ;
+    om:genreName "psychedelic experimental metal"^^xsd:string .
+
+om:PsychedelicFolkMetal a om:Genre ;
+    om:genreName "psychedelic folk metal"^^xsd:string .
+
+om:PsychedelicFolkRock a om:Genre ;
+    om:genreName "psychedelic folk rock"^^xsd:string .
+
+om:PsychedelicGrooveMetal a om:Genre ;
+    om:genreName "psychedelic groove metal"^^xsd:string .
+
+om:PsychedelicHardRock a om:Genre ;
+    om:genreName "psychedelic hard rock"^^xsd:string .
+
+om:PsychedelicHeavyMetal a om:Genre ;
+    om:genreName "psychedelic heavy metal"^^xsd:string .
+
+om:PsychedelicPop a om:Genre ;
+    om:genreName "psychedelic pop"^^xsd:string .
+
+om:PsychedelicPost-Metal a om:Genre ;
+    om:genreName "psychedelic post-metal"^^xsd:string .
+
+om:PsychedelicProgressiveGothic a om:Genre ;
+    om:genreName "psychedelic progressive gothic"^^xsd:string .
+
+om:PsychedelicProgressiveMetal a om:Genre ;
+    om:genreName "psychedelic progressive metal"^^xsd:string .
+
+om:PsychedelicRock a om:Genre ;
+    om:genreName "psychedelic rock"^^xsd:string .
+
+om:PsychedelicSludgeMetal a om:Genre ;
+    om:genreName "psychedelic sludge metal"^^xsd:string .
+
+om:PsychedelicStonerMetal a om:Genre ;
+    om:genreName "psychedelic stoner metal"^^xsd:string .
+
+om:PsychedelicStonerRock a om:Genre ;
+    om:genreName "psychedelic stoner rock"^^xsd:string .
+
+om:PsychedelicThrashMetal a om:Genre ;
+    om:genreName "psychedelic thrash metal"^^xsd:string .
+
+om:PuertoRico a om:Country ;
+    om:countryName "puerto rico"^^xsd:string .
+
+om:PunkRockWithHeavyMetalInfluences a om:Genre ;
+    om:genreName "punk rock with heavy metal influences"^^xsd:string .
+
+om:PunkWithGrindcoreInfluences a om:Genre ;
+    om:genreName "punk with grindcore influences"^^xsd:string .
+
+om:PunkWithRockabillyInfluences a om:Genre ;
+    om:genreName "punk with rockabilly influences"^^xsd:string .
+
+om:PunkWithThrashMetalInfluences a om:Genre ;
+    om:genreName "punk with thrash metal influences"^^xsd:string .
+
+om:Qatar a om:Country ;
+    om:countryName "qatar"^^xsd:string .
+
+om:RapRock a om:Genre ;
+    om:genreName "rap rock"^^xsd:string .
+
+om:Rapcore a om:Genre ;
+    om:genreName "rapcore"^^xsd:string .
+
+om:RawAmbientBlackMetal a om:Genre ;
+    om:genreName "raw ambient black metal"^^xsd:string .
+
+om:RawAtmosphericBlackMetal a om:Genre ;
+    om:genreName "raw atmospheric black metal"^^xsd:string .
+
+om:RawBlackMetal a om:Genre ;
+    om:genreName "raw black metal"^^xsd:string .
+
+om:RawBlackMetalWithHardcorePunkInfluences a om:Genre ;
+    om:genreName "raw black metal with hardcore punk influences"^^xsd:string .
+
+om:RawBlackMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "raw black metal with industrial influences"^^xsd:string .
+
+om:RawBlackMetalWithPunkElements a om:Genre ;
+    om:genreName "raw black metal with punk elements"^^xsd:string .
+
+om:RawBlackMetalWithPunkInfluences a om:Genre ;
+    om:genreName "raw black metal with punk influences"^^xsd:string .
+
+om:RawBlackMetalWithRacInfluences a om:Genre ;
+    om:genreName "raw black metal with rac influences"^^xsd:string .
+
+om:RawBlackenedThrashMetal a om:Genre ;
+    om:genreName "raw blackened thrash metal"^^xsd:string .
+
+om:RawCelticFolkMetal a om:Genre ;
+    om:genreName "raw celtic folk metal"^^xsd:string .
+
+om:RawCrust a om:Genre ;
+    om:genreName "raw crust"^^xsd:string .
+
+om:RawDeath a om:Genre ;
+    om:genreName "raw death"^^xsd:string .
+
+om:RawDepressiveBlackMetal a om:Genre ;
+    om:genreName "raw depressive black metal"^^xsd:string .
+
+om:RawDoom a om:Genre ;
+    om:genreName "raw doom"^^xsd:string .
+
+om:RawExperimental a om:Genre ;
+    om:genreName "raw experimental"^^xsd:string .
+
+om:RawFolk a om:Genre ;
+    om:genreName "raw folk"^^xsd:string .
+
+om:RawIndustrialBlackMetal a om:Genre ;
+    om:genreName "raw industrial black metal"^^xsd:string .
+
+om:RawMelodicBlackMetal a om:Genre ;
+    om:genreName "raw melodic black metal"^^xsd:string .
+
+om:RawPaganBlackMetal a om:Genre ;
+    om:genreName "raw pagan black metal"^^xsd:string .
+
+om:RawPaganMetal a om:Genre ;
+    om:genreName "raw pagan metal"^^xsd:string .
+
+om:RawPost-BlackMetal a om:Genre ;
+    om:genreName "raw post-black metal"^^xsd:string .
+
+om:RawSymphonicBlackMetal a om:Genre ;
+    om:genreName "raw symphonic black metal"^^xsd:string .
+
+om:RawThrashMetal a om:Genre ;
+    om:genreName "raw thrash metal"^^xsd:string .
+
+om:RawViking a om:Genre ;
+    om:genreName "raw viking"^^xsd:string .
+
+om:Reggae a om:Genre ;
+    om:genreName "reggae"^^xsd:string .
+
+om:Reggaeton a om:Genre ;
+    om:genreName "reggaeton"^^xsd:string .
+
+om:Reunion a om:Country ;
+    om:countryName "reunion"^^xsd:string .
+
+om:RitualAmbient a om:Genre ;
+    om:genreName "ritual ambient"^^xsd:string .
+
+om:RitualDarkAmbient a om:Genre ;
+    om:genreName "ritual dark ambient"^^xsd:string .
+
+om:RockBallad a om:Genre ;
+    om:genreName "rock ballad"^^xsd:string .
+
+om:RockOpera a om:Genre ;
+    om:genreName "rock opera"^^xsd:string .
+
+om:RockWithBlackMetalInfluences a om:Genre ;
+    om:genreName "rock with black metal influences"^^xsd:string .
+
+om:RockWithDoomMetal a om:Genre ;
+    om:genreName "rock with doom metal"^^xsd:string .
+
+om:RockWithFlamencoElements a om:Genre ;
+    om:genreName "rock with flamenco elements"^^xsd:string .
+
+om:RockWithFunkElements a om:Genre ;
+    om:genreName "rock with funk elements"^^xsd:string .
+
+om:RockWithFunkInfluences a om:Genre ;
+    om:genreName "rock with funk influences"^^xsd:string .
+
+om:RockWithGothicInfluences a om:Genre ;
+    om:genreName "rock with gothic influences"^^xsd:string .
+
+om:RockWithGrungeElements a om:Genre ;
+    om:genreName "rock with grunge elements"^^xsd:string .
+
+om:RockWithGrungeInfluences a om:Genre ;
+    om:genreName "rock with grunge influences"^^xsd:string .
+
+om:RockWithIndustrial a om:Genre ;
+    om:genreName "rock with industrial"^^xsd:string .
+
+om:RockWithJazzElements a om:Genre ;
+    om:genreName "rock with jazz elements"^^xsd:string .
+
+om:RockWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "rock with middle eastern influences"^^xsd:string .
+
+om:RockWithProgressiveElements a om:Genre ;
+    om:genreName "rock with progressive elements"^^xsd:string .
+
+om:RockWithPunkElements a om:Genre ;
+    om:genreName "rock with punk elements"^^xsd:string .
+
+om:RockWithThrashElements a om:Genre ;
+    om:genreName "rock with thrash elements"^^xsd:string .
+
+om:RockWithThrashMetalInfluences a om:Genre ;
+    om:genreName "rock with thrash metal influences"^^xsd:string .
+
+om:Rockabilly a om:Genre ;
+    om:genreName "rockabilly"^^xsd:string .
+
+om:Romania a om:Country ;
+    om:countryName "romania"^^xsd:string .
+
+om:Roots a om:Genre ;
+    om:genreName "roots"^^xsd:string .
+
+om:Russia a om:Country ;
+    om:countryName "russia"^^xsd:string .
+
+om:SaintPierreAndMiquelon a om:Country ;
+    om:countryName "saint pierre and miquelon"^^xsd:string .
+
+om:SanMarino a om:Country ;
+    om:countryName "san marino"^^xsd:string .
+
+om:SaudiArabia a om:Country ;
+    om:countryName "saudi arabia"^^xsd:string .
+
+om:Screamo a om:Genre ;
+    om:genreName "screamo"^^xsd:string .
+
+om:Serbia a om:Country ;
+    om:countryName "serbia"^^xsd:string .
+
+om:Shoegaze a om:Genre ;
+    om:genreName "shoegaze"^^xsd:string .
+
+om:ShredMetal a om:Genre ;
+    om:genreName "shred metal"^^xsd:string .
+
+om:ShredWithHeavyMetalElements a om:Genre ;
+    om:genreName "shred with heavy metal elements"^^xsd:string .
+
+om:ShredWithOrientalInfluences a om:Genre ;
+    om:genreName "shred with oriental influences"^^xsd:string .
+
+om:ShredWithRockInfluences a om:Genre ;
+    om:genreName "shred with rock influences"^^xsd:string .
+
+om:ShredWithThrashMetalElements a om:Genre ;
+    om:genreName "shred with thrash metal elements"^^xsd:string .
+
+om:Singapore a om:Country ;
+    om:countryName "singapore"^^xsd:string .
+
+om:SkaPunk a om:Genre ;
+    om:genreName "ska punk"^^xsd:string .
+
+om:Slam a om:Genre ;
+    om:genreName "slam"^^xsd:string .
+
+om:Slovakia a om:Country ;
+    om:countryName "slovakia"^^xsd:string .
+
+om:Slovenia a om:Country ;
+    om:countryName "slovenia"^^xsd:string .
+
+om:SludgeMetal a om:Genre ;
+    om:genreName "sludge metal"^^xsd:string .
+
+om:SludgeMetalInfluences a om:Genre ;
+    om:genreName "sludge metal influences"^^xsd:string .
+
+om:SludgeMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "sludge metal with death metal influences"^^xsd:string .
+
+om:SludgeMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "sludge metal with hardcore influences"^^xsd:string .
+
+om:SludgeMetalWithPost-HardcoreInfluences a om:Genre ;
+    om:genreName "sludge metal with post-hardcore influences"^^xsd:string .
+
+om:SludgeMetalWithProgressiveMetalInfluences a om:Genre ;
+    om:genreName "sludge metal with progressive metal influences"^^xsd:string .
+
+om:SludgeMetalWithPunkInfluences a om:Genre ;
+    om:genreName "sludge metal with punk influences"^^xsd:string .
+
+om:SludgeMetalWithThrashInfluences a om:Genre ;
+    om:genreName "sludge metal with thrash influences"^^xsd:string .
+
+om:SludgeMetalWithThrashMetalElements a om:Genre ;
+    om:genreName "sludge metal with thrash metal elements"^^xsd:string .
+
+om:Sluge a om:Genre ;
+    om:genreName "sluge"^^xsd:string .
+
+om:Soft a om:Genre ;
+    om:genreName "soft"^^xsd:string .
+
+om:SoftRock a om:Genre ;
+    om:genreName "soft rock"^^xsd:string .
+
+om:Soundtrack a om:Genre ;
+    om:genreName "soundtrack"^^xsd:string .
+
+om:SoundtrackWithElectronic a om:Genre ;
+    om:genreName "soundtrack with electronic"^^xsd:string .
+
+om:SouthAfrica a om:Country ;
+    om:countryName "south africa"^^xsd:string .
+
+om:SouthernGroove a om:Genre ;
+    om:genreName "southern groove"^^xsd:string .
+
+om:SouthernMetal a om:Genre ;
+    om:genreName "southern metal"^^xsd:string .
+
+om:SouthernMetalInfluences a om:Genre ;
+    om:genreName "southern metal influences"^^xsd:string .
+
+om:Space a om:Genre ;
+    om:genreName "space"^^xsd:string .
+
+om:SpaceRock a om:Genre ;
+    om:genreName "space rock"^^xsd:string .
+
+om:Spain a om:Country ;
+    om:countryName "spain"^^xsd:string .
+
+om:SpeedMetal a om:Genre ;
+    om:genreName "speed metal"^^xsd:string .
+
+om:SpeedMetalInfluences a om:Genre ;
+    om:genreName "speed metal influences"^^xsd:string .
+
+om:SpeedMetalWithBlackMetalElements a om:Genre ;
+    om:genreName "speed metal with black metal elements"^^xsd:string .
+
+om:SpeedMetalWithDoomInfluences a om:Genre ;
+    om:genreName "speed metal with doom influences"^^xsd:string .
+
+om:SpeedMetalWithFolkInfluences a om:Genre ;
+    om:genreName "speed metal with folk influences"^^xsd:string .
+
+om:SpeedMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "speed metal with hardcore influences"^^xsd:string .
+
+<https://w3id.org/ontometal#SpeedMetalWithOi!Influences> a om:Genre ;
+    om:genreName "speed metal with oi! influences"^^xsd:string .
+
+om:SpeedMetalWithProgressiveElements a om:Genre ;
+    om:genreName "speed metal with progressive elements"^^xsd:string .
+
+om:SpeedMetalWithProgressiveInfluences a om:Genre ;
+    om:genreName "speed metal with progressive influences"^^xsd:string .
+
+om:SpeedMetalWithPunkInfluences a om:Genre ;
+    om:genreName "speed metal with punk influences"^^xsd:string .
+
+<https://w3id.org/ontometal#Speed​​Metal> a om:Genre ;
+    om:genreName "speed ​​metal"^^xsd:string .
+
+om:SpokenWord a om:Genre ;
+    om:genreName "spoken word"^^xsd:string .
+
+om:SriLanka a om:Country ;
+    om:countryName "sri lanka"^^xsd:string .
+
+om:StonerMetal a om:Genre ;
+    om:genreName "stoner metal"^^xsd:string .
+
+om:StonerMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "stoner metal with black metal influences"^^xsd:string .
+
+om:StonerMetalWithCelticFolkElements a om:Genre ;
+    om:genreName "stoner metal with celtic folk elements"^^xsd:string .
+
+om:StonerMetalWithCrustInfluences a om:Genre ;
+    om:genreName "stoner metal with crust influences"^^xsd:string .
+
+om:StonerMetalWithDeathMetalElements a om:Genre ;
+    om:genreName "stoner metal with death metal elements"^^xsd:string .
+
+om:StonerMetalWithDoomMetalInfluences a om:Genre ;
+    om:genreName "stoner metal with doom metal influences"^^xsd:string .
+
+om:StonerMetalWithFolkInfluences a om:Genre ;
+    om:genreName "stoner metal with folk influences"^^xsd:string .
+
+om:StonerMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "stoner metal with groove influences"^^xsd:string .
+
+om:StonerMetalWithHardcoreElements a om:Genre ;
+    om:genreName "stoner metal with hardcore elements"^^xsd:string .
+
+om:StonerMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "stoner metal with hardcore influences"^^xsd:string .
+
+om:StonerMetalWithPsychobillyInfluences a om:Genre ;
+    om:genreName "stoner metal with psychobilly influences"^^xsd:string .
+
+om:StonerMetalWithPunkElements a om:Genre ;
+    om:genreName "stoner metal with punk elements"^^xsd:string .
+
+om:StonerMetalWithPunkInfluences a om:Genre ;
+    om:genreName "stoner metal with punk influences"^^xsd:string .
+
+om:StonerMetalWithThrashInfluences a om:Genre ;
+    om:genreName "stoner metal with thrash influences"^^xsd:string .
+
+om:StonerMetalWithVariousInfluences a om:Genre ;
+    om:genreName "stoner metal with various influences"^^xsd:string .
+
+om:Suriname a om:Country ;
+    om:countryName "suriname"^^xsd:string .
+
+om:Svalbard a om:Country ;
+    om:countryName "svalbard"^^xsd:string .
+
+om:Sweden a om:Country ;
+    om:countryName "sweden"^^xsd:string .
+
+om:Switzerland a om:Country ;
+    om:countryName "switzerland"^^xsd:string .
+
+om:SymphonicAmbient a om:Genre ;
+    om:genreName "symphonic ambient"^^xsd:string .
+
+om:SymphonicAtmosphericBlackMetal a om:Genre ;
+    om:genreName "symphonic atmospheric black metal"^^xsd:string .
+
+om:SymphonicBlackMetal a om:Genre ;
+    om:genreName "symphonic black metal"^^xsd:string .
+
+om:SymphonicBlackMetalWithClassicalInfluences a om:Genre ;
+    om:genreName "symphonic black metal with classical influences"^^xsd:string .
+
+om:SymphonicBlackMetalWithDoomElements a om:Genre ;
+    om:genreName "symphonic black metal with doom elements"^^xsd:string .
+
+om:SymphonicBlackMetalWithFolkInfluences a om:Genre ;
+    om:genreName "symphonic black metal with folk influences"^^xsd:string .
+
+om:SymphonicBlackMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "symphonic black metal with industrial influences"^^xsd:string .
+
+om:SymphonicBlackenedDeathMetal a om:Genre ;
+    om:genreName "symphonic blackened death metal"^^xsd:string .
+
+om:SymphonicDeathMetal a om:Genre ;
+    om:genreName "symphonic death metal"^^xsd:string .
+
+om:SymphonicDeathMetalWithElectronicInfluences a om:Genre ;
+    om:genreName "symphonic death metal with electronic influences"^^xsd:string .
+
+om:SymphonicDeathcore a om:Genre ;
+    om:genreName "symphonic deathcore"^^xsd:string .
+
+om:SymphonicDepressiveBlackMetal a om:Genre ;
+    om:genreName "symphonic depressive black metal"^^xsd:string .
+
+om:SymphonicDoomMetal a om:Genre ;
+    om:genreName "symphonic doom metal"^^xsd:string .
+
+om:SymphonicElectronicMetal a om:Genre ;
+    om:genreName "symphonic electronic metal"^^xsd:string .
+
+om:SymphonicEpicBlackMetal a om:Genre ;
+    om:genreName "symphonic epic black metal"^^xsd:string .
+
+om:SymphonicEpicGothic a om:Genre ;
+    om:genreName "symphonic epic gothic"^^xsd:string .
+
+om:SymphonicEpicPowerMetal a om:Genre ;
+    om:genreName "symphonic epic power metal"^^xsd:string .
+
+om:SymphonicExtremeMetal a om:Genre ;
+    om:genreName "symphonic extreme metal"^^xsd:string .
+
+om:SymphonicFolkMetal a om:Genre ;
+    om:genreName "symphonic folk metal"^^xsd:string .
+
+om:SymphonicFuneralDoomMetal a om:Genre ;
+    om:genreName "symphonic funeral doom metal"^^xsd:string .
+
+om:SymphonicGothicMetal a om:Genre ;
+    om:genreName "symphonic gothic metal"^^xsd:string .
+
+om:SymphonicGothicMetalWithElectronicElements a om:Genre ;
+    om:genreName "symphonic gothic metal with electronic elements"^^xsd:string .
+
+om:SymphonicGothicMetalWithFolkInfluences a om:Genre ;
+    om:genreName "symphonic gothic metal with folk influences"^^xsd:string .
+
+om:SymphonicGrooveMetal a om:Genre ;
+    om:genreName "symphonic groove metal"^^xsd:string .
+
+om:SymphonicHardRock a om:Genre ;
+    om:genreName "symphonic hard rock"^^xsd:string .
+
+om:SymphonicHeavyMetal a om:Genre ;
+    om:genreName "symphonic heavy metal"^^xsd:string .
+
+om:SymphonicIndustrialBlack a om:Genre ;
+    om:genreName "symphonic industrial black"^^xsd:string .
+
+om:SymphonicIndustrialDeath a om:Genre ;
+    om:genreName "symphonic industrial death"^^xsd:string .
+
+om:SymphonicIndustrialMetal a om:Genre ;
+    om:genreName "symphonic industrial metal"^^xsd:string .
+
+om:SymphonicMelodicBlack a om:Genre ;
+    om:genreName "symphonic melodic black"^^xsd:string .
+
+om:SymphonicMelodicDeathMetal a om:Genre ;
+    om:genreName "symphonic melodic death metal"^^xsd:string .
+
+om:SymphonicMelodicDeathcore a om:Genre ;
+    om:genreName "symphonic melodic deathcore"^^xsd:string .
+
+om:SymphonicMelodicPowerMetal a om:Genre ;
+    om:genreName "symphonic melodic power metal"^^xsd:string .
+
+om:SymphonicMetal a om:Genre ;
+    om:genreName "symphonic metal"^^xsd:string .
+
+om:SymphonicMetalWithAvant-GardeInfluences a om:Genre ;
+    om:genreName "symphonic metal with avant-garde influences"^^xsd:string .
+
+om:SymphonicMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "symphonic metal with black metal influences"^^xsd:string .
+
+om:SymphonicMetalWithDeathMetalElements a om:Genre ;
+    om:genreName "symphonic metal with death metal elements"^^xsd:string .
+
+om:SymphonicMetalWithEasternAsianFolkElements a om:Genre ;
+    om:genreName "symphonic metal with eastern asian folk elements"^^xsd:string .
+
+om:SymphonicMetalWithElectro a om:Genre ;
+    om:genreName "symphonic metal with electro"^^xsd:string .
+
+om:SymphonicMetalWithElectronicMusicInfluences a om:Genre ;
+    om:genreName "symphonic metal with electronic music influences"^^xsd:string .
+
+om:SymphonicMetalWithVariousInfluences a om:Genre ;
+    om:genreName "symphonic metal with various influences"^^xsd:string .
+
+om:SymphonicMetalcore a om:Genre ;
+    om:genreName "symphonic metalcore"^^xsd:string .
+
+om:SymphonicNeoclassicalMetal a om:Genre ;
+    om:genreName "symphonic neoclassical metal"^^xsd:string .
+
+om:SymphonicPaganBlackMetal a om:Genre ;
+    om:genreName "symphonic pagan black metal"^^xsd:string .
+
+om:SymphonicPaganMetal a om:Genre ;
+    om:genreName "symphonic pagan metal"^^xsd:string .
+
+om:SymphonicPost-BlackMetal a om:Genre ;
+    om:genreName "symphonic post-black metal"^^xsd:string .
+
+om:SymphonicPowerMetal a om:Genre ;
+    om:genreName "symphonic power metal"^^xsd:string .
+
+om:SymphonicPowerMetalWithElectronicInfluences a om:Genre ;
+    om:genreName "symphonic power metal with electronic influences"^^xsd:string .
+
+om:SymphonicProgressiveBlackMetal a om:Genre ;
+    om:genreName "symphonic progressive black metal"^^xsd:string .
+
+om:SymphonicProgressiveDeathMetal a om:Genre ;
+    om:genreName "symphonic progressive death metal"^^xsd:string .
+
+om:SymphonicProgressiveHeavyMetal a om:Genre ;
+    om:genreName "symphonic progressive heavy metal"^^xsd:string .
+
+om:SymphonicProgressiveMetal a om:Genre ;
+    om:genreName "symphonic progressive metal"^^xsd:string .
+
+om:SymphonicProgressivePowerMetal a om:Genre ;
+    om:genreName "symphonic progressive power metal"^^xsd:string .
+
+om:SymphonicProgressiveRock a om:Genre ;
+    om:genreName "symphonic progressive rock"^^xsd:string .
+
+om:SymphonicRawBlackMetal a om:Genre ;
+    om:genreName "symphonic raw black metal"^^xsd:string .
+
+om:SymphonicRock a om:Genre ;
+    om:genreName "symphonic rock"^^xsd:string .
+
+om:SymphonicTechnicalDeathMetal a om:Genre ;
+    om:genreName "symphonic technical death metal"^^xsd:string .
+
+om:SymphonicThrashMetal a om:Genre ;
+    om:genreName "symphonic thrash metal"^^xsd:string .
+
+om:SymphonicViking a om:Genre ;
+    om:genreName "symphonic viking"^^xsd:string .
+
+om:SynthPunk a om:Genre ;
+    om:genreName "synth punk"^^xsd:string .
+
+om:Synthpop a om:Genre ;
+    om:genreName "synthpop"^^xsd:string .
+
+om:Synthwave a om:Genre ;
+    om:genreName "synthwave"^^xsd:string .
+
+om:SynthwaveElements a om:Genre ;
+    om:genreName "synthwave elements"^^xsd:string .
+
+om:Syria a om:Country ;
+    om:countryName "syria"^^xsd:string .
+
+om:Taiwan a om:Country ;
+    om:countryName "taiwan"^^xsd:string .
+
+om:Tajikistan a om:Country ;
+    om:countryName "tajikistan"^^xsd:string .
+
+om:TechnicalAvant-GardeMetal a om:Genre ;
+    om:genreName "technical avant-garde metal"^^xsd:string .
+
+om:TechnicalBlackMetal a om:Genre ;
+    om:genreName "technical black metal"^^xsd:string .
+
+om:TechnicalBlackenedDeathMetal a om:Genre ;
+    om:genreName "technical blackened death metal"^^xsd:string .
+
+om:TechnicalBrutalDeathMetal a om:Genre ;
+    om:genreName "technical brutal death metal"^^xsd:string .
+
+om:TechnicalDeathMetal a om:Genre ;
+    om:genreName "technical death metal"^^xsd:string .
+
+om:TechnicalDeathMetalWithGrindcoreElements a om:Genre ;
+    om:genreName "technical death metal with grindcore elements"^^xsd:string .
+
+om:TechnicalDeathMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "technical death metal with groove influences"^^xsd:string .
+
+om:TechnicalDeathMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "technical death metal with hardcore influences"^^xsd:string .
+
+om:TechnicalDeathMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "technical death metal with industrial influences"^^xsd:string .
+
+om:TechnicalDeathMetalWithJazzInfluences a om:Genre ;
+    om:genreName "technical death metal with jazz influences"^^xsd:string .
+
+om:TechnicalDeathcore a om:Genre ;
+    om:genreName "technical deathcore"^^xsd:string .
+
+om:TechnicalDoomMetal a om:Genre ;
+    om:genreName "technical doom metal"^^xsd:string .
+
+om:TechnicalExperimentalMetal a om:Genre ;
+    om:genreName "technical experimental metal"^^xsd:string .
+
+om:TechnicalExtremeMetal a om:Genre ;
+    om:genreName "technical extreme metal"^^xsd:string .
+
+om:TechnicalGrindcore a om:Genre ;
+    om:genreName "technical grindcore"^^xsd:string .
+
+om:TechnicalGrooveMetal a om:Genre ;
+    om:genreName "technical groove metal"^^xsd:string .
+
+om:TechnicalHeavyMetal a om:Genre ;
+    om:genreName "technical heavy metal"^^xsd:string .
+
+om:TechnicalMelodicBlack a om:Genre ;
+    om:genreName "technical melodic black"^^xsd:string .
+
+om:TechnicalMelodicDeathMetal a om:Genre ;
+    om:genreName "technical melodic death metal"^^xsd:string .
+
+om:TechnicalMelodicDeathcore a om:Genre ;
+    om:genreName "technical melodic deathcore"^^xsd:string .
+
+om:TechnicalMelodicThrashMetal a om:Genre ;
+    om:genreName "technical melodic thrash metal"^^xsd:string .
+
+om:TechnicalMelodicThrashMetalWithProgressiveElements a om:Genre ;
+    om:genreName "technical melodic thrash metal with progressive elements"^^xsd:string .
+
+om:TechnicalMetalcore a om:Genre ;
+    om:genreName "technical metalcore"^^xsd:string .
+
+om:TechnicalPowerMetal a om:Genre ;
+    om:genreName "technical power metal"^^xsd:string .
+
+om:TechnicalProgressiveBlackMetal a om:Genre ;
+    om:genreName "technical progressive black metal"^^xsd:string .
+
+om:TechnicalProgressiveDeathMetal a om:Genre ;
+    om:genreName "technical progressive death metal"^^xsd:string .
+
+om:TechnicalProgressiveGrooveMetal a om:Genre ;
+    om:genreName "technical progressive groove metal"^^xsd:string .
+
+om:TechnicalProgressiveMetal a om:Genre ;
+    om:genreName "technical progressive metal"^^xsd:string .
+
+om:TechnicalProgressiveThrash a om:Genre ;
+    om:genreName "technical progressive thrash"^^xsd:string .
+
+om:TechnicalSlam a om:Genre ;
+    om:genreName "technical slam"^^xsd:string .
+
+om:TechnicalSludgeMetal a om:Genre ;
+    om:genreName "technical sludge metal"^^xsd:string .
+
+om:TechnicalSpeedMetal a om:Genre ;
+    om:genreName "technical speed metal"^^xsd:string .
+
+om:TechnicalThrashMetal a om:Genre ;
+    om:genreName "technical thrash metal"^^xsd:string .
+
+om:TechnicalThrashMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "technical thrash metal with groove influences"^^xsd:string .
+
+om:TechnicalThrashMetalWithJazz a om:Genre ;
+    om:genreName "technical thrash metal with jazz"^^xsd:string .
+
+om:Techno a om:Genre ;
+    om:genreName "techno"^^xsd:string .
+
+om:Thailand a om:Country ;
+    om:countryName "thailand"^^xsd:string .
+
+om:ThrashMetal a om:Genre ;
+    om:genreName "thrash metal"^^xsd:string .
+
+om:ThrashMetalInfluences a om:Genre ;
+    om:genreName "thrash metal influences"^^xsd:string .
+
+om:ThrashMetalWithAlternativeInfluences a om:Genre ;
+    om:genreName "thrash metal with alternative influences"^^xsd:string .
+
+om:ThrashMetalWithAlternativeRock a om:Genre ;
+    om:genreName "thrash metal with alternative rock"^^xsd:string .
+
+om:ThrashMetalWithAlternativeRockInfluences a om:Genre ;
+    om:genreName "thrash metal with alternative rock influences"^^xsd:string .
+
+om:ThrashMetalWithBlack a om:Genre ;
+    om:genreName "thrash metal with black"^^xsd:string .
+
+om:ThrashMetalWithBlackMetalElements a om:Genre ;
+    om:genreName "thrash metal with black metal elements"^^xsd:string .
+
+om:ThrashMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "thrash metal with black metal influences"^^xsd:string .
+
+om:ThrashMetalWithCrossoverElements a om:Genre ;
+    om:genreName "thrash metal with crossover elements"^^xsd:string .
+
+om:ThrashMetalWithCrossoverInfluences a om:Genre ;
+    om:genreName "thrash metal with crossover influences"^^xsd:string .
+
+om:ThrashMetalWithCrustInfluences a om:Genre ;
+    om:genreName "thrash metal with crust influences"^^xsd:string .
+
+om:ThrashMetalWithDeathAndHardcoreInfluences a om:Genre ;
+    om:genreName "thrash metal with death and hardcore influences"^^xsd:string .
+
+om:ThrashMetalWithDeathInfluences a om:Genre ;
+    om:genreName "thrash metal with death influences"^^xsd:string .
+
+om:ThrashMetalWithDeathMetal a om:Genre ;
+    om:genreName "thrash metal with death metal"^^xsd:string .
+
+om:ThrashMetalWithDeathMetalElements a om:Genre ;
+    om:genreName "thrash metal with death metal elements"^^xsd:string .
+
+om:ThrashMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "thrash metal with death metal influences"^^xsd:string .
+
+om:ThrashMetalWithDoomAndAlternativeRockInfluences a om:Genre ;
+    om:genreName "thrash metal with doom and alternative rock influences"^^xsd:string .
+
+om:ThrashMetalWithDoomInfluences a om:Genre ;
+    om:genreName "thrash metal with doom influences"^^xsd:string .
+
+om:ThrashMetalWithFolk a om:Genre ;
+    om:genreName "thrash metal with folk"^^xsd:string .
+
+om:ThrashMetalWithFolkAndGothicInfluences a om:Genre ;
+    om:genreName "thrash metal with folk and gothic influences"^^xsd:string .
+
+om:ThrashMetalWithFolkInfluences a om:Genre ;
+    om:genreName "thrash metal with folk influences"^^xsd:string .
+
+om:ThrashMetalWithFunkInfluences a om:Genre ;
+    om:genreName "thrash metal with funk influences"^^xsd:string .
+
+om:ThrashMetalWithGothic a om:Genre ;
+    om:genreName "thrash metal with gothic"^^xsd:string .
+
+om:ThrashMetalWithGothicElements a om:Genre ;
+    om:genreName "thrash metal with gothic elements"^^xsd:string .
+
+om:ThrashMetalWithGothicInfluences a om:Genre ;
+    om:genreName "thrash metal with gothic influences"^^xsd:string .
+
+om:ThrashMetalWithGothicMetalInfluences a om:Genre ;
+    om:genreName "thrash metal with gothic metal influences"^^xsd:string .
+
+om:ThrashMetalWithGrindcoreElements a om:Genre ;
+    om:genreName "thrash metal with grindcore elements"^^xsd:string .
+
+om:ThrashMetalWithGrindcoreInfluences a om:Genre ;
+    om:genreName "thrash metal with grindcore influences"^^xsd:string .
+
+om:ThrashMetalWithGroove a om:Genre ;
+    om:genreName "thrash metal with groove"^^xsd:string .
+
+om:ThrashMetalWithGrooveInfluences a om:Genre ;
+    om:genreName "thrash metal with groove influences"^^xsd:string .
+
+om:ThrashMetalWithGrooveMetalElements a om:Genre ;
+    om:genreName "thrash metal with groove metal elements"^^xsd:string .
+
+om:ThrashMetalWithGrungeElements a om:Genre ;
+    om:genreName "thrash metal with grunge elements"^^xsd:string .
+
+om:ThrashMetalWithGrungeInfluences a om:Genre ;
+    om:genreName "thrash metal with grunge influences"^^xsd:string .
+
+om:ThrashMetalWithHardcore a om:Genre ;
+    om:genreName "thrash metal with hardcore"^^xsd:string .
+
+om:ThrashMetalWithHardcoreAndDoom a om:Genre ;
+    om:genreName "thrash metal with hardcore and doom"^^xsd:string .
+
+om:ThrashMetalWithHardcoreElements a om:Genre ;
+    om:genreName "thrash metal with hardcore elements"^^xsd:string .
+
+om:ThrashMetalWithHardcoreInfluences a om:Genre ;
+    om:genreName "thrash metal with hardcore influences"^^xsd:string .
+
+om:ThrashMetalWithHeavyMetalInfluences a om:Genre ;
+    om:genreName "thrash metal with heavy metal influences"^^xsd:string .
+
+om:ThrashMetalWithIndustrialElements a om:Genre ;
+    om:genreName "thrash metal with industrial elements"^^xsd:string .
+
+om:ThrashMetalWithIndustrialInfluences a om:Genre ;
+    om:genreName "thrash metal with industrial influences"^^xsd:string .
+
+om:ThrashMetalWithJazzInfluences a om:Genre ;
+    om:genreName "thrash metal with jazz influences"^^xsd:string .
+
+om:ThrashMetalWithLatinInfluences a om:Genre ;
+    om:genreName "thrash metal with latin influences"^^xsd:string .
+
+om:ThrashMetalWithLatinJazzInfluences a om:Genre ;
+    om:genreName "thrash metal with latin jazz influences"^^xsd:string .
+
+om:ThrashMetalWithMetalcoreElements a om:Genre ;
+    om:genreName "thrash metal with metalcore elements"^^xsd:string .
+
+om:ThrashMetalWithMetalcoreInfluences a om:Genre ;
+    om:genreName "thrash metal with metalcore influences"^^xsd:string .
+
+om:ThrashMetalWithMiddleEasternInfluences a om:Genre ;
+    om:genreName "thrash metal with middle eastern influences"^^xsd:string .
+
+<https://w3id.org/ontometal#ThrashMetalWithOi!Influences> a om:Genre ;
+    om:genreName "thrash metal with oi! influences"^^xsd:string .
+
+om:ThrashMetalWithPowerInfluences a om:Genre ;
+    om:genreName "thrash metal with power influences"^^xsd:string .
+
+om:ThrashMetalWithProgressiveInfluences a om:Genre ;
+    om:genreName "thrash metal with progressive influences"^^xsd:string .
+
+om:ThrashMetalWithProgressiveMetalElements a om:Genre ;
+    om:genreName "thrash metal with progressive metal elements"^^xsd:string .
+
+om:ThrashMetalWithPsychedelicInfluences a om:Genre ;
+    om:genreName "thrash metal with psychedelic influences"^^xsd:string .
+
+om:ThrashMetalWithPunk a om:Genre ;
+    om:genreName "thrash metal with punk"^^xsd:string .
+
+om:ThrashMetalWithPunkElements a om:Genre ;
+    om:genreName "thrash metal with punk elements"^^xsd:string .
+
+om:ThrashMetalWithPunkInfluences a om:Genre ;
+    om:genreName "thrash metal with punk influences"^^xsd:string .
+
+om:ThrashMetalWithRac a om:Genre ;
+    om:genreName "thrash metal with rac"^^xsd:string .
+
+om:ThrashMetalWithRacElements a om:Genre ;
+    om:genreName "thrash metal with rac elements"^^xsd:string .
+
+om:ThrashMetalWithRacInfluences a om:Genre ;
+    om:genreName "thrash metal with rac influences"^^xsd:string .
+
+om:ThrashMetalWithRockElements a om:Genre ;
+    om:genreName "thrash metal with rock elements"^^xsd:string .
+
+om:ThrashMetalWithRockNRollElements a om:Genre ;
+    om:genreName "thrash metal with rock n roll elements"^^xsd:string .
+
+om:ThrashMetalWithRockNRollInfluences a om:Genre ;
+    om:genreName "thrash metal with rock n roll influences"^^xsd:string .
+
+om:ThrashMetalWithSkaInfluences a om:Genre ;
+    om:genreName "thrash metal with ska influences"^^xsd:string .
+
+om:ThrashMetalWithStoner a om:Genre ;
+    om:genreName "thrash metal with stoner"^^xsd:string .
+
+om:ThrashMetalWithStonerInfluences a om:Genre ;
+    om:genreName "thrash metal with stoner influences"^^xsd:string .
+
+om:ThrashNRoll a om:Genre ;
+    om:genreName "thrash n roll"^^xsd:string .
+
+om:ThrashWithHardcoreAndHeavyMetalInfluences a om:Genre ;
+    om:genreName "thrash with hardcore and heavy metal influences"^^xsd:string .
+
+om:Trap a om:Genre ;
+    om:genreName "trap"^^xsd:string .
+
+om:TrinidadAndTobago a om:Country ;
+    om:countryName "trinidad and tobago"^^xsd:string .
+
+om:TripHop a om:Genre ;
+    om:genreName "trip hop"^^xsd:string .
+
+om:Tunisia a om:Country ;
+    om:countryName "tunisia"^^xsd:string .
+
+om:Turkmenistan a om:Country ;
+    om:countryName "turkmenistan"^^xsd:string .
+
+om:Türkiye a om:Country ;
+    om:countryName "türkiye"^^xsd:string .
+
+om:Uganda a om:Country ;
+    om:countryName "uganda"^^xsd:string .
+
+om:Ukraine a om:Country ;
+    om:countryName "ukraine"^^xsd:string .
+
+om:UnitedArabEmirates a om:Country ;
+    om:countryName "united arab emirates"^^xsd:string .
+
+om:UnitedKingdom a om:Country ;
+    om:countryName "united kingdom"^^xsd:string .
+
+om:UnitedStates a om:Country ;
+    om:countryName "united states"^^xsd:string .
+
+om:Unknown a om:Country ;
+    om:countryName "unknown"^^xsd:string .
+
+om:Uruguay a om:Country ;
+    om:countryName "uruguay"^^xsd:string .
+
+om:Uzbekistan a om:Country ;
+    om:countryName "uzbekistan"^^xsd:string .
+
+om:Vaporwave a om:Genre ;
+    om:genreName "vaporwave"^^xsd:string .
+
+om:Venezuela a om:Country ;
+    om:countryName "venezuela"^^xsd:string .
+
+om:Vietnam a om:Country ;
+    om:countryName "vietnam"^^xsd:string .
+
+om:VikingBlackMetal a om:Genre ;
+    om:genreName "viking black metal"^^xsd:string .
+
+om:VikingFolkMetal a om:Genre ;
+    om:genreName "viking folk metal"^^xsd:string .
+
+om:VikingMetal a om:Genre ;
+    om:genreName "viking metal"^^xsd:string .
+
+om:VikingMetalWithBlack a om:Genre ;
+    om:genreName "viking metal with black"^^xsd:string .
+
+om:VikingMetalWithBlackMetalInfluences a om:Genre ;
+    om:genreName "viking metal with black metal influences"^^xsd:string .
+
+om:VikingMetalWithDeathMetalInfluences a om:Genre ;
+    om:genreName "viking metal with death metal influences"^^xsd:string .
+
+om:VikingRock a om:Genre ;
+    om:genreName "viking rock"^^xsd:string .
+
+om:WitchHouse a om:Genre ;
+    om:genreName "witch house"^^xsd:string .
+
+om:WorldFolk a om:Genre ;
+    om:genreName "world folk"^^xsd:string .
+
+om:WorldMusic a om:Genre ;
+    om:genreName "world music"^^xsd:string .
+
+om:Zimbabwe a om:Country ;
+    om:countryName "zimbabwe"^^xsd:string .
+
+om:bandID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "bandID"@en ;
+    rdfs:comment "Identifier by metal archives"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:long ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+om:bandName a owl:DatatypeProperty ;
+    rdfs:label "bandName"@en ;
+    rdfs:comment "Name of a given band"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:name .
+
+om:bandStatus a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "bandStatus" ;
+    rdfs:comment "Status of a band (active, split..)" ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:status .
+
+om:countryName a owl:DatatypeProperty ;
+    rdfs:label "countryName"@en ;
+    rdfs:comment "Name of a given country"@en ;
+    rdfs:domain om:Country ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:name .
+
+om:genreID a owl:DatatypeProperty ;
+    rdfs:label "genreID"@en ;
+    rdfs:comment "Identifier of a genre"@en ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+om:genreName a owl:DatatypeProperty ;
+    rdfs:label "genreName"@en ;
+    rdfs:comment "Name of a music genre"@en ;
+    rdfs:subPropertyOf foaf:name .
+
+om:hasCountry a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasCountry"@en ;
+    rdfs:comment "Relates an entity with its origin country"@en ;
+    rdfs:domain om:Band,
+        om:Label ;
+    rdfs:range om:Country ;
+    rdfs:subPropertyOf foaf:based_near .
+
+om:hasGenre a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "hasGenre"@en ;
+    rdfs:comment "Relates a band with one or more genres"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range om:Genre ;
+    rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> .
+
+om:hasSpecialization a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "Relates a label with its preferred musical genre"@en,
+        "hasSpecialization"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range om:Genre ;
+    rdfs:subPropertyOf <http://purl.org/ontology/ao/core#genre> .
+
+om:labelID a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "labelID"@en ;
+    rdfs:comment "Identifier by metal archives"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:long ;
+    rdfs:subPropertyOf dcterms:identifier .
+
+om:labelName a owl:DatatypeProperty ;
+    rdfs:label "labelName"@en ;
+    rdfs:comment "Name of a given label"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:name .
+
+om:labelStatus a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "labelStatus" ;
+    rdfs:comment "Status of a label (closed, active, changedName..)" ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf foaf:status .
+
+om:labelWebsiteURL a owl:DatatypeProperty ;
+    rdfs:label "labelWebsiteURL"@en ;
+    rdfs:comment "URL of a label website"@en ;
+    rdfs:domain om:Label ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf om:url .
+
+om:metalArchivesURL a owl:DatatypeProperty ;
+    rdfs:label "metalArchivesURL"@en ;
+    rdfs:comment "URL of a band page in metal archives website"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf om:url .
+
+om:producedBy a owl:ObjectProperty ;
+    rdfs:label "producedBy" ;
+    rdfs:comment "Relates a band which is produces by a label"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range om:Band,
+        om:Label ;
+    rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ;
+    owl:inverseOf om:producer .
+
+om:releaseTitle a owl:DatatypeProperty ;
+    rdfs:label "releaseTitle"@en ;
+    rdfs:comment "Title of a band release"@en ;
+    rdfs:domain om:Release ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf dcterms:title .
+
+om:releasedBy a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "releasedBy"@en ;
+    rdfs:comment "Relates a release with the band that released it"@en ;
+    rdfs:domain om:Release ;
+    rdfs:range om:Band ;
+    rdfs:subPropertyOf foaf:made ;
+    owl:inverseOf om:releases .
+
+om:ÅlandIslands a om:Country ;
+    om:countryName "åland islands"^^xsd:string .
+
+om:producer a owl:ObjectProperty ;
+    rdfs:label "producer"@en ;
+    rdfs:comment "Relates a band or musical composition to its producer (label)"@en ;
+    rdfs:domain om:Band,
+        om:Label ;
+    rdfs:range om:Band ;
+    rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#agent> .
+
+om:releaseYear a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "releaseYear"@en ;
+    rdfs:comment "Year when a band release came out"@en ;
+    rdfs:domain om:Release ;
+    rdfs:range xsd:gYear ;
+    rdfs:subPropertyOf dcterms:date .
+
+om:releases a owl:ObjectProperty ;
+    rdfs:label "releases"@en ;
+    rdfs:comment "Relates a band with a release"@en ;
+    rdfs:domain om:Band ;
+    rdfs:range om:Release ;
+    rdfs:subPropertyOf foaf:maker .
+
+om:url a owl:DatatypeProperty ;
+    rdfs:label "url" ;
+    rdfs:comment "A link to acess a website" .
+
+om:Release a owl:Class ;
+    rdfs:label "Release"@en ;
+    rdfs:comment "Music release from a band. Equivalent to mo:ReleaseType"@en .
+
+om:Label a owl:Class ;
+    rdfs:label "Label"@en ;
+    rdfs:comment "Comercial organization from music industry. Equivalent to mo:Label"@en .
+
+om:Band a owl:Class ;
+    rdfs:label "Band"@en ;
+    rdfs:comment "Class representing a music group. Equivalent to mo:MusicGroup"@en .
+
+om:Country a owl:Class,
+        om:Genre ;
+    rdfs:label "Country"@en ;
+    rdfs:comment "A class representing a country"@en ;
+    om:genreName "country"^^xsd:string .
+
+om:Genre a owl:Class ;
+    rdfs:label "Genre"@en ;
+    rdfs:comment "Music genre class, equivalent to mo:Genre"@en .
+
