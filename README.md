@@ -52,10 +52,33 @@ python -m src.etl.main
 ```
 
 # Storing TTL file
+The generated ontology file (`ontometal.ttl`) is stored using [Git LFS](https://git-lfs.github.com/) due to its size (~130MB).
+
+```bash
 sudo apt-get update && sudo apt-get install -y git-lfs
 git lfs install
 git lfs track "*.ttl"
-Generated .gitattributes
-Needs to migrate ttl file since it exists in commit history
-git lfs migrate import --include="*.ttl" --include-ref=feature/release_conversion
+```
+
+If the TTL file already exists in commit history, migrate it:
+```bash
+git lfs migrate import --include="*.ttl" --include-ref=<branch>
+```
+
+## CI/CD Pipeline
+
+The CI/CD pipeline runs on `feature/*` and `release/*` branches:
+
+1. **Generate** — Rebuilds the ontology from normalized CSVs (`python -m src.rdf_conversion.main`)
+2. **Validate** — Runs the [Robot](https://robot.obolibrary.org/) tool with the HermiT reasoner to check ontology consistency
+3. **Commit** — Pushes the generated TTL file (via Git LFS) to the branch
+
+The `develop` and `master` branches inherit the TTL file through pull request merges:
+
+```
+feature/* (generates TTL) → PR → develop (inherits TTL) → release/* (regenerates TTL) → PR → master (inherits TTL)
+```
+
+The ontology is always validated before reaching `develop` or `master`.
 https://git-lfs.com/
+
