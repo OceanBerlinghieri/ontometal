@@ -50,3 +50,12 @@ pip install -e ".[dev]"
 ```bash
 python -m src.etl.main
 ```
+
+# Storing TTL file
+sudo apt-get update && sudo apt-get install -y git-lfs
+git lfs install
+git lfs track "*.ttl"
+Generated .gitattributes
+Needs to migrate ttl file since it exists in commit history
+git lfs migrate import --include="*.ttl" --include-ref=feature/release_conversion
+https://git-lfs.com/
