@@ -7,6 +7,8 @@ from etl.interactor.normalization.genre_utils import clean_and_split_genres
 
 class LabelNormalization:
     def normalize(self, labels, normalized_countries, genre_map: dict) -> DataFrame:
+        labels = labels.dropna(subset=["Name"])
+
         labels = self._merge_countries(labels, normalized_countries)
         labels = self._merge_specializations(labels, genre_map)
         labels = self._group_by_label(labels)
@@ -15,7 +17,7 @@ class LabelNormalization:
 
         labels = DataFrame([vars(g) for g in labels])
 
-        # Some labels may have float(NaN) in hasCountry. Convert to Int64 with NA support.
+        # Some labels may have float(NaN) in hasCountry. Convert to int with NA support.
         labels["hasCountry"] = pd.to_numeric(labels["hasCountry"], errors='coerce').astype("Int64")
         return labels
 

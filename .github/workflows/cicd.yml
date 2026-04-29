@@ -19,6 +19,7 @@ jobs:
             with:
                 token: ${{ secrets.PAT_TOKEN }}
                 fetch-depth: 0
+                lfs: true
 
           - name: Set up Python 3.12
             uses: actions/setup-python@v4
@@ -36,6 +37,23 @@ jobs:
           - name: Generate ontology file
             run: |
                 python -m src.rdf_conversion.main
+
+          - name: Set up Java
+            uses: actions/setup-java@v4
+            with:
+                distribution: 'temurin'
+                java-version: '17'
+
+          # https://robot.obolibrary.org/
+          - name: Download Robot
+            run: |
+                curl -L -o robot.jar https://github.com/ontodev/robot/releases/latest/download/robot.jar
+
+          - name: Validate ontology
+            run: |
+                sed '/owl:imports/d' src/rdf_conversion/output/ontometal.ttl > src/rdf_conversion/output/ontometal_no_imports.ttl
+                java -jar robot.jar reason --reasoner HermiT --input src/rdf_conversion/output/ontometal_no_imports.ttl
+                rm src/rdf_conversion/output/ontometal_no_imports.ttl
   
           - name: Commit and push ontology file
             run: |
@@ -43,7 +61,7 @@ jobs:
                 git config user.email 'OceanBerlinghieri@users.noreply.github.com'
                 git add --all
                 if ! git diff --cached --quiet; then
-                    git commit -m 'Update ontology file'
+                    git commit -m 'Update ontology file [skip ci]'
                     git push origin HEAD
                 else
                     echo 'No ontology file changes to commit.'
