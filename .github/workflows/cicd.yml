@@ -36,6 +36,23 @@ jobs:
           - name: Generate ontology file
             run: |
                 python -m src.rdf_conversion.main
+
+          - name: Set up Java
+            uses: actions/setup-java@v4
+            with:
+                distribution: 'temurin'
+                java-version: '17'
+
+          # https://robot.obolibrary.org/
+          - name: Download Robot
+            run: |
+                curl -L -o robot.jar https://github.com/ontodev/robot/releases/latest/download/robot.jar
+
+          - name: Validate ontology
+            run: |
+                sed '/owl:imports/d' src/rdf_conversion/output/ontometal.ttl > src/rdf_conversion/output/ontometal_no_imports.ttl
+                java -jar robot.jar reason --reasoner HermiT --input src/rdf_conversion/output/ontometal_no_imports.ttl
+                rm src/rdf_conversion/output/ontometal_no_imports.ttl
   
           - name: Commit and push ontology file
             run: |

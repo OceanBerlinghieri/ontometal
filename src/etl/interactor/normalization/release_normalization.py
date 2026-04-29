@@ -13,6 +13,9 @@ class ReleaseNormalization:
             ~releases["Album Name"].str.strip().str.lower().isin(["null"])
         ]
 
+        # Drop releases with non-numeric years
+        releases = releases[pd.to_numeric(releases["Year"], errors="coerce").notna()]
+
         # Keep only bands that will survive band normalization
         # (no null names, no duplicate Band IDs) to avoid orphan releases
         valid_bands = bands.dropna(subset=["Name"])
@@ -37,7 +40,7 @@ class ReleaseNormalization:
                 Release(
                     releaseId=idx,
                     releaseTitle=str(row["Album Name"]).strip().lower(),
-                    releaseYear=row["Year"],
+                    releaseYear=int(row["Year"]),
                     releaseType=str(row["Type"]).strip().lower(),
                     releasedBy=int(row["Band ID"]),
                 )

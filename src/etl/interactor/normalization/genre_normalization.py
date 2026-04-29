@@ -18,7 +18,7 @@ class GenreNormalization:
 
         all_genres = self._split_into_all_genres(genres)
 
-        all_genres = list(set(g.lower() for g in all_genres))
+        all_genres = sorted(set(g.lower() for g in all_genres))
 
         filtered_global = self._filter_non_specific_genres(all_genres)
 
@@ -39,7 +39,7 @@ class GenreNormalization:
         return all_genres
 
     def _filter_non_specific_genres(self, genres: list[str]) -> list[str]:
-        unique_genres = list(set(g.lower() for g in genres))
+        unique_genres = sorted(set(g.lower() for g in genres))
         filtered_global = []
 
         for genre in unique_genres:
@@ -61,15 +61,16 @@ class GenreNormalization:
         for genre in filtered:
             self.genre_map[genre] = genre
 
-        for genre in all_unique:
+        for genre in sorted(all_unique):
             if genre not in filtered:
                 metal_form = genre + " metal"
                 if metal_form in filtered:
                     self.genre_map[genre] = metal_form
-                # If the genre is a substring of multiple "metal" genres, we can try to find the shortes match
+                # If the genre is a substring of multiple "metal" genres, we can try to find the shortest match
+                # On ties, alphabetical order wins (deterministic).
                 else:
                     best_match = None
-                    for other in filtered:
+                    for other in sorted(filtered):
                         if genre in other and "metal" in other:
                             if best_match is None or len(other) < len(best_match):
                                 best_match = other

@@ -3,6 +3,9 @@ import os
 from rdf_conversion import ONTOMETAL
 from rdf_conversion.interactor.genre_converter import GenreConverter
 from rdf_conversion.interactor.metadata_adder import MetadataAdder
+from rdf_conversion.interactor.release_converter import ReleaseConverter
+from rdf_conversion.repository.band_repository import BandRepository
+from rdf_conversion.repository.release_repository_impl import ReleaseRepository
 from rdf_conversion.repository.resource.turtle_resource import TurtleResource
 
 from rdf_conversion.interactor.country_converter import CountryConverter
@@ -15,10 +18,14 @@ class Pipeline:
         self,
         country_repository: CountryRepository,
         genre_repository: GenreRepository,
+        release_repository: ReleaseRepository,
+        band_repository: BandRepository,
         turtle_resource: TurtleResource,
     ):
         self.country_repository = country_repository
         self.genre_repository = genre_repository
+        self.release_repository = release_repository
+        self.band_repository = band_repository
         self.turtle_resource = turtle_resource
 
     def run(self):
@@ -46,6 +53,20 @@ class Pipeline:
         )
         graph = GenreConverter().convert(genres, graph)
 
+        # Releases
+        releases = self.release_repository.get_releases(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "releases_v2.csv"
+            )
+        )
+
+        band_mapping = self.band_repository.get_band_mapping(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "bands_v2.csv"
+            )
+        )
+        graph = ReleaseConverter().convert(releases, band_mapping, graph)
+        
         # Save
         output_path = os.path.join(
             working_dir, "src/rdf_conversion/output", "ontometal.ttl"

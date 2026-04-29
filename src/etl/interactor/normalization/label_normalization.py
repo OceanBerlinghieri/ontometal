@@ -7,6 +7,8 @@ from etl.interactor.normalization.genre_utils import clean_and_split_genres
 
 class LabelNormalization:
     def normalize(self, labels, normalized_countries, genre_map: dict) -> DataFrame:
+        labels = labels.dropna(subset=["Name"])
+
         labels = self._merge_countries(labels, normalized_countries)
         labels = self._merge_specializations(labels, genre_map)
         labels = self._group_by_label(labels)
