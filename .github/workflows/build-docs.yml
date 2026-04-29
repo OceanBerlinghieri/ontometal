@@ -18,6 +18,7 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
           fetch-depth: 0
+          lfs: true
 
       - name: Set up JDK 17
         uses: actions/setup-java@v3
@@ -35,7 +36,7 @@ jobs:
       - name: Generate Documentation
         run: |
           java -jar ./widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-            -ontFile ./ontology/ontometal.ttl \
+            -ontFile ./src/rdf_conversion/output/ontometal.ttl \
             -outFolder ./generated-docs/ \
             -oops -rewriteAll -lang en
 
