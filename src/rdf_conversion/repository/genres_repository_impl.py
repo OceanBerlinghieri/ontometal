@@ -11,3 +11,7 @@ class GenreRepositoryImpl(GenreRepository):
         df = self.resource.load(file_path=path)
         return [Genre(id=row["id"], name=row["name"]) for _, row in df.iterrows()]
 
+    def get_genre_mapping(self, path: str) -> dict[str, tuple[str, int]]:
+        df = self.resource.load(file_path=path)
+        return {row["name"]: (row["name"], row["id"]) for _, row in df.iterrows()}
+
