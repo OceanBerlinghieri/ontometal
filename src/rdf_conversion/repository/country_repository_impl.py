@@ -10,3 +10,7 @@ class CountryRepositoryImpl(CountryRepository):
     def get_countries(self, path: str) -> list[Country]:
         df = self.resource.load(file_path=path)
         return [Country(id=row["id"], name=row["name"]) for _, row in df.iterrows()]
+
+    def get_country_mapping(self, path: str) -> dict[int, tuple[str, int]]:
+        df = self.resource.load(file_path=path)
+        return {row["id"]: (row["name"], row["id"]) for _, row in df.iterrows()}

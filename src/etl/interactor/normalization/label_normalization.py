@@ -17,6 +17,10 @@ class LabelNormalization:
 
         labels = DataFrame([vars(g) for g in labels])
 
+        # Flatten list columns to CSV-friendly comma-separated strings
+        labels["producer"] = labels["producer"].apply(lambda x: ",".join(str(i) for i in x) if isinstance(x, list) else "")
+        labels["hasSpecialization"] = labels["hasSpecialization"].apply(lambda x: ",".join(x) if isinstance(x, list) else "")
+
         # Some labels may have float(NaN) in hasCountry. Convert to int with NA support.
         labels["hasCountry"] = pd.to_numeric(labels["hasCountry"], errors='coerce').astype("Int64")
         return labels

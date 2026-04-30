@@ -31,6 +31,11 @@ class BandNormalization:
 
         # Due to left join, some bands may have float(NaN) in producedBy. Convert to Int64 with NA support.
         normalized_bands["producedBy"] = pd.to_numeric(normalized_bands["producedBy"], errors='coerce').astype("Int64")
+
+        # Flatten list columns to CSV-friendly comma-separated strings
+        normalized_bands["releases"] = normalized_bands["releases"].apply(lambda x: ",".join(str(i) for i in x) if isinstance(x, list) else "")
+        normalized_bands["hasGenre"] = normalized_bands["hasGenre"].apply(lambda x: ",".join(x) if isinstance(x, list) else "")
+
         return normalized_bands
 
     def _merge_countries(self, labels, normalized_countries):

@@ -13,7 +13,7 @@ class ReleaseConverter:
 
             release_uri = ONTOMETAL[f"{sanitize_uri_fragment(release.releaseTitle)}_{release.releaseId}"]
             graph.add((release_uri, RDF.type, ONTOMETAL.Release))
-            graph.add((release_uri, ONTOMETAL.releaseTitle, Literal(release.releaseTitle, datatype=XSD.string)))
+            graph.add((release_uri, ONTOMETAL.releaseTitle, Literal(release.releaseTitle.title(), datatype=XSD.string)))
             graph.add((release_uri, ONTOMETAL.releaseYear, Literal(release.releaseYear, datatype=XSD.gYear)))
             graph.add((release_uri, ONTOMETAL.releaseType, Literal(release.releaseType, datatype=XSD.string)))
             graph.add((release_uri, ONTOMETAL.releasedBy, band_uri))
