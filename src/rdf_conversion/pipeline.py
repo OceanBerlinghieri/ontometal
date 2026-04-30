@@ -2,6 +2,7 @@ import logging
 import os
 
 from rdf_conversion import ONTOMETAL
+from rdf_conversion.interactor.band_converter import BandConverter
 from rdf_conversion.interactor.genre_converter import GenreConverter
 from rdf_conversion.interactor.label_converter import LabelConverter
 from rdf_conversion.interactor.metadata_adder import MetadataAdder
@@ -48,6 +49,37 @@ class Pipeline:
         # Ontology metadata
         graph = MetadataAdder().add_metadata(graph)
 
+        # Mapping dictionaries
+        band_mapping = self.band_repository.get_band_mapping(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "bands_v2.csv"
+            )
+        )
+
+        genre_mapping = self.genre_repository.get_genre_mapping(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "genres_v2.csv"
+            )
+        )
+
+        country_mapping = self.country_repository.get_country_mapping(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "countries_v2.csv"
+            )
+        )
+
+        label_mapping = self.label_repository.get_label_mapping(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "labels_v2.csv"
+            )
+        )
+
+        release_mapping = self.release_repository.get_release_mapping(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "releases_v2.csv"
+            )
+        )
+
         # Countries
         logger.info("Converting countries")
         countries = self.country_repository.get_countries(
@@ -72,11 +104,6 @@ class Pipeline:
             )
         )
 
-        band_mapping = self.band_repository.get_band_mapping(
-            path=os.path.join(
-                working_dir, "src/etl/data/normalized", "bands_v2.csv"
-            )
-        )
         graph = ReleaseConverter().convert(releases, band_mapping, graph)
 
         # Labels
@@ -87,25 +114,24 @@ class Pipeline:
             )
         )
 
-        genre_mapping = self.genre_repository.get_genre_mapping(
-            path=os.path.join(
-                working_dir, "src/etl/data/normalized", "genres_v2.csv"
-            )
-        )
-
-        country_mapping = self.country_repository.get_country_mapping(
-            path=os.path.join(
-                working_dir, "src/etl/data/normalized", "countries_v2.csv"
-            )
-        )
-
         graph = LabelConverter().convert(labels, band_mapping, genre_mapping, country_mapping, graph)
 
 
+        # Bands
+        logger.info("Converting bands")
+        bands = self.band_repository.get_bands(
+            path=os.path.join(
+                working_dir, "src/etl/data/normalized", "bands_v2.csv"
+            )
+        )
+
+        graph = BandConverter().convert(bands, label_mapping, genre_mapping, release_mapping, country_mapping, graph)
+        
         # Save
         logger.info("Saving output")
         output_path = os.path.join(
             working_dir, "src/rdf_conversion/output", "ontometal.ttl"
         )
+
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         self.turtle_resource.save(graph, output_path)

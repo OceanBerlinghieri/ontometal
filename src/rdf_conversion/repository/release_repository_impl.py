@@ -17,3 +17,7 @@ class ReleaseRepositoryImpl(ReleaseRepository):
             releaseType=row["releaseType"],
             releasedBy=row["releasedBy"]) 
             for _, row in df.iterrows()]
+    
+    def get_release_mapping(self, path: str) -> dict[int, tuple[str, int]]:
+        df = self.resource.load(file_path=path)
+        return {row["releaseId"]: (row["releaseTitle"], row["releaseId"]) for _, row in df.iterrows()}
