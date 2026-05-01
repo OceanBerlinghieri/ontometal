@@ -21,3 +21,7 @@ class LabelRepositoryImpl(LabelRepository):
             hasSpecialization=[x.strip() for x in str(row["hasSpecialization"]).split(",") if x.strip()],
             hasCountry=row["hasCountry"])
             for _, row in df.iterrows()]
+    
+    def get_label_mapping(self, path: str) -> dict[int, tuple[str, int]]:
+        df = self.resource.load(file_path=path)
+        return {row["labelId"]: (row["labelName"], row["labelId"]) for _, row in df.iterrows()}
