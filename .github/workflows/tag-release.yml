@@ -1,0 +1,42 @@
+name: tag-release
+run-name: ${{ github.actor }} is tagging a release
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+    tag-release:
+        runs-on: ubuntu-24.04
+        steps:
+          - name: Checkout source
+            uses: actions/checkout@v4
+            with:
+                token: ${{ secrets.PAT_TOKEN }}
+                fetch-depth: 0
+
+          - name: Set up Python
+            uses: actions/setup-python@v4
+            with:
+                python-version: '3.12'
+
+          - name: Get version from setup.py
+            id: version
+            run: |
+                VERSION=$(python -c "import re; print(re.search(r\"version=['\\\"]([^'\\\"]+)\", open('setup.py').read()).group(1))")
+                echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+          - name: Create and push tag
+            run: |
+                TAG="v${{ steps.version.outputs.version }}"
+                if git rev-parse "$TAG" >/dev/null 2>&1; then
+                    echo "Tag $TAG already exists, skipping."
+                else
+                    git config user.name 'OceanBerlinghieri'
+                    git config user.email 'OceanBerlinghieri@users.noreply.github.com'
+                    git tag -a "$TAG" -m "Release $TAG"
+                    git push origin "$TAG"
+                fi

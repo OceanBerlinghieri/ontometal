@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="ontometal",
-    version="0.0.0-dev",
+    version="1.0.0",
     description="Ontometal ETL pipeline",
     author="Ocean Berlinghieri",
     author_email="berlinghieri10@gmail.com",
