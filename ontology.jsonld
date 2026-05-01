@@ -24,10 +24,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/dc/terms/date"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://w3id.org/ontometal#releaseYear"
   } ]
-}, {
-  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -47,26 +47,23 @@
   "@id" : "http://purl.org/ontology/mo/Genre",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre"
+    "@id" : "https://w3id.org/ontometal#Genre"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Label",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/MusicGroup",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/ReleaseType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/album",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://purl.org/ontology/mo/releaseType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -75,7 +72,7 @@
     "@value" : "Defines de type of a release as album, single, compilation.."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
+    "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -91,7 +88,28 @@
   "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal",
+  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/based_near",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/made",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/maker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/ontometal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@value" : "Ocean Berlinghieri García"
@@ -115,7 +133,7 @@
     "@value" : "om"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal"
+    "@value" : "https://w3id.org/ontometal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Ontology about metal music"
@@ -124,13 +142,13 @@
     "@id" : "http://purl.org/ontology/mo/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal-0.0.1_dev"
+    "@value" : "1.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.1_dev - First ontology prototype"
+    "@value" : "Ontology skeleton"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band",
+  "@id" : "https://w3id.org/ontometal#Band",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -141,51 +159,7 @@
     "@value" : "Band"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName" : [ {
-    "@value" : "Capitol Records"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus" : [ {
-    "@value" : "Active"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName" : [ {
-    "@value" : "Columbia Records"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus" : [ {
-    "@value" : "Active"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country",
+  "@id" : "https://w3id.org/ontometal#Country",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -196,48 +170,7 @@
     "@value" : "Country"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/ontology/mo/releaseType" : [ {
-    "@id" : "http://purl.org/ontology/mo/album"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle" : [ {
-    "@value" : "Dance Of Death"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYear",
-    "@value" : "2003"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName" : [ {
-    "@value" : "Elektra Records"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus" : [ {
-    "@value" : "Active"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre",
+  "@id" : "https://w3id.org/ontometal#Genre",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -248,44 +181,7 @@
     "@value" : "Genre"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/IronMaiden",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "3"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName" : [ {
-    "@value" : "Iron Maiden"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus" : [ {
-    "@value" : "Active"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ColumbiaRecords"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/DanceOfDeath"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Iron Maiden music group"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "IronMaiden"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label",
+  "@id" : "https://w3id.org/ontometal#Label",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -296,65 +192,7 @@
     "@value" : "Label"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/ontology/mo/releaseType" : [ {
-    "@id" : "http://purl.org/ontology/mo/album"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle" : [ {
-    "@value" : "Master Of Puppets"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYear",
-    "@value" : "1986"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Megadeth. Encyclopaedia Metallum: The Metal Archives. Accessed 2026. https://www.metal-archives.com/bands/megadeth/138"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "2"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName" : [ {
-    "@value" : "Megadeth"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus" : [ {
-    "@value" : "Active"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal"
-  }, {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/CapitolRecords"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Megadeth music group"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Megadeth"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre",
+  "@id" : "https://w3id.org/ontometal#MetalGenre",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -365,46 +203,10 @@
     "@value" : "MetalGenre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre"
+    "@id" : "https://w3id.org/ontometal#Genre"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Metallica",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "1"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName" : [ {
-    "@value" : "Metallica"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus" : [ {
-    "@value" : "Active"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/HeavyMetal"
-  }, {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ElekctraRecords"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MasterOfPuppets"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Metallica music group"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Metallica"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release",
+  "@id" : "https://w3id.org/ontometal#Release",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -415,85 +217,14 @@
     "@value" : "Release"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/RustInPeace",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/ontology/mo/releaseType" : [ {
-    "@id" : "http://purl.org/ontology/mo/album"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle" : [ {
-    "@value" : "Rust In Peace"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#gYear",
-    "@value" : "1990"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Megadeth"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Slayer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
-    "@value" : "4"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName" : [ {
-    "@value" : "Slayer"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus" : [ {
-    "@value" : "Retired"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA"
-  } ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Slayer music group"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Slayer"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/ThrashMetal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/MetalGenre"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/UK",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName" : [ {
-    "@value" : "United Kingdom"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/USA",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName" : [ {
-    "@value" : "United States Of America"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandID",
+  "@id" : "https://w3id.org/ontometal#bandID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Identifier by metal archives"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -506,14 +237,14 @@
     "@id" : "http://purl.org/dc/terms/identifier"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandName",
+  "@id" : "https://w3id.org/ontometal#bandName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of a given band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -526,10 +257,16 @@
     "@id" : "http://xmlns.com/foaf/0.1/name"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/bandStatus",
+  "@id" : "https://w3id.org/ontometal#bandStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Status of a band (active, split..)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "bandStatus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -538,14 +275,14 @@
     "@id" : "http://xmlns.com/foaf/0.1/status"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/countryName",
+  "@id" : "https://w3id.org/ontometal#countryName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of a given country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country"
+    "@id" : "https://w3id.org/ontometal#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -558,52 +295,80 @@
     "@id" : "http://xmlns.com/foaf/0.1/name"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasCountry",
+  "@id" : "https://w3id.org/ontometal#genreID",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifier of a genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "genreID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/identifier"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontometal#genreName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of a music genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "genreName"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/name"
+  } ]
+}, {
+  "@id" : "https://w3id.org/ontometal#hasCountry",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates an entity with its origin country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   }, {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasCountry"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Country"
+    "@id" : "https://w3id.org/ontometal#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/based_near"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasGenre",
+  "@id" : "https://w3id.org/ontometal#hasGenre",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a band with one or more genres"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasGenre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre"
+    "@id" : "https://w3id.org/ontometal#Genre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/ontology/ao/core#genre"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/hasSpecialization",
+  "@id" : "https://w3id.org/ontometal#hasSpecialization",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -613,20 +378,20 @@
     "@value" : "hasSpecialization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Genre"
+    "@id" : "https://w3id.org/ontometal#Genre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/ontology/ao/core#genre"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelID",
+  "@id" : "https://w3id.org/ontometal#labelID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Identifier by metal archives"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -639,14 +404,14 @@
     "@id" : "http://purl.org/dc/terms/identifier"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelName",
+  "@id" : "https://w3id.org/ontometal#labelName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name of a given label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -659,10 +424,16 @@
     "@id" : "http://xmlns.com/foaf/0.1/name"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelStatus",
+  "@id" : "https://w3id.org/ontometal#labelStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Status of a label (closed, active, changedName..)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "labelStatus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -671,14 +442,14 @@
     "@id" : "http://xmlns.com/foaf/0.1/status"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/labelWebsiteURL",
+  "@id" : "https://w3id.org/ontometal#labelWebsiteURL",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "URL of a label website"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -688,17 +459,17 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url"
+    "@id" : "https://w3id.org/ontometal#url"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/metalArchivesURL",
+  "@id" : "https://w3id.org/ontometal#metalArchivesURL",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "URL of a band page in metal archives website"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -708,63 +479,63 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url"
+    "@id" : "https://w3id.org/ontometal#url"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producedBy",
+  "@id" : "https://w3id.org/ontometal#producedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a band which is produces by a label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "producedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   }, {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer"
+    "@id" : "https://w3id.org/ontometal#producer"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/producer",
+  "@id" : "https://w3id.org/ontometal#producer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a band or musical composition to its producer (label)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   }, {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Label"
+    "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "producer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#agent"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseTitle",
+  "@id" : "https://w3id.org/ontometal#releaseTitle",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Title of a band release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
+    "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -777,14 +548,14 @@
     "@id" : "http://purl.org/dc/terms/title"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releaseYear",
+  "@id" : "https://w3id.org/ontometal#releaseYear",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Year when a band release came out"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
+    "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -797,50 +568,50 @@
     "@id" : "http://purl.org/dc/terms/date"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releasedBy",
+  "@id" : "https://w3id.org/ontometal#releasedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a release with the band that released it"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
+    "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "releasedBy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/made"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases"
+    "@id" : "https://w3id.org/ontometal#releases"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/releases",
+  "@id" : "https://w3id.org/ontometal#releases",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a band with a release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Band"
+    "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "releases"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/Release"
+    "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/maker"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ocean/ontologies/2026/3/ontometal/url",
+  "@id" : "https://w3id.org/ontometal#url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A link to acess a website"
@@ -848,22 +619,4 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "url"
   } ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/based_near",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/made",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/maker",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/name",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
-}, {
-  "@id" : "http://xmlns.com/foaf/0.1/status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 } ]
