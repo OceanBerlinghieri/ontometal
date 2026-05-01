@@ -35,8 +35,8 @@ jobs:
 
       - name: Generate Documentation
         run: |
-          java -jar ./widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-            -ontFile ./src/rdf_conversion/output/ontometal.ttl \
+          java -Xmx6g -jar ./widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
+            -ontFile ./ontology/ontometal_skeleton.ttl \
             -outFolder ./generated-docs/ \
             -oops -rewriteAll -lang en
 
