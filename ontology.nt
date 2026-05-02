@@ -8,9 +8,9 @@
 <https://w3id.org/ontometal> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
 <https://w3id.org/ontometal> <http://purl.org/vocab/vann/preferredNamespacePrefix> "om" .
 <https://w3id.org/ontometal> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontometal" .
-<https://w3id.org/ontometal> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about metal music" .
+<https://w3id.org/ontometal> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about metal music that represents relations between bands, labels, genres and countries" .
 <https://w3id.org/ontometal> <http://www.w3.org/2002/07/owl#versionIRI> "1.0.0" .
-<https://w3id.org/ontometal> <http://www.w3.org/2002/07/owl#versionInfo> "Ontology skeleton" .
+<https://w3id.org/ontometal> <http://www.w3.org/2002/07/owl#versionInfo> "First version of finished and valid schema" .
 # 
 # 
 # #################################################################

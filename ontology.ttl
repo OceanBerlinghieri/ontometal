@@ -16,9 +16,9 @@
                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "om" ;
                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/ontometal" ;
-                              rdfs:comment "Ontology about metal music" ;
+                              rdfs:comment "Ontology about metal music that represents relations between bands, labels, genres and countries" ;
                               owl:versionIRI "1.0.0" ;
-                              owl:versionInfo "Ontology skeleton" .
+                              owl:versionInfo "First version of finished and valid schema" .
 
 #################################################################
 #    Annotation properties

@@ -136,7 +136,7 @@
     "@value" : "https://w3id.org/ontometal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Ontology about metal music"
+    "@value" : "Ontology about metal music that represents relations between bands, labels, genres and countries"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.org/ontology/mo/"
@@ -145,7 +145,7 @@
     "@value" : "1.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "Ontology skeleton"
+    "@value" : "First version of finished and valid schema"
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#Band",

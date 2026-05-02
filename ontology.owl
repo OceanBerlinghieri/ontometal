@@ -19,9 +19,9 @@
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <vann:preferredNamespacePrefix>om</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://w3id.org/ontometal</vann:preferredNamespaceUri>
-        <rdfs:comment>Ontology about metal music</rdfs:comment>
+        <rdfs:comment>Ontology about metal music that represents relations between bands, labels, genres and countries</rdfs:comment>
         <owl:versionIRI>1.0.0</owl:versionIRI>
-        <owl:versionInfo>Ontology skeleton</owl:versionInfo>
+        <owl:versionInfo>First version of finished and valid schema</owl:versionInfo>
     </owl:Ontology>
     
 
