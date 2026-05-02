@@ -51,3 +51,10 @@ pip install -e ".[dev]"
 python -m src.etl.main
 python -m src.rdf_conversion.main
 ```
+## GraphDB execution
+```bash
+cd docker/
+sudo docker compose up -d
+```
+
+Access to ontometal database v1.0.0 on `http://localhost:7200`
