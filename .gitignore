@@ -17,3 +17,6 @@ env/
 
 # Jar files
 *.jar
+
+# Docker
+data-docker/
