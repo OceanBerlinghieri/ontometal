@@ -1,0 +1,13 @@
+version: '3' 
+services:
+  graphdb:
+    image: ontotext/graphdb:11.3.3
+    build:
+      context: ./Dockerfile
+    container_name: graphdb
+    ports:
+#     - 7200:7200
+      - 7200:7200
+    volumes:
+      - ./data-docker/graphdb/data:/data
+      - ./data-docker/graphdb/notebooks:/notebooks
