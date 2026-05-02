@@ -1,5 +1,5 @@
 # Storing TTL file
-The generated ontology file (`ontometal.ttl`) is stored using [Git LFS](https://git-lfs.github.com/) due to its size (~130MB).
+The generated ontology file (`ontometal.ttl`) is stored using [Git LFS](https://git-lfs.github.com/) due to its size.
 
 ```bash
 sudo apt-get update && sudo apt-get install -y git-lfs
