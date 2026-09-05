@@ -20,3 +20,8 @@ env/
 
 # Docker
 data-docker/
+
+# App
+build/
+output/
+*.ttl

@@ -1,3 +1,4 @@
+# Modify the workflow for a full release action
 name: tag-release
 run-name: ${{ github.actor }} is tagging a release
 on:

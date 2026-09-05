@@ -1,34 +1,27 @@
 from setuptools import setup, find_packages
+from configparser import ConfigParser
+
+config = ConfigParser()
+config.read("config/ontology_config.ini")
 
 setup(
     name="ontometal",
-    version="1.0.0",
-    description="Ontometal ETL pipeline",
+    version=config.get("ONTOMETAL", "VERSION"),
+    description="Ontometal TBOX generator",
     author="Ocean Berlinghieri",
     author_email="berlinghieri10@gmail.com",
     url="https://github.com/oceanberlinghieri/ontometal",
-    license="Apache 2.0",
+    license="CC BY 4.0",
     # Package discovery
-    packages=find_packages(where="src"),
-    package_dir={"": "src"},
-    # Include non-Python files
-    package_data={
-        "": ["*.ttl", "*.rdfs", "*.csv", "*.xml"],
-    },
-    include_package_data=True,
+    packages=find_packages(include=["ontometal", "ontometal.*"]),
+    package_dir={"": "."},
     # Python version requirement
     python_requires=">=3.10",
     entry_points={
-        "console_scripts": [
-            "ontometal=etl.main:main",
-            "conversion=rdf_conversion.main:main",
-        ],
+        "console_scripts": "ontometal=ontometal.main:main",
     },
     # Dependencies
-    install_requires=[
-        "pandas>=3.0.2",
-        "rdflib>=7.0.0",
-    ],
+    install_requires=["rdflib>=7.0.0", "configparser>=5.0.0"],
     # Optional dependencies
     extras_require={
         "dev": [
