@@ -55,8 +55,10 @@ jobs:
             run: |
                 curl -L -o robot.jar https://github.com/ontodev/robot/releases/latest/download/robot.jar
 
+
           - name: Validate ontology
             run: |
-                java -Xmx4g -jar robot.jar remove --input ontometal.ttl --select individuals --output tbox.ttl
+                sed '/owl:imports/d' src/rdf_conversion/output/ontometal.ttl > src/rdf_conversion/output/ontometal_no_imports.ttl
+                java -Xmx4g -jar robot.jar remove --input src/rdf_conversion/output/ontometal_no_imports.ttl --select individuals --output src/rdf_conversion/output/tbox.ttl
                 java -Xmx4g -jar robot.jar reason --reasoner HermiT --input src/rdf_conversion/output/tbox.ttl
                 rm src/rdf_conversion/output/ontometal_no_imports.ttl src/rdf_conversion/output/tbox.ttl
