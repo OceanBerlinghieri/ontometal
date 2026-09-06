@@ -1,5 +1,5 @@
-<h2 id="crossreference" class="list">Cross-reference for ontometal classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by ontometal.
+<h2 id="crossreference" class="list">Cross-reference for OntoMetal: An Ontology for Metal Music classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by OntoMetal: An Ontology for Metal Music.
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
@@ -9,7 +9,7 @@ This section provides details for each class and property defined by ontometal.
   <li><a href="#Genre" title="https://w3id.org/ontometal#Genre">Genre</a></li>
   <li><a href="#http://purl.org/ontology/mo/Label" title="http://purl.org/ontology/mo/Label"> <span>Label</span> </a></li>
   <li><a href="#Label" title="https://w3id.org/ontometal#Label">Label</a></li>
-  <li><a href="#MetalGenre" title="https://w3id.org/ontometal#MetalGenre">MetalGenre</a></li>
+  <li><a href="#MetalGenre" title="https://w3id.org/ontometal#MetalGenre">Metal Genre</a></li>
   <li><a href="#http://purl.org/ontology/mo/MusicGroup" title="http://purl.org/ontology/mo/MusicGroup"> <span>Music Group</span> </a></li>
   <li><a href="#Release" title="https://w3id.org/ontometal#Release">Release</a></li>
  </ul>
@@ -17,20 +17,20 @@ This section provides details for each class and property defined by ontometal.
   <h3>Band<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#Band</p>
   <div class="comment">
-   <span class="markdown">Class representing a music group. Equivalent to mo:MusicGroup</span>
+   <span class="markdown">A musical group or artist entity.</span>
   </div>
   <dl class="description">
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#bandID" title="https://w3id.org/ontometal#bandID">bandID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#bandName" title="https://w3id.org/ontometal#bandName">bandName</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#bandStatus" title="https://w3id.org/ontometal#bandStatus">bandStatus</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasGenre" title="https://w3id.org/ontometal#hasGenre">hasGenre</a> <sup class="type-op" title="object property">op</sup>, <a href="#metalArchivesURL" title="https://w3id.org/ontometal#metalArchivesURL">metalArchivesURL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#producedBy" title="https://w3id.org/ontometal#producedBy">producedBy</a> <sup class="type-op" title="object property">op</sup>, <a href="#producer" title="https://w3id.org/ontometal#producer">producer</a> <sup class="type-op" title="object property">op</sup>, <a href="#releases" title="https://w3id.org/ontometal#releases">releases</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#bandId" title="https://w3id.org/ontometal#bandId">Band ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#bandName" title="https://w3id.org/ontometal#bandName">Band Name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#bandStatus" title="https://w3id.org/ontometal#bandStatus">Band Status</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">Has Country</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasGenre" title="https://w3id.org/ontometal#hasGenre">Has Genre</a> <sup class="type-op" title="object property">op</sup>, <a href="#metalArchivesUrl" title="https://w3id.org/ontometal#metalArchivesUrl">Metal Archives URL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#producedBy" title="https://w3id.org/ontometal#producedBy">Produced By</a> <sup class="type-op" title="object property">op</sup>, <a href="#releases" title="https://w3id.org/ontometal#releases">Releases</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#producedBy" title="https://w3id.org/ontometal#producedBy">producedBy</a> <sup class="type-op" title="object property">op</sup>, <a href="#producer" title="https://w3id.org/ontometal#producer">producer</a> <sup class="type-op" title="object property">op</sup>, <a href="#releasedBy" title="https://w3id.org/ontometal#releasedBy">releasedBy</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#producer" title="https://w3id.org/ontometal#producer">Producer</a> <sup class="type-op" title="object property">op</sup>, <a href="#releasedBy" title="https://w3id.org/ontometal#releasedBy">Released By</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -38,20 +38,20 @@ This section provides details for each class and property defined by ontometal.
   <h3>Country<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#Country</p>
   <div class="comment">
-   <span class="markdown">A class representing a country</span>
+   <span class="markdown">A country associated with a band or release.</span>
   </div>
   <dl class="description">
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#countryName" title="https://w3id.org/ontometal#countryName">countryName</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#countryName" title="https://w3id.org/ontometal#countryName">Country Name</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">Has Country</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -71,20 +71,20 @@ This section provides details for each class and property defined by ontometal.
   <h3>Genre<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#Genre</p>
   <div class="comment">
-   <span class="markdown">Music genre class, equivalent to mo:Genre</span>
+   <span class="markdown">A musical genre associated with a band or release.</span>
   </div>
   <dl class="description">
    <dt>
-    has sub-classes
+    is in domain of
    </dt>
    <dd>
-    <a href="#MetalGenre" title="https://w3id.org/ontometal#MetalGenre">MetalGenre</a> <sup class="type-c" title="class">c</sup>
+    <a href="#genreId" title="https://w3id.org/ontometal#genreId">Genre ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#genreName" title="https://w3id.org/ontometal#genreName">Genre Name</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasSpecialization" title="https://w3id.org/ontometal#hasSpecialization">Relates a label with its preferred musical genre</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasGenre" title="https://w3id.org/ontometal#hasGenre">hasGenre</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasGenre" title="https://w3id.org/ontometal#hasGenre">Has Genre</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSpecialization" title="https://w3id.org/ontometal#hasSpecialization">Has Specialization</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -104,37 +104,29 @@ This section provides details for each class and property defined by ontometal.
   <h3>Label<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#Label</p>
   <div class="comment">
-   <span class="markdown">Comercial organization from music industry. Equivalent to mo:Label</span>
+   <span class="markdown">A record label associated with a band or release.</span>
   </div>
   <dl class="description">
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasSpecialization" title="https://w3id.org/ontometal#hasSpecialization">Relates a label with its preferred musical genre</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">hasCountry</a> <sup class="type-op" title="object property">op</sup>, <a href="#labelID" title="https://w3id.org/ontometal#labelID">labelID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#labelName" title="https://w3id.org/ontometal#labelName">labelName</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#labelStatus" title="https://w3id.org/ontometal#labelStatus">labelStatus</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#labelWebsiteURL" title="https://w3id.org/ontometal#labelWebsiteURL">labelWebsiteURL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#producer" title="https://w3id.org/ontometal#producer">producer</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">Has Country</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSpecialization" title="https://w3id.org/ontometal#hasSpecialization">Has Specialization</a> <sup class="type-op" title="object property">op</sup>, <a href="#labelId" title="https://w3id.org/ontometal#labelId">Label ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#labelName" title="https://w3id.org/ontometal#labelName">Label Name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#labelStatus" title="https://w3id.org/ontometal#labelStatus">Label Status</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#labelWebsiteUrl" title="https://w3id.org/ontometal#labelWebsiteUrl">Label Website URL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#producer" title="https://w3id.org/ontometal#producer">Producer</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#producedBy" title="https://w3id.org/ontometal#producedBy">producedBy</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#producedBy" title="https://w3id.org/ontometal#producedBy">Produced By</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="MetalGenre">
-  <h3>MetalGenre<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>Metal Genre<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#MetalGenre</p>
   <div class="comment">
-   <span class="markdown">A class representing musical subgenres from metal music</span>
+   <span class="markdown">A specific subgenre of metal music.</span>
   </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#Genre" title="https://w3id.org/ontometal#Genre">Genre</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
  </div>
  <div class="entity" id="http://purl.org/ontology/mo/MusicGroup">
   <h3>Music Group<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -152,40 +144,39 @@ This section provides details for each class and property defined by ontometal.
   <h3>Release<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#Release</p>
   <div class="comment">
-   <span class="markdown">Music release from a band. Equivalent to mo:ReleaseType</span>
+   <span class="markdown">A musical release, such as an album or single.</span>
   </div>
   <dl class="description">
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#releaseTitle" title="https://w3id.org/ontometal#releaseTitle">releaseTitle</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/ontology/mo/releaseType" title="http://purl.org/ontology/mo/releaseType">releaseType</a> <sup class="type-op" title="object property">op</sup>, <a href="#releaseYear" title="https://w3id.org/ontometal#releaseYear">releaseYear</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#releasedBy" title="https://w3id.org/ontometal#releasedBy">releasedBy</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#releaseTitle" title="https://w3id.org/ontometal#releaseTitle">Release Title</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#releaseYear" title="https://w3id.org/ontometal#releaseYear">Release Year</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#releasedBy" title="https://w3id.org/ontometal#releasedBy">Released By</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#releases" title="https://w3id.org/ontometal#releases">releases</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#releases" title="https://w3id.org/ontometal#releases">Releases</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">hasCountry</a></li>
-  <li><a href="#hasGenre" title="https://w3id.org/ontometal#hasGenre">hasGenre</a></li>
-  <li><a href="#producedBy" title="https://w3id.org/ontometal#producedBy">producedBy</a></li>
-  <li><a href="#producer" title="https://w3id.org/ontometal#producer">producer</a></li>
-  <li><a href="#hasSpecialization" title="https://w3id.org/ontometal#hasSpecialization">Relates a label with its preferred musical genre</a></li>
-  <li><a href="#releasedBy" title="https://w3id.org/ontometal#releasedBy">releasedBy</a></li>
-  <li><a href="#releases" title="https://w3id.org/ontometal#releases">releases</a></li>
-  <li><a href="#http://purl.org/ontology/mo/releaseType" title="http://purl.org/ontology/mo/releaseType">releaseType</a></li>
+  <li><a href="#hasCountry" title="https://w3id.org/ontometal#hasCountry">Has Country</a></li>
+  <li><a href="#hasGenre" title="https://w3id.org/ontometal#hasGenre">Has Genre</a></li>
+  <li><a href="#hasSpecialization" title="https://w3id.org/ontometal#hasSpecialization">Has Specialization</a></li>
+  <li><a href="#producedBy" title="https://w3id.org/ontometal#producedBy">Produced By</a></li>
+  <li><a href="#producer" title="https://w3id.org/ontometal#producer">Producer</a></li>
+  <li><a href="#releasedBy" title="https://w3id.org/ontometal#releasedBy">Released By</a></li>
+  <li><a href="#releases" title="https://w3id.org/ontometal#releases">Releases</a></li>
  </ul>
  <div class="entity" id="hasCountry">
-  <h3>hasCountry<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>Has Country<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#hasCountry</p>
   <div class="comment">
-   <span class="markdown">Relates an entity with its origin country</span>
+   <span class="markdown">Indicates the country associated with an entity</span>
   </div>
   <div class="description">
    <p><strong>has characteristics: </strong> functional</p>
@@ -215,10 +206,10 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="hasGenre">
-  <h3>hasGenre<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>Has Genre<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#hasGenre</p>
   <div class="comment">
-   <span class="markdown">Relates a band with one or more genres</span>
+   <span class="markdown">Indicates the genre associated with an entity</span>
   </div>
   <div class="description">
    <p><strong>has characteristics: </strong> transitive</p>
@@ -227,13 +218,43 @@ This section provides details for each class and property defined by ontometal.
      has super-properties
     </dt>
     <dd>
-     <a href="http://purl.org/ontology/ao/core#genre" target="_blank" title="http://purl.org/ontology/ao/core#genre">genre</a> <sup class="type-op" title="object property">op</sup>
+     <a href="http://purl.org/ontology/ao/genre" target="_blank" title="http://purl.org/ontology/ao/genre">genre</a> <sup class="type-op" title="object property">op</sup>
     </dd>
     <dt>
      has domain
     </dt>
     <dd>
      <a href="#Band" title="https://w3id.org/ontometal#Band">Band</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Genre" title="https://w3id.org/ontometal#Genre">Genre</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSpecialization">
+  <h3>Has Specialization<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ontometal#hasSpecialization</p>
+  <div class="comment">
+   <span class="markdown">Indicates the specialization associated with an entity</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> transitive</p>
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="http://purl.org/ontology/ao/genre" target="_blank" title="http://purl.org/ontology/ao/genre">genre</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Label" title="https://w3id.org/ontometal#Label">Label</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -245,19 +266,14 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="producedBy">
-  <h3>producedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>Produced By<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#producedBy</p>
   <div class="comment">
-   <span class="markdown">Relates a band which is produces by a label</span>
+   <span class="markdown">Indicates an entity produced by another entity</span>
   </div>
   <div class="description">
+   <p><strong>has characteristics: </strong> transitive</p>
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.org/NET/c4dm/event.owl#isAgentIn" target="_blank" title="http://purl.org/NET/c4dm/event.owl#isAgentIn">is Agent In</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -268,70 +284,19 @@ This section provides details for each class and property defined by ontometal.
      has range
     </dt>
     <dd>
-     <a href="#Band" title="https://w3id.org/ontometal#Band">Band</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
      <a href="#Label" title="https://w3id.org/ontometal#Label">Label</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#producer" title="https://w3id.org/ontometal#producer">producer</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="producer">
-  <h3>producer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>Producer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#producer</p>
   <div class="comment">
-   <span class="markdown">Relates a band or musical composition to its producer (label)</span>
+   <span class="markdown">Indicates the producer of an entity</span>
   </div>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.org/NET/c4dm/event.owl#agent" target="_blank" title="http://purl.org/NET/c4dm/event.owl#agent">agent</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Band" title="https://w3id.org/ontometal#Band">Band</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="#Label" title="https://w3id.org/ontometal#Label">Label</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Band" title="https://w3id.org/ontometal#Band">Band</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#producedBy" title="https://w3id.org/ontometal#producedBy">producedBy</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasSpecialization">
-  <h3>Relates a label with its preferred musical genre<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ontometal#hasSpecialization</p>
-  <div class="description">
-   <p><strong>has characteristics: </strong> transitive</p>
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.org/ontology/ao/core#genre" target="_blank" title="http://purl.org/ontology/ao/core#genre">genre</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
     <dt>
      has domain
     </dt>
@@ -342,16 +307,16 @@ This section provides details for each class and property defined by ontometal.
      has range
     </dt>
     <dd>
-     <a href="#Genre" title="https://w3id.org/ontometal#Genre">Genre</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Band" title="https://w3id.org/ontometal#Band">Band</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="releasedBy">
-  <h3>releasedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>Released By<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#releasedBy</p>
   <div class="comment">
-   <span class="markdown">Relates a release with the band that released it</span>
+   <span class="markdown">Indicates the entity that released another entity</span>
   </div>
   <div class="description">
    <p><strong>has characteristics: </strong> functional</p>
@@ -374,20 +339,14 @@ This section provides details for each class and property defined by ontometal.
     <dd>
      <a href="#Band" title="https://w3id.org/ontometal#Band">Band</a> <sup class="type-c" title="class">c</sup>
     </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#releases" title="https://w3id.org/ontometal#releases">releases</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="releases">
-  <h3>releases<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>Releases<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#releases</p>
   <div class="comment">
-   <span class="markdown">Relates a band with a release</span>
+   <span class="markdown">Indicates the entity that is released by another entity</span>
   </div>
   <div class="description">
    <dl>
@@ -409,82 +368,32 @@ This section provides details for each class and property defined by ontometal.
     <dd>
      <a href="#Release" title="https://w3id.org/ontometal#Release">Release</a> <sup class="type-c" title="class">c</sup>
     </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#releasedBy" title="https://w3id.org/ontometal#releasedBy">releasedBy</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.org/ontology/mo/releaseType">
-  <h3>releaseType<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/ontology/mo/releaseType</p>
-  <div class="comment">
-   <span class="markdown">Defines de type of a release as album, single, compilation..</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Release" title="https://w3id.org/ontometal#Release">Release</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://purl.org/ontology/mo/ReleaseType" target="_blank" title="http://purl.org/ontology/mo/ReleaseType">Release Type</a> <sup class="type-c" title="class">c</sup>
-    </dd>
    </dl>
   </div>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
-  <li><a href="#http://purl.org/dc/terms/available" title="http://purl.org/dc/terms/available"> <span>available</span> </a></li>
-  <li><a href="#bandID" title="https://w3id.org/ontometal#bandID">bandID</a></li>
-  <li><a href="#bandName" title="https://w3id.org/ontometal#bandName">bandName</a></li>
-  <li><a href="#bandStatus" title="https://w3id.org/ontometal#bandStatus">bandStatus</a></li>
-  <li><a href="#countryName" title="https://w3id.org/ontometal#countryName">countryName</a></li>
-  <li><a href="#genreID" title="https://w3id.org/ontometal#genreID">genreID</a></li>
-  <li><a href="#genreName" title="https://w3id.org/ontometal#genreName">genreName</a></li>
-  <li><a href="#labelID" title="https://w3id.org/ontometal#labelID">labelID</a></li>
-  <li><a href="#labelName" title="https://w3id.org/ontometal#labelName">labelName</a></li>
-  <li><a href="#labelStatus" title="https://w3id.org/ontometal#labelStatus">labelStatus</a></li>
-  <li><a href="#labelWebsiteURL" title="https://w3id.org/ontometal#labelWebsiteURL">labelWebsiteURL</a></li>
-  <li><a href="#metalArchivesURL" title="https://w3id.org/ontometal#metalArchivesURL">metalArchivesURL</a></li>
-  <li><a href="#releaseTitle" title="https://w3id.org/ontometal#releaseTitle">releaseTitle</a></li>
-  <li><a href="#releaseYear" title="https://w3id.org/ontometal#releaseYear">releaseYear</a></li>
-  <li><a href="#url" title="https://w3id.org/ontometal#url">url</a></li>
+  <li><a href="#bandId" title="https://w3id.org/ontometal#bandId">Band ID</a></li>
+  <li><a href="#bandName" title="https://w3id.org/ontometal#bandName">Band Name</a></li>
+  <li><a href="#bandStatus" title="https://w3id.org/ontometal#bandStatus">Band Status</a></li>
+  <li><a href="#countryName" title="https://w3id.org/ontometal#countryName">Country Name</a></li>
+  <li><a href="#genreId" title="https://w3id.org/ontometal#genreId">Genre ID</a></li>
+  <li><a href="#genreName" title="https://w3id.org/ontometal#genreName">Genre Name</a></li>
+  <li><a href="#labelId" title="https://w3id.org/ontometal#labelId">Label ID</a></li>
+  <li><a href="#labelName" title="https://w3id.org/ontometal#labelName">Label Name</a></li>
+  <li><a href="#labelStatus" title="https://w3id.org/ontometal#labelStatus">Label Status</a></li>
+  <li><a href="#labelWebsiteUrl" title="https://w3id.org/ontometal#labelWebsiteUrl">Label Website URL</a></li>
+  <li><a href="#metalArchivesUrl" title="https://w3id.org/ontometal#metalArchivesUrl">Metal Archives URL</a></li>
+  <li><a href="#releaseTitle" title="https://w3id.org/ontometal#releaseTitle">Release Title</a></li>
+  <li><a href="#releaseYear" title="https://w3id.org/ontometal#releaseYear">Release Year</a></li>
+  <li><a href="#url" title="https://w3id.org/ontometal#url">URL</a></li>
  </ul>
- <div class="entity" id="http://purl.org/dc/terms/available">
-  <h3>available<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.org/dc/terms/available</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#releaseYear" title="https://w3id.org/ontometal#releaseYear">releaseYear</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.org/dc/terms/date" target="_blank" title="http://purl.org/dc/terms/date">date</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="bandID">
-  <h3>bandID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ontometal#bandID</p>
+ <div class="entity" id="bandId">
+  <h3>Band ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ontometal#bandId</p>
   <div class="comment">
-   <span class="markdown">Identifier by metal archives</span>
+   <span class="markdown">The unique identifier for a band</span>
   </div>
   <div class="description">
    <p><strong>has characteristics: </strong> functional</p>
@@ -511,10 +420,10 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="bandName">
-  <h3>bandName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Band Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#bandName</p>
   <div class="comment">
-   <span class="markdown">Name of a given band</span>
+   <span class="markdown">The name of the band</span>
   </div>
   <div class="description">
    <dl>
@@ -540,10 +449,10 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="bandStatus">
-  <h3>bandStatus<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Band Status<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#bandStatus</p>
   <div class="comment">
-   <span class="markdown">Status of a band (active, split..)</span>
+   <span class="markdown">The current status of the band</span>
   </div>
   <div class="description">
    <p><strong>has characteristics: </strong> functional</p>
@@ -570,10 +479,10 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="countryName">
-  <h3>countryName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Country Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#countryName</p>
   <div class="comment">
-   <span class="markdown">Name of a given country</span>
+   <span class="markdown">The name of the country</span>
   </div>
   <div class="description">
    <dl>
@@ -598,11 +507,11 @@ This section provides details for each class and property defined by ontometal.
    </dl>
   </div>
  </div>
- <div class="entity" id="genreID">
-  <h3>genreID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ontometal#genreID</p>
+ <div class="entity" id="genreId">
+  <h3>Genre ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ontometal#genreId</p>
   <div class="comment">
-   <span class="markdown">Identifier of a genre</span>
+   <span class="markdown">The unique identifier for a genre</span>
   </div>
   <div class="description">
    <dl>
@@ -612,14 +521,26 @@ This section provides details for each class and property defined by ontometal.
     <dd>
      <a href="http://purl.org/dc/terms/identifier" target="_blank" title="http://purl.org/dc/terms/identifier">identifier</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Genre" title="https://w3id.org/ontometal#Genre">Genre</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#long" target="_blank" title="http://www.w3.org/2001/XMLSchema#long">long</a>
+    </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="genreName">
-  <h3>genreName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Genre Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#genreName</p>
   <div class="comment">
-   <span class="markdown">Name of a music genre</span>
+   <span class="markdown">The name of the genre</span>
   </div>
   <div class="description">
    <dl>
@@ -629,14 +550,26 @@ This section provides details for each class and property defined by ontometal.
     <dd>
      <a href="http://xmlns.com/foaf/0.1/name" target="_blank" title="http://xmlns.com/foaf/0.1/name">name</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Genre" title="https://w3id.org/ontometal#Genre">Genre</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="labelID">
-  <h3>labelID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ontometal#labelID</p>
+ <div class="entity" id="labelId">
+  <h3>Label ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ontometal#labelId</p>
   <div class="comment">
-   <span class="markdown">Identifier by metal archives</span>
+   <span class="markdown">The unique identifier for a label</span>
   </div>
   <div class="description">
    <p><strong>has characteristics: </strong> functional</p>
@@ -663,10 +596,10 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="labelName">
-  <h3>labelName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Label Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#labelName</p>
   <div class="comment">
-   <span class="markdown">Name of a given label</span>
+   <span class="markdown">The name of the label</span>
   </div>
   <div class="description">
    <dl>
@@ -692,13 +625,12 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="labelStatus">
-  <h3>labelStatus<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Label Status<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#labelStatus</p>
   <div class="comment">
-   <span class="markdown">Status of a label (closed, active, changedName..)</span>
+   <span class="markdown">The current status of the label</span>
   </div>
   <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
    <dl>
     <dt>
      has super-properties
@@ -721,11 +653,11 @@ This section provides details for each class and property defined by ontometal.
    </dl>
   </div>
  </div>
- <div class="entity" id="labelWebsiteURL">
-  <h3>labelWebsiteURL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ontometal#labelWebsiteURL</p>
+ <div class="entity" id="labelWebsiteUrl">
+  <h3>Label Website URL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ontometal#labelWebsiteUrl</p>
   <div class="comment">
-   <span class="markdown">URL of a label website</span>
+   <span class="markdown">The URL of the label's website</span>
   </div>
   <div class="description">
    <dl>
@@ -733,7 +665,7 @@ This section provides details for each class and property defined by ontometal.
      has super-properties
     </dt>
     <dd>
-     <a href="#url" title="https://w3id.org/ontometal#url">url</a> <sup class="type-dp" title="data property">dp</sup>
+     <a href="#url" title="https://w3id.org/ontometal#url">URL</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
     <dt>
      has domain
@@ -750,11 +682,11 @@ This section provides details for each class and property defined by ontometal.
    </dl>
   </div>
  </div>
- <div class="entity" id="metalArchivesURL">
-  <h3>metalArchivesURL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/ontometal#metalArchivesURL</p>
+ <div class="entity" id="metalArchivesUrl">
+  <h3>Metal Archives URL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/ontometal#metalArchivesUrl</p>
   <div class="comment">
-   <span class="markdown">URL of a band page in metal archives website</span>
+   <span class="markdown">The URL of the band's page on Metal Archives</span>
   </div>
   <div class="description">
    <dl>
@@ -762,7 +694,7 @@ This section provides details for each class and property defined by ontometal.
      has super-properties
     </dt>
     <dd>
-     <a href="#url" title="https://w3id.org/ontometal#url">url</a> <sup class="type-dp" title="data property">dp</sup>
+     <a href="#url" title="https://w3id.org/ontometal#url">URL</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
     <dt>
      has domain
@@ -780,10 +712,10 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="releaseTitle">
-  <h3>releaseTitle<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Release Title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#releaseTitle</p>
   <div class="comment">
-   <span class="markdown">Title of a band release</span>
+   <span class="markdown">The title of the release</span>
   </div>
   <div class="description">
    <dl>
@@ -809,20 +741,13 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="releaseYear">
-  <h3>releaseYear<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>Release Year<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#releaseYear</p>
   <div class="comment">
-   <span class="markdown">Year when a band release came out</span>
+   <span class="markdown">The year the release was published</span>
   </div>
   <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
    <dl>
-    <dt>
-     has equivalent properties
-    </dt>
-    <dd>
-     <a href="#http://purl.org/dc/terms/available" title="http://purl.org/dc/terms/available">available</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
     <dt>
      has super-properties
     </dt>
@@ -845,10 +770,10 @@ This section provides details for each class and property defined by ontometal.
   </div>
  </div>
  <div class="entity" id="url">
-  <h3>url<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>URL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/ontometal#url</p>
   <div class="comment">
-   <span class="markdown">A link to acess a website</span>
+   <span class="markdown">The URL associated with the entity</span>
   </div>
   <div class="description">
    <dl>
@@ -856,7 +781,7 @@ This section provides details for each class and property defined by ontometal.
      has sub-properties
     </dt>
     <dd>
-     <a href="#labelWebsiteURL" title="https://w3id.org/ontometal#labelWebsiteURL">labelWebsiteURL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#metalArchivesURL" title="https://w3id.org/ontometal#metalArchivesURL">metalArchivesURL</a> <sup class="type-dp" title="data property">dp</sup>
+     <a href="#labelWebsiteUrl" title="https://w3id.org/ontometal#labelWebsiteUrl">Label Website URL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#metalArchivesUrl" title="https://w3id.org/ontometal#metalArchivesUrl">Metal Archives URL</a> <sup class="type-dp" title="data property">dp</sup>
     </dd>
    </dl>
   </div>

@@ -1,17 +1,11 @@
 [ {
-  "@id" : "http://purl.org/NET/c4dm/event.owl#agent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/created",
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@id" : "http://purl.org/dc/elements/1.1/date",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/publisher",
@@ -19,15 +13,6 @@
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/available",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/dc/terms/date"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
-    "@id" : "https://w3id.org/ontometal#releaseYear"
-  } ]
 }, {
   "@id" : "http://purl.org/dc/terms/date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
@@ -41,7 +26,7 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://purl.org/ontology/ao/core#genre",
+  "@id" : "http://purl.org/ontology/ao/genre",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://purl.org/ontology/mo/Genre",
@@ -62,26 +47,6 @@
     "@id" : "https://w3id.org/ontometal#Band"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/mo/ReleaseType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://purl.org/ontology/mo/releaseType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Defines de type of a release as album, single, compilation.."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ontometal#Release"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "releaseType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://purl.org/ontology/mo/ReleaseType"
-  } ]
-}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -90,9 +55,6 @@
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#gYear",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/based_near",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
@@ -109,25 +71,25 @@
   "@id" : "http://xmlns.com/foaf/0.1/status",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://w3id.org/ontometal",
+  "@id" : "https://w3id.org/ontometal#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@value" : "Ocean Berlinghieri García"
-  } ],
-  "http://purl.org/dc/elements/1.1/created" : [ {
-    "@value" : "2026-04-19"
+    "@value" : "Ocean Berlinghieri"
   } ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Ocean Berlinghieri García"
+    "@value" : "Ocean Berlinghieri"
+  } ],
+  "http://purl.org/dc/elements/1.1/date" : [ {
+    "@value" : "2026-04-19"
   } ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
-    "@value" : "Ocean Berlinghieri García"
+    "@value" : "Ocean Berlinghieri"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
-    "@value" : "ontometal"
+    "@value" : "OntoMetal: An Ontology for Metal Music"
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+    "@value" : "CC BY 4.0"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@value" : "om"
@@ -136,23 +98,23 @@
     "@value" : "https://w3id.org/ontometal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Ontology about metal music that represents relations between bands, labels, genres and countries"
+    "@value" : "This ontology is designed to represent the domain of metal music, including bands, albums, releases, and related concepts. It provides a structured framework for organizing and linking information about metal music entities."
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://purl.org/ontology/mo/"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@value" : "1.0.0"
+    "@id" : "https://w3id.org/ontometal#-2.0.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "First version of finished and valid schema"
+    "@value" : "Version built from code"
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#Band",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Class representing a music group. Equivalent to mo:MusicGroup"
+    "@value" : "A musical group or artist entity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -163,7 +125,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A class representing a country"
+    "@value" : "A country associated with a band or release."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -174,7 +136,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Music genre class, equivalent to mo:Genre"
+    "@value" : "A musical genre associated with a band or release."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -185,7 +147,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Comercial organization from music industry. Equivalent to mo:Label"
+    "@value" : "A record label associated with a band or release."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -196,39 +158,36 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A class representing musical subgenres from metal music"
+    "@value" : "A specific subgenre of metal music."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "MetalGenre"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/ontometal#Genre"
+    "@value" : "Metal Genre"
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#Release",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Music release from a band. Equivalent to mo:ReleaseType"
+    "@value" : "A musical release, such as an album or single."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Release"
   } ]
 }, {
-  "@id" : "https://w3id.org/ontometal#bandID",
+  "@id" : "https://w3id.org/ontometal#bandId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Identifier by metal archives"
+    "@value" : "The unique identifier for a band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "bandID"
+    "@value" : "Band ID"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#long"
@@ -241,14 +200,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Name of a given band"
+    "@value" : "The name of the band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "bandName"
+    "@value" : "Band Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -260,13 +219,15 @@
   "@id" : "https://w3id.org/ontometal#bandStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Status of a band (active, split..)"
+    "@language" : "en",
+    "@value" : "The current status of the band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "bandStatus"
+    "@language" : "en",
+    "@value" : "Band Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -279,14 +240,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Name of a given country"
+    "@value" : "The name of the country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "countryName"
+    "@value" : "Country Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -295,15 +256,21 @@
     "@id" : "http://xmlns.com/foaf/0.1/name"
   } ]
 }, {
-  "@id" : "https://w3id.org/ontometal#genreID",
+  "@id" : "https://w3id.org/ontometal#genreId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Identifier of a genre"
+    "@value" : "The unique identifier for a genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontometal#Genre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "genreID"
+    "@value" : "Genre ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#long"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/dc/terms/identifier"
@@ -313,11 +280,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Name of a music genre"
+    "@value" : "The name of the genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/ontometal#Genre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "genreName"
+    "@value" : "Genre Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/name"
@@ -327,7 +300,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates an entity with its origin country"
+    "@value" : "Indicates the country associated with an entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
@@ -336,7 +309,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasCountry"
+    "@value" : "Has Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontometal#Country"
@@ -349,53 +322,54 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates a band with one or more genres"
+    "@value" : "Indicates the genre associated with an entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "hasGenre"
+    "@value" : "Has Genre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontometal#Genre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/ao/core#genre"
+    "@id" : "http://purl.org/ontology/ao/genre"
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#hasSpecialization",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indicates the specialization associated with an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Relates a label with its preferred musical genre"
-  }, {
-    "@language" : "en",
-    "@value" : "hasSpecialization"
+    "@value" : "Has Specialization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontometal#Genre"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/ontology/ao/core#genre"
+    "@id" : "http://purl.org/ontology/ao/genre"
   } ]
 }, {
-  "@id" : "https://w3id.org/ontometal#labelID",
+  "@id" : "https://w3id.org/ontometal#labelId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Identifier by metal archives"
+    "@value" : "The unique identifier for a label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "labelID"
+    "@value" : "Label ID"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#long"
@@ -408,14 +382,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Name of a given label"
+    "@value" : "The name of the label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "labelName"
+    "@value" : "Label Name"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -425,15 +399,17 @@
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#labelStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Status of a label (closed, active, changedName..)"
+    "@language" : "en",
+    "@value" : "The current status of the label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "labelStatus"
+    "@language" : "en",
+    "@value" : "Label Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -442,18 +418,18 @@
     "@id" : "http://xmlns.com/foaf/0.1/status"
   } ]
 }, {
-  "@id" : "https://w3id.org/ontometal#labelWebsiteURL",
+  "@id" : "https://w3id.org/ontometal#labelWebsiteUrl",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "URL of a label website"
+    "@value" : "The URL of the label's website"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "labelWebsiteURL"
+    "@value" : "Label Website URL"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -462,18 +438,18 @@
     "@id" : "https://w3id.org/ontometal#url"
   } ]
 }, {
-  "@id" : "https://w3id.org/ontometal#metalArchivesURL",
+  "@id" : "https://w3id.org/ontometal#metalArchivesUrl",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "URL of a band page in metal archives website"
+    "@value" : "The URL of the band's page on Metal Archives"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "metalArchivesURL"
+    "@value" : "Metal Archives URL"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -483,63 +459,51 @@
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#producedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates a band which is produces by a label"
+    "@value" : "Indicates an entity produced by another entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "producedBy"
+    "@language" : "en",
+    "@value" : "Produced By"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/ontometal#Band"
-  }, {
     "@id" : "https://w3id.org/ontometal#Label"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#isAgentIn"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/ontometal#producer"
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#producer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates a band or musical composition to its producer (label)"
+    "@value" : "Indicates the producer of an entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ontometal#Band"
-  }, {
     "@id" : "https://w3id.org/ontometal#Label"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "producer"
+    "@value" : "Producer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://purl.org/NET/c4dm/event.owl#agent"
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#releaseTitle",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Title of a band release"
+    "@value" : "The title of the release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "releaseTitle"
+    "@value" : "Release Title"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -549,17 +513,17 @@
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#releaseYear",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Year when a band release came out"
+    "@value" : "The year the release was published"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "releaseYear"
+    "@value" : "Release Year"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
@@ -572,37 +536,34 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates a release with the band that released it"
+    "@value" : "Indicates the entity that released another entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Release"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "releasedBy"
+    "@value" : "Released By"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/made"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://w3id.org/ontometal#releases"
   } ]
 }, {
   "@id" : "https://w3id.org/ontometal#releases",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Relates a band with a release"
+    "@value" : "Indicates the entity that is released by another entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/ontometal#Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "releases"
+    "@value" : "Releases"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/ontometal#Release"
@@ -614,9 +575,11 @@
   "@id" : "https://w3id.org/ontometal#url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A link to acess a website"
+    "@language" : "en",
+    "@value" : "The URL associated with the entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "url"
+    "@language" : "en",
+    "@value" : "URL"
   } ]
 } ]
