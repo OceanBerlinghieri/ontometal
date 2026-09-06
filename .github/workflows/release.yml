@@ -40,7 +40,7 @@ jobs:
 
           git merge --no-edit origin/develop || true
 
-          if git ls-files -u | grep -q " setup.py$"; then
+          if git diff --name-only --diff-filter=U | grep -q '^setup\.py$'; then
             git checkout --theirs setup.py
             git add setup.py
           fi
@@ -48,7 +48,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No merge resolution needed"
           else
-            git commit -m "Merge develop into master" || true
+            git commit -m "Merge develop into master"
           fi
 
           git push origin master
