@@ -1,0 +1,64 @@
+name: ci
+run-name: ${{ github.actor }} runs CI
+on:
+  push:
+    branches:
+      - develop
+      - master
+
+  pull_request:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+    ci:
+        runs-on: ubuntu-24.04
+        steps:
+          - name: Checkout source
+            uses: actions/checkout@v4
+            with:
+                token: ${{ secrets.PAT_TOKEN }}
+                fetch-depth: 0
+                lfs: true
+
+          - name: Set up Python 3.12
+            uses: actions/setup-python@v4
+            with:
+                python-version: '3.12'
+
+          - name: Install dependencies
+            run: |
+                python -m pip install --upgrade pip
+                pip install -e .
+
+          - name: Run pre-commit hooks
+            uses: pre-commit/action@v3.0.1
+            with:
+                extra_args: --all-files
+
+          - name: Generate ontology file
+            run: |
+                python -m ontometal.main
+
+          - name: Set up Java
+            uses: actions/setup-java@v4
+            with:
+                distribution: 'temurin'
+                java-version: '17'
+
+          # https://robot.obolibrary.org/
+          - name: Download Robot
+            run: |
+                curl -L -o robot.jar https://github.com/ontodev/robot/releases/latest/download/robot.jar
+
+
+          - name: Validate ontology
+            run: |
+                sed '/owl:imports/d' ontometal.ttl > ontometal_no_imports.ttl
+                java -Xmx4g -jar robot.jar remove --input ontometal_no_imports.ttl --select individuals --output tbox.ttl
+                java -Xmx4g -jar robot.jar reason --reasoner HermiT --input tbox.ttl
+                rm ontometal_no_imports.ttl tbox.ttl
