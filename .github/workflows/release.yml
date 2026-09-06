@@ -51,8 +51,6 @@ jobs:
             git commit -m "Merge develop into master"
           fi
 
-          git push origin master
-
       - name: Update ontology version
         run: |
           python - <<'PY'
