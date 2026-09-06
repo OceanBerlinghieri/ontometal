@@ -9,6 +9,24 @@ class ClassBuilder(GraphBuilder):
         for class_name in ClassEnum:
             metadata = CLASS_METADATA[class_name.value]
             graph.add((class_name.value, RDF.type, OWL.Class))
-            graph.add((class_name.value, RDFS.label, Literal(metadata["label"])))
-            graph.add((class_name.value, RDFS.comment, Literal(metadata["comment"])))
+
+            if "equivalent_class" in metadata:
+                graph.add(
+                    (
+                        class_name.value,
+                        OWL.equivalentClass,
+                        metadata["equivalent_class"],
+                    )
+                )
+
+            graph.add(
+                (class_name.value, RDFS.label, Literal(metadata["label"], lang="en"))
+            )
+            graph.add(
+                (
+                    class_name.value,
+                    RDFS.comment,
+                    Literal(metadata["comment"], lang="en"),
+                )
+            )
         return graph

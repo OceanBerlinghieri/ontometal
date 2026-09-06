@@ -1,5 +1,6 @@
 from enum import Enum
 
+from ontometal.repositories.namespaces_import import MO
 from ontometal import OM
 
 
@@ -14,6 +15,7 @@ class ClassEnum(Enum):
 
 CLASS_METADATA = {
     OM.Band: {
+        "equivalent_class": MO.MusicGroup,
         "label": "Band",
         "comment": "A musical group or artist entity.",
     },
@@ -22,10 +24,12 @@ CLASS_METADATA = {
         "comment": "A country associated with a band or release.",
     },
     OM.Genre: {
+        "equivalent_class": MO.Genre,
         "label": "Genre",
         "comment": "A musical genre associated with a band or release.",
     },
     OM.Label: {
+        "equivalent_class": MO.Label,
         "label": "Label",
         "comment": "A record label associated with a band or release.",
     },

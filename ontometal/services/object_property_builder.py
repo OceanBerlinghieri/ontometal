@@ -13,13 +13,17 @@ class ObjectPropertyBuilder(GraphBuilder):
             metadata = OBJECT_PROPERTY_METADATA[object_property]
             graph.add((object_property.value, RDF.type, OWL.ObjectProperty))
 
-            sub_property_of = metadata.get("sub_property_of")
-            if sub_property_of is not None:
-                graph.add((object_property.value, RDFS.subPropertyOf, sub_property_of))
+            if "sub_property_of" in metadata:
+                graph.add(
+                    (
+                        object_property.value,
+                        RDFS.subPropertyOf,
+                        metadata["sub_property_of"],
+                    )
+                )
 
-            property_type = metadata.get("type")
-            if property_type is not None:
-                graph.add((object_property.value, RDF.type, property_type))
+            if "type" in metadata:
+                graph.add((object_property.value, RDF.type, metadata["type"]))
 
             for domain in metadata.get("domain", []):
                 graph.add((object_property.value, RDFS.domain, domain))
@@ -29,12 +33,20 @@ class ObjectPropertyBuilder(GraphBuilder):
 
             if "comment" in metadata:
                 graph.add(
-                    (object_property.value, RDFS.comment, Literal(metadata["comment"]))
+                    (
+                        object_property.value,
+                        RDFS.comment,
+                        Literal(metadata["comment"], lang="en"),
+                    )
                 )
 
             if "label" in metadata:
                 graph.add(
-                    (object_property.value, RDFS.label, Literal(metadata["label"]))
+                    (
+                        object_property.value,
+                        RDFS.label,
+                        Literal(metadata["label"], lang="en"),
+                    )
                 )
 
         return graph
