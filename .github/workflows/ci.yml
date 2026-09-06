@@ -1,5 +1,5 @@
 name: ci
-run-name: ${{ github.actor }} is generating ontology file
+run-name: ${{ github.actor }} runs CI
 on:
   push:
     branches:

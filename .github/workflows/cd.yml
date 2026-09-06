@@ -32,6 +32,10 @@ jobs:
         run: |
           wget https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar
 
+      - name: Generate ontology file
+        run: |
+            python -m ontometal.main
+
       - name: Generate Documentation
         run: |
           java -Xmx6g -jar ./widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
