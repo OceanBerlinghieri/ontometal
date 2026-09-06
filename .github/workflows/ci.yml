@@ -42,7 +42,7 @@ jobs:
 
           - name: Generate ontology file
             run: |
-                python -m src.main
+                python -m ontometal.main
 
           - name: Set up Java
             uses: actions/setup-java@v4
