@@ -31,12 +31,26 @@ jobs:
           git config user.name "OceanBerlinghieri"
           git config user.email "OceanBerlinghieri@users.noreply.github.com"
 
+
       - name: Merge develop into master
         run: |
           git fetch origin master develop
           git checkout master
           git pull --ff-only origin master
-          git merge --no-edit origin/develop
+
+          git merge --no-edit origin/develop || true
+
+          if git ls-files -u | grep -q " setup.py$"; then
+            git checkout --theirs setup.py
+            git add setup.py
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No merge resolution needed"
+          else
+            git commit -m "Merge develop into master" || true
+          fi
+
           git push origin master
 
       - name: Update ontology version
